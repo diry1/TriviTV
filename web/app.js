@@ -23,7 +23,8 @@ let config,
   polling = false,
   clockOffset = 0,
   renderedPhase = null,
-  renderedTurn = null;
+  renderedTurn = null,
+  renderedPaused = false;
 try {
   session = JSON.parse(sessionStorage.getItem("trivitv-session") || "null");
 } catch {}
@@ -92,44 +93,46 @@ function lobby() {
   const joinURL = `${location.origin}/?join=${session.code}`;
   return `<section class="room-page">${status()}<div class="room-top"><div><h1>${isHost ? "Good company?" : "You’re in."}<br><em>${isHost ? "Great. Let’s play." : "Make yourself comfortable."}</em></h1><p>${isHost ? "Add players, then start when everyone is ready." : "The TV host will start the game."}</p></div><div class="room-code"><small>ROOM CODE</small><strong>${session.code}</strong><span>${esc(location.host)} · Join a game</span></div></div><div class="lobby-grid"><section>${people()}${isHost && state.settings.mode === "trivia" ? `<form id="add-form" class="add-player"><label class="sr-only" for="local-name">Local player name</label><input id="local-name" name="name" maxlength="24" placeholder="Add a player using the TV remote" required><button class="secondary">Add player +</button></form>` : ""}${isHost ? `<button id="start" class="primary wide">Everyone’s here. Let’s play →</button>` : '<p class="waiting">Waiting for the host…</p>'}</section><aside class="room-info"><h3>Your question mix</h3><p>${esc(state.settings.categories.join(" · "))}</p><p>${state.total} questions · ${esc(state.settings.region)}</p>${state.total < 15 && state.settings.mode === "millionaire" ? '<p class="fine">This category mix has a shorter ladder. Include more categories for all 15 steps.</p>' : ""}<h3>Phones welcome</h3><p>On the same Wi-Fi, open this server’s network address on your phone and enter the room code.</p><button id="copy-link" class="secondary" data-link="${esc(joinURL)}">Copy joining link</button><p class="fine">A localhost address works only on this device. Use your computer’s LAN IP for other devices.</p>${state.party ? '<p class="demo-label">DEVELOPMENT PARTY MODE · NO PAYMENT</p>' : '<p class="fine">Free Trivia: up to 3 players. Millionaire: 1 player.</p>'}</aside></div></section>`;
 }
-function canControlReview() {
+function canControlPause() {
   const first = state?.players[0];
   return (
-    state.settings.mode === "millionaire" &&
+    state.settings.mode === "trivia" &&
     !!first &&
     ((session.role === "host" && first.local) || session.playerId === first.id)
   );
 }
+function pausedNow() {
+  return state.phase === "question"
+    ? state.questionPaused
+    : state.review?.paused;
+}
+function pauseButton() {
+  return canControlPause()
+    ? `<button id="pause-review" class="primary" aria-describedby="pause-hint">${pausedNow() ? "Resume" : "Pause"}</button>`
+    : `<span class="fine">Player 1 can ${pausedNow() ? "resume" : "pause"}</span>`;
+}
 function reviewControls() {
-  if (state.settings.mode !== "millionaire")
-    return '<p class="fine">Moving on automatically after the correct answer.</p>';
-  const paused = state.review.paused;
-  return `<section class="review-timing" aria-label="Answer review">
-    <div class="review-heading"><strong id="review-countdown" role="timer" aria-live="off"></strong>
-    <div class="pause-countdown"><div class="countdown-ring" aria-hidden="true"><svg viewBox="0 0 48 48"><circle class="ring-track" cx="24" cy="24" r="20"/><circle id="review-ring" class="ring-fill" cx="24" cy="24" r="20" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"/></svg><span id="review-seconds">3</span></div>
-    ${canControlReview() ? `<button id="pause-review" class="primary" aria-describedby="pause-hint">${paused ? "Resume" : "Pause"}</button>` : `<span class="fine">Player 1 can ${paused ? "resume" : "pause"}</span>`}</div></div>
-    <p id="pause-hint" class="fine">${paused ? "Take your time. Resume continues the remaining countdown." : "Player 1: press OK or Play/Pause to pause. No need to press Next."}</p>
-  </section>`;
+  return `<section class="review-timing" aria-label="Answer review"><div class="review-heading">
+    <strong id="review-countdown" role="status"></strong><div class="pause-countdown">
+    <div class="countdown-ring" role="img" aria-label="Time remaining before the next round"><svg viewBox="0 0 48 48" aria-hidden="true"><circle class="ring-track" cx="24" cy="24" r="20"/><circle id="review-ring" class="ring-fill" cx="24" cy="24" r="20" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"/></svg></div>
+    ${state.settings.mode === "trivia" ? pauseButton() : ""}</div></div>
+    ${state.settings.mode === "trivia" ? `<p id="pause-hint" class="fine">${state.review.paused ? "Take your time. Resume continues the remaining wait." : "Player 1: press OK on Pause or use Play/Pause."}</p>` : ""}</section>`;
 }
 function updateCountdown() {
-  if (state?.phase === "question" && state.questionEndsAt !== null) {
-    const remaining = Math.max(
-      0,
-      state.questionEndsAt - (Date.now() + clockOffset),
-    );
+  if (state?.phase === "question" && state.settings.mode === "trivia") {
+    const remaining = state.questionPaused
+      ? state.questionRemainingMs
+      : Math.max(0, state.questionEndsAt - (Date.now() + clockOffset));
     const seconds = Math.ceil(remaining / 1000);
     const clock = document.getElementById("answer-countdown");
     if (clock)
-      clock.textContent = `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
+      clock.textContent = state.questionPaused
+        ? "Paused"
+        : `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
     const progress = document.getElementById("answer-progress");
     if (progress) progress.value = remaining;
   }
-  if (
-    state?.phase !== "reveal" ||
-    !state.review ||
-    state.settings.mode !== "millionaire"
-  )
-    return;
+  if (state?.phase !== "reveal" || !state.review) return;
   const remaining = state.review.paused
     ? state.review.remainingMs
     : Math.max(0, state.review.endsAt - (Date.now() + clockOffset));
@@ -139,11 +142,9 @@ function updateCountdown() {
   const message = state.review.paused
     ? "Paused · answer stays on screen"
     : remaining > 0
-      ? `${last ? "Results" : "Next question"} in ${Math.ceil(remaining / 1000)}s`
+      ? `${last ? "Results" : "Next question"}`
       : "Moving on…";
   if (text && text.textContent !== message) text.textContent = message;
-  const number = document.getElementById("review-seconds");
-  if (number) number.textContent = Math.ceil(remaining / 1000);
   document
     .getElementById("review-ring")
     ?.setAttribute(
@@ -167,13 +168,14 @@ function play() {
   const mine = isHost
     ? state.players.find((p) => p.id === localPlayer)
     : state.players.find((p) => p.id === session.playerId);
-  const canAnswer = answering && mine && !mine.answered;
+  const canAnswer =
+    answering && !state.questionPaused && mine && !mine.answered;
   return `<section class="play-page">${status()}
     <div class="game-meta"><span>QUESTION ${state.index + 1} / ${state.total}</span><span class="tag">${esc(q.category)}</span>${state.settings.mode === "millionaire" ? `<span class="prize">FOR ${state.ladder[state.index].toLocaleString()} POINTS</span>` : `<span>${state.players.length} PLAYERS</span>`}</div>
     <div class="play-grid"><section><h1 class="question">${esc(q.text)}</h1>
     ${isHost && local.length > 1 && answering && pending ? `<p class="remote-turn">Remote turn: <strong>${esc(pending.name)}</strong><span>One press locks your answer and passes the remote.</span></p>` : ""}
     ${mine && answering ? `<p class="answer-status">${mine.answered ? `${esc(mine.name)}, your answer is locked. Waiting for the other players…` : `${esc(mine.name)}, what’s your answer?`}</p>` : ""}
-    ${answering && state.settings.mode === "trivia" ? `<div class="answer-clock"><span>Time to answer</span><strong id="answer-countdown" role="timer" aria-live="off">1:00</strong><progress id="answer-progress" max="${state.answerDurationMs}" value="${state.answerDurationMs}" aria-label="Answer time remaining"></progress><small>Any unanswered pick is chosen at random when time runs out.</small></div>` : ""}
+    ${answering && state.settings.mode === "trivia" ? `<div class="answer-clock"><span>Time to answer</span><div class="answer-clock-controls"><strong id="answer-countdown" role="timer" aria-live="off">1:00</strong>${pauseButton()}</div><progress id="answer-progress" max="${state.answerDurationMs}" value="${state.answerDurationMs}" aria-label="Answer time remaining"></progress><small id="pause-hint">${state.questionPaused ? "Player 1 paused the game. All answers are frozen until resumed." : "Any unanswered pick is chosen at random when time runs out."}</small></div>` : ""}
     <div class="answers ${state.phase === "answers" ? "revealing-picks" : state.phase === "correct" ? "revealing-correct" : ""}" data-stage="${state.phase}">${q.choices
       .map((choice, i) => {
         const voters = showPicks
@@ -275,7 +277,7 @@ function render() {
   on("finish", leave);
   on("create", create);
   on("start", () => act("start"));
-  on("pause-review", () => act(state.review.paused ? "resume" : "pause"));
+  on("pause-review", () => act(pausedNow() ? "resume" : "pause"));
   on("fifty", () => act("fifty"));
   on("walk", () => {
     if (confirm("Walk away with your current points?")) act("walk");
@@ -322,7 +324,8 @@ function render() {
     session && state ? `${session.code}:${state.index}:${localPlayer}` : null;
   if (
     state?.phase === "question" &&
-    (renderedPhase !== "question" || turn !== renderedTurn)
+    !state.questionPaused &&
+    (renderedPhase !== "question" || turn !== renderedTurn || renderedPaused)
   ) {
     app.querySelector(".answer:not(:disabled)")?.focus();
   } else if (state?.phase === "reveal" && renderedPhase !== "reveal") {
@@ -332,6 +335,9 @@ function render() {
   } else if (state?.phase === "lobby" && renderedPhase !== "lobby") {
     document.getElementById("start")?.focus();
   }
+  if (state?.phase === "question" && state.questionPaused)
+    document.getElementById("pause-review")?.focus();
+  renderedPaused = state?.questionPaused || false;
   renderedPhase = state?.phase || null;
   renderedTurn = turn;
   updateCountdown();
@@ -396,11 +402,11 @@ document.addEventListener("keydown", (e) => {
   }
   if (
     e.key === "MediaPlayPause" &&
-    state?.phase === "reveal" &&
-    canControlReview()
+    ["question", "reveal"].includes(state?.phase) &&
+    canControlPause()
   ) {
     e.preventDefault();
-    act(state.review.paused ? "resume" : "pause");
+    act(pausedNow() ? "resume" : "pause");
   }
 });
 // Directional navigation also supports Android TV D-pad events in the WebView shell.

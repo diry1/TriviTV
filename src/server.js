@@ -212,11 +212,11 @@ export function createAppServer({
             first && ((host && first.local) || playerId === first.id);
           if (!playerOne)
             throw new rules.GameError(
-              "Only Player 1 can pause or resume the review.",
+              "Only Player 1 can pause or resume the game.",
               403,
             );
-          if (input.type === "pause") rules.pauseReview(game, actionTime);
-          else rules.resumeReview(game, actionTime);
+          if (input.type === "pause") rules.pauseGame(game, actionTime);
+          else rules.resumeGame(game, actionTime);
         } else {
           if (!host)
             throw new rules.GameError("Only the TV host can do that.", 403);

@@ -99,6 +99,29 @@ const assert = require("node:assert/strict");
     assert.equal(await host.locator(".player").count(), 3);
     await host.locator("#start").click();
     await host.locator('[data-answer="0"]').waitFor();
+    // Player 1 can freeze the timed question, including on other players' phones.
+    await host.locator("#pause-review").click();
+    await host
+      .locator("#answer-countdown")
+      .filter({ hasText: "Paused" })
+      .waitFor();
+    await phones[0]
+      .locator("#answer-countdown")
+      .filter({ hasText: "Paused" })
+      .waitFor();
+    assert.equal(await host.locator(".answer:not(:disabled)").count(), 0);
+    timeOffset += 70000;
+    await host.reload();
+    await host
+      .locator("#answer-countdown")
+      .filter({ hasText: "Paused" })
+      .waitFor();
+    await host.locator("#pause-review").click();
+    await host.locator(".answer:not(:disabled)").first().waitFor();
+    assert.equal(
+      await host.evaluate(() => document.activeElement.dataset.answer),
+      "0",
+    );
     for (let i = 0; i < 10; i++) {
       await host
         .locator(".game-meta")
@@ -141,12 +164,39 @@ const assert = require("node:assert/strict");
         "reveal-correct",
       );
       await nextStage(host, "reveal");
-      assert.equal(
+      assert.equal(await host.locator("#review-ring").count(), 1);
+      assert.equal(await host.locator("#review-seconds").count(), 0);
+      assert(!/\d/.test(await host.locator("#review-countdown").innerText()));
+      if (i === 0) {
+        assert.equal(
+          await host.evaluate(() => document.activeElement.id),
+          "pause-review",
+        );
+        await host.keyboard.down("Enter");
         await host
-          .locator("#pause-review,#review-countdown,#review-ring")
-          .count(),
-        0,
-      );
+          .locator("#review-countdown")
+          .filter({ hasText: "Paused" })
+          .waitFor();
+        await host.keyboard.down("Enter");
+        assert.equal(await host.locator("#pause-review").innerText(), "Resume");
+        await host.keyboard.up("Enter");
+        timeOffset += 10000;
+        await host.reload();
+        await host
+          .locator("#review-countdown")
+          .filter({ hasText: "Paused" })
+          .waitFor();
+        assert.equal(await phones[0].locator("#pause-review").count(), 0);
+        await host.screenshot({
+          path: "/tmp/trivitv-trivia-pause.png",
+          fullPage: true,
+        });
+        await host.locator("#pause-review").click();
+        await host
+          .locator("#pause-review")
+          .filter({ hasText: "Pause" })
+          .waitFor();
+      }
       assert.equal(await host.locator("#reveal,#next").count(), 0);
       await nextStage(host, i === 9 ? "finished" : "question");
     }
@@ -169,31 +219,15 @@ const assert = require("node:assert/strict");
     await nextStage(host, "correct");
     await nextStage(host, "reveal");
     assert.equal(await host.locator("#review-ring").count(), 1);
-    assert.equal(await host.locator("#review-seconds").innerText(), "3");
     assert.equal(
-      await host.evaluate(() => document.activeElement.id),
-      "pause-review",
+      await host.locator("#review-seconds,#pause-review").count(),
+      0,
     );
+    assert(!/\d/.test(await host.locator("#review-countdown").innerText()));
     await host.screenshot({
       path: "/tmp/trivitv-millionaire-countdown.png",
       fullPage: true,
     });
-    await host.keyboard.down("Enter");
-    await host
-      .locator("#review-countdown")
-      .filter({ hasText: "Paused" })
-      .waitFor();
-    await host.keyboard.down("Enter");
-    assert.equal(await host.locator("#pause-review").innerText(), "Resume");
-    await host.keyboard.up("Enter");
-    timeOffset += 10000;
-    await host.reload();
-    await host
-      .locator("#review-countdown")
-      .filter({ hasText: "Paused" })
-      .waitFor();
-    await host.locator("#pause-review").click();
-    await host.locator("#pause-review").filter({ hasText: "Pause" }).waitFor();
     await nextStage(host, "question");
     host.once("dialog", (d) => d.accept());
     await host.locator("#walk").click();
@@ -226,7 +260,7 @@ const assert = require("node:assert/strict");
     await host.locator('.answers[data-stage="answers"]').waitFor();
     await nextStage(host, "correct");
     await nextStage(host, "reveal");
-    assert.equal(await host.locator("#pause-review").count(), 0);
+    assert.equal(await host.locator("#pause-review").count(), 1);
     await host.setViewportSize({ width: 390, height: 844 });
     assert.equal(
       await host.evaluate(
@@ -257,7 +291,7 @@ const assert = require("node:assert/strict");
     await nextStage(host, "reveal");
     assert.deepEqual(errors, []);
     console.log(
-      "PASS: three-player phone session, 10 rounds, results, region/categories, solo 50:50 and walk-away, automatic reveal/advance, Millionaire countdown/pause across reload, Trivia timeout/random picks, staged animations, reduced motion, shared remote handoff, mobile layout; no page errors",
+      "PASS: three-player phone session, 10 rounds, results, region/categories, solo 50:50 and walk-away, automatic reveal/advance, four-second nonnumeric rings, Trivia question/review pause across reload, untimed Millionaire without pause, Trivia timeout/random picks, staged animations, reduced motion, shared remote handoff, mobile layout; no page errors",
     );
   } finally {
     await browser?.close();

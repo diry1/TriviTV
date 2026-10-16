@@ -1037,15 +1037,7 @@ input#code {
   stroke-linecap: round;
   transition: stroke-dashoffset 0.1s linear;
 }
-.countdown-ring > span {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  color: var(--lime);
-  font-size: 19px;
-  font-variant-numeric: tabular-nums;
-}
+
 .answer-clock {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -1156,4 +1148,9 @@ input#code {
   .pause-countdown {
     gap: 12px;
   }
+}
+.answer-clock-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }

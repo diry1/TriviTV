@@ -14,8 +14,8 @@ import {
   selectQuestions,
   ladder,
   advance,
-  pauseReview,
-  resumeReview,
+  pauseGame,
+  resumeGame,
   REVIEW_DURATION_MS,
   ANSWER_DURATION_MS,
   ANSWERS_REVEAL_MS,
@@ -85,7 +85,7 @@ function toReview(game) {
 function finishRound(game) {
   next(game, toReview(game));
 }
-test("player picks appear first, then correct answer and scores, then a full three-second review", () => {
+test("player picks appear first, then correct answer and scores, then a full four-second review", () => {
   const game = createGame(settings());
   const a = addPlayer(game, "A"),
     b = addPlayer(game, "B");
@@ -113,14 +113,14 @@ test("player picks appear first, then correct answer and scores, then a full thr
   const reviewStart = game.stageEndsAt;
   advance(game, reviewStart);
   assert.equal(game.phase, "reveal");
-  assert.equal(REVIEW_DURATION_MS, 3000);
-  assert.equal(game.review.endsAt, reviewStart + 3000);
+  assert.equal(REVIEW_DURATION_MS, 4000);
+  assert.equal(game.review.endsAt, reviewStart + 4000);
   assert.equal(advance(game, game.review.endsAt - 1), false);
   advance(game, game.review.endsAt);
   assert.equal(game.index, 1);
   assert.deepEqual(game.answers, {});
   assert.equal(game.autoPicked.length, 0);
-  assert.equal(game.questionEndsAt, reviewStart + 3000 + ANSWER_DURATION_MS);
+  assert.equal(game.questionEndsAt, reviewStart + 4000 + ANSWER_DURATION_MS);
   assert.equal(game.scores[a.id], 100);
 });
 test("Trivia timeout randomly fills only missing players, labels picks, and rejects late answers", () => {
@@ -196,38 +196,38 @@ test("Millionaire lifeline never removes correct answer; checkpoints, loss and c
   assert.equal(full.won, 1000000);
   assert.equal(full.phase, "finished");
 });
-test("only Millionaire supports pausing; exact remaining time survives multiple pause/resume cycles", () => {
-  const game = createGame(settings("millionaire"));
+test("only Trivia supports pausing; exact remaining time survives multiple pause/resume cycles", () => {
+  const game = createGame(settings());
   const p = addPlayer(game, "One");
   start(game, 0);
   answer(game, p.id, game.questions[0].correct, 1000);
-  assert.throws(() => pauseReview(game, 1001), /no running review/);
+  assert.throws(() => pauseGame(game, 1001), /no running review/);
   toReview(game);
   const end = game.review.endsAt;
-  pauseReview(game, end - 2250);
+  pauseGame(game, end - 2250);
   assert.equal(game.review.remainingMs, 2250);
   assert.equal(game.review.endsAt, null);
   assert.equal(advance(game, 100000), false);
   assert.throws(() => next(game, 100000), /still running/);
-  resumeReview(game, 200000);
+  resumeGame(game, 200000);
   assert.equal(game.review.endsAt, 202250);
-  pauseReview(game, 202000);
+  pauseGame(game, 202000);
   assert.equal(game.review.remainingMs, 250);
-  resumeReview(game, 300000);
+  resumeGame(game, 300000);
   assert.equal(advance(game, 300249), false);
   assert.equal(advance(game, 300250), true);
   assert.equal(game.index, 1);
   assert.equal(game.review, null);
   assert.equal(game.scores[p.id], 100);
-  const trivia = createGame(settings());
-  const p2 = addPlayer(trivia, "One");
-  start(trivia, 0);
-  answer(trivia, p2.id, 0, 1);
-  toReview(trivia);
-  assert.throws(() => pauseReview(trivia, 2), /Millionaire only/);
-  assert.throws(() => resumeReview(trivia, 2), /Millionaire only/);
+  const solo = createGame(settings("millionaire"));
+  const p2 = addPlayer(solo, "One");
+  start(solo, 0);
+  answer(solo, p2.id, 0, 1);
+  toReview(solo);
+  assert.throws(() => pauseGame(solo, 2), /Trivia only/);
+  assert.throws(() => resumeGame(solo, 2), /Trivia only/);
 });
-test("last and losing answers finish only after both animations and the three-second review", () => {
+test("last and losing answers finish only after both animations and the four-second review", () => {
   for (const mode of ["trivia", "millionaire"]) {
     const game = createGame(settings(mode));
     const p = addPlayer(game, "One");
@@ -263,4 +263,25 @@ test("invalid transitions stay rejected and walk-away preserves prior winnings",
   walk(game);
   assert.equal(game.won, ladder[0]);
   assert.equal(game.finishReason, "walked");
+});
+
+test("Trivia question pause freezes deadline and all player answers, then resumes the remaining minute", () => {
+  const game = createGame(settings());
+  const a = addPlayer(game, "One"),
+    b = addPlayer(game, "Two");
+  start(game, 1000);
+  answer(game, a.id, 1, 2000);
+  pauseGame(game, 11000);
+  assert.equal(game.questionRemainingMs, 50000);
+  assert.equal(game.questionEndsAt, null);
+  assert(game.questionPaused);
+  assert.equal(advance(game, 100000), false);
+  assert.throws(() => answer(game, b.id, 2, 100000), /paused/);
+  resumeGame(game, 100000);
+  assert.equal(game.questionEndsAt, 150000);
+  assert.equal(game.answers[a.id], 1);
+  assert.equal(advance(game, 149999), false);
+  advance(game, 150000);
+  assert.equal(game.phase, "answers");
+  assert.deepEqual(game.autoPicked, [b.id]);
 });

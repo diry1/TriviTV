@@ -1,7 +1,7 @@
 import { randomInt, randomUUID } from "node:crypto";
 import { categories, questions } from "./questions.js";
 export { categories };
-export const REVIEW_DURATION_MS = 3000;
+export const REVIEW_DURATION_MS = 4000;
 export const ANSWER_DURATION_MS = 60000;
 export const ANSWERS_REVEAL_MS = 800;
 export const CORRECT_REVEAL_MS = 600;
@@ -107,6 +107,8 @@ export function createGame(
     correctRevealMs,
     review: null,
     questionEndsAt: null,
+    questionPaused: false,
+    questionRemainingMs: answerDurationMs,
     stageEndsAt: null,
     autoPicked: [],
   };
@@ -150,9 +152,12 @@ function beginQuestion(game, now) {
   game.questionEndsAt =
     game.settings.mode === "trivia" ? now + game.answerDurationMs : null;
   game.stageEndsAt = null;
+  game.questionPaused = false;
+  game.questionRemainingMs = game.answerDurationMs;
 }
 export function answer(game, playerId, choice, now = Date.now()) {
   requireThat(game.phase === "question", "Answers are closed.", 409);
+  requireThat(!game.questionPaused, "The game is paused by Player 1.", 409);
   requireThat(
     game.questionEndsAt === null || now < game.questionEndsAt,
     "Time is up. Unanswered picks are assigned randomly.",
@@ -259,12 +264,23 @@ export function advance(game, now = Date.now()) {
   else next(game, now);
   return true;
 }
-export function pauseReview(game, now = Date.now()) {
+export function pauseGame(game, now = Date.now()) {
   requireThat(
-    game.settings.mode === "millionaire",
-    "Pause is available in Millionaire only.",
+    game.settings.mode === "trivia",
+    "Pause is available in Trivia only.",
     409,
   );
+  if (game.phase === "question") {
+    requireThat(
+      !game.questionPaused && now < game.questionEndsAt,
+      "There is no running question to pause.",
+      409,
+    );
+    game.questionRemainingMs = game.questionEndsAt - now;
+    game.questionEndsAt = null;
+    game.questionPaused = true;
+    return;
+  }
   requireThat(
     game.phase === "reveal" && !game.review.paused && now < game.review.endsAt,
     "There is no running review to pause.",
@@ -274,12 +290,18 @@ export function pauseReview(game, now = Date.now()) {
   game.review.endsAt = null;
   game.review.paused = true;
 }
-export function resumeReview(game, now = Date.now()) {
+export function resumeGame(game, now = Date.now()) {
   requireThat(
-    game.settings.mode === "millionaire",
-    "Pause is available in Millionaire only.",
+    game.settings.mode === "trivia",
+    "Pause is available in Trivia only.",
     409,
   );
+  if (game.phase === "question") {
+    requireThat(game.questionPaused, "The question is not paused.", 409);
+    game.questionEndsAt = now + game.questionRemainingMs;
+    game.questionPaused = false;
+    return;
+  }
   requireThat(
     game.phase === "reveal" && game.review.paused,
     "The review is not paused.",
@@ -330,6 +352,8 @@ export function view(game, viewerId = null, now = Date.now()) {
     phase: game.phase,
     serverNow: now,
     questionEndsAt: game.questionEndsAt,
+    questionPaused: game.questionPaused,
+    questionRemainingMs: game.questionRemainingMs,
     answerDurationMs: game.answerDurationMs,
     stageEndsAt: game.stageEndsAt,
     review: game.review
