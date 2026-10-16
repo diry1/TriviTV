@@ -1,6 +1,7 @@
 import { randomInt, randomUUID } from "node:crypto";
 import { categories, questions } from "./questions.js";
 export { categories };
+export const REVIEW_DURATION_MS = 5000;
 export const ladder = [
   100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000,
   250000, 500000, 1000000,
@@ -68,7 +69,10 @@ export function selectQuestions(settings) {
     };
   });
 }
-export function createGame(settings, { party = false } = {}) {
+export function createGame(
+  settings,
+  { party = false, reviewDurationMs = REVIEW_DURATION_MS } = {},
+) {
   const selected = selectQuestions(settings);
   return {
     settings: {
@@ -88,6 +92,8 @@ export function createGame(settings, { party = false } = {}) {
     won: 0,
     secured: 0,
     finishReason: null,
+    reviewDurationMs,
+    review: null,
   };
 }
 export function addPlayer(game, name, local = false) {
@@ -124,7 +130,7 @@ export function start(game) {
   requireThat(game.players.length > 0, "Add at least one player.");
   game.phase = "question";
 }
-export function answer(game, playerId, choice) {
+export function answer(game, playerId, choice, now = Date.now()) {
   requireThat(game.phase === "question", "Answers are closed.", 409);
   requireThat(
     game.players.some((p) => p.id === playerId),
@@ -144,11 +150,15 @@ export function answer(game, playerId, choice) {
     409,
   );
   game.answers[playerId] = choice;
+  if (game.players.every((p) => p.id in game.answers)) reveal(game, now);
 }
-export function reveal(game) {
+export function reveal(game, now = Date.now()) {
   requireThat(game.phase === "question", "No question to reveal.", 409);
-  if (game.settings.mode === "millionaire")
-    requireThat(game.players[0].id in game.answers, "Lock an answer first.");
+  requireThat(
+    game.players.every((p) => p.id in game.answers),
+    "Wait for every player to answer.",
+    409,
+  );
   const correct = game.questions[game.index].correct;
   for (const p of game.players)
     if (game.answers[p.id] === correct) game.scores[p.id] += 100;
@@ -163,9 +173,20 @@ export function reveal(game) {
     }
   }
   game.phase = "reveal";
+  game.review = {
+    paused: false,
+    remainingMs: game.reviewDurationMs,
+    endsAt: now + game.reviewDurationMs,
+  };
 }
-export function next(game) {
+export function next(game, now = Date.now()) {
   requireThat(game.phase === "reveal", "Reveal the answer first.", 409);
+  requireThat(
+    !game.review.paused && now >= game.review.endsAt,
+    "The answer review is still running.",
+    409,
+  );
+  game.review = null;
   if (
     game.finishReason === "wrong" ||
     game.index === game.questions.length - 1
@@ -178,6 +199,32 @@ export function next(game) {
   game.answers = {};
   game.eliminated = [];
   game.phase = "question";
+}
+// Server time owns transitions; clients only display the countdown.
+export function advance(game, now = Date.now()) {
+  if (game.phase !== "reveal" || game.review.paused || now < game.review.endsAt)
+    return false;
+  next(game, now);
+  return true;
+}
+export function pauseReview(game, now = Date.now()) {
+  requireThat(
+    game.phase === "reveal" && !game.review.paused && now < game.review.endsAt,
+    "There is no running review to pause.",
+    409,
+  );
+  game.review.remainingMs = game.review.endsAt - now;
+  game.review.endsAt = null;
+  game.review.paused = true;
+}
+export function resumeReview(game, now = Date.now()) {
+  requireThat(
+    game.phase === "reveal" && game.review.paused,
+    "The review is not paused.",
+    409,
+  );
+  game.review.endsAt = now + game.review.remainingMs;
+  game.review.paused = false;
 }
 export function fifty(game) {
   requireThat(
@@ -211,13 +258,17 @@ export function walk(game) {
   game.phase = "finished";
   game.finishReason = "walked";
 }
-export function view(game, viewerId = null) {
+export function view(game, viewerId = null, now = Date.now()) {
   const q = game.questions[game.index];
   const show = game.phase === "reveal" || game.phase === "finished";
   return {
     settings: game.settings,
     party: game.party,
     phase: game.phase,
+    serverNow: now,
+    review: game.review
+      ? { ...game.review, durationMs: game.reviewDurationMs }
+      : null,
     index: game.index,
     total: game.questions.length,
     players: game.players.map((p) => ({

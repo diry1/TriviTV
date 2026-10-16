@@ -27,9 +27,28 @@ async function body(req) {
     throw new rules.GameError("Invalid JSON object.");
   }
 }
-export function createAppServer({ partyDemo = false } = {}) {
+export function createAppServer({
+  partyDemo = false,
+  reviewDurationMs = rules.REVIEW_DURATION_MS,
+  now = Date.now,
+} = {}) {
   const rooms = new Map();
   const attempts = new Map();
+  function schedule(room) {
+    clearTimeout(room.timer);
+    room.timer = null;
+    const review = room.game.review;
+    if (room.game.phase !== "reveal" || review.paused) return;
+    room.timer = setTimeout(
+      () => {
+        room.timer = null;
+        rules.advance(room.game, now());
+        schedule(room);
+      },
+      Math.max(0, review.endsAt - now()),
+    );
+    room.timer.unref();
+  }
   const server = http.createServer(async (req, res) => {
     const json = (status, value) => {
       res.writeHead(status, {
@@ -51,14 +70,17 @@ export function createAppServer({ partyDemo = false } = {}) {
           403,
         );
       if (url.pathname.startsWith("/api/")) {
-        const now = Date.now();
+        const timestamp = now();
         for (const [code, room] of rooms)
-          if (now - room.updated > 6 * 60 * 60 * 1000) rooms.delete(code);
+          if (timestamp - room.updated > 6 * 60 * 60 * 1000) {
+            clearTimeout(room.timer);
+            rooms.delete(code);
+          }
         if (req.method === "POST") {
           const ip = req.socket.remoteAddress;
-          const rate = attempts.get(ip) || { since: now, count: 0 };
-          if (now - rate.since > 60000) {
-            rate.since = now;
+          const rate = attempts.get(ip) || { since: timestamp, count: 0 };
+          if (timestamp - rate.since > 60000) {
+            rate.since = timestamp;
             rate.count = 0;
           }
           rate.count++;
@@ -69,7 +91,7 @@ export function createAppServer({ partyDemo = false } = {}) {
               429,
             );
           for (const [key, value] of attempts)
-            if (now - value.since > 60000) attempts.delete(key);
+            if (timestamp - value.since > 60000) attempts.delete(key);
         }
         if (req.method === "GET" && url.pathname === "/api/config")
           return json(200, {
@@ -90,6 +112,7 @@ export function createAppServer({ partyDemo = false } = {}) {
             );
           const game = rules.createGame(input, {
             party: !!input.party && partyDemo,
+            reviewDurationMs,
           });
           rules.addPlayer(game, input.name || "TV player", true);
           let code;
@@ -97,13 +120,13 @@ export function createAppServer({ partyDemo = false } = {}) {
             code = randomBytes(4).toString("hex").slice(0, 6).toUpperCase();
           } while (rooms.has(code));
           const host = token();
-          const room = { game, host, members: new Map(), updated: now };
+          const room = { game, host, members: new Map(), updated: timestamp };
           rooms.set(code, room);
           return json(201, {
             code,
             token: host,
             role: "host",
-            state: rules.view(game),
+            state: rules.view(game, null, timestamp),
           });
         }
         if (req.method === "POST" && url.pathname === "/api/join") {
@@ -126,13 +149,13 @@ export function createAppServer({ partyDemo = false } = {}) {
           } else player = rules.addPlayer(room.game, input.name);
           const key = token();
           room.members.set(key, player.id);
-          room.updated = now;
+          room.updated = timestamp;
           return json(201, {
             code,
             token: key,
             playerId: player.id,
             role: "player",
-            state: rules.view(room.game, player.id),
+            state: rules.view(room.game, player.id, timestamp),
           });
         }
         const match = url.pathname.match(
@@ -150,13 +173,25 @@ export function createAppServer({ partyDemo = false } = {}) {
         const playerId = room.members.get(key);
         if (!host && !playerId)
           throw new rules.GameError("Rejoin this room to continue.", 403);
-        room.updated = now;
+        room.updated = timestamp;
+        if (rules.advance(room.game, timestamp)) schedule(room);
         if (req.method === "GET" && !match[2])
-          return json(200, rules.view(room.game, playerId));
+          return json(200, rules.view(room.game, playerId, timestamp));
         if (req.method !== "POST" || !match[2])
           throw new rules.GameError("Method not allowed.", 405);
         const input = await body(req);
+        const actionTime = now();
+        if (rules.advance(room.game, actionTime)) schedule(room);
         const game = room.game;
+        if (
+          ["answer", "pause", "resume", "fifty", "walk"].includes(input.type) &&
+          input.questionId !== game.questions[game.index].id
+        ) {
+          throw new rules.GameError(
+            "That question has changed. Please try again.",
+            409,
+          );
+        }
         if (input.type === "answer") {
           const id = host ? input.playerId : playerId;
           if (host && !game.players.some((p) => p.id === id && p.local))
@@ -164,19 +199,24 @@ export function createAppServer({ partyDemo = false } = {}) {
               "Use that player’s phone to answer.",
               403,
             );
-          rules.answer(game, id, input.choice);
+          rules.answer(game, id, input.choice, actionTime);
+        } else if (["pause", "resume"].includes(input.type)) {
+          const first = game.players[0];
+          const playerOne =
+            first && ((host && first.local) || playerId === first.id);
+          if (!playerOne)
+            throw new rules.GameError(
+              "Only Player 1 can pause or resume the review.",
+              403,
+            );
+          if (input.type === "pause") rules.pauseReview(game, actionTime);
+          else rules.resumeReview(game, actionTime);
         } else {
           if (!host)
             throw new rules.GameError("Only the TV host can do that.", 403);
           switch (input.type) {
             case "start":
               rules.start(game);
-              break;
-            case "reveal":
-              rules.reveal(game);
-              break;
-            case "next":
-              rules.next(game);
               break;
             case "fifty":
               rules.fifty(game);
@@ -191,7 +231,8 @@ export function createAppServer({ partyDemo = false } = {}) {
               throw new rules.GameError("Unknown action.");
           }
         }
-        return json(200, rules.view(game, playerId));
+        schedule(room);
+        return json(200, rules.view(game, playerId, actionTime));
       }
       if (req.method !== "GET" && req.method !== "HEAD")
         throw new rules.GameError("Method not allowed.", 405);
@@ -225,6 +266,9 @@ export function createAppServer({ partyDemo = false } = {}) {
         });
       if (!error.status) console.error(error);
     }
+  });
+  server.on("close", () => {
+    for (const room of rooms.values()) clearTimeout(room.timer);
   });
   return server;
 }

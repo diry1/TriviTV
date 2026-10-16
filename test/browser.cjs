@@ -3,7 +3,11 @@ const assert = require("node:assert/strict");
 (async () => {
   const { createAppServer } = await import("../src/server.js");
   const { questions } = await import("../src/questions.js");
-  const server = createAppServer({ partyDemo: true });
+  let timeOffset = 0;
+  const server = createAppServer({
+    partyDemo: true,
+    now: () => Date.now() + timeOffset,
+  });
   await new Promise((r) => server.listen(0, "127.0.0.1", r));
   const base = `http://127.0.0.1:${server.address().port}`;
   let browser;
@@ -74,26 +78,57 @@ const assert = require("node:assert/strict");
     await host.locator("#start").click();
     await host.locator('[data-answer="0"]').waitFor();
     for (let i = 0; i < 10; i++) {
-      await host.locator('[data-answer="0"]').click();
-      for (const phone of phones) {
-        await phone.locator('[data-answer="1"]:not(:disabled)').waitFor();
-        await phone.locator('[data-answer="1"]').click();
-      }
       await host
-        .locator("#reveal")
-        .filter({ hasText: "Reveal the answer" })
+        .locator(".game-meta")
+        .filter({ hasText: `QUESTION ${i + 1} / 10` })
         .waitFor();
-      if (i === 0) {
-        await phones[0].reload();
-        await phones[0]
-          .locator(".answer-status")
-          .filter({ hasText: "locked" })
+      await host.locator('[data-answer="0"]:not(:disabled)').click();
+      for (let p = 0; p < phones.length; p++) {
+        const phone = phones[p];
+        await phone
+          .locator(".game-meta")
+          .filter({ hasText: `QUESTION ${i + 1} / 10` })
           .waitFor();
-        assert(await phones[0].locator('[data-answer="1"]').isDisabled());
+        await phone.locator('[data-answer="1"]:not(:disabled)').click();
+        if (i === 0 && p === 0) {
+          await phone.reload();
+          await phone
+            .locator(".answer-status")
+            .filter({ hasText: "locked" })
+            .waitFor();
+          assert(await phone.locator('[data-answer="1"]').isDisabled());
+          assert.equal(await phone.locator(".answer.correct").count(), 0);
+        }
       }
-      await host.locator("#reveal").click();
       await host.locator(".answer.correct").waitFor();
-      await host.locator("#next").click();
+      assert.equal(await host.locator("#reveal,#next").count(), 0);
+      if (i === 0) {
+        assert.equal(
+          await host.evaluate(() => document.activeElement.id),
+          "pause-review",
+        );
+        await host.keyboard.down("Enter");
+        await host
+          .locator("#review-countdown")
+          .filter({ hasText: "Paused" })
+          .waitFor();
+        await host.keyboard.down("Enter"); // a held key must not toggle again
+        assert.equal(await host.locator("#pause-review").innerText(), "Resume");
+        await host.keyboard.up("Enter");
+        timeOffset += 10000;
+        await host.reload();
+        await host
+          .locator("#review-countdown")
+          .filter({ hasText: "Paused" })
+          .waitFor();
+        assert.equal(await phones[0].locator("#pause-review").count(), 0);
+        await host.locator("#pause-review").click();
+        await host
+          .locator("#pause-review")
+          .filter({ hasText: "Pause" })
+          .waitFor();
+      }
+      timeOffset += 5000; // advance server clock; no Next API or button exists
     }
     await host.locator("#finish").waitFor();
     assert.equal(await host.locator(".standings .player").count(), 3);
@@ -110,8 +145,12 @@ const assert = require("node:assert/strict");
       .locator(".answer:not(:disabled)")
       .filter({ hasText: answer })
       .click();
-    await host.locator("#reveal").click();
-    await host.locator("#next").click();
+    await host.locator(".answer.correct").waitFor();
+    timeOffset += 5000;
+    await host
+      .locator(".game-meta")
+      .filter({ hasText: "QUESTION 2 /" })
+      .waitFor();
     host.once("dialog", (d) => d.accept());
     await host.locator("#walk").click();
     await host.locator("#finish").waitFor();
@@ -125,12 +164,22 @@ const assert = require("node:assert/strict");
     await host.locator(".player").filter({ hasText: "Sofa friend" }).waitFor();
     await host.locator("#start").click();
     await host.locator('[data-answer="0"]').click();
-    await host.locator("#local-player").selectOption({ label: "Sofa friend" });
-    await host.locator('[data-answer="2"]').click();
     await host
-      .locator("#reveal")
-      .filter({ hasText: "Reveal the answer" })
+      .locator(".remote-turn")
+      .filter({ hasText: "Sofa friend" })
       .waitFor();
+    assert.equal(await host.locator("#local-player").count(), 0);
+    assert.equal(
+      await host.evaluate(() => document.activeElement.dataset.answer),
+      "0",
+    );
+    await host.keyboard.press("ArrowRight");
+    assert.equal(
+      await host.evaluate(() => document.activeElement.dataset.answer),
+      "1",
+    );
+    await host.keyboard.press("Enter");
+    await host.locator(".answer.correct").waitFor();
     await host.setViewportSize({ width: 390, height: 844 });
     assert.equal(
       await host.evaluate(
@@ -140,7 +189,7 @@ const assert = require("node:assert/strict");
     );
     assert.deepEqual(errors, []);
     console.log(
-      "PASS: three-player phone session, 10 rounds, results, region/categories, solo 50:50 and walk-away, shared remote, keyboard navigation, tab reload, mobile layout; no page errors",
+      "PASS: three-player phone session, 10 rounds, results, region/categories, solo 50:50 and walk-away, automatic reveal/advance, Player 1 pause/resume across reload, held-key protection, shared remote handoff, keyboard navigation, mobile layout; no page errors",
     );
   } finally {
     await browser?.close();

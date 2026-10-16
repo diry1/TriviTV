@@ -19,7 +19,10 @@ let config,
   busy = false,
   snapshot = "",
   connectionLost = false,
-  pollEpoch = 0;
+  pollEpoch = 0,
+  clockOffset = 0,
+  renderedPhase = null,
+  renderedTurn = null;
 try {
   session = JSON.parse(sessionStorage.getItem("trivitv-session") || "null");
 } catch {}
@@ -33,6 +36,7 @@ function notify(message) {
   notify.timer = setTimeout(() => (n.hidden = true), 6000);
 }
 async function api(path, body) {
+  const sentAt = Date.now();
   const res = await fetch(path, {
     method: body ? "POST" : "GET",
     headers: {
@@ -42,6 +46,11 @@ async function api(path, body) {
     ...(body ? { body: JSON.stringify(body) } : {}),
   });
   const data = await res.json();
+  const timedState = data.state || data;
+  if (typeof timedState.serverNow === "number") {
+    clockOffset = timedState.serverNow - (sentAt + Date.now()) / 2;
+    delete timedState.serverNow;
+  }
   if (!res.ok) {
     const error = new Error(data.error);
     error.status = res.status;
@@ -69,7 +78,7 @@ function status() {
   return `<div class="eyebrow">${state.settings.mode === "millionaire" ? "SOLO · MILLIONAIRE" : "MULTIPLAYER · TRIVIA"} <span class="dot">•</span> ${esc(state.settings.region)} <span class="dot">•</span> ${state.party ? "PARTY DEMO" : "FREE PLAY"}</div>`;
 }
 function home() {
-  return `<section class="intro"><div class="eyebrow">THE SOFA IS YOUR GAME SHOW</div><h1>A little friendly<br><em>competition.</em></h1><p>One screen. Your favourite people. Something<br class="desktop"> everyone thinks they know the answer to.</p></section><div class="home-grid"><section class="setup"><div class="section-heading"><h2>Pick your game</h2><span>01 / THE FORMAT</span></div><div class="modes"><button class="mode ${mode === "trivia" ? "active" : ""}" data-mode="trivia"><span class="mode-icon">✳</span><span><strong>Trivia</strong><small>Four choices. Plenty of opinions.</small></span><span class="tag">1–3 FREE</span></button><button class="mode ${mode === "millionaire" ? "active" : ""}" data-mode="millionaire"><span class="mode-icon amber">◇</span><span><strong>Millionaire</strong><small>One player. One climb to the top.</small></span><span class="tag">SOLO</span></button></div><div class="section-heading"><h2>Make it your kind of quiz</h2><span>02 / THE MIX</span></div><div class="setting-row"><div><h3>Your region</h3><p>Familiar references, different perspectives.</p></div><div class="segmented" role="group" aria-label="Question region">${["Europe", "US"].map((r) => `<button data-region="${r}" class="${region === r ? "selected" : ""}" aria-pressed="${region === r}">${r === "Europe" ? "Europe" : "United States"}</button>`).join("")}</div></div><div class="category-head"><h3>Include categories</h3><button id="all-categories" class="text-button">${selected.size === config.categories.length ? "Clear all" : "Select all"}</button></div><div class="categories">${config.categories.map((c, i) => `<button class="chip ${selected.has(c) ? "selected" : ""}" data-category="${c}" aria-pressed="${selected.has(c)}"><span>${["◎", "♫", "⌛", "⚛", "⚑", "✎"][i]}</span>${c}<b>${selected.has(c) ? "✓" : "+"}</b></button>`).join("")}</div><p class="fine">Selected categories only. Regional questions are mixed with worldwide knowledge.</p><button class="primary start-button" id="create" ${selected.size ? "" : "disabled"}>Set up ${mode === "millionaire" ? "my climb" : "the game"} <span>→</span></button><p class="fine">${mode === "millionaire" ? "Up to 15 questions · 50:50 · Walk away · Fictional points" : "Up to 10 questions · No timers · Everyone gets a turn"}</p></section><aside><section class="party-card"><div class="eyebrow">A BIGGER NIGHT IN</div><div class="party-art">✦<span>✳</span>✧</div><h2>More friends.<br>More possibilities.</h2><p>The full game is free for up to three players. Party Passes will unlock bigger groups and extras like picture questions.</p><div class="passes"><div><strong>2 days</strong><small>For the weekend</small></div><div><strong>30 days</strong><small>Keep the party going</small></div></div><p class="fine">Planned one-time payments. Never auto-renew. Purchases and picture questions are not available yet.</p>${config.partyDemo ? `<label class="demo-toggle"><input id="party" type="checkbox" ${party ? "checked" : ""} ${mode === "millionaire" ? "disabled" : ""}> Enable development Party Mode</label><p class="fine">Testing only. No payment or paid access is granted.</p>` : ""}</section><section class="join-card"><span class="small-icon">↗</span><h3>Already have a room?</h3><p>Your phone is your controller.</p><button id="join-screen" class="secondary">Join a game <span>→</span></button></section></aside></div>`;
+  return `<section class="intro"><div class="eyebrow">THE SOFA IS YOUR GAME SHOW</div><h1>A little friendly<br><em>competition.</em></h1><p>One screen. Your favourite people. Something<br class="desktop"> everyone thinks they know the answer to.</p></section><div class="home-grid"><section class="setup"><div class="section-heading"><h2>Pick your game</h2><span>01 / THE FORMAT</span></div><div class="modes"><button class="mode ${mode === "trivia" ? "active" : ""}" data-mode="trivia"><span class="mode-icon">✳</span><span><strong>Trivia</strong><small>Four choices. Plenty of opinions.</small></span><span class="tag">1–3 FREE</span></button><button class="mode ${mode === "millionaire" ? "active" : ""}" data-mode="millionaire"><span class="mode-icon amber">◇</span><span><strong>Millionaire</strong><small>One player. One climb to the top.</small></span><span class="tag">SOLO</span></button></div><div class="section-heading"><h2>Make it your kind of quiz</h2><span>02 / THE MIX</span></div><div class="setting-row"><div><h3>Your region</h3><p>Familiar references, different perspectives.</p></div><div class="segmented" role="group" aria-label="Question region">${["Europe", "US"].map((r) => `<button data-region="${r}" class="${region === r ? "selected" : ""}" aria-pressed="${region === r}">${r === "Europe" ? "Europe" : "United States"}</button>`).join("")}</div></div><div class="category-head"><h3>Include categories</h3><button id="all-categories" class="text-button">${selected.size === config.categories.length ? "Clear all" : "Select all"}</button></div><div class="categories">${config.categories.map((c, i) => `<button class="chip ${selected.has(c) ? "selected" : ""}" data-category="${c}" aria-pressed="${selected.has(c)}"><span>${["◎", "♫", "⌛", "⚛", "⚑", "✎"][i]}</span>${c}<b>${selected.has(c) ? "✓" : "+"}</b></button>`).join("")}</div><p class="fine">Selected categories only. Regional questions are mixed with worldwide knowledge.</p><button class="primary start-button" id="create" ${selected.size ? "" : "disabled"}>Set up ${mode === "millionaire" ? "my climb" : "the game"} <span>→</span></button><p class="fine">${mode === "millionaire" ? "Up to 15 questions · 50:50 · Walk away · Fictional points" : "Up to 10 questions · Untimed answers · Automatic reveal"}</p></section><aside><section class="party-card"><div class="eyebrow">A BIGGER NIGHT IN</div><div class="party-art">✦<span>✳</span>✧</div><h2>More friends.<br>More possibilities.</h2><p>The full game is free for up to three players. Party Passes will unlock bigger groups and extras like picture questions.</p><div class="passes"><div><strong>2 days</strong><small>For the weekend</small></div><div><strong>30 days</strong><small>Keep the party going</small></div></div><p class="fine">Planned one-time payments. Never auto-renew. Purchases and picture questions are not available yet.</p>${config.partyDemo ? `<label class="demo-toggle"><input id="party" type="checkbox" ${party ? "checked" : ""} ${mode === "millionaire" ? "disabled" : ""}> Enable development Party Mode</label><p class="fine">Testing only. No payment or paid access is granted.</p>` : ""}</section><section class="join-card"><span class="small-icon">↗</span><h3>Already have a room?</h3><p>Your phone is your controller.</p><button id="join-screen" class="secondary">Join a game <span>→</span></button></section></aside></div>`;
 }
 function joinForm() {
   return `<section class="join-page"><div class="eyebrow">PULL UP A SEAT</div><h1>You’re invited.</h1><p>Enter the code on the TV. No app download needed.</p><form id="join-form"><label>Room code<input name="code" id="code" maxlength="6" autocapitalize="characters" autocomplete="off" value="${esc(prefill || "")}" placeholder="A1B2C3" required pattern="[A-Fa-f0-9]{6}"></label><label>Your name<input name="name" maxlength="24" autocomplete="nickname" placeholder="What should we call you?" required></label><button class="primary">Join the room →</button></form><button id="back" class="text-button">← Back to game setup</button></section>`;
@@ -82,33 +91,78 @@ function lobby() {
   const joinURL = `${location.origin}/?join=${session.code}`;
   return `<section class="room-page">${status()}<div class="room-top"><div><h1>${isHost ? "Good company?" : "You’re in."}<br><em>${isHost ? "Great. Let’s play." : "Make yourself comfortable."}</em></h1><p>${isHost ? "Add players, then start when everyone is ready." : "The TV host will start the game."}</p></div><div class="room-code"><small>ROOM CODE</small><strong>${session.code}</strong><span>${esc(location.host)} · Join a game</span></div></div><div class="lobby-grid"><section>${people()}${isHost && state.settings.mode === "trivia" ? `<form id="add-form" class="add-player"><label class="sr-only" for="local-name">Local player name</label><input id="local-name" name="name" maxlength="24" placeholder="Add a player using the TV remote" required><button class="secondary">Add player +</button></form>` : ""}${isHost ? `<button id="start" class="primary wide">Everyone’s here. Let’s play →</button>` : '<p class="waiting">Waiting for the host…</p>'}</section><aside class="room-info"><h3>Your question mix</h3><p>${esc(state.settings.categories.join(" · "))}</p><p>${state.total} questions · ${esc(state.settings.region)}</p>${state.total < 15 && state.settings.mode === "millionaire" ? '<p class="fine">This category mix has a shorter ladder. Include more categories for all 15 steps.</p>' : ""}<h3>Phones welcome</h3><p>On the same Wi-Fi, open this server’s network address on your phone and enter the room code.</p><button id="copy-link" class="secondary" data-link="${esc(joinURL)}">Copy joining link</button><p class="fine">A localhost address works only on this device. Use your computer’s LAN IP for other devices.</p>${state.party ? '<p class="demo-label">DEVELOPMENT PARTY MODE · NO PAYMENT</p>' : '<p class="fine">Free Trivia: up to 3 players. Millionaire: 1 player.</p>'}</aside></div></section>`;
 }
+function canControlReview() {
+  const first = state?.players[0];
+  return (
+    !!first &&
+    ((session.role === "host" && first.local) || session.playerId === first.id)
+  );
+}
+function reviewControls() {
+  const paused = state.review.paused;
+  return `<section class="review-timing" aria-label="Answer review">
+    <div class="review-heading"><strong id="review-countdown" role="timer" aria-live="off"></strong>
+    ${canControlReview() ? `<button id="pause-review" class="primary" aria-describedby="pause-hint">${paused ? "Resume" : "Pause"}</button>` : `<span class="fine">Player 1 can ${paused ? "resume" : "pause"}</span>`}</div>
+    <progress id="review-progress" max="${state.review.durationMs}" value="${state.review.remainingMs}" aria-label="Review time remaining"></progress>
+    <p id="pause-hint" class="fine">${paused ? "Take your time. Resume continues the remaining countdown." : "Player 1: press OK or Play/Pause to pause. No need to press Next."}</p>
+  </section>`;
+}
+function updateCountdown() {
+  if (state?.phase !== "reveal" || !state.review) return;
+  const remaining = state.review.paused
+    ? state.review.remainingMs
+    : Math.max(0, state.review.endsAt - (Date.now() + clockOffset));
+  const last =
+    state.finishReason === "wrong" || state.index === state.total - 1;
+  const text = document.getElementById("review-countdown");
+  const message = state.review.paused
+    ? "Paused · answer stays on screen"
+    : remaining > 0
+      ? `${last ? "Results" : "Next question"} in ${Math.ceil(remaining / 1000)}s`
+      : "Moving on…";
+  if (text && text.textContent !== message) text.textContent = message;
+  const progress = document.getElementById("review-progress");
+  if (progress) progress.value = remaining;
+}
 function play() {
   const isHost = session.role === "host",
     q = state.question,
     revealed = state.phase === "reveal";
   const local = state.players.filter((p) => p.local);
-  if (!local.some((p) => p.id === localPlayer))
-    localPlayer = local.find((p) => !p.answered)?.id || local[0]?.id;
+  const pending = local.find((p) => !p.answered);
+  if (
+    !local.some((p) => p.id === localPlayer) ||
+    (!revealed && local.find((p) => p.id === localPlayer)?.answered && pending)
+  )
+    localPlayer = pending?.id || local[0]?.id;
   const mine = isHost
     ? state.players.find((p) => p.id === localPlayer)
     : state.players.find((p) => p.id === session.playerId);
   const canAnswer = !revealed && mine && !mine.answered;
-  const allAnswered = state.players.every((p) => p.answered);
-  return `<section class="play-page">${status()}<div class="game-meta"><span>QUESTION ${state.index + 1} / ${state.total}</span><span class="tag">${esc(q.category)}</span>${state.settings.mode === "millionaire" ? `<span class="prize">FOR ${state.ladder[state.index].toLocaleString()} POINTS</span>` : `<span>${state.players.length} PLAYERS</span>`}</div><div class="play-grid"><section><h1 class="question">${esc(q.text)}</h1>${isHost && local.length > 1 && !revealed ? `<label class="local-picker">Answering with the remote<select id="local-player">${local.map((p) => `<option value="${p.id}" ${p.id === localPlayer ? "selected" : ""}>${esc(p.name)}${p.answered ? " · locked" : ""}</option>`).join("")}</select></label>` : ""}${mine && !revealed ? `<p class="answer-status">${mine.answered ? `${esc(mine.name)}, your answer is locked.` : `${esc(mine.name)}, what’s your answer?`}</p>` : ""}<div class="answers">${q.choices.map((choice, i) => `<button data-answer="${i}" class="answer ${revealed && i === q.correct ? "correct" : ""} ${revealed && mine?.answer === i && i !== q.correct ? "incorrect" : ""} ${!revealed && state.myAnswer === i ? "locked" : ""}" ${!canAnswer || q.eliminated.includes(i) ? "disabled" : ""}><span>${"ABCD"[i]}</span>${q.eliminated.includes(i) ? "—" : esc(choice)}${revealed && i === q.correct ? "<b>✓</b>" : ""}</button>`).join("")}</div>${revealed ? `<p class="result-note">${state.settings.mode === "millionaire" && state.finishReason === "wrong" ? `The climb ends here. You keep ${state.won.toLocaleString()} points.` : `Correct answer: ${esc(q.choices[q.correct])}`}</p>` : `<p class="fine">Answers lock immediately. ${state.players.filter((p) => p.answered).length} of ${state.players.length} locked.</p>`}${isHost ? `<div class="host-actions">${!revealed ? `<button id="reveal" class="primary" ${state.settings.mode === "millionaire" && !allAnswered ? "disabled" : ""}>${allAnswered ? "Reveal the answer" : "Reveal · unanswered players get 0"}</button>${state.settings.mode === "millionaire" ? `<button id="fifty" class="secondary" ${state.usedFifty || mine?.answered ? "disabled" : ""}>50:50 ${state.usedFifty ? "· used" : ""}</button><button id="walk" class="quiet" ${mine?.answered ? "disabled" : ""}>Walk away</button>` : ""}` : `<button id="next" class="primary">${state.index === state.total - 1 || state.finishReason === "wrong" ? "See results" : "Next question"} →</button>`}</div>` : `<p class="waiting">${revealed ? "Waiting for the next question…" : mine?.answered ? "Look at the TV for the reveal." : "Choose on your phone. The host controls the reveal."}</p>`}</section><aside>${
-    state.settings.mode === "millionaire"
-      ? `<div class="ladder"><h3>Your climb</h3><p class="fine">Fictional points. No cash prizes.</p>${[
-          ...state.ladder,
-        ]
-          .reverse()
-          .map((v, j) => {
-            const i = state.ladder.length - j - 1;
-            return `<div class="rung ${i === state.index ? "current" : ""} ${[4, 9].includes(i) ? "safe" : ""}"><span>${i + 1}</span><strong>${v.toLocaleString()}</strong></div>`;
-          })
-          .join(
-            "",
-          )}<p class="fine">Secured: ${state.secured.toLocaleString()} pts</p></div>`
-      : people()
-  }</aside></div></section>`;
+  return `<section class="play-page">${status()}
+    <div class="game-meta"><span>QUESTION ${state.index + 1} / ${state.total}</span><span class="tag">${esc(q.category)}</span>${state.settings.mode === "millionaire" ? `<span class="prize">FOR ${state.ladder[state.index].toLocaleString()} POINTS</span>` : `<span>${state.players.length} PLAYERS</span>`}</div>
+    <div class="play-grid"><section><h1 class="question">${esc(q.text)}</h1>
+    ${isHost && local.length > 1 && !revealed && pending ? `<p class="remote-turn">Remote turn: <strong>${esc(pending.name)}</strong><span>One press locks your answer and passes the remote.</span></p>` : ""}
+    ${mine && !revealed ? `<p class="answer-status">${mine.answered ? `${esc(mine.name)}, your answer is locked. Waiting for the other players…` : `${esc(mine.name)}, what’s your answer?`}</p>` : ""}
+    <div class="answers">${q.choices.map((choice, i) => `<button data-answer="${i}" class="answer ${revealed && i === q.correct ? "correct" : ""} ${revealed && mine?.answer === i && i !== q.correct ? "incorrect" : ""} ${!revealed && state.myAnswer === i ? "locked" : ""}" ${!canAnswer || q.eliminated.includes(i) ? "disabled" : ""}><span>${"ABCD"[i]}</span>${q.eliminated.includes(i) ? "—" : esc(choice)}${revealed && i === q.correct ? "<b>✓</b>" : ""}</button>`).join("")}</div>
+    ${revealed ? `<p class="result-note">${state.settings.mode === "millionaire" && state.finishReason === "wrong" ? `The climb ends here. You keep ${state.won.toLocaleString()} points.` : `Correct answer: ${esc(q.choices[q.correct])}`}</p>${reviewControls()}` : `<p class="fine">${state.players.filter((p) => p.answered).length} of ${state.players.length} answers locked. Reveals automatically when everyone has answered.</p>`}
+    ${isHost && !revealed && state.settings.mode === "millionaire" ? `<div class="host-actions"><button id="fifty" class="secondary" ${state.usedFifty || mine?.answered ? "disabled" : ""}>50:50 ${state.usedFifty ? "· used" : ""}</button><button id="walk" class="quiet" ${mine?.answered ? "disabled" : ""}>Walk away</button></div>` : ""}
+    ${!isHost && !revealed ? `<p class="waiting">${mine?.answered ? "Look at the TV for the reveal." : "Choose on your phone. The answer reveals automatically."}</p>` : ""}</section>
+    <aside>${
+      state.settings.mode === "millionaire"
+        ? `<div class="ladder"><h3>Your climb</h3><p class="fine">Fictional points. No cash prizes.</p>${[
+            ...state.ladder,
+          ]
+            .reverse()
+            .map((v, j) => {
+              const i = state.ladder.length - j - 1;
+              return `<div class="rung ${i === state.index ? "current" : ""} ${[4, 9].includes(i) ? "safe" : ""}"><span>${i + 1}</span><strong>${v.toLocaleString()}</strong></div>`;
+            })
+            .join(
+              "",
+            )}<p class="fine">Secured: ${state.secured.toLocaleString()} pts</p></div>`
+        : people()
+    }</aside></div></section>`;
 }
 function results() {
   const sorted = [...state.players].sort((a, b) => b.score - a.score);
@@ -184,20 +238,13 @@ function render() {
   on("finish", leave);
   on("create", create);
   on("start", () => act("start"));
-  on("reveal", () => act("reveal"));
-  on("next", () => act("next"));
+  on("pause-review", () => act(state.review.paused ? "resume" : "pause"));
   on("fifty", () => act("fifty"));
   on("walk", () => {
     if (confirm("Walk away with your current points?")) act("walk");
   });
   const toggle = document.getElementById("party");
   if (toggle) toggle.onchange = () => (party = toggle.checked);
-  const picker = document.getElementById("local-player");
-  if (picker)
-    picker.onchange = () => {
-      localPlayer = picker.value;
-      render();
-    };
   const join = document.getElementById("join-form");
   if (join)
     join.onsubmit = async (e) => {
@@ -232,8 +279,25 @@ function render() {
       [...app.querySelectorAll("[data-focus]")].find(
         (el) => el.dataset.focus === key,
       );
-    target?.focus();
+    if (target && !target.disabled) target.focus();
   }
+  const turn =
+    session && state ? `${session.code}:${state.index}:${localPlayer}` : null;
+  if (
+    state?.phase === "question" &&
+    (renderedPhase !== "question" || turn !== renderedTurn)
+  ) {
+    app.querySelector(".answer:not(:disabled)")?.focus();
+  } else if (state?.phase === "reveal" && renderedPhase !== "reveal") {
+    document.getElementById("pause-review")?.focus();
+  } else if (state?.phase === "finished" && renderedPhase !== "finished") {
+    document.getElementById("finish")?.focus();
+  } else if (state?.phase === "lobby" && renderedPhase !== "lobby") {
+    document.getElementById("start")?.focus();
+  }
+  renderedPhase = state?.phase || null;
+  renderedTurn = turn;
+  updateCountdown();
 }
 async function run(work) {
   if (busy) return;
@@ -262,7 +326,11 @@ async function create() {
 async function act(type, extra = {}) {
   await run(async () =>
     setState(
-      await api(`/api/rooms/${session.code}/action`, { type, ...extra }),
+      await api(`/api/rooms/${session.code}/action`, {
+        type,
+        questionId: state.question?.id,
+        ...extra,
+      }),
     ),
   );
 }
@@ -283,6 +351,21 @@ document.querySelector("#home").onclick = () => {
   )
     leave();
 };
+// Ignore held buttons across transitions; a held OK must not answer for the next player.
+document.addEventListener("keydown", (e) => {
+  if (["Enter", " ", "MediaPlayPause"].includes(e.key) && e.repeat) {
+    e.preventDefault();
+    return;
+  }
+  if (
+    e.key === "MediaPlayPause" &&
+    state?.phase === "reveal" &&
+    canControlReview()
+  ) {
+    e.preventDefault();
+    act(state.review.paused ? "resume" : "pause");
+  }
+});
 // Directional navigation also supports Android TV D-pad events in the WebView shell.
 document.addEventListener("keydown", (e) => {
   if (
@@ -361,7 +444,8 @@ async function boot() {
           notify("Connection interrupted. Reconnecting…");
         }
       }
-    }, 1200);
+    }, 500);
+    setInterval(updateCountdown, 100);
   } catch (e) {
     app.innerHTML =
       "<h1>Couldn’t reach the game.</h1><p>Check the server and reload this page.</p>";

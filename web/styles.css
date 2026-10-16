@@ -968,3 +968,64 @@ input#code {
   flex: 0 0 auto;
   accent-color: var(--lime);
 }
+
+.review-timing {
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+}
+.review-heading {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: space-between;
+}
+.review-heading strong {
+  font-size: 17px;
+  color: var(--lime);
+}
+.review-heading button {
+  min-width: 110px;
+}
+.review-timing progress {
+  display: block;
+  width: 100%;
+  height: 7px;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;
+  accent-color: var(--lime);
+  background: var(--line);
+}
+.review-timing progress::-webkit-progress-bar {
+  background: var(--line);
+}
+.review-timing progress::-webkit-progress-value {
+  background: var(--lime);
+}
+.review-timing progress::-moz-progress-bar {
+  background: var(--lime);
+}
+.remote-turn {
+  border-left: 3px solid var(--violet);
+  padding-left: 15px;
+  margin-bottom: 18px;
+  color: var(--text);
+}
+.remote-turn span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 4px;
+}
+@media (max-width: 620px) {
+  .review-heading {
+    align-items: flex-start;
+  }
+  .review-heading strong {
+    font-size: 15px;
+  }
+}

@@ -78,6 +78,17 @@ class MainActivity : Activity() {
   (getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager).hideSoftInputFromWindow(address.windowToken,0)
   web.loadUrl(value); web.requestFocus()
  }
+ override fun dispatchKeyEvent(event: KeyEvent): Boolean {
+  val activationKeys = listOf(KeyEvent.KEYCODE_DPAD_CENTER, KeyEvent.KEYCODE_ENTER, KeyEvent.KEYCODE_NUMPAD_ENTER, KeyEvent.KEYCODE_SPACE)
+  if(event.action == KeyEvent.ACTION_DOWN && event.repeatCount > 0 && event.keyCode in activationKeys) return true
+  if(event.keyCode == KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE && ::web.isInitialized) {
+   if(event.action == KeyEvent.ACTION_DOWN && event.repeatCount == 0) {
+    web.evaluateJavascript("document.dispatchEvent(new KeyboardEvent('keydown', {key:'MediaPlayPause', bubbles:true}))", null)
+   }
+   return true
+  }
+  return super.dispatchKeyEvent(event)
+ }
  override fun onKeyDown(keyCode: Int, event: KeyEvent): Boolean {
   if(keyCode==KeyEvent.KEYCODE_MENU) { address.requestFocus(); return true }
   return super.onKeyDown(keyCode,event)
