@@ -1,0 +1,1 @@
+Install Node.js 24 or later from https://nodejs.org. Extract the entire ZIP, then double-click Start TriviTV.bat on Windows. Keep its terminal open while playing. No npm install is needed to play. On macOS/Linux run node src/server.js from the extracted TriviTV folder, then open http://localhost:3000 in your browser.

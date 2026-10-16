@@ -1,0 +1,8 @@
+node_modules/
+.gradle/
+.kotlin/
+build/
+local.properties
+*.keystore
+*.log
+.DS_Store

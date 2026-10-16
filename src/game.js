@@ -1,0 +1,247 @@
+import { randomInt, randomUUID } from "node:crypto";
+import { categories, questions } from "./questions.js";
+export { categories };
+export const ladder = [
+  100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000,
+  250000, 500000, 1000000,
+];
+export class GameError extends Error {
+  constructor(message, status = 400) {
+    super(message);
+    this.status = status;
+  }
+}
+const requireThat = (ok, message, status) => {
+  if (!ok) throw new GameError(message, status);
+};
+function shuffle(items) {
+  const result = [...items];
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = randomInt(i + 1);
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+}
+export function selectQuestions(settings) {
+  requireThat(
+    ["millionaire", "trivia"].includes(settings.mode),
+    "Choose a game mode.",
+  );
+  requireThat(
+    ["Europe", "US"].includes(settings.region),
+    "Choose Europe or US.",
+  );
+  requireThat(
+    Array.isArray(settings.categories) &&
+      settings.categories.length > 0 &&
+      settings.categories.every((c) => categories.includes(c)),
+    "Include at least one valid category.",
+  );
+  const pool = questions.filter(
+    (q) =>
+      settings.categories.includes(q.category) &&
+      (q.region === "Global" || q.region === settings.region),
+  );
+  const count = Math.min(
+    settings.mode === "millionaire" ? 15 : 10,
+    pool.length,
+  );
+  requireThat(count > 0, "No questions match these settings.");
+  // Spread Millionaire questions across available difficulties, then increase difficulty.
+  let chosen;
+  if (settings.mode === "millionaire") {
+    const groups = [1, 2, 3].map((d) =>
+      shuffle(pool.filter((q) => q.difficulty === d)),
+    );
+    chosen = [];
+    while (chosen.length < count && groups.some((g) => g.length))
+      for (const group of groups)
+        if (group.length && chosen.length < count) chosen.push(group.pop());
+    chosen.sort((a, b) => a.difficulty - b.difficulty);
+  } else chosen = shuffle(pool).slice(0, count);
+  return chosen.map((q) => {
+    const order = shuffle([0, 1, 2, 3]);
+    return {
+      ...q,
+      choices: order.map((i) => q.choices[i]),
+      correct: order.indexOf(q.correct),
+    };
+  });
+}
+export function createGame(settings, { party = false } = {}) {
+  const selected = selectQuestions(settings);
+  return {
+    settings: {
+      mode: settings.mode,
+      region: settings.region,
+      categories: [...new Set(settings.categories)],
+    },
+    party: !!party,
+    phase: "lobby",
+    players: [],
+    questions: selected,
+    index: 0,
+    answers: {},
+    scores: {},
+    eliminated: [],
+    usedFifty: false,
+    won: 0,
+    secured: 0,
+    finishReason: null,
+  };
+}
+export function addPlayer(game, name, local = false) {
+  requireThat(game.phase === "lobby", "This game has already started.", 409);
+  requireThat(
+    typeof name === "string" &&
+      name.trim().length > 0 &&
+      name.trim().length <= 24,
+    "Use a name from 1 to 24 characters.",
+  );
+  const max =
+    game.settings.mode === "millionaire" ? 1 : game.party ? Infinity : 3;
+  requireThat(
+    game.players.length < max,
+    game.settings.mode === "millionaire"
+      ? "Millionaire is for one player."
+      : "Free Trivia supports 3 players. Party Mode unlocks larger groups.",
+    409,
+  );
+  requireThat(
+    !game.players.some(
+      (p) => p.name.toLowerCase() === name.trim().toLowerCase(),
+    ),
+    "That name is already in use.",
+    409,
+  );
+  const player = { id: randomUUID(), name: name.trim(), local };
+  game.players.push(player);
+  game.scores[player.id] = 0;
+  return player;
+}
+export function start(game) {
+  requireThat(game.phase === "lobby", "Game already started.", 409);
+  requireThat(game.players.length > 0, "Add at least one player.");
+  game.phase = "question";
+}
+export function answer(game, playerId, choice) {
+  requireThat(game.phase === "question", "Answers are closed.", 409);
+  requireThat(
+    game.players.some((p) => p.id === playerId),
+    "Unknown player.",
+    403,
+  );
+  requireThat(
+    Number.isInteger(choice) &&
+      choice >= 0 &&
+      choice < 4 &&
+      !game.eliminated.includes(choice),
+    "Choose an available answer.",
+  );
+  requireThat(
+    !(playerId in game.answers),
+    "Your answer is already locked.",
+    409,
+  );
+  game.answers[playerId] = choice;
+}
+export function reveal(game) {
+  requireThat(game.phase === "question", "No question to reveal.", 409);
+  if (game.settings.mode === "millionaire")
+    requireThat(game.players[0].id in game.answers, "Lock an answer first.");
+  const correct = game.questions[game.index].correct;
+  for (const p of game.players)
+    if (game.answers[p.id] === correct) game.scores[p.id] += 100;
+  if (game.settings.mode === "millionaire") {
+    const right = game.answers[game.players[0].id] === correct;
+    if (right) {
+      game.won = ladder[game.index];
+      if ([4, 9].includes(game.index)) game.secured = game.won;
+    } else {
+      game.won = game.secured;
+      game.finishReason = "wrong";
+    }
+  }
+  game.phase = "reveal";
+}
+export function next(game) {
+  requireThat(game.phase === "reveal", "Reveal the answer first.", 409);
+  if (
+    game.finishReason === "wrong" ||
+    game.index === game.questions.length - 1
+  ) {
+    game.phase = "finished";
+    game.finishReason ??= "completed";
+    return;
+  }
+  game.index++;
+  game.answers = {};
+  game.eliminated = [];
+  game.phase = "question";
+}
+export function fifty(game) {
+  requireThat(
+    game.settings.mode === "millionaire" &&
+      game.phase === "question" &&
+      !game.usedFifty,
+    "50:50 is unavailable.",
+    409,
+  );
+  requireThat(
+    Object.keys(game.answers).length === 0,
+    "Use 50:50 before locking an answer.",
+    409,
+  );
+  game.eliminated = shuffle(
+    [0, 1, 2, 3].filter((i) => i !== game.questions[game.index].correct),
+  ).slice(0, 2);
+  game.usedFifty = true;
+}
+export function walk(game) {
+  requireThat(
+    game.settings.mode === "millionaire" && game.phase === "question",
+    "You can walk away before answering.",
+    409,
+  );
+  requireThat(
+    Object.keys(game.answers).length === 0,
+    "Your answer is already locked.",
+    409,
+  );
+  game.phase = "finished";
+  game.finishReason = "walked";
+}
+export function view(game, viewerId = null) {
+  const q = game.questions[game.index];
+  const show = game.phase === "reveal" || game.phase === "finished";
+  return {
+    settings: game.settings,
+    party: game.party,
+    phase: game.phase,
+    index: game.index,
+    total: game.questions.length,
+    players: game.players.map((p) => ({
+      ...p,
+      score: game.scores[p.id],
+      answered: p.id in game.answers,
+      ...(show ? { answer: game.answers[p.id] ?? null } : {}),
+    })),
+    question:
+      game.phase === "lobby"
+        ? null
+        : {
+            id: q.id,
+            text: q.text,
+            category: q.category,
+            choices: q.choices,
+            eliminated: game.eliminated,
+            ...(show ? { correct: q.correct } : {}),
+          },
+    myAnswer: game.answers[viewerId] ?? null,
+    usedFifty: game.usedFifty,
+    won: game.won,
+    secured: game.secured,
+    finishReason: game.finishReason,
+    ladder: ladder.slice(0, game.questions.length),
+  };
+}
