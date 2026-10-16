@@ -1,39 +1,86 @@
-# Question bank sourcing proposal
+# OpenTriviaQA question bank
 
-TriviTV should own a curated question bank. External sources can provide verifiable facts, licensed seed questions and images, but should not feed the live game without review. The current 56 starter questions remain unchanged; no third-party questions or images were imported in this change.
+TriviTV now uses **only OpenTriviaQA**. The 56 original starter questions were removed from the runtime bank. No questions or images from Wikidata, Commons, OpenTDB or paid APIs are included.
 
-## Recommended sources
+## Snapshot and license
 
-| Source                                                                                            | Role                                                                                                                               | Rights and selection considerations                                                                                                                                                                                                                                                                                                                                                             |
-| ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Wikidata](https://www.wikidata.org/wiki/Wikidata:Licensing)                                      | Structured facts for geography, dates, creators, places and scientific subjects. Write original prompts and plausible distractors. | Structured Wikidata data is generally CC0. Check referenced facts and qualifiers; do not assume linked Wikipedia prose or images share that license. The current licensing page was blocked in this environment, so its latest text was not independently retrieved.                                                                                                                            |
-| [Wikimedia Commons](https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia) | Picture rounds: landmarks, artworks, animals, objects and historical images.                                                       | Check each file's own rights, author, attribution and allowed commercial use. Prefer public-domain/CC0 assets initially; approved CC BY assets are another option. Store attribution alongside the asset. The current policy page was blocked; no asset has been selected or cleared.                                                                                                           |
-| [OpenTriviaQA](https://github.com/uberspot/OpenTriviaQA)                                          | An inspectable, downloadable multiple-choice seed dataset for a pilot import.                                                      | Its README and LICENSE were retrieved and declare CC BY-SA 4.0. Commercial reuse is possible under the license conditions, including attribution and applicable share-alike obligations for adapted content. The README says questions were gathered and split crudely: review provenance, accuracy, wording, duplicates and aging. Keep imported content and its notices clearly identifiable. |
-| [Open Trivia Database](https://opentdb.com/api_config.php)                                        | Another candidate for ready-made four-choice questions and category/difficulty labels.                                             | Evaluate its current licensing, attribution/share-alike obligations, quality, offline redistribution and regional balance before import. Its live licensing/API documentation could not be retrieved here; current terms are unverified.                                                                                                                                                        |
-| [The Trivia API](https://the-trivia-api.com/)                                                     | Candidate paid provider if speed and a larger initial catalogue justify the cost.                                                  | Confirm the actual commercial contract covers a monetized TV game, persistent/offline question storage, distribution, images if supplied, attribution and continued use after cancellation. Do not infer those rights from a free endpoint or a pricing tier. Current pricing/licensing pages were blocked, so no prices or terms are asserted.                                                 |
-| Official museums, scientific institutions, geography authorities and historical archives          | Fact checking and original questions; selected institutions also offer open-access media.                                          | Verify the precise fact and each media asset's rights. Publicly accessible text is not automatically permission to copy its question wording, prose or photographs.                                                                                                                                                                                                                             |
+- Source: [OpenTriviaQA by its contributors](https://github.com/uberspot/OpenTriviaQA).
+- Pinned revision: `dcc1cdf36c2985ed5c849d1f2265c5041ffcdfb9`.
+- Snapshot date: 2026-10-16.
+- Source records: **49,716**.
+- Adapted four-choice questions: **38,926**.
+- Exact duplicate records merged: 21.
+- Excluded records: 10,769.
+- Source and adapted question data: **CC BY-SA 4.0**, with attribution and applicable share-alike obligations. The full license and upstream README are retained in `data/opentriviaqa/`. The app links its Credits page in the footer, including source, changes, license and downloadable data.
 
-Recommendation: original editorial questions from verified facts plus public-domain/CC0 image assets form the core. Run a small, separately tracked OpenTriviaQA pilot only after accepting its attribution/share-alike approach. Consider a paid provider after its redistribution/offline terms and Europe/US coverage are confirmed. No provider has been selected or contracted.
+This is structurally validated community content, **not an individually fact-checked or calibrated bank**. Source answers, older references and editorial quality still need review.
 
-## First milestones
+## Source-based categories
 
-1. Review and annotate the existing 56 questions: factual sources, audience tags, plausible distractors and difficulty. They are starter content, not a fully sourced release bank.
-2. Prepare a 60-question editorial pilot: ten per current category, with Europe, US and globally familiar questions. Trial it with both audiences before scaling.
-3. Target an initial 600 reviewed questions: 100 per category, approximately 30 Europe-focused, 30 US-focused and 40 global. Balance easy/medium/hard within those groups. This provides substantial pools for category-filtered games; it is an editorial target, not completed content.
-4. Add a small licensed picture pilot after text rounds are reliable. Do not scrape Google Images or take screenshots from films/TV as an assumed licensed asset source.
+Twenty topic groups are available in both modes. The category panel is collapsed by default for quicker TV setup. Its labels map directly to the source filenames through `data/opentriviaqa/config.json`.
 
-Europe/US describe audience relevance, not just where an answer is located. A Danube question may fit Europe while a Potomac question may fit US. Global astronomy works for either. Europe should include multiple countries, and both audiences should span ages and interests. Every launch question is English; translation is a separate editorial step.
+| Category             | Questions |
+| -------------------- | --------: |
+| Animals              |       802 |
+| Arts & Humanities    |       871 |
+| Brain Teasers        |       125 |
+| Celebrities          |     2,461 |
+| Entertainment        |       211 |
+| General Knowledge    |     6,838 |
+| Geography            |       710 |
+| History              |     1,323 |
+| Hobbies              |       976 |
+| Kids Trivia          |       545 |
+| Literature           |     1,038 |
+| Movies               |     3,465 |
+| Music                |     4,346 |
+| People               |     2,221 |
+| Religion & Faith     |       483 |
+| Science & Technology |     1,888 |
+| Sport                |     2,299 |
+| Television           |     4,143 |
+| Video Games          |       418 |
+| World                |     3,763 |
 
-## Bank record and publishing workflow
+The `newest` and `rated` files are treated as collections rather than extra subjects. Their questions map to General Knowledge unless an exact duplicate in a topic file supplies a better category. All original source category references are preserved; `rated` is not interpreted as a difficulty rating.
 
-Keep a stable question ID and canonical fact/topic IDs, prompt, four unique answer choices, correct answer, category, region, difficulty, short explanation, fact-source URL(s), source-check date, question author/source, source record ID and license. Optional media needs its asset URL, creator, license, attribution text and stored checksum. Time-sensitive facts need an explicit validity date or review schedule.
+## Regional targeting and difficulty
 
-Separate factual references from permission to reuse question wording. An original question about a Wikidata fact has different provenance from an adapted CC BY-SA seed question. An image has its own rights independently of either.
+OpenTriviaQA supplies **neither Europe/US audience labels nor difficulty ratings**.
 
-Use draft → fact check → editorial review → approved → retired status. Validate one unambiguous correct answer, no duplicate choices, no answer leakage in the wording, realistic distractors, consistent units/date scope and image visibility from a sofa. Deduplicate by topic/fact as well as exact text. AI may draft or improve wording; it must not be the factual authority or automatic approval step.
+Prompt keyword rules currently identify 2,818 Europe-cued and 2,944 US-cued questions. The remaining 33,164 questions are explicitly **Unclassified**, not falsely called globally relevant. Selecting a region excludes explicit opposite-region cues and shares unclassified content between both audiences. These automatic cues can be imperfect; they are not reviewed cultural targeting. Choice distractors are not used for classification. Language references such as “English” and ambiguous mixed-region prompts are not enough by themselves.
 
-Serve versioned, reviewed bank snapshots from our backend. Keep correct answers off the client until the correct-answer reveal. Avoid a live third-party API dependency during a party; the existing server-owned answer/timer flow stays intact.
+All questions have `difficulty: null`. Millionaire retains its fifteen-step points ladder, lifelines and checkpoints, but **cannot promise increasing difficulty** until editorial ratings exist. The selection engine supports source ratings in the future and currently draws from the unrated pool.
 
-## Verification notes
+## Import and reproducibility
 
-OpenTriviaQA's README and LICENSE were checked from its GitHub source. The other providers' current public policy/pricing pages were blocked by the environment network policy; the links above identify sources to investigate and do not assert that their present contracts have been reviewed. There are no imported assets, provider credentials or recurring supplier commitments.
+Play uses the committed `data/opentriviaqa/questions.json` snapshot, not a live external API. No extra runtime npm dependencies, API key or Internet connection are required. Correct answers stay server-side until their reveal stage.
+
+```sh
+npm run bank:import
+npm run test:bank
+```
+
+Maintenance requires Python 3.10+ (the cloud uses 3.12). The importer reads the retained original files from `data/opentriviaqa/source/`, checks their pinned SHA-256 hashes and the source license, and deterministically builds questions, manifest and rejection ledger. `--check` verifies the retained outputs without rewriting them. Raw bytes are preserved across Git checkouts using `.gitattributes`.
+
+Records retain a stable ID, original source categories, source filename/record/line, upstream revision, license, normalization review status and regional method. Normalization decodes HTML entities, strips markup, normalizes whitespace, keeps the source's correct answer and three of its supplied distractors, and never invents answers. Exact normalized prompt duplicates merge their provenance; conflicting answer keys are excluded.
+
+### Exclusions
+
+| Reason                      | Records |
+| --------------------------- | ------: |
+| conflicting-correct-answers |      10 |
+| duplicate-choices           |      29 |
+| fewer-than-four-choices     |   6,617 |
+| invalid-source-encoding     |      31 |
+| missing-media               |      20 |
+| position-dependent-options  |   2,248 |
+| time-sensitive              |     191 |
+| tv-length                   |     377 |
+| unparsed-lines              |   1,246 |
+
+These checks reject fewer-than-four choices (including true/false), ambiguous position-dependent options such as “all of the above”, corrupt encodings, prompts requiring unavailable media, obvious changing-time references, overly long TV text and malformed/conflicting records. They cannot establish factual accuracy. Separate importer tests cover those cases, source tampering, Unicode, deduplication, correct-answer preservation and repeatability.
+
+## Next editorial work
+
+Review a representative sample per category, correct factual errors with cited references, add audience tags and calibrate easy/medium/hard ratings through playtesting. Corrections to this adapted question content keep the bank's CC BY-SA notices. There are no licensed picture rounds in this text-only source import.

@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { resolve, extname } from "node:path";
 import { randomBytes, timingSafeEqual } from "node:crypto";
 import * as rules from "./game.js";
+import { bank } from "./questions.js";
 const webRoot = fileURLToPath(new URL("../web/", import.meta.url));
 const token = () => randomBytes(24).toString("hex");
 const same = (a, b) =>
@@ -101,6 +102,15 @@ export function createAppServer({
             categories: rules.categories,
             partyDemo,
             freePlayers: 3,
+            bank: {
+              name: "OpenTriviaQA",
+              count: bank.questionCount,
+              revision: bank.source.revision,
+              license: bank.source.license,
+              categories: bank.categories,
+              difficulty: "unrated",
+              regions: "automatic-keywords",
+            },
           });
         if (req.method === "GET" && url.pathname === "/api/health")
           return json(200, { status: "ok" });
@@ -246,6 +256,8 @@ export function createAppServer({
         "/": "index.html",
         "/app.js": "app.js",
         "/styles.css": "styles.css",
+        "/credits": "credits.html",
+        "/licenses/opentriviaqa.txt": "../data/opentriviaqa/LICENSE.txt",
       };
       const filename = files[url.pathname];
       if (!filename) {
@@ -258,6 +270,7 @@ export function createAppServer({
           ".html": "text/html; charset=utf-8",
           ".js": "text/javascript; charset=utf-8",
           ".css": "text/css; charset=utf-8",
+          ".txt": "text/plain; charset=utf-8",
         }[extname(filename)],
         "Cache-Control": "no-cache",
         "X-Content-Type-Options": "nosniff",

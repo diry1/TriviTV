@@ -34,10 +34,12 @@ Host/player access tokens live in the tab's session storage. Reloading the same 
 
 ## Modes
 
-- **Millionaire:** exactly one player, up to 15 progressively harder four-choice questions; points ladder ending at 1,000,000; safe checkpoints after steps 5 and 10; one 50:50 lifeline; walk away before locking an answer. A wrong answer ends the climb at the last checkpoint. All rewards are fictional points. A phone can take the single player seat by joining before the host starts; a second player cannot join.
+- **Millionaire:** exactly one player, up to 15 four-choice questions; points ladder ending at 1,000,000; safe checkpoints after steps 5 and 10; one 50:50 lifeline; walk away before locking an answer. A wrong answer ends the climb at the last checkpoint. All rewards are fictional points. A phone can take the single player seat by joining before the host starts; a second player cannot join.
 - **Trivia:** up to 10 questions, 100 points per correct answer and a final leaderboard. Three players are free, including the TV player. Ties are shared by score; ordering is stable, not a tie-break rule. The host is a player in this prototype, not a spectator.
 
-Both modes accept **Europe** or **US** as the regional audience and a category inclusion list. Excluded categories never appear. Regional references are mixed with global questions; selecting Europe is not a claim that every question is about Europe. All text is currently English. The 56 original starter questions span Geography, Entertainment, History, Science, Sport and Arts. A narrow category filter can produce a shorter game/ladder; the lobby shows its actual length. Questions are not repeated within a game, but may repeat between games.
+Both modes use **20 categories derived from OpenTriviaQA**, selectable in the expandable category panel. The bank now contains **38,926 imported four-choice questions**, replacing all 56 starter questions. Categories include Animals, Geography, History, Literature, Movies, Music, Television, Science & Technology, Sport, Video Games and more. [Full inventory, import details and limitations](docs/question-bank.md).
+
+OpenTriviaQA does not provide difficulty or Europe/US audience tags. Difficulty remains explicitly unrated, so Millionaire’s points ladder does not yet imply increasingly difficult questions. Region selection uses conservative automatic prompt cues: opposite-region references are excluded and unclassified questions are shared. Region labels are not editorially verified. Community answers have passed structural checks but are not individually fact-checked. The in-app **Credits** page provides attribution, source revision, changes, license and data access; adapted data is CC BY-SA 4.0.
 
 ## Party Pass model
 
@@ -71,11 +73,12 @@ APK compilation has been validated in Linux. Installation, actual Android TV Web
 ```sh
 npm run check
 npm test
+npm run test:bank
 npx playwright install chromium
 npm run test:browser
 ```
 
-With an installed browser, use `CHROMIUM_PATH=/usr/bin/chromium npm run test:browser` instead of downloading one. The browser test advances an injected server clock to avoid waiting through every reveal stage and four-second review, starts and stops its own server, and verifies a full three-player, ten-question session, results, settings, solo lifelines/walk-away, ring-only countdowns, Trivia question/review pause across reload, Trivia timeouts/random picks, both reveal animations, reduced motion, shared-remote handoff, held-button protection and mobile overflow. It saves a home screenshot to `/tmp/trivitv-home.png` (override with `TRIVITV_SCREENSHOT`). Unit/API tests check capacity, filtering, scoring, checkpoints, hidden answers, access roles, countdown boundaries, timeout auto-picks, staged answer/score visibility, server timer execution, stale-answer rejection and Party bypass rejection. CI runs web checks and builds the Android APK; the hosted CI workflow itself has not yet run.
+With an installed browser, use `CHROMIUM_PATH=/usr/bin/chromium npm run test:browser` instead of downloading one. The reproducible bank checks require Python 3.10+; ordinary gameplay only requires Node.js. The browser test advances an injected server clock to avoid waiting through every reveal stage and four-second review, starts and stops its own server, and verifies a full three-player, ten-question session, results, settings, solo lifelines/walk-away, ring-only countdowns, Trivia question/review pause across reload, Trivia timeouts/random picks, both reveal animations, reduced motion, shared-remote handoff, held-button protection and mobile overflow. It saves a home screenshot to `/tmp/trivitv-home.png` (override with `TRIVITV_SCREENSHOT`). Unit/API tests check capacity, filtering, scoring, checkpoints, hidden answers, access roles, countdown boundaries, timeout auto-picks, staged answer/score visibility, server timer execution, stale-answer rejection and Party bypass rejection. CI runs web checks and builds the Android APK; the hosted CI workflow itself has not yet run.
 
 In the prepared cloud machine:
 
@@ -95,6 +98,6 @@ cd android && ./gradlew --no-daemon assembleDebug
 4. Implement 2-day/30-day pass lifecycle, restoration, refunds and active-game expiry behavior after product decisions are finalized.
 5. Load-test party capacity and prepare HTTPS hosting, durable sessions and deployment operations.
 
-## Question-bank development
+## Question-bank maintenance
 
-See [question-bank sourcing proposal](docs/question-bank.md) for the recommended sources, licensing assessment, regional balance, content metadata and editorial milestones. No third-party questions or image assets have been imported yet.
+Only OpenTriviaQA is imported. Run `npm run bank:import` to rebuild from the retained, hash-pinned source and `npm run test:bank` to validate the importer and snapshot. See [question-bank documentation](docs/question-bank.md) for source categories, provenance, licensing, exclusions and editorial limitations.

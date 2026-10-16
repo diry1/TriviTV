@@ -27,7 +27,12 @@ async function fixture(t, partyDemo = false, options = {}) {
       },
       ...(data ? { body: JSON.stringify(data) } : {}),
     });
-    return { status: res.status, data: await res.json() };
+    return {
+      status: res.status,
+      data: res.headers.get("content-type")?.includes("application/json")
+        ? await res.json()
+        : await res.text(),
+    };
   };
 }
 test("HTTP flow has separate pick/correct/review stages and supports Trivia pause and rejects stale answers", async (t) => {
@@ -338,4 +343,24 @@ test("only Player 1 can pause timed Trivia questions, and answers are blocked un
       .status,
     200,
   );
+});
+
+test("source-based categories and attribution are available without exposing answers", async (t) => {
+  const api = await fixture(t);
+  const config = (await api("/api/config")).data;
+  assert.equal(config.categories.length, 20);
+  assert(config.categories.includes("Movies"));
+  assert(config.categories.includes("Science & Technology"));
+  assert.equal(config.bank.name, "OpenTriviaQA");
+  assert(config.bank.count > 10000);
+  assert.equal(config.bank.license, "CC-BY-SA-4.0");
+  assert(!("questions" in config));
+  const credits = await api("/credits");
+  assert.equal(credits.status, 200);
+  assert.match(credits.data, /Attribution–ShareAlike/);
+  assert.match(credits.data, /Changes made/);
+  const license = await api("/licenses/opentriviaqa.txt");
+  assert.equal(license.status, 200);
+  assert.match(license.data, /Attribution-ShareAlike 4.0/);
+  assert.equal((await api("/data/opentriviaqa/questions.json")).status, 404);
 });

@@ -64,18 +64,21 @@ const assert = require("node:assert/strict");
         .evaluate((el) => el.classList.contains("active")),
     );
     await host.locator("[data-mode=trivia]").click();
+    await host.locator("#category-toggle").click();
     await host.locator("#all-categories").click();
     assert(await host.locator("#create").isDisabled());
     await host.locator("#all-categories").click();
     await host.locator("[data-region=US]").click();
-    await host.locator("[data-category=Arts]").click();
+    await host.locator('[data-category="Arts & Humanities"]').click();
+    assert.equal(await host.locator("[data-category]").count(), 20);
+    await host.locator("#category-toggle").click();
     await host.locator("#create").click();
     await host.locator("#start").waitFor();
     const room = await host.evaluate(() =>
       JSON.parse(sessionStorage.getItem("trivitv-session")),
     );
     assert.equal(room.state.settings.region, "US");
-    assert(!room.state.settings.categories.includes("Arts"));
+    assert(!room.state.settings.categories.includes("Arts & Humanities"));
     const phones = [];
     for (const name of ["Alice", "Bob"]) {
       const context = await browser.newContext({

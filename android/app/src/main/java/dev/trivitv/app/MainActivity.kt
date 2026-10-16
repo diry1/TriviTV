@@ -11,6 +11,8 @@ import android.view.KeyEvent
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import android.content.Context
+import android.content.Intent
+import android.content.ActivityNotFoundException
 import android.webkit.WebResourceError
 import android.webkit.WebResourceRequest
 import android.webkit.WebView
@@ -51,7 +53,14 @@ class MainActivity : Activity() {
    settings.setSupportMultipleWindows(false)
    webChromeClient=WebChromeClient()
    webViewClient=object : WebViewClient() {
-    override fun shouldOverrideUrlLoading(view: WebView, request: WebResourceRequest): Boolean = origin(request.url) != currentOrigin
+    override fun shouldOverrideUrlLoading(view: WebView, request: WebResourceRequest): Boolean {
+     if(origin(request.url) == currentOrigin) return false
+     if(request.hasGesture() && request.isForMainFrame && request.url.scheme in listOf("http", "https")) {
+      try { startActivity(Intent(Intent.ACTION_VIEW, request.url)) }
+      catch (_: ActivityNotFoundException) { status.text="No browser installed. Source and license URLs are also listed in Credits." }
+     }
+     return true
+    }
     override fun onPageFinished(view: WebView, url: String) { status.text="TriviTV prototype • Menu: server settings • Back: previous screen" }
     override fun onReceivedError(view: WebView, request: WebResourceRequest, error: WebResourceError) {
      if(request.isForMainFrame) status.text="Cannot reach the session server. Check its address and Wi-Fi, then Connect."

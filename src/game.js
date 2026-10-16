@@ -44,24 +44,26 @@ export function selectQuestions(settings) {
   const pool = questions.filter(
     (q) =>
       settings.categories.includes(q.category) &&
-      (q.region === "Global" || q.region === settings.region),
+      (q.region === "Global" ||
+        q.region === "Unclassified" ||
+        q.region === settings.region),
   );
   const count = Math.min(
     settings.mode === "millionaire" ? 15 : 10,
     pool.length,
   );
   requireThat(count > 0, "No questions match these settings.");
-  // Spread Millionaire questions across available difficulties, then increase difficulty.
+  // Use source difficulty when available, with explicitly unrated questions as a fallback.
   let chosen;
   if (settings.mode === "millionaire") {
-    const groups = [1, 2, 3].map((d) =>
+    const groups = [1, 2, 3, null].map((d) =>
       shuffle(pool.filter((q) => q.difficulty === d)),
     );
     chosen = [];
     while (chosen.length < count && groups.some((g) => g.length))
       for (const group of groups)
         if (group.length && chosen.length < count) chosen.push(group.pop());
-    chosen.sort((a, b) => a.difficulty - b.difficulty);
+    chosen.sort((a, b) => (a.difficulty ?? 4) - (b.difficulty ?? 4));
   } else chosen = shuffle(pool).slice(0, count);
   return chosen.map((q) => {
     const order = shuffle([0, 1, 2, 3]);

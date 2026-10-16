@@ -1,0 +1,4 @@
+# Preserve licensed source and snapshot bytes for checksum verification on all platforms.
+data/opentriviaqa/** -text -whitespace
+# The deterministic importer and manifest provide a reviewable summary of this large generated file.
+data/opentriviaqa/questions.json -diff

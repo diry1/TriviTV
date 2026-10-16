@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { questions, categories } from "../src/questions.js";
+import { questions, categories, bank } from "../src/questions.js";
 import {
   createGame,
   addPlayer,
@@ -28,14 +28,17 @@ const settings = (mode = "trivia", region = "Europe", cats = categories) => ({
   categories: cats,
 });
 
-test("question bank has four unique choices, valid regions, balanced difficulties, and unique IDs", () => {
+test("OpenTriviaQA bank has four unique choices, explicit unrated difficulty, provenance, and unique IDs", () => {
   assert.equal(new Set(questions.map((q) => q.id)).size, questions.length);
   for (const q of questions) {
     assert.equal(q.choices.length, 4);
     assert.equal(new Set(q.choices).size, 4);
-    assert(["Europe", "US", "Global"].includes(q.region));
+    assert(["Europe", "US", "Global", "Unclassified"].includes(q.region));
     assert(categories.includes(q.category));
-    assert([1, 2, 3].includes(q.difficulty));
+    assert.equal(q.difficulty, null);
+    assert(q.id.startsWith("otqa:"));
+    assert.equal(q.source.name, "OpenTriviaQA");
+    assert.equal(q.source.license, "CC-BY-SA-4.0");
   }
   for (const region of ["Europe", "US"])
     assert(selectQuestions(settings("millionaire", region)).length === 15);
@@ -48,17 +51,18 @@ test("regions change the audience references and exclusions apply to both modes"
         assert(selected.length > 0);
         assert(selected.every((q) => q.category === category));
         assert(
-          selected.every((q) => q.region === region || q.region === "Global"),
+          selected.every(
+            (q) =>
+              q.region === region ||
+              q.region === "Global" ||
+              q.region === "Unclassified",
+          ),
         );
       }
   assert.throws(() => createGame(settings("trivia", "Europe", [])), /category/);
   assert.throws(() => createGame(settings("trivia", "Asia")), /Europe or US/);
-  assert(
-    questions.some((q) => q.text.includes("Vienna") && q.region === "Europe"),
-  );
-  assert(
-    questions.some((q) => q.text.includes("Washington") && q.region === "US"),
-  );
+  assert(bank.regions.Europe > 0 && bank.regions.US > 0);
+  assert.equal(questions.length, bank.questionCount);
 });
 test("free capacity is three; Party supports more; Millionaire always stays solo", () => {
   for (const party of [false, true]) {
