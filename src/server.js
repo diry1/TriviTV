@@ -200,7 +200,9 @@ export function createAppServer({
         if (rules.advance(room.game, actionTime)) schedule(room);
         const game = room.game;
         if (
-          ["answer", "pause", "resume", "fifty", "walk"].includes(input.type) &&
+          ["answer", "pause", "resume", "fifty", "walk", "next"].includes(
+            input.type,
+          ) &&
           input.questionId !== game.questions[game.index].id
         ) {
           throw new rules.GameError(
@@ -233,6 +235,11 @@ export function createAppServer({
           switch (input.type) {
             case "start":
               rules.start(game, actionTime);
+              break;
+            case "next":
+              if (game.settings.mode !== "millionaire")
+                throw new rules.GameError("Trivia advances automatically.");
+              rules.next(game, actionTime);
               break;
             case "fifty":
               rules.fifty(game);

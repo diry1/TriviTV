@@ -113,6 +113,13 @@ function pauseButton() {
     : "";
 }
 function reviewControls() {
+  if (state.settings.mode === "millionaire") {
+    const last =
+      state.finishReason === "wrong" || state.index === state.total - 1;
+    return session.role === "host"
+      ? `<div class="review-timing"><button id="next" class="primary">${last ? "View results" : "Next question"}</button></div>`
+      : `<p class="fine">Waiting for the TV host to continue.</p>`;
+  }
   return `<section class="review-timing" aria-label="Answer review"><div class="review-heading">
     <strong id="review-countdown" role="status"></strong><div class="pause-countdown">
     <div class="countdown-ring" role="img" aria-label="Time remaining before the next round"><svg viewBox="0 0 48 48" aria-hidden="true"><circle class="ring-track" cx="24" cy="24" r="20"/><circle id="review-ring" class="ring-fill" cx="24" cy="24" r="20" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"/></svg></div>
@@ -278,6 +285,7 @@ function render() {
   on("finish", leave);
   on("create", create);
   on("start", () => act("start"));
+  on("next", () => act("next"));
   on("pause-review", () => act(pausedNow() ? "resume" : "pause"));
   on("fifty", () => act("fifty"));
   on("walk", () => {
@@ -334,6 +342,12 @@ function render() {
     (renderedPhase !== "question" || turn !== renderedTurn || renderedPaused)
   ) {
     app.querySelector(".answer:not(:disabled)")?.focus();
+  } else if (
+    state?.phase === "reveal" &&
+    renderedPhase !== "reveal" &&
+    state.settings.mode === "millionaire"
+  ) {
+    document.getElementById("next")?.focus();
   } else if (state?.phase === "finished" && renderedPhase !== "finished") {
     document.getElementById("finish")?.focus();
   } else if (state?.phase === "lobby" && renderedPhase !== "lobby") {

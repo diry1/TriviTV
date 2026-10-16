@@ -111,7 +111,10 @@ test("HTTP flow has separate pick/correct/review stages and supports Trivia paus
     ).status,
     409,
   );
-  assert.equal((await action({ type: "next" })).status, 400);
+  assert.equal(
+    (await action({ type: "next", questionId: state.question.id })).status,
+    400,
+  );
 });
 test("late HTTP answers cannot replace a timeout random pick", async (t) => {
   let clock = 1000;
@@ -212,6 +215,21 @@ test("demo permits larger groups; Millionaire phone handoff stays solo without p
     (await action({ type: "pause", questionId }, phone.token)).status,
     409,
   );
+  assert.equal(state.review, null);
+  clock += 60000;
+  state = (await api(`/api/rooms/${solo.code}`, undefined, solo.token)).data;
+  assert.equal(state.phase, "reveal");
+  assert.equal(
+    (await action({ type: "next", questionId }, phone.token)).status,
+    403,
+  );
+  assert.equal(
+    (await action({ type: "next", questionId: "stale" }, solo.token)).status,
+    409,
+  );
+  const continued = await action({ type: "next", questionId }, solo.token);
+  assert.equal(continued.status, 200);
+  assert.notEqual(continued.data.phase, "reveal");
 });
 test("server timers fill timed-out Trivia answers without polling", async (t) => {
   let reads = 0;

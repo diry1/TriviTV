@@ -245,17 +245,23 @@ const assert = require("node:assert/strict");
     await host.locator('.answers[data-stage="answers"]').waitFor();
     await nextStage(host, "correct");
     await nextStage(host, "reveal");
-    assert.equal(await host.locator("#review-ring").count(), 1);
     assert.equal(
-      await host.locator("#review-seconds,#pause-review").count(),
+      await host
+        .locator("#review-ring,#review-countdown,#pause-review")
+        .count(),
       0,
     );
-    assert(!/\d/.test(await host.locator("#review-countdown").innerText()));
+    assert.equal(await host.locator("#next").innerText(), "Next question");
+    assert.equal(await host.evaluate(() => document.activeElement.id), "next");
+    timeOffset += 60000;
+    await host.reload();
+    await host.locator("#next").waitFor();
     await host.screenshot({
-      path: "/tmp/trivitv-millionaire-countdown.png",
+      path: "/tmp/trivitv-millionaire-next.png",
       fullPage: true,
     });
-    await nextStage(host, "question");
+    await host.keyboard.press("Enter");
+    await host.locator('.answers[data-stage="question"]').waitFor();
     host.once("dialog", (d) => d.accept());
     await host.locator("#walk").click();
     await host.locator("#finish").waitFor();
@@ -318,7 +324,7 @@ const assert = require("node:assert/strict");
     await nextStage(host, "reveal");
     assert.deepEqual(errors, []);
     console.log(
-      "PASS: three-player phone session, 10 rounds, results, region/categories, solo 50:50 and walk-away, automatic reveal/advance, four-second nonnumeric rings, Trivia question/review pause across reload, untimed Millionaire without pause, Trivia timeout/random picks, staged animations, reduced motion, shared remote handoff, mobile layout; no page errors",
+      "PASS: three-player phone session, 10 rounds, results, region/categories, solo 50:50 and walk-away, automatic reveal/advance, four-second nonnumeric rings, Trivia question/review pause across reload, untimed Millionaire with manual Next across reload and no countdown, Trivia timeout/random picks, staged animations, reduced motion, shared remote handoff, mobile layout; no page errors",
     );
   } finally {
     await browser?.close();

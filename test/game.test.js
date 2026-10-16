@@ -84,7 +84,7 @@ function toReview(game) {
   assert.equal(game.phase, "correct");
   advance(game, game.stageEndsAt);
   assert.equal(game.phase, "reveal");
-  return game.review.endsAt;
+  return game.review?.endsAt ?? 1000000;
 }
 function finishRound(game) {
   next(game, toReview(game));
@@ -195,7 +195,11 @@ test("Millionaire lifeline never removes correct answer; checkpoints, loss and c
     answer(full, p2.id, full.questions[full.index].correct, i * 10000);
     toReview(full);
     if (i === 9) assert.equal(full.secured, 32000);
-    next(full, full.review.endsAt);
+    assert.equal(full.review, null);
+    assert.equal(nextDeadline(full), null);
+    assert.equal(advance(full, 1e12), false);
+    assert.equal(full.phase, "reveal");
+    next(full, i * 10000 + 5000);
   }
   assert.equal(full.won, 1000000);
   assert.equal(full.phase, "finished");
@@ -231,7 +235,7 @@ test("only Trivia supports pausing; exact remaining time survives multiple pause
   assert.throws(() => pauseGame(solo, 2), /Trivia only/);
   assert.throws(() => resumeGame(solo, 2), /Trivia only/);
 });
-test("last and losing answers finish only after both animations and the four-second review", () => {
+test("final answers require both animations, then Trivia waits four seconds and Millionaire waits for Next", () => {
   for (const mode of ["trivia", "millionaire"]) {
     const game = createGame(settings(mode));
     const p = addPlayer(game, "One");
@@ -247,7 +251,11 @@ test("last and losing answers finish only after both animations and the four-sec
     );
     const end = toReview(game);
     assert.equal(advance(game, end - 1), false);
-    advance(game, end);
+    if (mode === "millionaire") {
+      assert.equal(advance(game, 1e12), false);
+      assert.equal(game.phase, "reveal");
+      next(game, end);
+    } else advance(game, end);
     assert.equal(game.phase, "finished");
     assert.equal(game.review, null);
   }

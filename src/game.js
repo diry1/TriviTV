@@ -216,16 +216,20 @@ function revealCorrect(game, now) {
 function beginReview(game, now) {
   game.phase = "reveal";
   game.stageEndsAt = null;
-  game.review = {
-    paused: false,
-    remainingMs: game.reviewDurationMs,
-    endsAt: now + game.reviewDurationMs,
-  };
+  game.review =
+    game.settings.mode === "millionaire"
+      ? null
+      : {
+          paused: false,
+          remainingMs: game.reviewDurationMs,
+          endsAt: now + game.reviewDurationMs,
+        };
 }
 export function next(game, now = Date.now()) {
   requireThat(game.phase === "reveal", "Reveal the answer first.", 409);
   requireThat(
-    !game.review.paused && now >= game.review.endsAt,
+    game.settings.mode === "millionaire" ||
+      (!game.review.paused && now >= game.review.endsAt),
     "The answer review is still running.",
     409,
   );
@@ -244,11 +248,12 @@ export function next(game, now = Date.now()) {
   game.autoPicked = [];
   beginQuestion(game, now);
 }
-// Every phase has a server-owned deadline. Reveals never leak the answer through scores.
+// Timed phases have server-owned deadlines. Millionaire review waits for the host.
 export function nextDeadline(game) {
   if (game.phase === "question") return game.questionEndsAt;
   if (["answers", "correct"].includes(game.phase)) return game.stageEndsAt;
-  if (game.phase === "reveal" && !game.review.paused) return game.review.endsAt;
+  if (game.phase === "reveal" && game.review && !game.review.paused)
+    return game.review.endsAt;
   return null;
 }
 export function advance(game, now = Date.now()) {
