@@ -102,8 +102,13 @@ const assert = require("node:assert/strict");
     assert.equal(await host.locator(".player").count(), 3);
     await host.locator("#start").click();
     await host.locator('[data-answer="0"]').waitFor();
+    assert.equal(await host.locator("#pause-review").count(), 0);
     // Player 1 can freeze the timed question, including on other players' phones.
-    await host.locator("#pause-review").click();
+    await host.evaluate(() =>
+      document.dispatchEvent(
+        new KeyboardEvent("keydown", { key: "MediaPlayPause", bubbles: true }),
+      ),
+    );
     await host
       .locator("#answer-countdown")
       .filter({ hasText: "Paused" })
@@ -119,7 +124,11 @@ const assert = require("node:assert/strict");
       .locator("#answer-countdown")
       .filter({ hasText: "Paused" })
       .waitFor();
-    await host.locator("#pause-review").click();
+    await host.evaluate(() =>
+      document.dispatchEvent(
+        new KeyboardEvent("keydown", { key: "MediaPlayPause", bubbles: true }),
+      ),
+    );
     await host.locator(".answer:not(:disabled)").first().waitFor();
     assert.equal(
       await host.evaluate(() => document.activeElement.dataset.answer),
@@ -171,6 +180,21 @@ const assert = require("node:assert/strict");
       assert.equal(await host.locator("#review-seconds").count(), 0);
       assert(!/\d/.test(await host.locator("#review-countdown").innerText()));
       if (i === 0) {
+        assert.notEqual(
+          await host.evaluate(() => document.activeElement.id),
+          "pause-review",
+        );
+        assert.equal(
+          await host
+            .locator("#pause-review.primary, .review-timing #pause-hint")
+            .count(),
+          0,
+        );
+        await host.screenshot({
+          path: "/tmp/trivitv-trivia-review.png",
+          fullPage: true,
+        });
+        await host.keyboard.press("ArrowDown");
         assert.equal(
           await host.evaluate(() => document.activeElement.id),
           "pause-review",
@@ -181,7 +205,7 @@ const assert = require("node:assert/strict");
           .filter({ hasText: "Paused" })
           .waitFor();
         await host.keyboard.down("Enter");
-        assert.equal(await host.locator("#pause-review").innerText(), "Resume");
+        assert.match(await host.locator("#pause-review").innerText(), /Resume/);
         await host.keyboard.up("Enter");
         timeOffset += 10000;
         await host.reload();

@@ -109,15 +109,15 @@ function pausedNow() {
 }
 function pauseButton() {
   return canControlPause()
-    ? `<button id="pause-review" class="primary" aria-describedby="pause-hint">${pausedNow() ? "Resume" : "Pause"}</button>`
-    : `<span class="fine">Player 1 can ${pausedNow() ? "resume" : "pause"}</span>`;
+    ? `<button id="pause-review" class="pause-secondary"><svg class="pause-icon" viewBox="0 0 12 12" aria-hidden="true"><path d="${pausedNow() ? "M3 1L11 6L3 11Z" : "M2 1H5V11H2ZM7 1H10V11H7Z"}"/></svg> ${pausedNow() ? "Resume" : "Pause"}</button>`
+    : "";
 }
 function reviewControls() {
   return `<section class="review-timing" aria-label="Answer review"><div class="review-heading">
     <strong id="review-countdown" role="status"></strong><div class="pause-countdown">
     <div class="countdown-ring" role="img" aria-label="Time remaining before the next round"><svg viewBox="0 0 48 48" aria-hidden="true"><circle class="ring-track" cx="24" cy="24" r="20"/><circle id="review-ring" class="ring-fill" cx="24" cy="24" r="20" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"/></svg></div>
     ${state.settings.mode === "trivia" ? pauseButton() : ""}</div></div>
-    ${state.settings.mode === "trivia" ? `<p id="pause-hint" class="fine">${state.review.paused ? "Take your time. Resume continues the remaining wait." : "Player 1: press OK on Pause or use Play/Pause."}</p>` : ""}</section>`;
+    </section>`;
 }
 function updateCountdown() {
   if (state?.phase === "question" && state.settings.mode === "trivia") {
@@ -176,7 +176,7 @@ function play() {
     <div class="play-grid"><section><h1 class="question">${esc(q.text)}</h1>
     ${isHost && local.length > 1 && answering && pending ? `<p class="remote-turn">Remote turn: <strong>${esc(pending.name)}</strong><span>One press locks your answer and passes the remote.</span></p>` : ""}
     ${mine && answering ? `<p class="answer-status">${mine.answered ? `${esc(mine.name)}, your answer is locked. Waiting for the other players…` : `${esc(mine.name)}, what’s your answer?`}</p>` : ""}
-    ${answering && state.settings.mode === "trivia" ? `<div class="answer-clock"><span>Time to answer</span><div class="answer-clock-controls"><strong id="answer-countdown" role="timer" aria-live="off">1:00</strong>${pauseButton()}</div><progress id="answer-progress" max="${state.answerDurationMs}" value="${state.answerDurationMs}" aria-label="Answer time remaining"></progress><small id="pause-hint">${state.questionPaused ? "Player 1 paused the game. All answers are frozen until resumed." : "Any unanswered pick is chosen at random when time runs out."}</small></div>` : ""}
+    ${answering && state.settings.mode === "trivia" ? `<div class="answer-clock"><span>Time to answer</span><div class="answer-clock-controls"><strong id="answer-countdown" role="timer" aria-live="off">1:00</strong></div><progress id="answer-progress" max="${state.answerDurationMs}" value="${state.answerDurationMs}" aria-label="Answer time remaining"></progress><small id="pause-hint">${state.questionPaused ? "Player 1 paused the game. All answers are frozen until resumed." : "Any unanswered pick is chosen at random when time runs out."}</small></div>` : ""}
     <div class="answers ${state.phase === "answers" ? "revealing-picks" : state.phase === "correct" ? "revealing-correct" : ""}" data-stage="${state.phase}">${q.choices
       .map((choice, i) => {
         const voters = showPicks
@@ -334,15 +334,11 @@ function render() {
     (renderedPhase !== "question" || turn !== renderedTurn || renderedPaused)
   ) {
     app.querySelector(".answer:not(:disabled)")?.focus();
-  } else if (state?.phase === "reveal" && renderedPhase !== "reveal") {
-    document.getElementById("pause-review")?.focus();
   } else if (state?.phase === "finished" && renderedPhase !== "finished") {
     document.getElementById("finish")?.focus();
   } else if (state?.phase === "lobby" && renderedPhase !== "lobby") {
     document.getElementById("start")?.focus();
   }
-  if (state?.phase === "question" && state.questionPaused)
-    document.getElementById("pause-review")?.focus();
   renderedPaused = state?.questionPaused || false;
   renderedPhase = state?.phase || null;
   renderedTurn = turn;
@@ -429,7 +425,11 @@ document.addEventListener("keydown", (e) => {
   ].filter((el) => el.getClientRects().length);
   const active = document.activeElement;
   if (!elements.includes(active)) {
-    elements[0]?.focus();
+    const target =
+      state?.phase === "reveal"
+        ? document.getElementById("pause-review") || elements[0]
+        : elements[0];
+    target?.focus();
     e.preventDefault();
     return;
   }
