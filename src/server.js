@@ -30,6 +30,9 @@ async function body(req) {
 export function createAppServer({
   partyDemo = false,
   reviewDurationMs = rules.REVIEW_DURATION_MS,
+  answerDurationMs = rules.ANSWER_DURATION_MS,
+  answersRevealMs = rules.ANSWERS_REVEAL_MS,
+  correctRevealMs = rules.CORRECT_REVEAL_MS,
   now = Date.now,
 } = {}) {
   const rooms = new Map();
@@ -37,15 +40,15 @@ export function createAppServer({
   function schedule(room) {
     clearTimeout(room.timer);
     room.timer = null;
-    const review = room.game.review;
-    if (room.game.phase !== "reveal" || review.paused) return;
+    const deadline = rules.nextDeadline(room.game);
+    if (deadline === null) return;
     room.timer = setTimeout(
       () => {
         room.timer = null;
         rules.advance(room.game, now());
         schedule(room);
       },
-      Math.max(0, review.endsAt - now()),
+      Math.max(0, deadline - now()),
     );
     room.timer.unref();
   }
@@ -113,6 +116,9 @@ export function createAppServer({
           const game = rules.createGame(input, {
             party: !!input.party && partyDemo,
             reviewDurationMs,
+            answerDurationMs,
+            answersRevealMs,
+            correctRevealMs,
           });
           rules.addPlayer(game, input.name || "TV player", true);
           let code;
@@ -216,7 +222,7 @@ export function createAppServer({
             throw new rules.GameError("Only the TV host can do that.", 403);
           switch (input.type) {
             case "start":
-              rules.start(game);
+              rules.start(game, actionTime);
               break;
             case "fifty":
               rules.fifty(game);

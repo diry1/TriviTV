@@ -1,7 +1,10 @@
 import { randomInt, randomUUID } from "node:crypto";
 import { categories, questions } from "./questions.js";
 export { categories };
-export const REVIEW_DURATION_MS = 5000;
+export const REVIEW_DURATION_MS = 3000;
+export const ANSWER_DURATION_MS = 60000;
+export const ANSWERS_REVEAL_MS = 800;
+export const CORRECT_REVEAL_MS = 600;
 export const ladder = [
   100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000,
   250000, 500000, 1000000,
@@ -71,7 +74,13 @@ export function selectQuestions(settings) {
 }
 export function createGame(
   settings,
-  { party = false, reviewDurationMs = REVIEW_DURATION_MS } = {},
+  {
+    party = false,
+    reviewDurationMs = REVIEW_DURATION_MS,
+    answerDurationMs = ANSWER_DURATION_MS,
+    answersRevealMs = ANSWERS_REVEAL_MS,
+    correctRevealMs = CORRECT_REVEAL_MS,
+  } = {},
 ) {
   const selected = selectQuestions(settings);
   return {
@@ -93,7 +102,13 @@ export function createGame(
     secured: 0,
     finishReason: null,
     reviewDurationMs,
+    answerDurationMs,
+    answersRevealMs,
+    correctRevealMs,
     review: null,
+    questionEndsAt: null,
+    stageEndsAt: null,
+    autoPicked: [],
   };
 }
 export function addPlayer(game, name, local = false) {
@@ -125,13 +140,24 @@ export function addPlayer(game, name, local = false) {
   game.scores[player.id] = 0;
   return player;
 }
-export function start(game) {
+export function start(game, now = Date.now()) {
   requireThat(game.phase === "lobby", "Game already started.", 409);
   requireThat(game.players.length > 0, "Add at least one player.");
+  beginQuestion(game, now);
+}
+function beginQuestion(game, now) {
   game.phase = "question";
+  game.questionEndsAt =
+    game.settings.mode === "trivia" ? now + game.answerDurationMs : null;
+  game.stageEndsAt = null;
 }
 export function answer(game, playerId, choice, now = Date.now()) {
   requireThat(game.phase === "question", "Answers are closed.", 409);
+  requireThat(
+    game.questionEndsAt === null || now < game.questionEndsAt,
+    "Time is up. Unanswered picks are assigned randomly.",
+    409,
+  );
   requireThat(
     game.players.some((p) => p.id === playerId),
     "Unknown player.",
@@ -159,6 +185,11 @@ export function reveal(game, now = Date.now()) {
     "Wait for every player to answer.",
     409,
   );
+  game.phase = "answers";
+  game.questionEndsAt = null;
+  game.stageEndsAt = now + game.answersRevealMs;
+}
+function revealCorrect(game, now) {
   const correct = game.questions[game.index].correct;
   for (const p of game.players)
     if (game.answers[p.id] === correct) game.scores[p.id] += 100;
@@ -172,7 +203,12 @@ export function reveal(game, now = Date.now()) {
       game.finishReason = "wrong";
     }
   }
+  game.phase = "correct";
+  game.stageEndsAt = now + game.correctRevealMs;
+}
+function beginReview(game, now) {
   game.phase = "reveal";
+  game.stageEndsAt = null;
   game.review = {
     paused: false,
     remainingMs: game.reviewDurationMs,
@@ -198,16 +234,37 @@ export function next(game, now = Date.now()) {
   game.index++;
   game.answers = {};
   game.eliminated = [];
-  game.phase = "question";
+  game.autoPicked = [];
+  beginQuestion(game, now);
 }
-// Server time owns transitions; clients only display the countdown.
+// Every phase has a server-owned deadline. Reveals never leak the answer through scores.
+export function nextDeadline(game) {
+  if (game.phase === "question") return game.questionEndsAt;
+  if (["answers", "correct"].includes(game.phase)) return game.stageEndsAt;
+  if (game.phase === "reveal" && !game.review.paused) return game.review.endsAt;
+  return null;
+}
 export function advance(game, now = Date.now()) {
-  if (game.phase !== "reveal" || game.review.paused || now < game.review.endsAt)
-    return false;
-  next(game, now);
+  const deadline = nextDeadline(game);
+  if (deadline === null || now < deadline) return false;
+  if (game.phase === "question") {
+    for (const player of game.players)
+      if (!(player.id in game.answers)) {
+        game.answers[player.id] = randomInt(4);
+        game.autoPicked.push(player.id);
+      }
+    reveal(game, now);
+  } else if (game.phase === "answers") revealCorrect(game, now);
+  else if (game.phase === "correct") beginReview(game, now);
+  else next(game, now);
   return true;
 }
 export function pauseReview(game, now = Date.now()) {
+  requireThat(
+    game.settings.mode === "millionaire",
+    "Pause is available in Millionaire only.",
+    409,
+  );
   requireThat(
     game.phase === "reveal" && !game.review.paused && now < game.review.endsAt,
     "There is no running review to pause.",
@@ -218,6 +275,11 @@ export function pauseReview(game, now = Date.now()) {
   game.review.paused = true;
 }
 export function resumeReview(game, now = Date.now()) {
+  requireThat(
+    game.settings.mode === "millionaire",
+    "Pause is available in Millionaire only.",
+    409,
+  );
   requireThat(
     game.phase === "reveal" && game.review.paused,
     "The review is not paused.",
@@ -260,12 +322,16 @@ export function walk(game) {
 }
 export function view(game, viewerId = null, now = Date.now()) {
   const q = game.questions[game.index];
-  const show = game.phase === "reveal" || game.phase === "finished";
+  const show = ["correct", "reveal", "finished"].includes(game.phase);
+  const showPicks = show || game.phase === "answers";
   return {
     settings: game.settings,
     party: game.party,
     phase: game.phase,
     serverNow: now,
+    questionEndsAt: game.questionEndsAt,
+    answerDurationMs: game.answerDurationMs,
+    stageEndsAt: game.stageEndsAt,
     review: game.review
       ? { ...game.review, durationMs: game.reviewDurationMs }
       : null,
@@ -275,7 +341,12 @@ export function view(game, viewerId = null, now = Date.now()) {
       ...p,
       score: game.scores[p.id],
       answered: p.id in game.answers,
-      ...(show ? { answer: game.answers[p.id] ?? null } : {}),
+      ...(showPicks
+        ? {
+            answer: game.answers[p.id] ?? null,
+            autoPicked: game.autoPicked.includes(p.id),
+          }
+        : {}),
     })),
     question:
       game.phase === "lobby"

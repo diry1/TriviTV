@@ -20,6 +20,7 @@ let config,
   snapshot = "",
   connectionLost = false,
   pollEpoch = 0,
+  polling = false,
   clockOffset = 0,
   renderedPhase = null,
   renderedTurn = null;
@@ -78,7 +79,7 @@ function status() {
   return `<div class="eyebrow">${state.settings.mode === "millionaire" ? "SOLO · MILLIONAIRE" : "MULTIPLAYER · TRIVIA"} <span class="dot">•</span> ${esc(state.settings.region)} <span class="dot">•</span> ${state.party ? "PARTY DEMO" : "FREE PLAY"}</div>`;
 }
 function home() {
-  return `<section class="intro"><div class="eyebrow">THE SOFA IS YOUR GAME SHOW</div><h1>A little friendly<br><em>competition.</em></h1><p>One screen. Your favourite people. Something<br class="desktop"> everyone thinks they know the answer to.</p></section><div class="home-grid"><section class="setup"><div class="section-heading"><h2>Pick your game</h2><span>01 / THE FORMAT</span></div><div class="modes"><button class="mode ${mode === "trivia" ? "active" : ""}" data-mode="trivia"><span class="mode-icon">✳</span><span><strong>Trivia</strong><small>Four choices. Plenty of opinions.</small></span><span class="tag">1–3 FREE</span></button><button class="mode ${mode === "millionaire" ? "active" : ""}" data-mode="millionaire"><span class="mode-icon amber">◇</span><span><strong>Millionaire</strong><small>One player. One climb to the top.</small></span><span class="tag">SOLO</span></button></div><div class="section-heading"><h2>Make it your kind of quiz</h2><span>02 / THE MIX</span></div><div class="setting-row"><div><h3>Your region</h3><p>Familiar references, different perspectives.</p></div><div class="segmented" role="group" aria-label="Question region">${["Europe", "US"].map((r) => `<button data-region="${r}" class="${region === r ? "selected" : ""}" aria-pressed="${region === r}">${r === "Europe" ? "Europe" : "United States"}</button>`).join("")}</div></div><div class="category-head"><h3>Include categories</h3><button id="all-categories" class="text-button">${selected.size === config.categories.length ? "Clear all" : "Select all"}</button></div><div class="categories">${config.categories.map((c, i) => `<button class="chip ${selected.has(c) ? "selected" : ""}" data-category="${c}" aria-pressed="${selected.has(c)}"><span>${["◎", "♫", "⌛", "⚛", "⚑", "✎"][i]}</span>${c}<b>${selected.has(c) ? "✓" : "+"}</b></button>`).join("")}</div><p class="fine">Selected categories only. Regional questions are mixed with worldwide knowledge.</p><button class="primary start-button" id="create" ${selected.size ? "" : "disabled"}>Set up ${mode === "millionaire" ? "my climb" : "the game"} <span>→</span></button><p class="fine">${mode === "millionaire" ? "Up to 15 questions · 50:50 · Walk away · Fictional points" : "Up to 10 questions · Untimed answers · Automatic reveal"}</p></section><aside><section class="party-card"><div class="eyebrow">A BIGGER NIGHT IN</div><div class="party-art">✦<span>✳</span>✧</div><h2>More friends.<br>More possibilities.</h2><p>The full game is free for up to three players. Party Passes will unlock bigger groups and extras like picture questions.</p><div class="passes"><div><strong>2 days</strong><small>For the weekend</small></div><div><strong>30 days</strong><small>Keep the party going</small></div></div><p class="fine">Planned one-time payments. Never auto-renew. Purchases and picture questions are not available yet.</p>${config.partyDemo ? `<label class="demo-toggle"><input id="party" type="checkbox" ${party ? "checked" : ""} ${mode === "millionaire" ? "disabled" : ""}> Enable development Party Mode</label><p class="fine">Testing only. No payment or paid access is granted.</p>` : ""}</section><section class="join-card"><span class="small-icon">↗</span><h3>Already have a room?</h3><p>Your phone is your controller.</p><button id="join-screen" class="secondary">Join a game <span>→</span></button></section></aside></div>`;
+  return `<section class="intro"><div class="eyebrow">THE SOFA IS YOUR GAME SHOW</div><h1>A little friendly<br><em>competition.</em></h1><p>One screen. Your favourite people. Something<br class="desktop"> everyone thinks they know the answer to.</p></section><div class="home-grid"><section class="setup"><div class="section-heading"><h2>Pick your game</h2><span>01 / THE FORMAT</span></div><div class="modes"><button class="mode ${mode === "trivia" ? "active" : ""}" data-mode="trivia"><span class="mode-icon">✳</span><span><strong>Trivia</strong><small>Four choices. Plenty of opinions.</small></span><span class="tag">1–3 FREE</span></button><button class="mode ${mode === "millionaire" ? "active" : ""}" data-mode="millionaire"><span class="mode-icon amber">◇</span><span><strong>Millionaire</strong><small>One player. One climb to the top.</small></span><span class="tag">SOLO</span></button></div><div class="section-heading"><h2>Make it your kind of quiz</h2><span>02 / THE MIX</span></div><div class="setting-row"><div><h3>Your region</h3><p>Familiar references, different perspectives.</p></div><div class="segmented" role="group" aria-label="Question region">${["Europe", "US"].map((r) => `<button data-region="${r}" class="${region === r ? "selected" : ""}" aria-pressed="${region === r}">${r === "Europe" ? "Europe" : "United States"}</button>`).join("")}</div></div><div class="category-head"><h3>Include categories</h3><button id="all-categories" class="text-button">${selected.size === config.categories.length ? "Clear all" : "Select all"}</button></div><div class="categories">${config.categories.map((c, i) => `<button class="chip ${selected.has(c) ? "selected" : ""}" data-category="${c}" aria-pressed="${selected.has(c)}"><span>${["◎", "♫", "⌛", "⚛", "⚑", "✎"][i]}</span>${c}<b>${selected.has(c) ? "✓" : "+"}</b></button>`).join("")}</div><p class="fine">Selected categories only. Regional questions are mixed with worldwide knowledge.</p><button class="primary start-button" id="create" ${selected.size ? "" : "disabled"}>Set up ${mode === "millionaire" ? "my climb" : "the game"} <span>→</span></button><p class="fine">${mode === "millionaire" ? "Up to 15 questions · 50:50 · Walk away · Fictional points" : "Up to 10 questions · 60 seconds · Automatic reveal"}</p></section><aside><section class="party-card"><div class="eyebrow">A BIGGER NIGHT IN</div><div class="party-art">✦<span>✳</span>✧</div><h2>More friends.<br>More possibilities.</h2><p>The full game is free for up to three players. Party Passes will unlock bigger groups and extras like picture questions.</p><div class="passes"><div><strong>2 days</strong><small>For the weekend</small></div><div><strong>30 days</strong><small>Keep the party going</small></div></div><p class="fine">Planned one-time payments. Never auto-renew. Purchases and picture questions are not available yet.</p>${config.partyDemo ? `<label class="demo-toggle"><input id="party" type="checkbox" ${party ? "checked" : ""} ${mode === "millionaire" ? "disabled" : ""}> Enable development Party Mode</label><p class="fine">Testing only. No payment or paid access is granted.</p>` : ""}</section><section class="join-card"><span class="small-icon">↗</span><h3>Already have a room?</h3><p>Your phone is your controller.</p><button id="join-screen" class="secondary">Join a game <span>→</span></button></section></aside></div>`;
 }
 function joinForm() {
   return `<section class="join-page"><div class="eyebrow">PULL UP A SEAT</div><h1>You’re invited.</h1><p>Enter the code on the TV. No app download needed.</p><form id="join-form"><label>Room code<input name="code" id="code" maxlength="6" autocapitalize="characters" autocomplete="off" value="${esc(prefill || "")}" placeholder="A1B2C3" required pattern="[A-Fa-f0-9]{6}"></label><label>Your name<input name="name" maxlength="24" autocomplete="nickname" placeholder="What should we call you?" required></label><button class="primary">Join the room →</button></form><button id="back" class="text-button">← Back to game setup</button></section>`;
@@ -94,21 +95,41 @@ function lobby() {
 function canControlReview() {
   const first = state?.players[0];
   return (
+    state.settings.mode === "millionaire" &&
     !!first &&
     ((session.role === "host" && first.local) || session.playerId === first.id)
   );
 }
 function reviewControls() {
+  if (state.settings.mode !== "millionaire")
+    return '<p class="fine">Moving on automatically after the correct answer.</p>';
   const paused = state.review.paused;
   return `<section class="review-timing" aria-label="Answer review">
     <div class="review-heading"><strong id="review-countdown" role="timer" aria-live="off"></strong>
-    ${canControlReview() ? `<button id="pause-review" class="primary" aria-describedby="pause-hint">${paused ? "Resume" : "Pause"}</button>` : `<span class="fine">Player 1 can ${paused ? "resume" : "pause"}</span>`}</div>
-    <progress id="review-progress" max="${state.review.durationMs}" value="${state.review.remainingMs}" aria-label="Review time remaining"></progress>
+    <div class="pause-countdown"><div class="countdown-ring" aria-hidden="true"><svg viewBox="0 0 48 48"><circle class="ring-track" cx="24" cy="24" r="20"/><circle id="review-ring" class="ring-fill" cx="24" cy="24" r="20" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"/></svg><span id="review-seconds">3</span></div>
+    ${canControlReview() ? `<button id="pause-review" class="primary" aria-describedby="pause-hint">${paused ? "Resume" : "Pause"}</button>` : `<span class="fine">Player 1 can ${paused ? "resume" : "pause"}</span>`}</div></div>
     <p id="pause-hint" class="fine">${paused ? "Take your time. Resume continues the remaining countdown." : "Player 1: press OK or Play/Pause to pause. No need to press Next."}</p>
   </section>`;
 }
 function updateCountdown() {
-  if (state?.phase !== "reveal" || !state.review) return;
+  if (state?.phase === "question" && state.questionEndsAt !== null) {
+    const remaining = Math.max(
+      0,
+      state.questionEndsAt - (Date.now() + clockOffset),
+    );
+    const seconds = Math.ceil(remaining / 1000);
+    const clock = document.getElementById("answer-countdown");
+    if (clock)
+      clock.textContent = `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
+    const progress = document.getElementById("answer-progress");
+    if (progress) progress.value = remaining;
+  }
+  if (
+    state?.phase !== "reveal" ||
+    !state.review ||
+    state.settings.mode !== "millionaire"
+  )
+    return;
   const remaining = state.review.paused
     ? state.review.remainingMs
     : Math.max(0, state.review.endsAt - (Date.now() + clockOffset));
@@ -121,33 +142,49 @@ function updateCountdown() {
       ? `${last ? "Results" : "Next question"} in ${Math.ceil(remaining / 1000)}s`
       : "Moving on…";
   if (text && text.textContent !== message) text.textContent = message;
-  const progress = document.getElementById("review-progress");
-  if (progress) progress.value = remaining;
+  const number = document.getElementById("review-seconds");
+  if (number) number.textContent = Math.ceil(remaining / 1000);
+  document
+    .getElementById("review-ring")
+    ?.setAttribute(
+      "stroke-dashoffset",
+      String(100 * (1 - remaining / state.review.durationMs)),
+    );
 }
 function play() {
   const isHost = session.role === "host",
     q = state.question,
-    revealed = state.phase === "reveal";
+    answering = state.phase === "question",
+    revealed = ["correct", "reveal"].includes(state.phase),
+    showPicks = ["answers", "correct", "reveal"].includes(state.phase);
   const local = state.players.filter((p) => p.local);
   const pending = local.find((p) => !p.answered);
   if (
     !local.some((p) => p.id === localPlayer) ||
-    (!revealed && local.find((p) => p.id === localPlayer)?.answered && pending)
+    (answering && local.find((p) => p.id === localPlayer)?.answered && pending)
   )
     localPlayer = pending?.id || local[0]?.id;
   const mine = isHost
     ? state.players.find((p) => p.id === localPlayer)
     : state.players.find((p) => p.id === session.playerId);
-  const canAnswer = !revealed && mine && !mine.answered;
+  const canAnswer = answering && mine && !mine.answered;
   return `<section class="play-page">${status()}
     <div class="game-meta"><span>QUESTION ${state.index + 1} / ${state.total}</span><span class="tag">${esc(q.category)}</span>${state.settings.mode === "millionaire" ? `<span class="prize">FOR ${state.ladder[state.index].toLocaleString()} POINTS</span>` : `<span>${state.players.length} PLAYERS</span>`}</div>
     <div class="play-grid"><section><h1 class="question">${esc(q.text)}</h1>
-    ${isHost && local.length > 1 && !revealed && pending ? `<p class="remote-turn">Remote turn: <strong>${esc(pending.name)}</strong><span>One press locks your answer and passes the remote.</span></p>` : ""}
-    ${mine && !revealed ? `<p class="answer-status">${mine.answered ? `${esc(mine.name)}, your answer is locked. Waiting for the other players…` : `${esc(mine.name)}, what’s your answer?`}</p>` : ""}
-    <div class="answers">${q.choices.map((choice, i) => `<button data-answer="${i}" class="answer ${revealed && i === q.correct ? "correct" : ""} ${revealed && mine?.answer === i && i !== q.correct ? "incorrect" : ""} ${!revealed && state.myAnswer === i ? "locked" : ""}" ${!canAnswer || q.eliminated.includes(i) ? "disabled" : ""}><span>${"ABCD"[i]}</span>${q.eliminated.includes(i) ? "—" : esc(choice)}${revealed && i === q.correct ? "<b>✓</b>" : ""}</button>`).join("")}</div>
-    ${revealed ? `<p class="result-note">${state.settings.mode === "millionaire" && state.finishReason === "wrong" ? `The climb ends here. You keep ${state.won.toLocaleString()} points.` : `Correct answer: ${esc(q.choices[q.correct])}`}</p>${reviewControls()}` : `<p class="fine">${state.players.filter((p) => p.answered).length} of ${state.players.length} answers locked. Reveals automatically when everyone has answered.</p>`}
-    ${isHost && !revealed && state.settings.mode === "millionaire" ? `<div class="host-actions"><button id="fifty" class="secondary" ${state.usedFifty || mine?.answered ? "disabled" : ""}>50:50 ${state.usedFifty ? "· used" : ""}</button><button id="walk" class="quiet" ${mine?.answered ? "disabled" : ""}>Walk away</button></div>` : ""}
-    ${!isHost && !revealed ? `<p class="waiting">${mine?.answered ? "Look at the TV for the reveal." : "Choose on your phone. The answer reveals automatically."}</p>` : ""}</section>
+    ${isHost && local.length > 1 && answering && pending ? `<p class="remote-turn">Remote turn: <strong>${esc(pending.name)}</strong><span>One press locks your answer and passes the remote.</span></p>` : ""}
+    ${mine && answering ? `<p class="answer-status">${mine.answered ? `${esc(mine.name)}, your answer is locked. Waiting for the other players…` : `${esc(mine.name)}, what’s your answer?`}</p>` : ""}
+    ${answering && state.settings.mode === "trivia" ? `<div class="answer-clock"><span>Time to answer</span><strong id="answer-countdown" role="timer" aria-live="off">1:00</strong><progress id="answer-progress" max="${state.answerDurationMs}" value="${state.answerDurationMs}" aria-label="Answer time remaining"></progress><small>Any unanswered pick is chosen at random when time runs out.</small></div>` : ""}
+    <div class="answers ${state.phase === "answers" ? "revealing-picks" : state.phase === "correct" ? "revealing-correct" : ""}" data-stage="${state.phase}">${q.choices
+      .map((choice, i) => {
+        const voters = showPicks
+          ? state.players.filter((p) => p.answer === i)
+          : [];
+        return `<button data-answer="${i}" class="answer ${voters.length ? "picked" : ""} ${revealed && i === q.correct ? "correct" : ""} ${revealed && mine?.answer === i && i !== q.correct ? "incorrect" : ""} ${answering && state.myAnswer === i ? "locked" : ""}" ${!canAnswer || q.eliminated.includes(i) ? "disabled" : ""}><span>${"ABCD"[i]}</span><div class="answer-content"><strong>${q.eliminated.includes(i) ? "—" : esc(choice)}</strong>${voters.length ? `<small class="answer-voters">${voters.map((p) => `<i>${esc(p.name)}${p.autoPicked ? " · random" : ""}</i>`).join("")}</small>` : ""}</div>${revealed && i === q.correct ? "<b>✓</b>" : ""}</button>`;
+      })
+      .join("")}</div>
+    ${state.phase === "answers" ? '<p class="stage-message" role="status">Revealing everyone’s picks…</p>' : revealed ? `<p class="result-note" role="status">${state.settings.mode === "millionaire" && state.finishReason === "wrong" ? `The climb ends here. You keep ${state.won.toLocaleString()} points.` : `Correct answer: ${esc(q.choices[q.correct])}`}</p>${state.phase === "reveal" ? reviewControls() : '<p class="stage-message">Revealing the correct answer…</p>'}` : `<p class="fine">${state.players.filter((p) => p.answered).length} of ${state.players.length} answers locked. ${state.settings.mode === "trivia" ? "Reveals when everyone answers or the minute is up." : "Reveals automatically after your pick."}</p>`}
+    ${isHost && answering && state.settings.mode === "millionaire" ? `<div class="host-actions"><button id="fifty" class="secondary" ${state.usedFifty || mine?.answered ? "disabled" : ""}>50:50 ${state.usedFifty ? "· used" : ""}</button><button id="walk" class="quiet" ${mine?.answered ? "disabled" : ""}>Walk away</button></div>` : ""}
+    ${!isHost && answering ? `<p class="waiting">${mine?.answered ? "Look at the TV for the reveal." : "Choose on your phone. The answer reveals automatically."}</p>` : ""}</section>
     <aside>${
       state.settings.mode === "millionaire"
         ? `<div class="ladder"><h3>Your climb</h3><p class="fine">Fictional points. No cash prizes.</p>${[
@@ -423,7 +460,8 @@ async function boot() {
     if (prefill && !session) screen = "join";
     render();
     setInterval(async () => {
-      if (!session || busy) return;
+      if (!session || busy || polling) return;
+      polling = true;
       const epoch = pollEpoch,
         code = session.code;
       try {
@@ -443,8 +481,10 @@ async function boot() {
           connectionLost = true;
           notify("Connection interrupted. Reconnecting…");
         }
+      } finally {
+        polling = false;
       }
-    }, 500);
+    }, 250);
     setInterval(updateCountdown, 100);
   } catch (e) {
     app.innerHTML =

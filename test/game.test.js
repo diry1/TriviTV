@@ -17,6 +17,10 @@ import {
   pauseReview,
   resumeReview,
   REVIEW_DURATION_MS,
+  ANSWER_DURATION_MS,
+  ANSWERS_REVEAL_MS,
+  CORRECT_REVEAL_MS,
+  nextDeadline,
 } from "../src/game.js";
 const settings = (mode = "trivia", region = "Europe", cats = categories) => ({
   mode,
@@ -69,117 +73,165 @@ test("free capacity is three; Party supports more; Millionaire always stays solo
     assert.throws(() => addPlayer(solo, "Two"), /one player/);
   }
 });
-test("answer locking, hidden answers, reveal scoring and advancement", () => {
+
+function toReview(game) {
+  assert.equal(game.phase, "answers");
+  advance(game, game.stageEndsAt);
+  assert.equal(game.phase, "correct");
+  advance(game, game.stageEndsAt);
+  assert.equal(game.phase, "reveal");
+  return game.review.endsAt;
+}
+function finishRound(game) {
+  next(game, toReview(game));
+}
+test("player picks appear first, then correct answer and scores, then a full three-second review", () => {
   const game = createGame(settings());
   const a = addPlayer(game, "A"),
     b = addPlayer(game, "B");
-  start(game);
+  start(game, 1000);
+  assert.equal(game.questionEndsAt, 61000);
   assert(!("correct" in view(game).question));
-  assert(!("questions" in view(game)));
-  answer(game, a.id, game.questions[0].correct);
-  assert.throws(() => answer(game, a.id, 0), /already locked/);
+  answer(game, a.id, game.questions[0].correct, 1001);
+  assert.throws(() => answer(game, a.id, 0, 1002), /already locked/);
   assert(!("answer" in view(game, b.id).players[0]));
   assert.equal(view(game, b.id).myAnswer, null);
-  assert.equal(view(game).players[0].score, 0);
-  answer(game, b.id, (game.questions[0].correct + 1) % 4);
-  assert.equal(game.phase, "reveal");
+  answer(game, b.id, (game.questions[0].correct + 1) % 4, 1003);
+  assert.equal(game.phase, "answers");
+  assert.equal(game.stageEndsAt, 1003 + ANSWERS_REVEAL_MS);
+  assert.equal(view(game).players[0].answer, game.questions[0].correct);
+  assert(!("correct" in view(game).question));
+  assert.equal(game.scores[a.id], 0);
+  assert.equal(game.review, null);
+  assert.equal(advance(game, game.stageEndsAt - 1), false);
+  advance(game, game.stageEndsAt);
+  assert.equal(game.phase, "correct");
   assert.equal(game.scores[a.id], 100);
   assert.equal(game.scores[b.id], 0);
-  assert.throws(() => reveal(game), /No question/);
-  assert.throws(() => answer(game, b.id, 0), /closed/);
-  next(game, game.review.endsAt);
+  assert(Number.isInteger(view(game).question.correct));
+  assert.equal(game.review, null);
+  const reviewStart = game.stageEndsAt;
+  advance(game, reviewStart);
+  assert.equal(game.phase, "reveal");
+  assert.equal(REVIEW_DURATION_MS, 3000);
+  assert.equal(game.review.endsAt, reviewStart + 3000);
+  assert.equal(advance(game, game.review.endsAt - 1), false);
+  advance(game, game.review.endsAt);
   assert.equal(game.index, 1);
   assert.deepEqual(game.answers, {});
+  assert.equal(game.autoPicked.length, 0);
+  assert.equal(game.questionEndsAt, reviewStart + 3000 + ANSWER_DURATION_MS);
+  assert.equal(game.scores[a.id], 100);
 });
-test("Millionaire lifeline never removes correct answer, cannot be reused, and safety floor applies", () => {
+test("Trivia timeout randomly fills only missing players, labels picks, and rejects late answers", () => {
+  const game = createGame(settings());
+  const a = addPlayer(game, "A"),
+    b = addPlayer(game, "B"),
+    c = addPlayer(game, "C");
+  start(game, 1000);
+  answer(game, a.id, 2, 60000);
+  assert.equal(advance(game, 60999), false);
+  assert.throws(() => answer(game, b.id, 1, 61000), /Time is up/);
+  advance(game, 61000);
+  assert.equal(game.phase, "answers");
+  assert.equal(game.answers[a.id], 2);
+  assert.deepEqual(game.autoPicked, [b.id, c.id]);
+  for (const id of [b.id, c.id])
+    assert(
+      Number.isInteger(game.answers[id]) &&
+        game.answers[id] >= 0 &&
+        game.answers[id] < 4,
+    );
+  assert(view(game).players.filter((p) => p.autoPicked).length === 2);
+  assert(!("correct" in view(game).question));
+  assert.equal(game.questionEndsAt, null);
+  assert.throws(() => answer(game, b.id, 1, 61001), /closed/);
+  const snapshot = { ...game.answers };
+  advance(game, game.stageEndsAt);
+  assert.deepEqual(game.answers, snapshot);
+});
+test("everyone answering early skips the minute; Millionaire has no question deadline", () => {
+  const trivia = createGame(settings());
+  const p = addPlayer(trivia, "One");
+  start(trivia, 1000);
+  answer(trivia, p.id, 0, 1001);
+  assert.equal(trivia.phase, "answers");
+  assert.deepEqual(trivia.autoPicked, []);
+  const solo = createGame(settings("millionaire"));
+  addPlayer(solo, "Solo");
+  start(solo, 1000);
+  assert.equal(solo.questionEndsAt, null);
+  assert.equal(nextDeadline(solo), null);
+  assert.equal(advance(solo, 1e12), false);
+  assert.equal(solo.phase, "question");
+});
+test("Millionaire lifeline never removes correct answer; checkpoints, loss and completion work through staged reveals", () => {
   const game = createGame(settings("millionaire"));
   const p = addPlayer(game, "Solo");
-  start(game);
+  start(game, 0);
   fifty(game);
   assert.equal(game.eliminated.length, 2);
   assert(!game.eliminated.includes(game.questions[0].correct));
-  assert.throws(() => answer(game, p.id, game.eliminated[0]), /available/);
+  assert.throws(() => answer(game, p.id, game.eliminated[0], 1), /available/);
   assert.throws(() => fifty(game), /unavailable/);
   for (let i = 0; i < 5; i++) {
-    answer(game, p.id, game.questions[game.index].correct);
-    next(game, game.review.endsAt);
+    answer(game, p.id, game.questions[game.index].correct, 1000 + i * 10000);
+    finishRound(game);
   }
   assert.equal(game.secured, 1000);
-  answer(game, p.id, (game.questions[game.index].correct + 1) % 4);
-  next(game, game.review.endsAt);
+  answer(game, p.id, (game.questions[game.index].correct + 1) % 4, 100000);
+  finishRound(game);
   assert.equal(game.phase, "finished");
   assert.equal(game.won, 1000);
   assert.equal(game.finishReason, "wrong");
-});
-test("Millionaire second checkpoint, full completion and walking away", () => {
-  const game = createGame(settings("millionaire"));
-  const p = addPlayer(game, "Solo");
-  start(game);
+  const full = createGame(settings("millionaire"));
+  const p2 = addPlayer(full, "Solo");
+  start(full, 0);
   for (let i = 0; i < 15; i++) {
-    answer(game, p.id, game.questions[game.index].correct);
-    if (i === 9) assert.equal(game.secured, 32000);
-    next(game, game.review.endsAt);
+    answer(full, p2.id, full.questions[full.index].correct, i * 10000);
+    toReview(full);
+    if (i === 9) assert.equal(full.secured, 32000);
+    next(full, full.review.endsAt);
   }
-  assert.equal(game.won, 1000000);
-  assert.equal(game.phase, "finished");
-  const short = createGame(settings("millionaire", "Europe", ["Science"]));
-  const p2 = addPlayer(short, "Solo");
-  start(short);
-  answer(short, p2.id, short.questions[0].correct);
-  next(short, short.review.endsAt);
-  walk(short);
-  assert.equal(short.won, ladder[0]);
-  assert.equal(short.finishReason, "walked");
-  assert.throws(() => start(short), /already/);
+  assert.equal(full.won, 1000000);
+  assert.equal(full.phase, "finished");
 });
-test("state transitions reject invalid play and completed Trivia stays finished", () => {
-  const game = createGame(settings());
-  assert.throws(() => start(game), /player/);
-  const p = addPlayer(game, "Player");
-  assert.throws(() => addPlayer(game, "player"), /already/);
-  start(game);
-  assert.throws(() => addPlayer(game, "late"), /started/);
-  assert.throws(() => answer(game, p.id, -1), /available/);
-  assert.throws(() => answer(game, "stranger", 0), /Unknown/);
-  assert.throws(() => next(game), /Reveal/);
-  for (let i = 0; i < game.questions.length; i++) {
-    answer(game, p.id, game.questions[game.index].correct);
-    next(game, game.review.endsAt);
-  }
-  assert.equal(game.phase, "finished");
-  assert.equal(game.scores[p.id], game.questions.length * 100);
-});
-
-test("five-second review auto-advances once; pause preserves exact remaining time", () => {
-  const game = createGame(settings());
+test("only Millionaire supports pausing; exact remaining time survives multiple pause/resume cycles", () => {
+  const game = createGame(settings("millionaire"));
   const p = addPlayer(game, "One");
-  start(game);
+  start(game, 0);
   answer(game, p.id, game.questions[0].correct, 1000);
-  assert.equal(game.phase, "reveal");
-  assert.equal(REVIEW_DURATION_MS, 5000);
-  assert.equal(game.review.endsAt, 6000);
-  assert.equal(advance(game, 5999), false);
-  pauseReview(game, 2750);
-  assert.equal(game.review.remainingMs, 3250);
+  assert.throws(() => pauseReview(game, 1001), /no running review/);
+  toReview(game);
+  const end = game.review.endsAt;
+  pauseReview(game, end - 2250);
+  assert.equal(game.review.remainingMs, 2250);
   assert.equal(game.review.endsAt, null);
   assert.equal(advance(game, 100000), false);
   assert.throws(() => next(game, 100000), /still running/);
-  assert.throws(() => pauseReview(game, 3000), /no running review/);
   resumeReview(game, 200000);
-  assert.equal(game.review.endsAt, 203250);
-  assert.equal(advance(game, 203249), false);
-  assert.equal(advance(game, 203250), true);
+  assert.equal(game.review.endsAt, 202250);
+  pauseReview(game, 202000);
+  assert.equal(game.review.remainingMs, 250);
+  resumeReview(game, 300000);
+  assert.equal(advance(game, 300249), false);
+  assert.equal(advance(game, 300250), true);
   assert.equal(game.index, 1);
   assert.equal(game.review, null);
-  assert.equal(advance(game, 300000), false);
   assert.equal(game.scores[p.id], 100);
-  assert.throws(() => resumeReview(game), /not paused/);
+  const trivia = createGame(settings());
+  const p2 = addPlayer(trivia, "One");
+  start(trivia, 0);
+  answer(trivia, p2.id, 0, 1);
+  toReview(trivia);
+  assert.throws(() => pauseReview(trivia, 2), /Millionaire only/);
+  assert.throws(() => resumeReview(trivia, 2), /Millionaire only/);
 });
-test("last and losing answers keep their review window before automatic final results", () => {
+test("last and losing answers finish only after both animations and the three-second review", () => {
   for (const mode of ["trivia", "millionaire"]) {
     const game = createGame(settings(mode));
     const p = addPlayer(game, "One");
-    start(game);
+    start(game, 0);
     game.index = game.questions.length - 1;
     answer(
       game,
@@ -189,10 +241,26 @@ test("last and losing answers keep their review window before automatic final re
         : game.questions[game.index].correct,
       1000,
     );
-    assert.equal(game.phase, "reveal");
-    assert.equal(advance(game, 5999), false);
-    assert.equal(advance(game, 6000), true);
+    const end = toReview(game);
+    assert.equal(advance(game, end - 1), false);
+    advance(game, end);
     assert.equal(game.phase, "finished");
     assert.equal(game.review, null);
   }
+});
+test("invalid transitions stay rejected and walk-away preserves prior winnings", () => {
+  const game = createGame(settings("millionaire"));
+  assert.throws(() => start(game, 0), /player/);
+  const p = addPlayer(game, "One");
+  assert.throws(() => addPlayer(game, "One"), /one player/);
+  start(game, 0);
+  assert.throws(() => next(game, 0), /Reveal/);
+  assert.throws(() => answer(game, "stranger", 0, 1), /Unknown/);
+  assert.throws(() => answer(game, p.id, -1, 1), /available/);
+  answer(game, p.id, game.questions[0].correct, 1);
+  assert.throws(() => walk(game), /before answering/);
+  finishRound(game);
+  walk(game);
+  assert.equal(game.won, ladder[0]);
+  assert.equal(game.finishReason, "walked");
 });

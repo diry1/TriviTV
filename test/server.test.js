@@ -30,7 +30,7 @@ async function fixture(t, partyDemo = false, options = {}) {
     return { status: res.status, data: await res.json() };
   };
 }
-test("HTTP flow automatically reveals only after everyone answers; only Player 1 pauses", async (t) => {
+test("HTTP flow has separate pick/correct/review stages and rejects Trivia pause and stale answers", async (t) => {
   let clock = 1000;
   const api = await fixture(t, false, { now: () => clock });
   const host = (await api("/api/rooms", settings)).data;
@@ -38,24 +38,20 @@ test("HTTP flow automatically reveals only after everyone answers; only Player 1
   const phone = (await api("/api/join", { code, name: "Phone" })).data;
   const action = (data, key = token) =>
     api(`/api/rooms/${code}/action`, data, key);
+  const read = async () =>
+    (await api(`/api/rooms/${code}`, undefined, token)).data;
   assert.equal((await api(`/api/rooms/${code}`)).status, 403);
   assert.equal((await action({ type: "start" }, phone.token)).status, 403);
   const started = (await action({ type: "start" })).data;
   const questionId = started.question.id;
+  assert.equal(started.questionEndsAt, 61000);
   assert(!("correct" in started.question));
-  const first = await action(
-    {
-      type: "answer",
-      choice: 0,
-      questionId,
-      playerId: host.state.players[0].id,
-    },
-    phone.token,
+  assert.equal(
+    (await action({ type: "answer", choice: 0, questionId }, phone.token)).data
+      .phase,
+    "question",
   );
-  assert.equal(first.status, 200);
-  assert.equal(first.data.phase, "question");
-  assert(!("correct" in first.data.question));
-  assert.equal((await action({ type: "reveal" })).status, 400); // no manual bypass
+  assert.equal((await action({ type: "reveal" })).status, 400);
   assert.equal(
     (
       await action({
@@ -67,7 +63,7 @@ test("HTTP flow automatically reveals only after everyone answers; only Player 1
     ).status,
     403,
   );
-  const revealed = (
+  let state = (
     await action({
       type: "answer",
       choice: 0,
@@ -75,38 +71,29 @@ test("HTTP flow automatically reveals only after everyone answers; only Player 1
       playerId: host.state.players[0].id,
     })
   ).data;
-  assert.equal(revealed.phase, "reveal");
-  assert(Number.isInteger(revealed.question.correct));
-  assert.equal(revealed.review.endsAt, 6000);
+  assert.equal(state.phase, "answers");
+  assert(!("correct" in state.question));
+  assert(state.players.every((p) => p.score === 0));
+  assert.equal(state.review, null);
+  clock = state.stageEndsAt;
+  state = await read();
+  assert.equal(state.phase, "correct");
+  assert(Number.isInteger(state.question.correct));
+  assert.equal(state.review, null);
+  clock = state.stageEndsAt;
+  state = await read();
+  assert.equal(state.phase, "reveal");
+  assert.equal(state.review.endsAt, clock + 3000);
+  assert.equal((await action({ type: "pause", questionId })).status, 409);
   assert.equal(
     (await action({ type: "pause", questionId }, phone.token)).status,
     403,
   );
-  clock = 2500;
-  const paused = (await action({ type: "pause", questionId })).data;
-  assert.equal(paused.review.remainingMs, 3500);
-  assert(paused.review.paused);
-  clock = 100000;
-  assert(
-    (await api(`/api/rooms/${code}`, undefined, phone.token)).data.review
-      .paused,
-  );
-  assert.equal(
-    (await action({ type: "resume", questionId }, phone.token)).status,
-    403,
-  );
-  const resumed = (await action({ type: "resume", questionId })).data;
-  assert.equal(resumed.review.endsAt, 103500);
-  clock = 103499;
-  assert.equal(
-    (await api(`/api/rooms/${code}`, undefined, token)).data.phase,
-    "reveal",
-  );
-  clock = 103500;
-  const advanced = (await api(`/api/rooms/${code}`, undefined, token)).data;
-  assert.equal(advanced.index, 1);
-  assert.equal(advanced.phase, "question");
-  assert(!("correct" in advanced.question));
+  clock = state.review.endsAt;
+  state = await read();
+  assert.equal(state.index, 1);
+  assert.equal(state.phase, "question");
+  assert.equal(state.questionEndsAt, clock + 60000);
   assert.equal(
     (
       await action({
@@ -119,6 +106,37 @@ test("HTTP flow automatically reveals only after everyone answers; only Player 1
     409,
   );
   assert.equal((await action({ type: "next" })).status, 400);
+});
+test("late HTTP answers cannot replace a timeout random pick", async (t) => {
+  let clock = 1000;
+  const api = await fixture(t, false, { now: () => clock });
+  const host = (await api("/api/rooms", settings)).data;
+  const phone = (await api("/api/join", { code: host.code, name: "Phone" }))
+    .data;
+  const path = `/api/rooms/${host.code}`;
+  const action = (data, token = host.token) =>
+    api(path + "/action", data, token);
+  const playing = (await action({ type: "start" })).data;
+  const questionId = playing.question.id;
+  await action({
+    type: "answer",
+    choice: 2,
+    questionId,
+    playerId: playing.players[0].id,
+  });
+  clock = playing.questionEndsAt;
+  assert.equal(
+    (await action({ type: "answer", choice: 1, questionId }, phone.token))
+      .status,
+    409,
+  );
+  const state = (await api(path, undefined, host.token)).data;
+  assert.equal(state.phase, "answers");
+  assert.equal(state.players[0].answer, 2);
+  assert.equal(state.players[0].autoPicked, false);
+  assert.equal(state.players[1].autoPicked, true);
+  assert([0, 1, 2, 3].includes(state.players[1].answer));
+  assert(!("correct" in state.question));
 });
 test("Party cannot be unlocked by a client flag; free cap includes the host", async (t) => {
   const api = await fixture(t);
@@ -170,11 +188,16 @@ test("demo permits larger groups; solo phone Player 1 owns pause after handoff",
     api(`/api/rooms/${solo.code}/action`, data, token);
   const playing = (await action({ type: "start" }, solo.token)).data;
   const questionId = playing.question.id;
-  assert.equal(
-    (await action({ type: "answer", choice: 0, questionId }, phone.token)).data
-      .phase,
-    "reveal",
-  );
+  let state = (
+    await action({ type: "answer", choice: 0, questionId }, phone.token)
+  ).data;
+  assert.equal(state.phase, "answers");
+  clock = state.stageEndsAt;
+  state = (await api(`/api/rooms/${solo.code}`, undefined, phone.token)).data;
+  assert.equal(state.phase, "correct");
+  clock = state.stageEndsAt;
+  state = (await api(`/api/rooms/${solo.code}`, undefined, phone.token)).data;
+  assert.equal(state.phase, "reveal");
   assert.equal(
     (await action({ type: "pause", questionId }, solo.token)).status,
     403,
@@ -193,41 +216,73 @@ test("demo permits larger groups; solo phone Player 1 owns pause after handoff",
     200,
   );
 });
-test("server timer advances without a polling client, and stops while paused", async (t) => {
-  let clockReads = 0;
+test("server timers fill timed-out Trivia answers without polling", async (t) => {
+  let reads = 0;
   const api = await fixture(t, false, {
-    reviewDurationMs: 150,
+    answerDurationMs: 30,
+    answersRevealMs: 20,
+    correctRevealMs: 20,
+    reviewDurationMs: 20000,
     now: () => {
-      clockReads++;
+      reads++;
       return Date.now();
     },
   });
   const host = (await api("/api/rooms", settings)).data;
   const path = `/api/rooms/${host.code}`;
+  await api(path + "/action", { type: "start" }, host.token);
+  const before = reads;
+  await delay(200);
+  assert(reads > before);
+  const state = (await api(path, undefined, host.token)).data;
+  assert.equal(state.phase, "reveal");
+  assert(
+    state.players.every((p) => p.autoPicked && [0, 1, 2, 3].includes(p.answer)),
+  );
+});
+test("Millionaire timers advance independently and freeze during pause", async (t) => {
+  const { questions } = await import("../src/questions.js");
+  let reads = 0;
+  const api = await fixture(t, false, {
+    answersRevealMs: 20,
+    correctRevealMs: 20,
+    reviewDurationMs: 500,
+    now: () => {
+      reads++;
+      return Date.now();
+    },
+  });
+  const host = (await api("/api/rooms", { ...settings, mode: "millionaire" }))
+    .data;
+  const path = `/api/rooms/${host.code}`;
   const action = (data) => api(path + "/action", data, host.token);
   let playing = (await action({ type: "start" })).data;
-  await action({
+  const pick = (state) => ({
     type: "answer",
-    choice: 0,
-    questionId: playing.question.id,
-    playerId: playing.players[0].id,
+    questionId: state.question.id,
+    playerId: state.players[0].id,
+    choice: state.question.choices.indexOf(
+      questions.find((q) => q.id === state.question.id).choices[0],
+    ),
   });
-  const reads = clockReads;
-  await delay(300);
-  assert(clockReads > reads, "the timer must run without HTTP polling");
+  await action(pick(playing));
+  await delay(800);
   playing = (await api(path, undefined, host.token)).data;
   assert.equal(playing.index, 1);
-  await action({
-    type: "answer",
-    choice: 0,
-    questionId: playing.question.id,
-    playerId: playing.players[0].id,
-  });
+  let state = (await action(pick(playing))).data;
+  for (let i = 0; i < 50 && state.phase !== "reveal"; i++) {
+    await delay(5);
+    state = (await api(path, undefined, host.token)).data;
+  }
+  assert.equal(state.phase, "reveal");
   await action({ type: "pause", questionId: playing.question.id });
-  const pausedReads = clockReads;
-  await delay(300);
-  assert.equal(clockReads, pausedReads);
+  const pausedReads = reads;
+  await delay(600);
+  assert.equal(reads, pausedReads);
   assert((await api(path, undefined, host.token)).data.review.paused);
+  await action({ type: "resume", questionId: playing.question.id });
+  await delay(650);
+  assert.equal((await api(path, undefined, host.token)).data.index, 2);
 });
 test("malformed input and invalid authentication return controlled errors", async (t) => {
   const api = await fixture(t);
