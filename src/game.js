@@ -1,5 +1,5 @@
 import { randomInt, randomUUID } from "node:crypto";
-import { categories, questions } from "./questions.js";
+import { categories, questions, ukrainianQuestions } from "./questions.js";
 export { categories };
 export const REVIEW_DURATION_MS = 4000;
 export const ANSWER_DURATION_MS = 60000;
@@ -27,6 +27,8 @@ function shuffle(items) {
   return result;
 }
 export function selectQuestions(settings) {
+  const language = settings.language ?? "en";
+  requireThat(["en", "uk"].includes(language), "Choose English or Ukrainian.");
   requireThat(
     ["millionaire", "trivia"].includes(settings.mode),
     "Choose a game mode.",
@@ -41,7 +43,9 @@ export function selectQuestions(settings) {
       settings.categories.every((c) => categories.includes(c)),
     "Include at least one valid category.",
   );
-  const pool = questions.filter(
+  const source =
+    language === "uk" ? [...ukrainianQuestions.values()] : questions;
+  const pool = source.filter(
     (q) =>
       settings.categories.includes(q.category) &&
       (q.region === "Global" ||
@@ -89,6 +93,7 @@ export function createGame(
     settings: {
       mode: settings.mode,
       region: settings.region,
+      language: settings.language ?? "en",
       categories: [...new Set(settings.categories)],
     },
     party: !!party,

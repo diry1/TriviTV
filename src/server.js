@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { resolve, extname } from "node:path";
 import { randomBytes, timingSafeEqual } from "node:crypto";
 import * as rules from "./game.js";
-import { bank } from "./questions.js";
+import { bank, languageCoverage } from "./questions.js";
 const webRoot = fileURLToPath(new URL("../web/", import.meta.url));
 const token = () => randomBytes(24).toString("hex");
 const same = (a, b) =>
@@ -102,6 +102,7 @@ export function createAppServer({
             categories: rules.categories,
             partyDemo,
             freePlayers: 3,
+            languages: languageCoverage,
             bank: {
               name: "OpenTriviaQA",
               count: bank.questionCount,
@@ -130,7 +131,12 @@ export function createAppServer({
             answersRevealMs,
             correctRevealMs,
           });
-          rules.addPlayer(game, input.name || "TV player", true);
+          rules.addPlayer(
+            game,
+            input.name ||
+              (input.language === "uk" ? "ТВ-гравець" : "TV player"),
+            true,
+          );
           let code;
           do {
             code = randomBytes(4).toString("hex").slice(0, 6).toUpperCase();
@@ -262,6 +268,7 @@ export function createAppServer({
       const files = {
         "/": "index.html",
         "/app.js": "app.js",
+        "/i18n.js": "i18n.js",
         "/styles.css": "styles.css",
         "/credits": "credits.html",
         "/licenses/opentriviaqa.txt": "../data/opentriviaqa/LICENSE.txt",

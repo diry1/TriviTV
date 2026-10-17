@@ -382,3 +382,32 @@ test("source-based categories and attribution are available without exposing ans
   assert.match(license.data, /Attribution-ShareAlike 4.0/);
   assert.equal((await api("/data/opentriviaqa/questions.json")).status, 404);
 });
+
+test("Ukrainian room language is shared with phones and hidden answer keys remain hidden", async (t) => {
+  const api = await fixture(t);
+  const config = (await api("/api/config")).data;
+  assert.equal(config.languages.en.count, 38926);
+  assert(config.languages.uk.count > 0);
+  assert.equal(config.languages.uk.status, "preview");
+  const host = (await api("/api/rooms", { ...settings, language: "uk" })).data;
+  assert.equal(host.state.settings.language, "uk");
+  assert.equal(host.state.players[0].name, "ТВ-гравець");
+  const phone = (await api("/api/join", { code: host.code, name: "Ready" }))
+    .data;
+  assert.equal(phone.state.settings.language, "uk");
+  const state = (
+    await api(`/api/rooms/${host.code}/action`, { type: "start" }, host.token)
+  ).data;
+  assert.match(state.question.text, /[А-Яа-яІіЇїЄєҐґ]/u);
+  assert.equal(state.question.correct, undefined);
+  assert.equal(
+    (await api(`/api/rooms/${host.code}`, undefined, phone.token)).data.question
+      .text,
+    state.question.text,
+  );
+  assert.equal(
+    (await api("/api/rooms", { ...settings, language: "invalid" })).status,
+    400,
+  );
+  assert.match((await api("/i18n.js")).data, /export function translate/);
+});

@@ -1,0 +1,527 @@
+{
+  "language": "uk",
+  "license": "CC-BY-SA-4.0",
+  "sourceRevision": "dcc1cdf36c2985ed5c849d1f2265c5041ffcdfb9",
+  "questions": [
+    {
+      "id": "otqa:005e39dd471bb24db65a10f2",
+      "sourceHash": "b4099ce89df0fa6cfa4de39b4f75ecb642c911dfdb07357ff268b7200aebc8b4",
+      "text": "Якого собаку Річард Ніксон отримав від техасця, коли був кандидатом у віцепрезиденти?",
+      "choices": [
+        "Кокер-спанієль",
+        "Німецька вівчарка",
+        "Золотистий ретривер",
+        "Вельш-коргі"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:03043eb280250d695473ad8a",
+      "sourceHash": "25ea30c05c2e279948bfa44c957656e675f70eddc0ed5a478cb1f35831f277d3",
+      "text": "Яка наукова назва африканського трубкозуба?",
+      "choices": [
+        "Orycteropus afer",
+        "Troglodytes pan",
+        "Loxodonta aficanus",
+        "Muscous domesticus"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:056e8349b5b0be99ad061dde",
+      "sourceHash": "2cd8febcc72b9207d492193e0c5611d968563b34b5aa7c11c9655da061b42044",
+      "text": "Частини тіл яких двох істот поєднував мінотавр у грецькій міфології?",
+      "choices": [
+        "Людини та бика",
+        "Людини та коня",
+        "Чоловіка та жінки",
+        "Людини та лева"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:06b99c0a181033cedfdc0f41",
+      "sourceHash": "07f1507eca5756bd0576be167c7220b0759ce1cd04c2b69e7f5c47919409e1ac",
+      "text": "Як називають людину, яка пише літературні твори?",
+      "choices": [
+        "Автор",
+        "Творець",
+        "Режисер",
+        "Освітянин"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:0c362be5508d76b10adf8e6d",
+      "sourceHash": "2ca884faa218ad46a7885ecc1e87a8db78bdd17eac17d4e9262a95c3bb634133",
+      "text": "Джо мав 29 пар шкарпеток. Скільки всього шкарпеток він мав?",
+      "choices": [
+        "58",
+        "60",
+        "56",
+        "29"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:1c407eba4b29ad8fc93b4237",
+      "sourceHash": "2611d53f395fda8d5b35253eab852079d3c25eefeadb944e4bc13848e7e57574",
+      "text": "Двоє коней в одній упряжці пробігли 3 милі. Скільки миль пробіг кожен кінь?",
+      "choices": [
+        "3",
+        "1,5",
+        "0",
+        "6"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:000be9e8322e0f4185381d36",
+      "sourceHash": "0b1a10161c302c47e2d88ac3f8342605ff320c3b0c29cf555ab5fea37142c7bb",
+      "text": "Від якого відомого американця походить рід Роберта Дюваля?",
+      "choices": [
+        "Роберт Е. Лі",
+        "Улісс С. Грант",
+        "Джордж Вашингтон",
+        "Вільям Т. Шерман"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:001379781d51f3ce2f370e47",
+      "sourceHash": "d6ac75a9d08abb7cd10df549851e821f69d6e2c89cd00e2e30fea477cf89dd4c",
+      "text": "Яка R&B-співачка назвала свою дитину Пума?",
+      "choices": [
+        "Еріка Баду",
+        "Тоні Брекстон",
+        "Лорін Гілл",
+        "Мері Джей Блайдж"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:001d1b96b4f10472fb54a4d7",
+      "sourceHash": "c30990e6ddae0ed9d43cd200fb409760d704f5eb82289f88ca85e2d6eb000782",
+      "text": "Яке справжнє ім’я Росомахи з «Людей Ікс»?",
+      "choices": [
+        "Джеймс Гоулетт",
+        "Віктор Крід",
+        "Михайло Распутін",
+        "Логан"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:02537cd98a017381077e2d38",
+      "sourceHash": "ab3ef4e0c1b8edeec0ac18761c97be17c6be1c4f34864e3559f10dfde41ffdce",
+      "text": "У якому році Галк Гоган дебютував у Всесвітній федерації реслінгу (WWF)?",
+      "choices": [
+        "1979",
+        "1980",
+        "1983",
+        "1977"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:002095e9be8a4b17f2675eaf",
+      "sourceHash": "5f5269e14e2a281a690ff9f0e2416df17be96046e747af8956e6ba79da9db83b",
+      "text": "Коли найчастіше вживають вислів «бачити рожевих слонів»?",
+      "choices": [
+        "Коли люди п’яні",
+        "Коли паморочиться голова",
+        "Коли бачать привида",
+        "Коли лягають спати"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:003f0a89d43ea9ef9242f9a7",
+      "sourceHash": "e37f62fc65723be3e33582d83de8891c43ea49861ce1bf6c7e004c03c2662e8d",
+      "text": "У якому фільмі Джон Вейн знявся зі Стюартом Вітменом, Лі Марвіном і своїм сином Патріком Вейном?",
+      "choices": [
+        "Команчерос",
+        "Ріо Браво",
+        "Ріо Лобо",
+        "Людина, яка застрелила Ліберті Веленса"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:04021b3c1f18ec501486a000",
+      "sourceHash": "9dec46435b13017fe95ebfaca55a285b6669e37ff086d088cca0fda8210d2a05",
+      "text": "Столицею якої балтійської країни є Рига?",
+      "choices": [
+        "Латвії",
+        "Естонії",
+        "Литви",
+        "Білорусі"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:04f5345296e14b131482e325",
+      "sourceHash": "8a89d15ed8a3a33e96fe5a16168461e76433c889a7c0b690bcb7376230ca40f2",
+      "text": "Яке місто є столицею та найбільшим містом Італії?",
+      "choices": [
+        "Рим",
+        "Мілан",
+        "Генуя",
+        "Венеція"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:00a3c6da1e4a49ec03bbd9e8",
+      "sourceHash": "9bacc8cd30f1633497ab2cdda818d438a14ebc2f792c3a01e57fcc47925e51db",
+      "text": "Яка держава стала наступницею Австрійської імперії у 1867 році?",
+      "choices": [
+        "Австро-Угорщина",
+        "Німецький союз",
+        "Австрійське ерцгерцогство",
+        "Перша Австрійська Республіка"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:00b76e9473d3f172384699cb",
+      "sourceHash": "40ce271d42894d98018cb76d2e4c4c7cafb92497f02164472dbaf801e415e122",
+      "text": "Коли Візантійську імперію охопила пандемія, відома як Юстиніанова чума?",
+      "choices": [
+        "541–542 роки н. е.",
+        "548–549 роки н. е.",
+        "527–528 роки н. е.",
+        "535–536 роки н. е."
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:024ad22fcfb0852841940202",
+      "sourceHash": "e358651089c01320d3b6987ddcbca4c1b5f75d0bc1229cbe6ec4aa6004e2efbc",
+      "text": "У якій країні з’явився сир чедер?",
+      "choices": [
+        "Англія",
+        "Швеція",
+        "Шотландія",
+        "Франція"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:02bf0ceb98a4d3ac1868be70",
+      "sourceHash": "5582aa1537674e9be4dca3ba4e58e12ab76006c8dd2e91ce3c842793dbca6d63",
+      "text": "З якого молока виготовляють брюссельський сир?",
+      "choices": [
+        "Коров’ячого",
+        "Буйволячого",
+        "Овечого",
+        "Козячого"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:01ab0cf3ff6739cdb31230af",
+      "sourceHash": "0b78ae82d40e0e1e32d4478cfc2e4da3f41b9eac4f15727c965f5aef08a584f6",
+      "text": "Якого кольору м’яч у вищій бейсбольній лізі?",
+      "choices": [
+        "Білого",
+        "Зеленого",
+        "Чорного",
+        "Синього"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:01c39da1c6a0e2098007655e",
+      "sourceHash": "133acc8e60eff19689a8541e97aaf38192fa09aa33453f9f4ad2ef977efe9ba9",
+      "text": "На якому транспорті Рон і Гаррі Поттер полетіли з Лондона до Гоґвортсу?",
+      "choices": [
+        "Ford Anglia",
+        "Гелікоптер Apache",
+        "Boeing 767",
+        "Килим-літак"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:010f77ab064e9856a5f8c0b0",
+      "sourceHash": "bf52ac0879a4bc9ee5b6bad4080ac97f991bc34d73ccf16e1bf143a9bfb18bd9",
+      "text": "У якій школі навчаються учасниці «Комітету красунь» у романі «The Clique»?",
+      "choices": [
+        "OCD",
+        "DDR",
+        "WHMS",
+        "CCD"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:02c851183ab2b6f9259510fa",
+      "sourceHash": "38bdbab0a7b86834447f8d42240d7a492e35196aabb5308799bdd62d43adc214",
+      "text": "Хто написав роман «Доктор Живаго», заборонений у Радянському Союзі до 1988 року?",
+      "choices": [
+        "Борис Пастернак",
+        "Іван Гоголь",
+        "Вільям Ф. Баклі",
+        "Лев Троцький"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:002d5c212fec6502462d6044",
+      "sourceHash": "2b0d92d408a40a573e5082311a1e1df080e21c77c23a2b19ed34ef9057f2b17b",
+      "text": "Яке прізвище Джека та Венді у фільмі «Сяйво»?",
+      "choices": [
+        "Торренс",
+        "Ганніґан",
+        "Чарлстон",
+        "Кінг"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:003bad667d90ee13015d36db",
+      "sourceHash": "b6edae18d18f5963df7cd7d1f272087998054d7615a6093cb7df2cd19e7ba210",
+      "text": "Як звати персонажа Декса Шепарда в комедії «Ідіократія»?",
+      "choices": [
+        "Фріто",
+        "Лікар",
+        "Джо",
+        "Прокурор"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:0009641796c44164042fa0fb",
+      "sourceHash": "5d0544264c35b6dfc3337297953a2818d5b3399c86a8ea602327e7da48f9942e",
+      "text": "Який співак очолив хіт-парад 1987 року з піснею «Got My Mind Set on You»?",
+      "choices": [
+        "Джордж Гаррісон",
+        "Рой Кларк",
+        "Джефф Лінн",
+        "Том Петті"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:00373ce22116725dbfc89db6",
+      "sourceHash": "203ee40c3c2af1b70a77243a93c05fbdffd42cfe0b6e807e3a31f4f7aa86505f",
+      "text": "Який співак і танцівник є кумиром Кріса Брауна?",
+      "choices": [
+        "Майкл Джексон",
+        "Ашер",
+        "Боббі Браун",
+        "Омаріон"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:0122ab699b426ef8cf1b1688",
+      "sourceHash": "6a61ace90b990e556c98ead8ee20dd8e43c507749a4f770429fa08f51990cdf7",
+      "text": "У 1974 році в Аргентині вона стала першою у світі жінкою-президентом. Хто це?",
+      "choices": [
+        "Ісабель Перон",
+        "Лідія Гейлер Техада",
+        "Агата Барбара",
+        "Віґдіс Фіннбоґадоуттір"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:012bceb7e92b3c396c18b4c5",
+      "sourceHash": "834781b673051054923faf5e27194445407e95a359beaa54f663706f736c48b1",
+      "text": "Як звали батька Джорджа Вашингтона?",
+      "choices": [
+        "Августин",
+        "Джон",
+        "Джордж",
+        "Лоуренс"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:00cd2054a86863cd97153e41",
+      "sourceHash": "748e1e0cddc340d692af3a02acfa6f4ffda57b3e0e7c5bd2aaa2267485237980",
+      "text": "Які три корені зла, за буддизмом, приховують від нас істину?",
+      "choices": [
+        "Омана, ненависть, жадібність",
+        "Ненависть, жадібність, егоїзм",
+        "Омана, розгубленість, гнів",
+        "Омана, ненависть, заздрість"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:0291ebdae1ac10870202e43e",
+      "sourceHash": "4afadf2927193426fc9c4ed0a814a8ad19909d07017db03074a012a04fea9972",
+      "text": "Під час якого свята юдеї їдять прісний хліб?",
+      "choices": [
+        "Песах",
+        "Рош га-Шана",
+        "Ханука",
+        "Йом-Кіпур"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:005fdd23de0cb40e0b7d1947",
+      "sourceHash": "f4d8e97a045214b17b6a75a887dd31cd070c9c09d423be7851a0064ba94d0234",
+      "text": "Між якими двома країнами точилися суперечки щодо контролю над священною річкою Ганг?",
+      "choices": [
+        "Індією та Бангладеш",
+        "Індією та М’янмою",
+        "Індією та Пакистаном",
+        "Індією та Китаєм"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:00a277acda8e123949d5a7b3",
+      "sourceHash": "f15e9af383f0ea3065c5c8e2a2c87b4c5e882f8f5ac314c668d3a3970d51bd1b",
+      "text": "Нестача якого вітаміну спричиняє рахіт і остеомаляцію у людей?",
+      "choices": [
+        "Вітаміну D",
+        "Вітаміну B5",
+        "Вітаміну A",
+        "Вітаміну E"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:005ac25e416dc458eaf7e08e",
+      "sourceHash": "ff8ff00397751a1587c9038fdce6e6200c0c3f569eb0c2b0d81d5a314cd8840c",
+      "text": "Яка родина володіє командою «Піттсбург Стілерз»?",
+      "choices": [
+        "Руні",
+        "Мара",
+        "Девіс",
+        "Белічик"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:005d044762e5078df1b96458",
+      "sourceHash": "f2719e358a78bf8b8dbcb0bac94b14d23cb0f6a461bb1ff2b84767dccad8665a",
+      "text": "Хто першою серед жінок успішно виконала потрійний аксель на змаганнях із фігурного катання?",
+      "choices": [
+        "Мідорі Іто",
+        "Тоня Гардінг",
+        "Ненсі Керріґан",
+        "Оксана Баюл"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:0021630d1e95e12b567c6363",
+      "sourceHash": "8ae86751397fdb1dd8f3af4096717c3346be4ead13c27e2ee8f28056adb7f592",
+      "text": "Яким танцем Найлз і Дафна вразили еліту Сіетла в серіалі «Фрейзер»?",
+      "choices": [
+        "Танго",
+        "Фокстрот",
+        "Самба",
+        "Гастл"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:004806303635aa3269df6823",
+      "sourceHash": "6af27a8ff91ff348f7472c37c8b3a86be94412a3434bcf67c379296ee281bd1a",
+      "text": "Про що мріє Наруто в однойменному серіалі?",
+      "choices": [
+        "Стати Хокаґе",
+        "Стати ніндзя рангу S",
+        "Стати чюніном",
+        "Стати чудотворцем"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:0355e0236602d3d8dd3d531d",
+      "sourceHash": "498a6eabc974a024ad0bb40f6de82cefa81bd26e677daef1729ff0449df862ee",
+      "text": "Скільки монет дають за перше місце в окремому заїзді гри Super Mario Kart?",
+      "choices": [
+        "9",
+        "15",
+        "10",
+        "12"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:05e96db7362363159d441b9e",
+      "sourceHash": "379cbac92996c81c3de494204bcf08f6bf9d6ad0f3cf1b6bd16b4e9d8f53d990",
+      "text": "У якому році народився Джейкоб Гарґрів із гри Crysis?",
+      "choices": [
+        "1896",
+        "1967",
+        "2001",
+        "1919"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:0035f1f25e0e8736a58e7532",
+      "sourceHash": "7ea485c89f437dfd3257ecc77fbc3705edfcd23b098846627b6c7d58e15cb279",
+      "text": "Яку валюту використовують в Індії?",
+      "choices": [
+        "Індійську рупію",
+        "Індійський долар",
+        "Індійський тенге",
+        "Індійський юань"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    },
+    {
+      "id": "otqa:0058aa285240f4742698a374",
+      "sourceHash": "f22b00d39513e3e694e029ca9fb8e3f0508968215a489598d0e3c6718ff36efe",
+      "text": "Якою мовою написано оригінал популярної різдвяної пісні «Тиха ніч»?",
+      "choices": [
+        "Німецькою",
+        "Французькою",
+        "Шведською",
+        "Нідерландською"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    }
+  ]
+}

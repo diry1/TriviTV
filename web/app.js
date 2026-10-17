@@ -1,3 +1,9 @@
+import { translate, localize } from "/i18n.js";
+let language = "en";
+try {
+  language = localStorage.getItem("trivitv-language") === "uk" ? "uk" : "en";
+} catch {}
+const t = (text) => translate(text, language);
 const app = document.querySelector("#app");
 const esc = (v) =>
   String(v ?? "").replace(
@@ -33,7 +39,7 @@ const params = new URLSearchParams(location.search);
 const prefill = params.get("join");
 function notify(message) {
   const n = document.querySelector("#notice");
-  n.textContent = message;
+  n.textContent = t(message);
   n.hidden = false;
   clearTimeout(notify.timer);
   notify.timer = setTimeout(() => (n.hidden = true), 6000);
@@ -71,6 +77,7 @@ function saveSession(value) {
 }
 function setState(value) {
   state = value;
+  language = state.settings.language ?? "en";
   const next = JSON.stringify(value);
   if (next !== snapshot) {
     snapshot = next;
@@ -81,13 +88,13 @@ function status() {
   return `<div class="eyebrow">${state.settings.mode === "millionaire" ? "SOLO · MILLIONAIRE" : "MULTIPLAYER · TRIVIA"} <span class="dot">•</span> ${esc(state.settings.region)} <span class="dot">•</span> ${state.party ? "PARTY DEMO" : "FREE PLAY"}</div>`;
 }
 function home() {
-  return `<section class="intro"><div class="eyebrow">THE SOFA IS YOUR GAME SHOW</div><h1>A little friendly<br><em>competition.</em></h1><p>One screen. Your favourite people. Something<br class="desktop"> everyone thinks they know the answer to.</p></section><div class="home-grid"><section class="setup"><div class="section-heading"><h2>Pick your game</h2><span>01 / THE FORMAT</span></div><div class="modes"><button class="mode ${mode === "trivia" ? "active" : ""}" data-mode="trivia"><span class="mode-icon">✳</span><span><strong>Trivia</strong><small>Four choices. Plenty of opinions.</small></span><span class="tag">1–3 FREE</span></button><button class="mode ${mode === "millionaire" ? "active" : ""}" data-mode="millionaire"><span class="mode-icon amber">◇</span><span><strong>Millionaire</strong><small>One player. One climb to the top.</small></span><span class="tag">SOLO</span></button></div><div class="section-heading"><h2>Make it your kind of quiz</h2><span>02 / THE MIX</span></div><div class="setting-row"><div><h3>Your region</h3><p>Prefer familiar references.</p></div><div class="segmented" role="group" aria-label="Question region">${["Europe", "US"].map((r) => `<button data-region="${r}" class="${region === r ? "selected" : ""}" aria-pressed="${region === r}">${r === "Europe" ? "Europe" : "United States"}</button>`).join("")}</div></div><details id="category-panel" class="category-panel" ${categoryPanelOpen ? "open" : ""}><summary id="category-toggle"><strong>Categories</strong><span>${selected.size === config.categories.length ? `All ${config.categories.length} included` : `${selected.size} included`}</span></summary><div class="category-head"><h3>Include categories (${config.categories.length})</h3><button id="all-categories" class="text-button">${selected.size === config.categories.length ? "Clear all" : "Select all"}</button></div><div class="categories">${config.categories.map((c, i) => `<button class="chip ${selected.has(c) ? "selected" : ""}" data-category="${c}" aria-pressed="${selected.has(c)}"><span>${["◎", "♫", "⌛", "⚛", "⚑", "✎"][i % 6]}</span>${c}<b>${selected.has(c) ? "✓" : "+"}</b></button>`).join("")}</div></details><p class="fine">Source categories only. Unclassified questions are shared across regions; difficulty is unrated.</p><button class="primary start-button" id="create" ${selected.size ? "" : "disabled"}>Set up ${mode === "millionaire" ? "my climb" : "the game"} <span>→</span></button><p class="fine">${mode === "millionaire" ? "Up to 15 questions · 50:50 · Walk away · Fictional points" : "Up to 10 questions · 60 seconds · Automatic reveal"}</p></section><aside><section class="party-card"><div class="eyebrow">A BIGGER NIGHT IN</div><div class="party-art">✦<span>✳</span>✧</div><h2>More friends.<br>More possibilities.</h2><p>The full game is free for up to three players. Party Passes will unlock bigger groups and extras like picture questions.</p><div class="passes"><div><strong>2 days</strong><small>For the weekend</small></div><div><strong>30 days</strong><small>Keep the party going</small></div></div><p class="fine">Planned one-time payments. Never auto-renew. Purchases and picture questions are not available yet.</p>${config.partyDemo ? `<label class="demo-toggle"><input id="party" type="checkbox" ${party ? "checked" : ""} ${mode === "millionaire" ? "disabled" : ""}> Enable development Party Mode</label><p class="fine">Testing only. No payment or paid access is granted.</p>` : ""}</section><section class="join-card"><span class="small-icon">↗</span><h3>Already have a room?</h3><p>Your phone is your controller.</p><button id="join-screen" class="secondary">Join a game <span>→</span></button></section></aside></div>`;
+  return `<section class="intro"><div class="eyebrow">THE SOFA IS YOUR GAME SHOW</div><h1>A little friendly<br><em>competition.</em></h1><p>One screen. Your favourite people. Something<br class="desktop"> everyone thinks they know the answer to.</p></section><div class="home-grid"><section class="setup"><div class="section-heading"><h2>Pick your game</h2><span>01 / THE FORMAT</span></div><div class="modes"><button class="mode ${mode === "trivia" ? "active" : ""}" data-mode="trivia"><span class="mode-icon">✳</span><span><strong>Trivia</strong><small>Four choices. Plenty of opinions.</small></span><span class="tag">1–3 FREE</span></button><button class="mode ${mode === "millionaire" ? "active" : ""}" data-mode="millionaire"><span class="mode-icon amber">◇</span><span><strong>Millionaire</strong><small>One player. One climb to the top.</small></span><span class="tag">SOLO</span></button></div><div class="section-heading"><h2>Make it your kind of quiz</h2><span>02 / THE MIX</span></div><div class="setting-row"><div><h3>Your region</h3><p>Prefer familiar references.</p></div><div class="segmented" role="group" aria-label="Question region">${["Europe", "US"].map((r) => `<button data-region="${r}" class="${region === r ? "selected" : ""}" aria-pressed="${region === r}">${r === "Europe" ? "Europe" : "United States"}</button>`).join("")}</div></div><details id="category-panel" class="category-panel" ${categoryPanelOpen ? "open" : ""}><summary id="category-toggle"><strong>Categories</strong><span>${selected.size === config.categories.length ? `All ${config.categories.length} included` : `${selected.size} included`}</span></summary><div class="category-head"><h3>Include categories (${config.categories.length})</h3><button id="all-categories" class="text-button">${selected.size === config.categories.length ? "Clear all" : "Select all"}</button></div><div class="categories">${config.categories.map((c, i) => `<button class="chip ${selected.has(c) ? "selected" : ""}" data-category="${c}" aria-pressed="${selected.has(c)}"><span>${["◎", "♫", "⌛", "⚛", "⚑", "✎"][i % 6]}</span>${c}<b>${selected.has(c) ? "✓" : "+"}</b></button>`).join("")}</div></details>${language === "uk" ? `<p class="fine translation-preview">Ukrainian preview: translated questions only. Draft translations need review.<br>${config.languages.uk.count} of ${config.bank.count} translated</p>` : ""}<p class="fine">Source categories only. Unclassified questions are shared across regions; difficulty is unrated.</p><button class="primary start-button" id="create" ${selected.size ? "" : "disabled"}>Set up ${mode === "millionaire" ? "my climb" : "the game"} <span>→</span></button><p class="fine">${mode === "millionaire" ? "Up to 15 questions · 50:50 · Walk away · Fictional points" : "Up to 10 questions · 60 seconds · Automatic reveal"}</p></section><aside><section class="party-card"><div class="eyebrow">A BIGGER NIGHT IN</div><div class="party-art">✦<span>✳</span>✧</div><h2>More friends.<br>More possibilities.</h2><p>The full game is free for up to three players. Party Passes will unlock bigger groups and extras like picture questions.</p><div class="passes"><div><strong>2 days</strong><small>For the weekend</small></div><div><strong>30 days</strong><small>Keep the party going</small></div></div><p class="fine">Planned one-time payments. Never auto-renew. Purchases and picture questions are not available yet.</p>${config.partyDemo ? `<label class="demo-toggle"><input id="party" type="checkbox" ${party ? "checked" : ""} ${mode === "millionaire" ? "disabled" : ""}> Enable development Party Mode</label><p class="fine">Testing only. No payment or paid access is granted.</p>` : ""}</section><section class="join-card"><span class="small-icon">↗</span><h3>Already have a room?</h3><p>Your phone is your controller.</p><button id="join-screen" class="secondary">Join a game <span>→</span></button></section></aside></div>`;
 }
 function joinForm() {
   return `<section class="join-page"><div class="eyebrow">PULL UP A SEAT</div><h1>You’re invited.</h1><p>Enter the code on the TV. No app download needed.</p><form id="join-form"><label>Room code<input name="code" id="code" maxlength="6" autocapitalize="characters" autocomplete="off" value="${esc(prefill || "")}" placeholder="A1B2C3" required pattern="[A-Fa-f0-9]{6}"></label><label>Your name<input name="name" maxlength="24" autocomplete="nickname" placeholder="What should we call you?" required></label><button class="primary">Join the room →</button></form><button id="back" class="text-button">← Back to game setup</button></section>`;
 }
 function people() {
-  return `<div class="players">${state.players.map((p) => `<div class="player"><span class="avatar">${esc(p.name.slice(0, 1).toUpperCase())}</span><strong>${esc(p.name)}</strong><span class="muted">${p.local ? "TV remote" : "Phone"}</span><span class="player-score">${state.phase === "question" ? (p.answered ? "Locked ✓" : "Thinking…") : state.phase === "lobby" ? "Ready" : `${p.score} pts`}</span></div>`).join("")}</div>`;
+  return `<div class="players">${state.players.map((p) => `<div class="player"><span class="avatar" data-no-translate>${esc(p.name.slice(0, 1).toUpperCase())}</span><strong data-no-translate>${esc(p.name)}</strong><span class="muted">${p.local ? "TV remote" : "Phone"}</span><span class="player-score">${state.phase === "question" ? (p.answered ? "Locked ✓" : "Thinking…") : state.phase === "lobby" ? "Ready" : `${p.score} pts`}</span></div>`).join("")}</div>`;
 }
 function lobby() {
   const isHost = session.role === "host";
@@ -135,7 +142,7 @@ function updateCountdown() {
     const clock = document.getElementById("answer-countdown");
     if (clock)
       clock.textContent = state.questionPaused
-        ? "Paused"
+        ? t("Paused")
         : `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
     const progress = document.getElementById("answer-progress");
     if (progress) progress.value = remaining;
@@ -152,7 +159,7 @@ function updateCountdown() {
     : remaining > 0
       ? `${last ? "Results" : "Next question"}`
       : "Moving on…";
-  if (text && text.textContent !== message) text.textContent = message;
+  if (text && text.textContent !== t(message)) text.textContent = t(message);
   document
     .getElementById("review-ring")
     ?.setAttribute(
@@ -180,8 +187,8 @@ function play() {
     answering && !state.questionPaused && mine && !mine.answered;
   return `<section class="play-page">${status()}
     <div class="game-meta"><span>QUESTION ${state.index + 1} / ${state.total}</span><span class="tag">${esc(q.category)}</span>${state.settings.mode === "millionaire" ? `<span class="prize">FOR ${state.ladder[state.index].toLocaleString()} POINTS</span>` : `<span>${state.players.length} PLAYERS</span>`}</div>
-    <div class="play-grid"><section><h1 class="question">${esc(q.text)}</h1>
-    ${isHost && local.length > 1 && answering && pending ? `<p class="remote-turn">Remote turn: <strong>${esc(pending.name)}</strong><span>One press locks your answer and passes the remote.</span></p>` : ""}
+    <div class="play-grid"><section><h1 class="question" data-no-translate>${esc(q.text)}</h1>
+    ${isHost && local.length > 1 && answering && pending ? `<p class="remote-turn">Remote turn: <strong data-no-translate>${esc(pending.name)}</strong><span>One press locks your answer and passes the remote.</span></p>` : ""}
     ${mine && answering ? `<p class="answer-status">${mine.answered ? `${esc(mine.name)}, your answer is locked. Waiting for the other players…` : `${esc(mine.name)}, what’s your answer?`}</p>` : ""}
     ${answering && state.settings.mode === "trivia" ? `<div class="answer-clock"><span>Time to answer</span><div class="answer-clock-controls"><strong id="answer-countdown" role="timer" aria-live="off">1:00</strong></div><progress id="answer-progress" max="${state.answerDurationMs}" value="${state.answerDurationMs}" aria-label="Answer time remaining"></progress><small id="pause-hint">${state.questionPaused ? "Player 1 paused the game. All answers are frozen until resumed." : "Any unanswered pick is chosen at random when time runs out."}</small></div>` : ""}
     <div class="answers ${state.phase === "answers" ? "revealing-picks" : state.phase === "correct" ? "revealing-correct" : ""}" data-stage="${state.phase}">${q.choices
@@ -189,10 +196,10 @@ function play() {
         const voters = showPicks
           ? state.players.filter((p) => p.answer === i)
           : [];
-        return `<button data-answer="${i}" class="answer ${voters.length ? "picked" : ""} ${revealed && i === q.correct ? "correct" : ""} ${revealed && mine?.answer === i && i !== q.correct ? "incorrect" : ""} ${answering && state.myAnswer === i ? "locked" : ""}" ${!canAnswer || q.eliminated.includes(i) ? "disabled" : ""}><span>${"ABCD"[i]}</span><div class="answer-content"><strong>${q.eliminated.includes(i) ? "—" : esc(choice)}</strong>${voters.length ? `<small class="answer-voters">${voters.map((p) => `<i>${esc(p.name)}${p.autoPicked ? " · random" : ""}</i>`).join("")}</small>` : ""}</div>${revealed && i === q.correct ? "<b>✓</b>" : ""}</button>`;
+        return `<button data-answer="${i}" class="answer ${voters.length ? "picked" : ""} ${revealed && i === q.correct ? "correct" : ""} ${revealed && mine?.answer === i && i !== q.correct ? "incorrect" : ""} ${answering && state.myAnswer === i ? "locked" : ""}" ${!canAnswer || q.eliminated.includes(i) ? "disabled" : ""}><span>${"ABCD"[i]}</span><div class="answer-content"><strong data-no-translate>${q.eliminated.includes(i) ? "—" : esc(choice)}</strong>${voters.length ? `<small class="answer-voters">${voters.map((p) => `<i><span data-no-translate>${esc(p.name)}</span>${p.autoPicked ? ` · ${t("random")}` : ""}</i>`).join("")}</small>` : ""}</div>${revealed && i === q.correct ? "<b>✓</b>" : ""}</button>`;
       })
       .join("")}</div>
-    ${state.phase === "answers" ? '<p class="stage-message" role="status">Revealing everyone’s picks…</p>' : revealed ? `<p class="result-note" role="status">${state.settings.mode === "millionaire" && state.finishReason === "wrong" ? `The climb ends here. You keep ${state.won.toLocaleString()} points.` : `Correct answer: ${esc(q.choices[q.correct])}`}</p>${state.phase === "reveal" ? reviewControls() : '<p class="stage-message">Revealing the correct answer…</p>'}` : `<p class="fine">${state.players.filter((p) => p.answered).length} of ${state.players.length} answers locked. ${state.settings.mode === "trivia" ? "Reveals when everyone answers or the minute is up." : "Reveals automatically after your pick."}</p>`}
+    ${state.phase === "answers" ? '<p class="stage-message" role="status">Revealing everyone’s picks…</p>' : revealed ? `<p class="result-note" role="status">${state.settings.mode === "millionaire" && state.finishReason === "wrong" ? `The climb ends here. You keep ${state.won.toLocaleString()} points.` : `<span>${t("Correct answer:")}</span> <span data-no-translate>${esc(q.choices[q.correct])}</span>`}</p>${state.phase === "reveal" ? reviewControls() : '<p class="stage-message">Revealing the correct answer…</p>'}` : `<p class="fine">${state.players.filter((p) => p.answered).length} of ${state.players.length} answers locked. ${state.settings.mode === "trivia" ? "Reveals when everyone answers or the minute is up." : "Reveals automatically after your pick."}</p>`}
     ${isHost && answering && state.settings.mode === "millionaire" ? `<div class="host-actions"><button id="fifty" class="secondary" ${state.usedFifty || mine?.answered ? "disabled" : ""}>50:50 ${state.usedFifty ? "· used" : ""}</button><button id="walk" class="quiet" ${mine?.answered ? "disabled" : ""}>Walk away</button></div>` : ""}
     ${!isHost && answering ? `<p class="waiting">${mine?.answered ? "Look at the TV for the reveal." : "Choose on your phone. The answer reveals automatically."}</p>` : ""}</section>
     <aside>${
@@ -213,7 +220,7 @@ function play() {
 }
 function results() {
   const sorted = [...state.players].sort((a, b) => b.score - a.score);
-  return `<section class="results-page">${status()}<div class="trophy">✦</div><h1>${state.settings.mode === "millionaire" ? (state.finishReason === "walked" ? "A smart exit." : "That’s your climb.") : "Good game.<br><em>Great company.</em>"}</h1>${state.settings.mode === "millionaire" ? `<div class="big-score">${state.won.toLocaleString()} <small>points</small></div><p>${state.finishReason === "completed" ? "You reached the top of this ladder." : state.finishReason === "walked" ? "You walked away with your winnings." : "Every question is a new chance to learn."}</p>` : `<div class="standings">${sorted.map((p, i) => `<div class="player"><span class="avatar">${sorted.findIndex((other) => other.score === p.score) + 1}</span><strong>${esc(p.name)}</strong><span class="player-score">${p.score} pts</span></div>`).join("")}</div>`}<button id="finish" class="primary">Back to game setup →</button><p class="fine">Scores are for fun. No money or real-world prizes.</p></section>`;
+  return `<section class="results-page">${status()}<div class="trophy">✦</div><h1>${state.settings.mode === "millionaire" ? (state.finishReason === "walked" ? "A smart exit." : "That’s your climb.") : "Good game.<br><em>Great company.</em>"}</h1>${state.settings.mode === "millionaire" ? `<div class="big-score">${state.won.toLocaleString()} <small>points</small></div><p>${state.finishReason === "completed" ? "You reached the top of this ladder." : state.finishReason === "walked" ? "You walked away with your winnings." : "Every question is a new chance to learn."}</p>` : `<div class="standings">${sorted.map((p, i) => `<div class="player"><span class="avatar" data-no-translate>${sorted.findIndex((other) => other.score === p.score) + 1}</span><strong data-no-translate>${esc(p.name)}</strong><span class="player-score">${p.score} pts</span></div>`).join("")}</div>`}<button id="finish" class="primary">Back to game setup →</button><p class="fine">Scores are for fun. No money or real-world prizes.</p></section>`;
 }
 function render() {
   const focus = document.activeElement;
@@ -228,9 +235,31 @@ function render() {
       : screen === "join"
         ? joinForm()
         : home();
+  localize(app, language);
+  document.documentElement.lang = language;
+  document.title =
+    language === "uk"
+      ? "TriviTV · Дружнє суперництво"
+      : "TriviTV · A little friendly competition";
+  document.querySelector(".header-note").textContent = t(
+    "GOOD COMPANY. GREAT QUESTIONS.",
+  );
+  document.querySelector("footer span").textContent = t(
+    "MADE FOR YOUR NEXT NIGHT IN",
+  );
+  document.querySelector("footer a").textContent = t(
+    "Questions: OpenTriviaQA · CC BY-SA 4.0",
+  );
+  document.querySelector(".logo").setAttribute("aria-label", t("TriviTV home"));
+  document.querySelector("#language-label").textContent = t("Language");
+  const languagePicker = document.querySelector("#language");
+  languagePicker.value = language;
+  languagePicker.disabled = !!session;
+  languagePicker.setAttribute("aria-label", t("Language"));
   document.querySelector("#home").hidden = !session;
-  document.querySelector("#home").textContent =
-    session?.role === "host" ? "Leave room" : "Leave game";
+  document.querySelector("#home").textContent = t(
+    session?.role === "host" ? "Leave room" : "Leave game",
+  );
   for (const button of app.querySelectorAll("button")) {
     button.dataset.focus =
       button.id ||
@@ -289,7 +318,7 @@ function render() {
   on("pause-review", () => act(pausedNow() ? "resume" : "pause"));
   on("fifty", () => act("fifty"));
   on("walk", () => {
-    if (confirm("Walk away with your current points?")) act("walk");
+    if (confirm(t("Walk away with your current points?"))) act("walk");
   });
   const panel = document.getElementById("category-panel");
   if (panel)
@@ -323,7 +352,7 @@ function render() {
       await navigator.clipboard.writeText(link);
       notify("Joining link copied.");
     } catch {
-      prompt("Copy this joining link:", link);
+      prompt(t("Copy this joining link:"), link);
     }
   });
   if (key) {
@@ -375,6 +404,7 @@ async function create() {
     const value = await api("/api/rooms", {
       mode,
       region,
+      language,
       categories: [...selected],
       party: mode === "trivia" && party,
     });
@@ -402,10 +432,20 @@ function leave() {
   history.replaceState(null, "", "/");
   render();
 }
+document.querySelector("#language").onchange = (event) => {
+  if (session) return;
+  language = event.target.value;
+  try {
+    localStorage.setItem("trivitv-language", language);
+  } catch {}
+  render();
+};
 document.querySelector("#home").onclick = () => {
   if (
     confirm(
-      "Leave this room? Other players can stay, but host controls remain in this tab only.",
+      t(
+        "Leave this room? Other players can stay, but host controls remain in this tab only.",
+      ),
     )
   )
     leave();
@@ -479,6 +519,7 @@ async function boot() {
     if (session) {
       try {
         state = await api(`/api/rooms/${session.code}`);
+        language = state.settings.language ?? "en";
         snapshot = JSON.stringify(state);
       } catch (e) {
         if ([403, 404].includes(e.status)) saveSession(null);
@@ -517,6 +558,7 @@ async function boot() {
   } catch (e) {
     app.innerHTML =
       "<h1>Couldn’t reach the game.</h1><p>Check the server and reload this page.</p>";
+    localize(app, language);
     notify(e.message);
   }
 }

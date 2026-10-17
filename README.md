@@ -101,3 +101,9 @@ cd android && ./gradlew --no-daemon assembleDebug
 ## Question-bank maintenance
 
 Only OpenTriviaQA is imported. Run `npm run bank:import` to rebuild from the retained, hash-pinned source and `npm run test:bank` to validate the importer and snapshot. See [question-bank documentation](docs/question-bank.md) for source categories, provenance, licensing, exclusions and editorial limitations.
+
+## Ukrainian preview
+
+Choose **Українська** in the header before creating a room. Both modes support Ukrainian independently of Europe/US selection. The interface and a **40-question draft subset** of the same OpenTriviaQA bank are translated, covering all 20 categories; the remaining 38,886 questions are not yet translated. Phones follow the room language. Ukrainian games draw only from translated questions, with no silent English fallback, so individual category mixes may be short. None of the translations have been independently reviewed.
+
+See [Ukrainian translation workflow](docs/ukrainian.md) for validation, review, importing and resumable bulk translation. Completing the bank requires a configured translation provider; no paid translation API has been called. Translated question data remains CC BY-SA 4.0.

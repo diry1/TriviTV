@@ -7,10 +7,11 @@
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
     "test": "node --test test/*.test.js",
-    "check": "node --check src/server.js && node --check web/app.js",
-    "test:browser": "node test/browser.cjs",
+    "check": "node --check src/server.js && node --check web/app.js && node --check web/i18n.js",
+    "test:browser": "node test/browser.cjs && node test/language-browser.cjs",
     "bank:import": "python3 scripts/import_opentriviaqa.py",
-    "test:bank": "python3 -m unittest discover -s test -p \"test_*.py\" -v && python3 scripts/import_opentriviaqa.py --check"
+    "test:bank": "python3 -m unittest discover -s test -p \"test_*.py\" -v && python3 scripts/import_opentriviaqa.py --check",
+    "test:translations": "python3 scripts/translate_questions.py --check"
   },
   "engines": {
     "node": ">=24"

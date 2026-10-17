@@ -1222,3 +1222,32 @@ summary:focus-visible {
   outline: 3px solid var(--lime);
   outline-offset: 5px;
 }
+
+.language-picker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 12px;
+}
+.language-picker select {
+  width: auto;
+  padding: 8px 10px;
+  font-size: 13px;
+}
+.translation-preview {
+  border-left: 2px solid var(--violet);
+  padding-left: 12px;
+}
+@media (max-width: 620px) {
+  .language-picker > span {
+    display: none;
+  }
+  .language-picker {
+    margin-left: 0;
+  }
+  header {
+    flex-wrap: wrap;
+  }
+}
