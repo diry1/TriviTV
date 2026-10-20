@@ -1,0 +1,16 @@
+{
+  "duration": 30,
+  "sampleRate": 48000,
+  "bpm": 128,
+  "bars": 16,
+  "peak_dBFS": -2.8533500713746314,
+  "rms_dBFS": -16.139947032493325,
+  "boundary_step": 0.0006003466749308336,
+  "samples": {
+    "BD Bump Perkons.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Perkons From Mars\\Presets\\Maschine\\Perkons From Mars\\01. Tight Impact Kit - Perkons From Mars Samples\\BD Bump Perkons.wav",
+    "Clap Chill Perkons Clean 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Perkons From Mars\\Presets\\Maschine\\Perkons From Mars\\01. Tight Impact Kit - Perkons From Mars Samples\\Clap Chill Perkons Clean 01.wav",
+    "CH Soft Perkons 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Perkons From Mars\\Presets\\Maschine\\Perkons From Mars\\01. Tight Impact Kit - Perkons From Mars Samples\\CH Soft Perkons 01.wav",
+    "Shaker Soft Perkons 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Perkons From Mars\\Presets\\Maschine\\Perkons From Mars\\01. Tight Impact Kit - Perkons From Mars Samples\\Shaker Soft Perkons 01.wav"
+  },
+  "method": "Original synthesis and sample sequencing rendered with Python; separate stems prepared for Waveform."
+}

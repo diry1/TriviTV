@@ -1,0 +1,15 @@
+# TriviTV browser testing version
+
+This static adaptation reuses the interface, Ukrainian dictionary, CSS and game rules from the user-supplied `TriviTV-EU-Filtered-916-Test.zip`. It contains exactly 916 existing Ukrainian Europe-eligible questions across all 20 categories. The source archive is preserved separately in `provided-916/` in the original workspace. The older GitHub main branch is not the source of these translations.
+
+`dist/` is the complete browser app. It requires static HTTP hosting, with no application backend, accounts, credentials, payments or external APIs. Deploy this folder through the existing Sites project in `.openai/hosting.json`; retain its project ID for future updates at the same URL.
+
+`dist/questions.json` retains original IDs, Ukrainian text/choices, canonical answer indexes, source record attribution and translation status. `audit.json` records category totals. The original loaders verified all translation, source, policy and eligibility fingerprints before export. Eligibility status is conservative draft, not independently verified. Attribution and CC BY-SA 4.0 license are included in Credits.
+
+The app defaults to Ukrainian/Europe and all categories, supports solo Trivia and Millionaire, and saves settings/session/game state under `trivitv-browser-*` localStorage keys. Finishing or leaving clears the current game. Clearing site data clears all saved settings/progress. Each browser/device has independent progress; shared state and multiplayer are omitted.
+
+The original 60-second Trivia limit, 800ms pick reveal, 600ms answer reveal, four-second review, timeout random picks, pause, scores and Millionaire 50:50/checkpoints/walk-away are retained. A visible pause control is added for mouse/touch testing. Browser deadlines catch up on return to a suspended tab; browser code cannot run independently of its tab as the former server could. Real TV hardware and remote testing remain outstanding.
+
+The active interface is `dist/tv-ui.js` plus `dist/tv-layout.css`; the original `app.js` is retained as a reference and is no longer loaded. Home has two mode cards and one-click Start. Category settings show 12 items per page. Credits are paged. All in-app screens use a fixed viewport frame with no scrolling; the full source/license documents remain available separately. Explicit logical rows/columns control arrows/OK; no geometry guessing or scrollIntoView is used in the active game UI. `window.TriviTVRemote` is the narrow native key/back entry point.
+
+Development-only QA: `npm ci`, then `npm test` (installed Microsoft Edge). QA temporarily serves static files if needed, checks complete games, exact focus paths, held OK protection, settings/credits paging, pause/reload, wrong answers/walk-away/timeout, and screen bounds at 960×540, 1280×720, 1920×1080, 3840×2160 and mobile portrait. It also renders all 916 questions in each mode at 960×540 to check question/answer clipping. Earlier `qa.mjs` documents tests of the pre-TV interface and is historical. Node/Playwright are development tools only, not deployed or required by players.

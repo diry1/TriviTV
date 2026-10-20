@@ -1,0 +1,23 @@
+{
+  "name": "trivitv",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test test/*.test.js",
+    "check": "node --check src/server.js && node --check src/eligibility.js && node --check web/app.js && node --check web/i18n.js",
+    "test:editorial": "python3 scripts/build_eu_eligibility.py --check && python3 -m unittest discover -s test -p 'test_eu_eligibility.py' -v",
+    "test:browser": "node test/browser.cjs && node test/language-browser.cjs",
+    "bank:import": "python3 scripts/import_opentriviaqa.py",
+    "test:bank": "python3 -m unittest discover -s test -p \"test_*.py\" -v && python3 scripts/import_opentriviaqa.py --check",
+    "test:translations": "python3 scripts/translate_questions.py --check"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "playwright": "1.58.2"
+  }
+}

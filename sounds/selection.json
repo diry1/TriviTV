@@ -1,0 +1,16 @@
+{
+  "status": "user-selected",
+  "selectedFromNumberedList": [1, 2, 3, 4, 6, 9, 11, 12],
+  "tracks": [
+    {"listNumber": 1, "title": "Original mellow trivia", "file": "TriviTV-Trivia-01-60s-clean-v2.wav"},
+    {"listNumber": 2, "title": "Caribbean / Beach", "file": "TriviTV-Trivia-02-Caribbean-60s-v1.wav"},
+    {"listNumber": 3, "title": "Deep House — original", "file": "TriviTV-Trivia-03-Deep-House-60s-v1.wav"},
+    {"listNumber": 4, "title": "Italo Disco", "file": "TriviTV-Trivia-04-Italo-Disco-60s-v1.wav"},
+    {"listNumber": 6, "title": "Chicago House", "file": "TriviTV-House-03-Chicago-60s-v1.wav"},
+    {"listNumber": 9, "title": "Garage House", "file": "TriviTV-House-06-Garage-60s-v1.wav"},
+    {"listNumber": 11, "title": "Deep Vintage House", "file": "TriviTV-House-08-Deep-Vintage-60s-v1.wav"},
+    {"listNumber": 12, "title": "Deep Dub House", "file": "TriviTV-House-09-Deep-Dub-60s-v1.wav"}
+  ],
+  "excludedListNumbers": [5, 7, 8, 10, 13, 14],
+  "notes": "Unselected drafts remain preserved. Track 1 uses the cleaned v2 mix. Menu music is separate. Selection does not imply integration or publication."
+}

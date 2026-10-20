@@ -1,0 +1,21 @@
+{
+  "functional": {
+    "completeGames": [
+      "Trivia 10/10",
+      "Millionaire 15/15"
+    ],
+    "navigation": "exact expected focus sequence",
+    "noScroll": true,
+    "settingsPaging": true,
+    "pauseAndProgressReload": true,
+    "lifeline": true,
+    "creditsPaging": true,
+    "browserErrors": []
+  },
+  "geometry": {
+    "questions": 916,
+    "modes": 2,
+    "issues": [],
+    "issueCount": 0
+  }
+}

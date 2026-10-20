@@ -11,3 +11,16 @@ __pycache__/
 
 /.translation-usage.json
 /.translation-usage.json.lock
+
+# Local runtimes, generated caches and credentials
+.tools/
+.qa/
+local.properties
+*.jks
+.env
+.env.*
+!.env.example
+# Raw commercial sample copies and intermediate audio stay local
+sounds/**/samples/
+sounds/**/archive-before-revision-2/
+sounds/sfx-v1/source/*.zip

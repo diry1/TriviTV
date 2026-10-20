@@ -1,0 +1,11 @@
+{
+  "name": "EU-filtered test",
+  "euPlayable": {
+    "en": 928,
+    "uk": 916
+  },
+  "retainedUkrainianDrafts": 36614,
+  "apk": "existing Ukrainian test launcher; unchanged",
+  "classification": "draft candidates; not independently verified",
+  "sourceRevision": "dcc1cdf36c2985ed5c849d1f2265c5041ffcdfb9"
+}

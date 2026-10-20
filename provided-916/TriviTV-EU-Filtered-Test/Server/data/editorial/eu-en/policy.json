@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": 1,
+  "audience": "Europe",
+  "language": "en",
+  "specification": "docs/eu-english-editorial-rules.md",
+  "inheritsSharedPolicyFrom": "data/editorial/eu-ua/policy.json",
+  "inheritsSharedPolicyVersion": 2,
+  "reviewManifest": "data/editorial/eu-en/review-decisions.json",
+  "sourceHumanReviewManifest": "data/editorial/eu-ua/review-decisions.json",
+  "sharedRuleIds": [
+    "EU01",
+    "EU02",
+    "EU03",
+    "EU04",
+    "EU05",
+    "EU06",
+    "EU07",
+    "EU08",
+    "Q01",
+    "Q02",
+    "Q03",
+    "Q04",
+    "Q05",
+    "Q06",
+    "AGE_REVIEW",
+    "OLD_MEDIA_REVIEW"
+  ],
+  "notInheritedUkrainianRuleIds": [
+    "UA01",
+    "UA02",
+    "UA03"
+  ],
+  "sharedMetricRule": {
+    "id": "EU09",
+    "equivalentTo": "UA04_incidental_units",
+    "requiresReviewBeforeSourceChanges": true
+  },
+  "requiresUkrainianTranslation": false,
+  "requiresUkrainianTranslationApproval": false,
+  "sourcePopulation": "full_canonical_English_bank",
+  "translationOnlyExcludeOrRevise": "reassess_against_shared_rules_not_automatic_keep",
+  "mixedLanguageAndAudience": "preserve_audience_hold_or_exclusion",
+  "sourceQualityGate": "independent_of_translation_quality",
+  "unreviewedOutcome": "hold",
+  "numericChoices": {
+    "screeningDefault": "hold_for_party_suitability",
+    "universalBan": false,
+    "holdPatterns": [
+      "four_numeric_counts_or_measurements",
+      "similar_lifespan_ranges",
+      "near_identical_numbered_names",
+      "routine_arithmetic",
+      "multi_step_calculation",
+      "number_sequences"
+    ],
+    "preserveExplicitKeeps": true,
+    "evidenceLevel": "inferred_from_round2_decisions"
+  },
+  "franchiseTrivia": {
+    "blanketFanDetailBan": false,
+    "assessCentralRecognizability": true,
+    "positiveExamples": [
+      "Harry Potter central characters and events",
+      "Mario occupation and Fire Flower",
+      "Joker identification",
+      "Duran Duran",
+      "Depeche Mode",
+      "Elton John"
+    ],
+    "explicitExistingExclusions": [
+      "Pokemon",
+      "Guitar Hero"
+    ]
+  },
+  "outdated": {
+    "currentExclusion": true,
+    "replacementStatus": "deferred",
+    "automaticYearCutoff": null,
+    "doNotTreatLabelAsProofOfFactualStaleness": true,
+    "replaceNow": false
+  },
+  "replacementBacklog": "data/editorial/eu-ua/replacement-backlog.json",
+  "wordplay": {
+    "englishDependentAllowedIfBroadlyComprehensible": true,
+    "USLocalSlangStillRequiresEUAudienceAssessment": true
+  },
+  "freshReviewSampling": {
+    "excludePreviouslyReviewedIds": true,
+    "reviewedIds": 400,
+    "explicitEnglishReassessmentBatchMayIncludeTranslationExemptIds": true
+  },
+  "automaticRuntimeApplication": true,
+  "runtimeEligibilityFile": "data/editorial/eu-eligibility.json",
+  "runtimeScope": "Europe region; source data preserved; US region retains legacy filtering",
+  "unassessedSemanticOutcome": "hold"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "event": "Menu highlight",
+    "start": 0.0
+  },
+  {
+    "event": "Button pressed",
+    "start": 0.822
+  },
+  {
+    "event": "Back / cancel",
+    "start": 1.773
+  },
+  {
+    "event": "Unavailable action",
+    "start": 2.637
+  },
+  {
+    "event": "Question appears",
+    "start": 3.602
+  },
+  {
+    "event": "Answer locked",
+    "start": 4.892
+  },
+  {
+    "event": "Choices revealed",
+    "start": 5.982
+  },
+  {
+    "event": "Correct answer",
+    "start": 7.332
+  },
+  {
+    "event": "Incorrect answer",
+    "start": 8.582
+  },
+  {
+    "event": "Last three seconds",
+    "start": 9.752
+  },
+  {
+    "event": "Time expired",
+    "start": 13.552
+  },
+  {
+    "event": "Round complete",
+    "start": 16.452
+  }
+]

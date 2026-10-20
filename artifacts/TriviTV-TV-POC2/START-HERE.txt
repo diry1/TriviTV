@@ -1,0 +1,38 @@
+TriviTV TV POC2 — 0.2.1-poc2 (versionCode 2)
+
+Install TriviTV-TV-POC-0.2.1.apk over the existing TriviTV POC.
+The package ID and signing key are unchanged. Do not uninstall first if you
+want to preserve browser settings/progress. App label: TriviTV POC.
+
+Changes based on the supplied TV photo and video:
+- Mode selection and Start fit on one screen; Start immediately begins play.
+- Categories are on a separate screen with two pages; no scrolling.
+- Question, four answers, timer and game actions fit on the game screen.
+- Focus moves by explicit rows/columns, not spatial guesses.
+- Logo and fixed language setting are not focus stops.
+- Strong visible focus; held OK cannot activate the next control.
+- Back closes category/credits/dialog screens; otherwise opens the app menu.
+
+Home controls: Left/Right switches between mode cards; OK selects a mode.
+Down reaches Categories or Start in the same column. OK on Start begins play.
+Answer controls: A/B on the first row, C/D on the second. Arrows follow that
+grid; down from the bottom row reaches pause or lifelines.
+
+The same live site URL is updated. The older installed APK may receive the
+new web layout after Back/Menu > Reload when online. Install this new APK
+to also update the bundled offline UI and native remote handling.
+
+Verification: full 10-question Trivia and 15-question Millionaire games;
+exact focus paths; category/credits paging; no scrolling; pause/reload;
+lifeline, timeout picks, wrong answers, walk-away and held OK.
+Rendered all 916 questions in BOTH modes at 960x540 with zero detected
+question/answer clipping. Also checked screen bounds at 1280x720,
+1920x1080, 3840x2160 and mobile portrait.
+APK build/lint/signature/alignment and offline browser tests passed.
+No physical TV or Android emulator run has been performed here.
+
+All 916 questions, IDs, answer keys, choices and attribution are unchanged.
+Android TV/Google TV 8.0+ with an up-to-date WebView; no Xiaomi-specific code.
+
+APK SHA-256:
+75c4229d72500670bcafa01666c4fbf33ec4a77d51d0fe2d63f4f924d58d3c91

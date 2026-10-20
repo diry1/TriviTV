@@ -1,0 +1,36 @@
+{
+  "duration": 60,
+  "sample_rate": 48000,
+  "bit_depth": 24,
+  "bpm_start": 116,
+  "bpm_end": 120,
+  "samples": {
+    "BD 808 Warm Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\BD 808 Warm Vinyl SP.wav",
+    "Clap 808 Standard Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\Clap 808 Standard Vinyl SP.wav",
+    "CH 808 Standard Vinyl SP 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\CH 808 Standard Vinyl SP 01.wav",
+    "OH 808 Standard Vinyl SP 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\OH 808 Standard Vinyl SP 01.wav",
+    "Maraca 808 Vinyl SP 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\02. 808 Demented Kit - Vinyl SP From Mars Samples\\Maraca 808 Vinyl SP 01.wav"
+  },
+  "synthesized": [
+    "warm bass",
+    "warm chord voicings",
+    "midrange chord responses",
+    "breath pad"
+  ],
+  "analysis": {
+    "peak_dbfs": -10.716177439499408,
+    "rms_dbfs": -25.0,
+    "band_energy_pct": {
+      "0-40Hz": 0.0,
+      "40-80Hz": 6.12,
+      "80-160Hz": 15.32,
+      "160-500Hz": 66.88,
+      "500-2000Hz": 11.24,
+      "2000-6000Hz": 0.29,
+      "6000-24001Hz": 0.15
+    },
+    "clipped_samples": 0
+  },
+  "purpose": "Soulful house trivia bed; warm midrange harmony, swung percussion, no high repeating motif, gentle late lift",
+  "method": "Scripted composition/rendering; separate processed stems in Waveform"
+}

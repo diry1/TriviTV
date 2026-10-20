@@ -1,0 +1,35 @@
+{
+  "duration": 60,
+  "sample_rate": 48000,
+  "bit_depth": 24,
+  "bpm_start": 115,
+  "bpm_end": 119,
+  "samples": {
+    "BD LM1 Vinyl SP Clean 02.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\11. LM1 Kit - Vinyl SP From Mars Samples\\BD LM1 Vinyl SP Clean 02.wav",
+    "SD LM1 Vinyl SP 02.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\11. LM1 Kit - Vinyl SP From Mars Samples\\SD LM1 Vinyl SP 02.wav",
+    "CH LM1 Standard Vinyl SP 02.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\11. LM1 Kit - Vinyl SP From Mars Samples\\CH LM1 Standard Vinyl SP 02.wav",
+    "Rim LM1 Vinyl SP 02.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\11. LM1 Kit - Vinyl SP From Mars Samples\\Rim LM1 Vinyl SP 02.wav",
+    "Cabasa LM1 Vinyl SP 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\11. LM1 Kit - Vinyl SP From Mars Samples\\Cabasa LM1 Vinyl SP 01.wav",
+    "Tamb LM1 Vinyl SP 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\11. LM1 Kit - Vinyl SP From Mars Samples\\Tamb LM1 Vinyl SP 01.wav",
+    "FX Mellow Chord Vinyl SP A.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\WAV\\01. Individual Hits\\10. FX\\FX Mellow Chord Vinyl SP A.wav"
+  },
+  "synthesized": [
+    "soft mid-bass only; A-centered sampled chord and processed delay textures"
+  ],
+  "analysis": {
+    "peak_dbfs": -5.679933127304016,
+    "rms_dbfs": -28.20684464504739,
+    "band_energy_pct": {
+      "0-40Hz": 0.0,
+      "40-80Hz": 1.03,
+      "80-160Hz": 50.65,
+      "160-500Hz": 41.22,
+      "500-2000Hz": 4.45,
+      "2000-6000Hz": 2.19,
+      "6000-24001Hz": 0.46
+    },
+    "clipped_samples": 0
+  },
+  "purpose": "Deep dub house trivia bed; LM1 sample kit, sampled A chord cuts, dark stereo echoes, cabasa/rim and gentle late lift",
+  "method": "Scripted composition/rendering; separate processed stems in Waveform"
+}

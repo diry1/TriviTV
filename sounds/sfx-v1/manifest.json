@@ -1,0 +1,290 @@
+{
+  "status": "draft-for-user-audition",
+  "sampleRate": 48000,
+  "format": "mono PCM16 WAV",
+  "sourcePage": "https://kenney.nl/assets/interface-sounds",
+  "license": "Kenney source CC0; original synthesized cues dedicated to CC0. Source license preserved in source/kenney/License.txt.",
+  "events": [
+    {
+      "id": "highlight",
+      "title": "Menu highlight",
+      "description": "Very soft focus tick; should tolerate repeated arrow navigation.",
+      "selected": "A",
+      "variants": [
+        {
+          "label": "A",
+          "file": "audio/highlight-a.wav",
+          "source": "Kenney Interface Sounds / tick_001.ogg (CC0), trimmed/EQ/gain/fades",
+          "duration": 0.022,
+          "peakDbfs": -18.83,
+          "rmsDbfs": -34.0
+        },
+        {
+          "label": "B",
+          "file": "audio/highlight-b.wav",
+          "source": "Kenney Interface Sounds / select_001.ogg (CC0), trimmed/EQ/gain/fades",
+          "duration": 0.043,
+          "peakDbfs": -18.14,
+          "rmsDbfs": -34.0
+        }
+      ]
+    },
+    {
+      "id": "press",
+      "title": "Button pressed",
+      "description": "Selected by you: former 4.B (switch_002), at its original level.",
+      "selected": "A",
+      "variants": [
+        {
+          "label": "A",
+          "file": "audio/press-a.wav",
+          "source": "Kenney Interface Sounds / switch_002.ogg (CC0), trimmed/EQ/gain/fades",
+          "duration": 0.151,
+          "peakDbfs": -12.87,
+          "rmsDbfs": -31.0
+        }
+      ],
+      "approval": "User selected former unavailable B; exact processed audio preserved."
+    },
+    {
+      "id": "back",
+      "title": "Back / cancel",
+      "description": "A soft closing gesture.",
+      "selected": "A",
+      "variants": [
+        {
+          "label": "A",
+          "file": "audio/back-a.wav",
+          "source": "Kenney Interface Sounds / back_001.ogg (CC0), trimmed/EQ/gain/fades",
+          "duration": 0.064,
+          "peakDbfs": -9.65,
+          "rmsDbfs": -31.0
+        },
+        {
+          "label": "B",
+          "file": "audio/back-b.wav",
+          "source": "Kenney Interface Sounds / close_001.ogg (CC0), trimmed/EQ/gain/fades",
+          "duration": 0.148,
+          "peakDbfs": -19.12,
+          "rmsDbfs": -31.0
+        }
+      ]
+    },
+    {
+      "id": "unavailable",
+      "title": "Unavailable action",
+      "description": "Muted feedback, distinct from an incorrect answer.",
+      "selected": "A",
+      "variants": [
+        {
+          "label": "A",
+          "file": "audio/unavailable-a.wav",
+          "source": "Kenney Interface Sounds / error_001.ogg (CC0), trimmed/EQ/gain/fades",
+          "duration": 0.165,
+          "peakDbfs": -14.19,
+          "rmsDbfs": -31.0
+        },
+        {
+          "label": "B",
+          "file": "audio/unavailable-b.wav",
+          "source": "Kenney Interface Sounds / switch_002.ogg (CC0), trimmed/EQ/gain/fades",
+          "duration": 0.151,
+          "peakDbfs": -12.87,
+          "rmsDbfs": -31.0
+        }
+      ]
+    },
+    {
+      "id": "question",
+      "title": "Question appears",
+      "description": "Brief attention cue before reading.",
+      "selected": "A",
+      "variants": [
+        {
+          "label": "A",
+          "file": "audio/question-a.wav",
+          "source": "Kenney Interface Sounds / question_001.ogg (CC0), trimmed/EQ/gain/fades",
+          "duration": 0.491,
+          "peakDbfs": -17.11,
+          "rmsDbfs": -28.0
+        },
+        {
+          "label": "B",
+          "file": "audio/question-b.wav",
+          "source": "Kenney Interface Sounds / open_001.ogg (CC0), trimmed/EQ/gain/fades",
+          "duration": 0.148,
+          "peakDbfs": -17.21,
+          "rmsDbfs": -28.0
+        }
+      ]
+    },
+    {
+      "id": "locked",
+      "title": "Answer locked",
+      "description": "Firm acknowledgement of the submitted answer.",
+      "selected": "A",
+      "variants": [
+        {
+          "label": "A",
+          "file": "audio/locked-a.wav",
+          "source": "Kenney Interface Sounds / confirmation_001.ogg (CC0), trimmed/EQ/gain/fades",
+          "duration": 0.29,
+          "peakDbfs": -16.88,
+          "rmsDbfs": -27.0
+        },
+        {
+          "label": "B",
+          "file": "audio/locked-b.wav",
+          "source": "Kenney Interface Sounds / select_004.ogg (CC0), trimmed/EQ/gain/fades",
+          "duration": 0.231,
+          "peakDbfs": -10.83,
+          "rmsDbfs": -27.0
+        }
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "Choices revealed",
+      "description": "New soft layered reveal accents; both previous choices replaced.",
+      "selected": "A",
+      "variants": [
+        {
+          "label": "A",
+          "file": "audio/choices-a.wav",
+          "source": "Original synthesized TriviTV cue; CC0",
+          "duration": 0.55,
+          "peakDbfs": -17.71,
+          "rmsDbfs": -29.0
+        },
+        {
+          "label": "B",
+          "file": "audio/choices-b.wav",
+          "source": "Original synthesized TriviTV cue; CC0",
+          "duration": 0.55,
+          "peakDbfs": -16.98,
+          "rmsDbfs": -29.0
+        }
+      ]
+    },
+    {
+      "id": "correct",
+      "title": "Correct answer",
+      "description": "Short rising warm chime, with no bass impact.",
+      "selected": "A",
+      "variants": [
+        {
+          "label": "A",
+          "file": "audio/correct-a.wav",
+          "source": "Original synthesized TriviTV cue; CC0",
+          "duration": 0.45,
+          "peakDbfs": -13.16,
+          "rmsDbfs": -24.0
+        },
+        {
+          "label": "B",
+          "file": "audio/correct-b.wav",
+          "source": "Original synthesized TriviTV cue; CC0",
+          "duration": 0.44,
+          "peakDbfs": -12.64,
+          "rmsDbfs": -24.0
+        }
+      ]
+    },
+    {
+      "id": "incorrect",
+      "title": "Incorrect answer",
+      "description": "Gentle falling cue, without a harsh buzzer.",
+      "selected": "A",
+      "variants": [
+        {
+          "label": "A",
+          "file": "audio/incorrect-a.wav",
+          "source": "Original synthesized TriviTV cue; CC0",
+          "duration": 0.37,
+          "peakDbfs": -14.58,
+          "rmsDbfs": -26.0
+        },
+        {
+          "label": "B",
+          "file": "audio/incorrect-b.wav",
+          "source": "Original synthesized TriviTV cue; CC0",
+          "duration": 0.4,
+          "peakDbfs": -14.88,
+          "rmsDbfs": -26.0
+        }
+      ]
+    },
+    {
+      "id": "warning",
+      "title": "Last three seconds",
+      "description": "Full 3-second cue: gentle pulses at 3, 2, 1. Trigger once at 3 seconds remaining.",
+      "selected": "A",
+      "variants": [
+        {
+          "label": "A",
+          "file": "audio/warning-a.wav",
+          "source": "Original synthesized TriviTV cue; CC0",
+          "duration": 3.0,
+          "peakDbfs": -15.84,
+          "rmsDbfs": -29.0
+        },
+        {
+          "label": "B",
+          "file": "audio/warning-b.wav",
+          "source": "Original synthesized TriviTV cue; CC0",
+          "duration": 3.0,
+          "peakDbfs": -15.75,
+          "rmsDbfs": -29.0
+        }
+      ]
+    },
+    {
+      "id": "expired",
+      "title": "Time expired",
+      "description": "2.1-second modern falling tones with a soft sustained ending; gentle failure cue.",
+      "selected": "A",
+      "variants": [
+        {
+          "label": "A",
+          "file": "audio/expired-a.wav",
+          "source": "Original synthesized TriviTV cue; CC0",
+          "duration": 2.1,
+          "peakDbfs": -13.76,
+          "rmsDbfs": -26.0
+        },
+        {
+          "label": "B",
+          "file": "audio/expired-b.wav",
+          "source": "Original synthesized TriviTV cue; CC0",
+          "duration": 2.1,
+          "peakDbfs": -13.71,
+          "rmsDbfs": -26.0
+        }
+      ]
+    },
+    {
+      "id": "complete",
+      "title": "Round complete",
+      "description": "A modest celebration, longer than a correct-answer cue.",
+      "selected": "A",
+      "variants": [
+        {
+          "label": "A",
+          "file": "audio/complete-a.wav",
+          "source": "Original synthesized TriviTV cue; CC0",
+          "duration": 0.77,
+          "peakDbfs": -12.73,
+          "rmsDbfs": -24.0
+        },
+        {
+          "label": "B",
+          "file": "audio/complete-b.wav",
+          "source": "Original synthesized TriviTV cue; CC0",
+          "duration": 0.82,
+          "peakDbfs": -12.48,
+          "rmsDbfs": -24.0
+        }
+      ]
+    }
+  ]
+}

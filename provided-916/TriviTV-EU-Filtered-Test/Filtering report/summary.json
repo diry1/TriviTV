@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "builderVersion": 1,
+  "audience": "Europe",
+  "status": "conservative_draft_pools_not_independently_verified",
+  "policyVersions": {
+    "en": 1,
+    "uk": 2
+  },
+  "inputHashes": {
+    "data/opentriviaqa/questions.json": "f9d14f56198416de0214b0a9be292b807415177835c058c5cb434d1cef2542ab",
+    "data/translations/uk.json": "3516437445dddea8ef13e37966a72edb038bedd2cfa6086f9ff1ea2b3770c443",
+    "data/editorial/eu-ua/policy.json": "2a7c46538c68c58dd8e38f54c8bb8d54a6663e6f4d9b440208141166245a400c",
+    "data/editorial/eu-en/policy.json": "94b5a25fb7108985d6c7f642d1d147e11dbe2bff23e00a782962b5d091cdbc71",
+    "data/editorial/eu-ua/review-decisions.json": "a11449d23dd923ab5e5eeff55a1b5af943a8326f73a3c389be681c4e2a96cf25",
+    "data/editorial/eu-en/review-decisions.json": "3323420c028b43b3d61d0fee4e90e6db872a36602074a182c4c4006ed7f0f89f",
+    "data/editorial/eu-ua/quality-flags.json": "f332be0ae1cf1c597f9eff2cdb44ff0599979f79433b9d52f5e41417a8b9cadf",
+    "data/editorial/eu-evidence/prior-screening.json": "8eba30bc8eef15f25a159a0eb1dc36fc2cfba5f4381e2c7bf0447c975ec93ebc",
+    "docs/eu-ua-editorial-rules.md": "59da2965f5b71f522c9a17ff70806762d579fd2f7d9c9e444a16f7f59679df53",
+    "docs/eu-english-editorial-rules.md": "2a2b3034fc2c3ce4e54d9ce0ae884aff17bf21254253033bd8679940179b5324"
+  },
+  "summary": {
+    "en": {
+      "candidate": 928,
+      "hold": 30458,
+      "exclude": 7540
+    },
+    "uk": {
+      "candidate": 916,
+      "hold": 30776,
+      "exclude": 7234
+    }
+  },
+  "categoryCoverage": {
+    "en": {
+      "Animals": 68,
+      "Arts & Humanities": 83,
+      "Brain Teasers": 36,
+      "Celebrities": 7,
+      "Entertainment": 8,
+      "General Knowledge": 75,
+      "Geography": 81,
+      "History": 79,
+      "Hobbies": 70,
+      "Kids Trivia": 38,
+      "Literature": 51,
+      "Movies": 33,
+      "Music": 3,
+      "People": 57,
+      "Religion & Faith": 46,
+      "Science & Technology": 113,
+      "Sport": 7,
+      "Television": 1,
+      "Video Games": 2,
+      "World": 70
+    },
+    "uk": {
+      "Animals": 68,
+      "Arts & Humanities": 83,
+      "Brain Teasers": 36,
+      "Celebrities": 7,
+      "Entertainment": 6,
+      "General Knowledge": 73,
+      "Geography": 81,
+      "History": 78,
+      "Hobbies": 69,
+      "Kids Trivia": 36,
+      "Literature": 51,
+      "Movies": 30,
+      "Music": 3,
+      "People": 57,
+      "Religion & Faith": 46,
+      "Science & Technology": 112,
+      "Sport": 7,
+      "Television": 1,
+      "Video Games": 2,
+      "World": 70
+    }
+  }
+}

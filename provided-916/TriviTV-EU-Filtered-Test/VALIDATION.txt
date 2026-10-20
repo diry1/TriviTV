@@ -1,0 +1,10 @@
+EU-filtered test package validation
+
+PASS: 29 Node game/API/editorial tests.
+PASS: 5 Python editorial rule tests and deterministic snapshot check.
+PASS: both browser suites (main game flow and Ukrainian language flow).
+PASS: packaged API advertises UK/Europe 916, EN/Europe 928 and creates a Ukrainian room.
+PASS: original acquired bank hashes match the 36,614-question milestone.
+
+The language browser fixture freezes its injected review clock during pause-control inspection to avoid the four-second review expiring on slow browsers.
+Physical TV installation/navigation remains a device test. Eligible questions remain draft screening candidates.

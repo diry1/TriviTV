@@ -1,0 +1,11 @@
+{
+  "events": 12,
+  "loadedAudio": 23,
+  "playback": true,
+  "music": true,
+  "keyboardNavigation": true,
+  "stop": true,
+  "choiceExport": true,
+  "mobileOverflow": false,
+  "pageErrors": []
+}

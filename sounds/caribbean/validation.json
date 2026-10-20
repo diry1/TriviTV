@@ -1,0 +1,36 @@
+{
+  "duration": 60,
+  "sample_rate": 48000,
+  "bit_depth": 24,
+  "bpm_start": 94,
+  "bpm_end": 100,
+  "samples": {
+    "BD 808 Air Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\BD 808 Air Vinyl SP.wav",
+    "Rim 808 Standard Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\Rim 808 Standard Vinyl SP.wav",
+    "Conga 808 Lo Vinyl SP Clean 02.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\Conga 808 Lo Vinyl SP Clean 02.wav",
+    "Clave 808 Standard Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\Clave 808 Standard Vinyl SP.wav",
+    "Maraca 808 Vinyl SP 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\02. 808 Demented Kit - Vinyl SP From Mars Samples\\Maraca 808 Vinyl SP 01.wav"
+  },
+  "synthesized": [
+    "bass",
+    "mallet keys",
+    "offbeat chords",
+    "surf-like air"
+  ],
+  "analysis": {
+    "peak_dbfs": -5.84468733305393,
+    "rms_dbfs": -25.0,
+    "band_energy_pct": {
+      "0-40Hz": 0.0,
+      "40-80Hz": 9.07,
+      "80-160Hz": 30.39,
+      "160-500Hz": 32.14,
+      "500-2000Hz": 27.88,
+      "2000-6000Hz": 0.5,
+      "6000-24001Hz": 0.02
+    },
+    "clipped_samples": 0
+  },
+  "purpose": "Caribbean/beach trivia question bed; gentle late percussion lift",
+  "method": "Scripted composition/rendering; separate processed stems in Waveform"
+}

@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": 2,
+  "flags": [
+    {
+      "id": "otqa:26c034d68ecd0356f4f4b089",
+      "reviewerDecision": "Revise",
+      "status": "pending",
+      "scope": "ua_or_question_review",
+      "blocking": true,
+      "cause": "reviewer_requested_revision",
+      "round": 1,
+      "note": "Translation / language  Лисиця з коротким хвостом - має мати якийсь еквівалент українською. - нагадай запланувати задачу з перевірки перекладівс назв тварин рослин та іншого "
+    },
+    {
+      "id": "otqa:0b7ae19903c392fcc785231d",
+      "reviewerDecision": "Revise",
+      "status": "pending",
+      "scope": "ua_or_question_review",
+      "blocking": true,
+      "cause": "reviewer_requested_revision",
+      "round": 1,
+      "note": " Переклади назв фльмів треба буде додатково обговорити також "
+    },
+    {
+      "id": "otqa:313e256f3ee26e5f244ec323",
+      "reviewerDecision": "Revise",
+      "status": "pending",
+      "scope": "ua_or_question_review",
+      "blocking": true,
+      "cause": "reviewer_requested_revision",
+      "round": 1,
+      "note": "Translation / language треба перевірити окремо "
+    },
+    {
+      "id": "otqa:06b5cb862e67b80674014abf",
+      "reviewerDecision": "Revise",
+      "status": "pending",
+      "scope": "ua_or_question_review",
+      "blocking": true,
+      "cause": "reviewer_requested_revision",
+      "round": 1,
+      "note": "Translation / language todo: cross check charater names via wiki "
+    },
+    {
+      "id": "otqa:00ca2e6c202bed138e8b2474",
+      "reviewerDecision": "Keep",
+      "status": "pending",
+      "scope": "ua_translation",
+      "blocking": true,
+      "cause": "reviewer_translation_note",
+      "round": 1,
+      "note": " but check medical terms trnaslations"
+    },
+    {
+      "id": "otqa:001ca5ac310eec9bfce572d3",
+      "reviewerDecision": "Keep",
+      "status": "pending",
+      "scope": "ua_translation",
+      "blocking": true,
+      "cause": "reviewer_translation_note",
+      "round": 1,
+      "note": " Марія Тереза - another todo corss check"
+    },
+    {
+      "id": "otqa:1d479d042259c62e92790a01",
+      "reviewerDecision": "Revise",
+      "status": "pending",
+      "scope": "ua_or_question_review",
+      "blocking": true,
+      "cause": "reviewer_requested_revision",
+      "round": 1,
+      "note": " todo: imperial to metric "
+    },
+    {
+      "id": "otqa:1cfa0cb71b7f0723b31119fe",
+      "reviewerDecision": "Revise",
+      "status": "pending",
+      "scope": "ua_or_question_review",
+      "blocking": true,
+      "cause": "reviewer_requested_revision",
+      "round": 1,
+      "note": "Translation / language Бакара - is known better "
+    },
+    {
+      "id": "otqa:0a86d73a5e3313b5f4f387c2",
+      "reviewerDecision": "Revise",
+      "status": "pending",
+      "scope": "ua_or_question_review",
+      "blocking": true,
+      "cause": "reviewer_requested_revision",
+      "round": 1,
+      "note": "Translation / language Трилисник? "
+    },
+    {
+      "id": "otqa:3b6718165a324c81f74c6ba4",
+      "reviewerDecision": "Revise",
+      "status": "pending",
+      "scope": "ua_or_question_review",
+      "blocking": true,
+      "cause": "reviewer_requested_revision",
+      "round": 1,
+      "note": "Translation / language  "
+    },
+    {
+      "id": "otqa:1aae67d3f7cc775ab31ac4c5",
+      "reviewerDecision": "Revise",
+      "status": "pending",
+      "scope": "ua_or_question_review",
+      "blocking": true,
+      "cause": "reviewer_requested_revision",
+      "round": 1,
+      "note": "Translation / language known works like shakespare's (and book, and movie titles) must use some of existing transations - to align with words that are familiar to people who were reading it translated "
+    },
+    {
+      "id": "otqa:18f1959413b68a28526a334a",
+      "reviewerDecision": "Revise",
+      "status": "pending",
+      "scope": "ua_or_question_review",
+      "blocking": true,
+      "cause": "reviewer_requested_revision",
+      "round": 1,
+      "note": "Translation / language known works like shakespare's (and book, and movie titles) must use some of existing transations - to align with words that are familiar to people who were reading it translated "
+    },
+    {
+      "id": "otqa:028842b07f57fefb683eb11d",
+      "reviewerDecision": "Revise",
+      "status": "pending",
+      "scope": "ua_or_question_review",
+      "blocking": true,
+      "cause": "reviewer_requested_revision",
+      "round": 1,
+      "note": "Translation / language known works like shakespare's (and book, and movie titles) must use some of existing transations - to align with words that are familiar to people who were reading it translated "
+    },
+    {
+      "id": "otqa:0bf5c43f2e228dca664ee1df",
+      "reviewerDecision": "Revise",
+      "status": "pending",
+      "scope": "ua_or_question_review",
+      "blocking": true,
+      "cause": "reviewer_requested_revision",
+      "round": 1,
+      "note": "Translation / language known works like shakespare's (and book, and movie titles) must use some of existing transations - to align with words that are familiar to people who were reading it translated "
+    },
+    {
+      "id": "otqa:09a304201733d3e8d7cedcfe",
+      "reviewerDecision": "Revise",
+      "status": "pending",
+      "scope": "ua_or_question_review",
+      "blocking": true,
+      "cause": "reviewer_requested_revision",
+      "round": 1,
+      "note": "Translation / language known works like shakespare's (and book, and movie titles) must use some of existing transations - to align with words that are familiar to people who were reading it translated "
+    },
+    {
+      "id": "otqa:050096583beaf36fee8ef4e5",
+      "reviewerDecision": "Revise",
+      "status": "pending",
+      "scope": "ua_or_question_review",
+      "blocking": true,
+      "cause": "reviewer_requested_revision",
+      "round": 1,
+      "note": "Too obscure / niche  "
+    },
+    {
+      "id": "otqa:3477f4a51b8def3dcf23ff5c",
+      "reviewerDecision": "Keep",
+      "status": "pending",
+      "scope": "ua_translation",
+      "blocking": true,
+      "cause": "reviewer_translation_note",
+      "round": 2,
+      "note": "Translation / language "
+    },
+    {
+      "id": "otqa:23f7c2f220cd10fdd6bf0fc3",
+      "reviewerDecision": "Revise",
+      "status": "pending",
+      "scope": "ua_or_question_review",
+      "blocking": true,
+      "cause": "reviewer_requested_revision",
+      "round": 2,
+      "note": "Translation / language  "
+    },
+    {
+      "id": "otqa:0c262cec679c9b567f9ad780",
+      "reviewerDecision": "Revise",
+      "status": "pending",
+      "scope": "ua_or_question_review",
+      "blocking": true,
+      "cause": "reviewer_requested_revision",
+      "round": 2,
+      "note": "Translation / language  "
+    },
+    {
+      "id": "otqa:03c5d7c34dce95f59627806e",
+      "reviewerDecision": "Revise",
+      "status": "pending",
+      "scope": "ua_or_question_review",
+      "blocking": true,
+      "cause": "reviewer_requested_revision",
+      "round": 2,
+      "note": "Translation / language  "
+    },
+    {
+      "id": "otqa:1aed00510a4ddd49b75390eb",
+      "reviewerDecision": "Keep",
+      "status": "pending",
+      "scope": "ua_translation",
+      "blocking": true,
+      "cause": "assistant_detected_semantic_mistranslation",
+      "round": 2,
+      "note": "The stored answer Пташина мова denotes bird language, while the source asks for Parseltongue/snake language. Verify established Ukrainian terminology before repair. Preserve the content Keep and answer index.",
+      "observedAnswer": "Пташина мова"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101323" />
+    <title>TriviTV · A little friendly competition</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="/" aria-label="TriviTV home"
+        >trivi<span>tv</span><i>✦</i></a
+      >
+      <div class="header-note">GOOD COMPANY. GREAT QUESTIONS.</div>
+      <label class="language-picker"
+        ><span id="language-label">Language</span
+        ><select id="language" aria-label="Language">
+          <option value="en">English</option>
+          <option value="uk">Українська</option>
+        </select></label
+      >
+      <button id="home" class="quiet" hidden>Leave room</button>
+    </header>
+    <main id="app"><p class="muted">Getting the questions ready…</p></main>
+    <div id="notice" role="alert" hidden></div>
+    <footer>
+      <span>MADE FOR YOUR NEXT NIGHT IN</span
+      ><a href="/credits">Questions: OpenTriviaQA · CC BY-SA 4.0</a>
+    </footer>
+  </body>
+</html>

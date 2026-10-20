@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "milestone": "Ukrainian questions acquired",
+  "reachedDate": "2026-10-19",
+  "recordedAtUtc": "2026-10-19T12:34:03.673054+00:00",
+  "bulkTranslationState": "paused_by_user",
+  "requiresExplicitUserInstructionToResume": true,
+  "sourceQuestions": 38926,
+  "translatedQuestions": 36614,
+  "translationExclusions": 341,
+  "unprocessedQuestions": 1971,
+  "independentlyReviewedTranslations": 0,
+  "categories": {
+    "Animals": 795,
+    "Arts & Humanities": 864,
+    "Brain Teasers": 113,
+    "Celebrities": 2443,
+    "Entertainment": 208,
+    "General Knowledge": 4818,
+    "Geography": 707,
+    "History": 1294,
+    "Hobbies": 963,
+    "Kids Trivia": 532,
+    "Literature": 1032,
+    "Movies": 3422,
+    "Music": 4289,
+    "People": 2213,
+    "Religion & Faith": 480,
+    "Science & Technology": 1883,
+    "Sport": 2293,
+    "Television": 4112,
+    "Video Games": 407,
+    "World": 3746
+  },
+  "sourceRevision": "dcc1cdf36c2985ed5c849d1f2265c5041ffcdfb9",
+  "files": {
+    "data/translations/uk.json": "3516437445dddea8ef13e37966a72edb038bedd2cfa6086f9ff1ea2b3770c443",
+    "data/opentriviaqa/questions.json": "f9d14f56198416de0214b0a9be292b807415177835c058c5cb434d1cef2542ab"
+  },
+  "translationEstimatedReportedCostUsd": "8.3852840",
+  "translationUnresolvedReservationsUsd": "0.0723404",
+  "authorizedJobCapUsd": "12",
+  "contentReviews": 400,
+  "validationStatus": "automated_baseline_passed",
+  "nextPhase": [
+    "functional_testing",
+    "apply_audience_eligibility",
+    "entity_and_terminology_verification",
+    "iterative_rule_and_pool_refinement"
+  ],
+  "outdatedReplacements": "deferred",
+  "validationReport": "docs/ukrainian-milestone-validation.md",
+  "validation": {
+    "syntax": "passed",
+    "translation_bank": "passed",
+    "unit_api_tests": {
+      "passed": 25,
+      "failed": 0,
+      "skipped": 0
+    },
+    "browser_suites": {
+      "passed": 2,
+      "failed": 0
+    },
+    "packaged_server_counts": "passed",
+    "automatic_resume_guard": "passed",
+    "physical_device_tests": "pending",
+    "translation_semantic_verification": "pending",
+    "full_editorial_runtime_filters": "pending"
+  }
+}

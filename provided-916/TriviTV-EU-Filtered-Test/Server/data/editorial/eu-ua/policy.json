@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": 2,
+  "audience": "Europe",
+  "language": "uk",
+  "specification": "docs/eu-ua-editorial-rules.md",
+  "reviewManifest": "data/editorial/eu-ua/review-decisions.json",
+  "qualityFlags": "data/editorial/eu-ua/quality-flags.json",
+  "replacementBacklog": "data/editorial/eu-ua/replacement-backlog.json",
+  "decisionPrecedence": "latest_explicit_per_id_decision_with_separate_factual_and_translation_gates",
+  "unreviewedOutcome": "hold",
+  "reviseOutcome": "hold",
+  "keepDoesNotVerifyFactsOrTranslation": true,
+  "excludePreviouslyReviewedIdsFromFreshSamples": true,
+  "priorReviewedIds": 400,
+  "numericChoices": {
+    "screeningDefault": "hold_for_party_suitability",
+    "universalBan": false,
+    "holdPatterns": [
+      "four_numeric_counts_or_measurements",
+      "similar_lifespan_ranges",
+      "near_identical_numbered_names",
+      "routine_arithmetic",
+      "multi_step_calculation",
+      "number_sequences"
+    ],
+    "preserveExplicitKeeps": true,
+    "evidenceLevel": "inferred_from_round2_decisions"
+  },
+  "franchiseTrivia": {
+    "blanketFanDetailBan": false,
+    "assessCentralRecognizability": true,
+    "positiveExamples": [
+      "Harry Potter central characters and events",
+      "Mario occupation and Fire Flower",
+      "Joker identification",
+      "Duran Duran",
+      "Depeche Mode",
+      "Elton John"
+    ],
+    "explicitExistingExclusions": [
+      "Pokemon",
+      "Guitar Hero"
+    ]
+  },
+  "outdated": {
+    "currentExclusion": true,
+    "replacementStatus": "deferred",
+    "automaticYearCutoff": null,
+    "doNotTreatLabelAsProofOfFactualStaleness": true,
+    "replaceNow": false
+  },
+  "categoryQuota": {
+    "doNotRelaxRulesToFill": true,
+    "reportShortages": true
+  },
+  "rawDecisionsPreserved": true,
+  "automaticRuntimeApplication": true,
+  "runtimeEligibilityFile": "data/editorial/eu-eligibility.json",
+  "runtimeScope": "Europe region; source data preserved; US region retains legacy filtering",
+  "unassessedSemanticOutcome": "hold"
+}

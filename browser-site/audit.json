@@ -1,0 +1,27 @@
+{
+  "archive": "TriviTV-EU-Filtered-916-Test.zip",
+  "count": 916,
+  "categories": {
+    "Animals": 68,
+    "Arts & Humanities": 83,
+    "Brain Teasers": 36,
+    "Celebrities": 7,
+    "Entertainment": 6,
+    "General Knowledge": 73,
+    "Geography": 81,
+    "History": 78,
+    "Hobbies": 69,
+    "Kids Trivia": 36,
+    "Literature": 51,
+    "Movies": 30,
+    "Music": 3,
+    "People": 57,
+    "Religion & Faith": 46,
+    "Science & Technology": 112,
+    "Sport": 7,
+    "Television": 1,
+    "Video Games": 2,
+    "World": 70
+  },
+  "sourceRevision": "dcc1cdf36c2985ed5c849d1f2265c5041ffcdfb9"
+}

@@ -1,0 +1,22 @@
+{
+  "duration_seconds": 60,
+  "sample_rate": 48000,
+  "bit_depth": 24,
+  "tempo_bpm": [
+    88,
+    96
+  ],
+  "tick_interval_first": 0.6818181818181818,
+  "tick_interval_last": 0.3998609647437874,
+  "peak_dbfs": -3.6091212891626263,
+  "rms_dbfs": -20.455775077900586,
+  "samples": {
+    "BD 808 Warm Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\BD 808 Warm Vinyl SP.wav",
+    "Rim 808 Standard Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\Rim 808 Standard Vinyl SP.wav",
+    "CH 808 Standard Vinyl SP 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\CH 808 Standard Vinyl SP 01.wav",
+    "Conga 808 Lo Vinyl SP Clean 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\Conga 808 Lo Vinyl SP Clean 01.wav"
+  },
+  "vinyl_bed": "Original synthetic vinyl-like hiss and crackle",
+  "method": "Scripted composition and rendering, five stems in Waveform edit",
+  "clipped_samples": 0
+}

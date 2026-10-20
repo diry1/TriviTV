@@ -1,0 +1,36 @@
+{
+  "duration": 60,
+  "sample_rate": 48000,
+  "bit_depth": 24,
+  "bpm_start": 112,
+  "bpm_end": 116,
+  "samples": {
+    "BD 808 Warm Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\BD 808 Warm Vinyl SP.wav",
+    "Clap 808 Standard Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\Clap 808 Standard Vinyl SP.wav",
+    "CH 808 Standard Vinyl SP 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\CH 808 Standard Vinyl SP 01.wav",
+    "OH 808 Standard Vinyl SP 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\OH 808 Standard Vinyl SP 01.wav",
+    "Maraca 808 Vinyl SP 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\02. 808 Demented Kit - Vinyl SP From Mars Samples\\Maraca 808 Vinyl SP 01.wav"
+  },
+  "synthesized": [
+    "octave bass",
+    "analog synth chords",
+    "retro arpeggio",
+    "soft lead"
+  ],
+  "analysis": {
+    "peak_dbfs": -8.994950683975762,
+    "rms_dbfs": -25.0,
+    "band_energy_pct": {
+      "0-40Hz": 0.0,
+      "40-80Hz": 13.82,
+      "80-160Hz": 20.1,
+      "160-500Hz": 43.71,
+      "500-2000Hz": 21.59,
+      "2000-6000Hz": 0.53,
+      "6000-24001Hz": 0.25
+    },
+    "clipped_samples": 0
+  },
+  "purpose": "Italo disco trivia question bed; octave bass and retro arpeggio with gentle late lift",
+  "method": "Scripted composition/rendering; separate processed stems in Waveform"
+}

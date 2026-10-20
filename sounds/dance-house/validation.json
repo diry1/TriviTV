@@ -1,0 +1,36 @@
+{
+  "duration": 60,
+  "sample_rate": 48000,
+  "bit_depth": 24,
+  "bpm_start": 120,
+  "bpm_end": 124,
+  "samples": {
+    "BD 808 Warm Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\BD 808 Warm Vinyl SP.wav",
+    "Clap 808 Standard Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\Clap 808 Standard Vinyl SP.wav",
+    "CH 808 Standard Vinyl SP 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\CH 808 Standard Vinyl SP 01.wav",
+    "OH 808 Standard Vinyl SP 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\01. 808 Standard Kit - Vinyl SP From Mars Samples\\OH 808 Standard Vinyl SP 01.wav",
+    "Maraca 808 Vinyl SP 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\02. 808 Demented Kit - Vinyl SP From Mars Samples\\Maraca 808 Vinyl SP 01.wav"
+  },
+  "synthesized": [
+    "bouncy bass",
+    "piano-style chords",
+    "piano hook",
+    "air pad"
+  ],
+  "analysis": {
+    "peak_dbfs": -9.785023930033406,
+    "rms_dbfs": -24.999999999999996,
+    "band_energy_pct": {
+      "0-40Hz": 0.0,
+      "40-80Hz": 6.09,
+      "80-160Hz": 14.02,
+      "160-500Hz": 65.39,
+      "500-2000Hz": 13.78,
+      "2000-6000Hz": 0.45,
+      "6000-24001Hz": 0.26
+    },
+    "clipped_samples": 0
+  },
+  "purpose": "Dance house trivia question bed; brighter piano groove, restrained bass and gentle late lift",
+  "method": "Scripted composition/rendering; separate processed stems in Waveform"
+}

@@ -1,0 +1,41 @@
+TriviTV TV proof of concept — 0.2.0-poc1
+
+Install: TriviTV-TV-POC-0.2.0.apk (about 1 MB)
+
+1. Copy the APK to your Android TV / Google TV, for example on a USB drive.
+2. Open it with your TV's file manager. If prompted, allow that file manager
+   to install unknown apps, then install.
+3. Open TriviTV POC from the TV apps list.
+
+Android 8.0+ with a current Android System WebView is required.
+There is no Xiaomi-specific dependency. Other TV platforms such as Samsung
+Tizen or LG webOS cannot install Android APKs.
+
+No PC server, IP address, login, payment or API key is needed.
+
+Arrows: move focus. OK: select.
+Back/Menu: Continue, Reload, Live version, Bundled version, Exit.
+
+The app first opens the live preview, which receives future web updates.
+On connection failure it falls back to the bundled 916 Ukrainian EU questions.
+You can also choose the bundled version from Back/Menu.
+Online and offline saved progress are separate.
+The bundled version is frozen in this APK; updating it needs a new APK.
+This app installs alongside older TriviTV builds under a separate app ID.
+
+For the first test, check:
+- all categories together show 916 available questions;
+- arrows and OK reach the setup and answer controls;
+- one Trivia game and one Millionaire game can be played;
+- long questions remain readable/scrollable on your TV.
+
+This is a signed debug APK for sideload testing, not a Google Play release.
+Build, lint (no errors), signature, alignment and packaged bank checks passed.
+Bundled page/start/answer/reload and remote DOM mapping passed offline in a
+desktop browser. Physical TV and Android emulator tests have NOT been run.
+
+APK SHA-256:
+2abb02ae596df5fa12d6634653166b8c7c538792a503c2157a3e5251388f6201
+
+Question source: OpenTriviaQA contributors, adapted under CC BY-SA 4.0.
+Full attribution, source revision and license are included in app Credits.

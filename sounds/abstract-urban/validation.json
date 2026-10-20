@@ -1,0 +1,36 @@
+{
+  "duration": 60,
+  "sample_rate": 48000,
+  "bit_depth": 24,
+  "bpm_start": 82,
+  "bpm_end": 86,
+  "samples": {
+    "BD Club Smack Vinyl SP 02.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\07. Hi Punch Kit - Vinyl SP From Mars Samples\\BD Club Smack Vinyl SP 02.wav",
+    "SD Tape Res Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\15. Old Tape Kit - Vinyl SP From Mars Samples\\SD Tape Res Vinyl SP.wav",
+    "CH Tape Snap Vinyl SP 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\15. Old Tape Kit - Vinyl SP From Mars Samples\\CH Tape Snap Vinyl SP 01.wav",
+    "Rim Tape Skin Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\15. Old Tape Kit - Vinyl SP From Mars Samples\\Rim Tape Skin Vinyl SP.wav",
+    "Perc Tape Glitch Vinyl SP 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\15. Old Tape Kit - Vinyl SP From Mars Samples\\Perc Tape Glitch Vinyl SP 01.wav",
+    "Shaker Acoustic Slap Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\07. Hi Punch Kit - Vinyl SP From Mars Samples\\Shaker Acoustic Slap Vinyl SP.wav",
+    "FX Vox Breath Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\07. Hi Punch Kit - Vinyl SP From Mars Samples\\FX Vox Breath Vinyl SP.wav",
+    "FX Club Chord Vinyl SP 02.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\09. Flux Kit - Vinyl SP From Mars Samples\\FX Club Chord Vinyl SP 02.wav"
+  },
+  "synthesized": [
+    "sparse mid-bass; all other parts use pack samples"
+  ],
+  "analysis": {
+    "peak_dbfs": -5.679933127304016,
+    "rms_dbfs": -25.014400708217096,
+    "band_energy_pct": {
+      "0-40Hz": 0.0,
+      "40-80Hz": 2.16,
+      "80-160Hz": 32.19,
+      "160-500Hz": 55.09,
+      "500-2000Hz": 8.31,
+      "2000-6000Hz": 2.1,
+      "6000-24001Hz": 0.14
+    },
+    "clipped_samples": 0
+  },
+  "purpose": "Abstract hip hop urban trivia bed; broken tape beat, chopped unpitched chord collage, found percussion and subtle late lift",
+  "method": "Scripted composition/rendering; separate processed stems in Waveform"
+}

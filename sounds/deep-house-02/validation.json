@@ -1,0 +1,36 @@
+{
+  "duration": 60,
+  "sample_rate": 48000,
+  "bit_depth": 24,
+  "bpm_start": 113,
+  "bpm_end": 117,
+  "samples": {
+    "BD 909 House Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\16. Vintage House Kit - Vinyl SP From Mars Samples\\BD 909 House Vinyl SP.wav",
+    "Clap House Vinyl SP 01.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\16. Vintage House Kit - Vinyl SP From Mars Samples\\Clap House Vinyl SP 01.wav",
+    "CH Vintage Drag Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\16. Vintage House Kit - Vinyl SP From Mars Samples\\CH Vintage Drag Vinyl SP.wav",
+    "OH House Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\16. Vintage House Kit - Vinyl SP From Mars Samples\\OH House Vinyl SP.wav",
+    "Conga Vintage Muted Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\16. Vintage House Kit - Vinyl SP From Mars Samples\\Conga Vintage Muted Vinyl SP.wav",
+    "Conga Vintage Open Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\16. Vintage House Kit - Vinyl SP From Mars Samples\\Conga Vintage Open Vinyl SP.wav",
+    "Shaker House Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\Presets\\Maschine\\Vinyl SP From Mars\\16. Vintage House Kit - Vinyl SP From Mars Samples\\Shaker House Vinyl SP.wav",
+    "FX House Chord Vinyl SP Cm9.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\WAV\\01. Individual Hits\\10. FX\\FX House Chord Vinyl SP Cm9.wav"
+  },
+  "synthesized": [
+    "muted mid-bass only; Cm9 harmony and textures from pack samples"
+  ],
+  "analysis": {
+    "peak_dbfs": -7.280614681849487,
+    "rms_dbfs": -25.0,
+    "band_energy_pct": {
+      "0-40Hz": 0.0,
+      "40-80Hz": 1.71,
+      "80-160Hz": 29.71,
+      "160-500Hz": 55.47,
+      "500-2000Hz": 11.71,
+      "2000-6000Hz": 1.31,
+      "6000-24001Hz": 0.09
+    },
+    "clipped_samples": 0
+  },
+  "purpose": "Deep vintage house trivia bed; Vintage House sampled drums and congas, sampled Cm9 harmony with long C pedal, subtle late lift",
+  "method": "Scripted composition/rendering; separate processed stems in Waveform"
+}
