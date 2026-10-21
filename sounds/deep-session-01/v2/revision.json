@@ -1,0 +1,10 @@
+{
+  "change": "06 replaced with original soft D-minor/F-major triad stabs; matching 07 echoes replaced to remove former timbre",
+  "old_track": "06 Sampled ninth keys",
+  "new_track": "06 Soft groove chords",
+  "chord_energy_change_db": -5.19,
+  "duration": 128,
+  "bpm": 120,
+  "other_tracks": "01\u201305 unchanged",
+  "changed_clip_count": 224
+}

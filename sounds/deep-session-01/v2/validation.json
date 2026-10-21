@@ -1,0 +1,12 @@
+{
+  "master": "sounds\\TriviTV-Deep-Session-01-Low-Tide-128s-v2.wav",
+  "native_waveform_export": "sounds\\deep-session-01\\Exported\\Low Tide v2 Export 1.wav",
+  "duration": 128,
+  "bpm": 120,
+  "peak_dbfs": -10.400409850542056,
+  "rms_dbfs": -25.69027853414882,
+  "clipped_samples": 0,
+  "same_master_gain_as_v1_db": 17.226790666565734,
+  "tracks_01_to_05_clips_unchanged": true,
+  "below_40Hz_energy_pct": 0.33
+}

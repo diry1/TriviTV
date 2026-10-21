@@ -20,6 +20,7 @@ import android.widget.LinearLayout
 /** Android TV proof of concept wrapping the existing browser-local game. */
 class MainActivity : Activity() {
  private lateinit var web: WebView
+ private lateinit var music: BundledMusic
  private var currentOrigin = ""
  private val liveUrl = "https://trivitv-ua-europe-test.jauntysloth128.chatgpt.site/"
  private val localUrl = "https://appassets.androidplatform.net/"
@@ -30,12 +31,14 @@ class MainActivity : Activity() {
  @SuppressLint("SetJavaScriptEnabled")
  override fun onCreate(savedInstanceState: Bundle?) {
   super.onCreate(savedInstanceState)
+  volumeControlStream=android.media.AudioManager.STREAM_MUSIC
   val root = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL; setBackgroundColor(Color.rgb(16,19,35)) }
   window.decorView.systemUiVisibility = android.view.View.SYSTEM_UI_FLAG_FULLSCREEN or android.view.View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or android.view.View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
   web=WebView(this).apply {
    setBackgroundColor(Color.rgb(16,19,35))
    settings.javaScriptEnabled=true
    settings.domStorageEnabled=true
+   settings.mediaPlaybackRequiresUserGesture=false
    settings.textZoom=100
    settings.useWideViewPort=true
    settings.loadWithOverviewMode=true
@@ -64,8 +67,19 @@ class MainActivity : Activity() {
      val path = if(request.url.path=="/") "index.html" else request.url.path.orEmpty().removePrefix("/")
      if(path.split('/').any { it==".." || it.isBlank() } || path.contains('\\')) return missing()
      return try {
-      val mime=when(path.substringAfterLast('.')) { "js"->"text/javascript";"css"->"text/css";"json"->"application/json";"txt"->"text/plain";else->"text/html" }
-      android.webkit.WebResourceResponse(mime,"UTF-8",200,"OK",mapOf("Cache-Control" to "no-cache"),assets.open("web/$path"))
+      val extension=path.substringAfterLast('.')
+      val mime=when(extension) { "ogg"->"audio/ogg";"wav"->"audio/wav";"js"->"text/javascript";"css"->"text/css";"json"->"application/json";"txt"->"text/plain";else->"text/html" }
+      if(extension in listOf("ogg","wav")) {
+       val bytes=assets.open("web/$path").use { it.readBytes() }
+       val range=request.requestHeaders.entries.firstOrNull { it.key.equals("Range",true) }?.value
+       val match=range?.let { Regex("bytes=(\\d+)-(\\d*)").matchEntire(it) }
+       if(match!=null) {
+        val start=match.groupValues[1].toLongOrNull()?:0
+        val end=match.groupValues[2].toLongOrNull()?.coerceAtMost(bytes.size.toLong()-1)?: (bytes.size.toLong()-1)
+        if(start> end || start>=bytes.size) return android.webkit.WebResourceResponse(mime,null,416,"Range Not Satisfiable",mapOf("Content-Range" to "bytes */${bytes.size}"),java.io.ByteArrayInputStream(byteArrayOf()))
+        android.webkit.WebResourceResponse(mime,null,206,"Partial Content",mapOf("Accept-Ranges" to "bytes","Content-Range" to "bytes $start-$end/${bytes.size}","Content-Length" to (end-start+1).toString()),java.io.ByteArrayInputStream(bytes,start.toInt(),(end-start+1).toInt()))
+       } else android.webkit.WebResourceResponse(mime,null,200,"OK",mapOf("Accept-Ranges" to "bytes","Content-Length" to bytes.size.toString()),java.io.ByteArrayInputStream(bytes))
+      } else android.webkit.WebResourceResponse(mime,"UTF-8",200,"OK",mapOf("Cache-Control" to "no-cache"),assets.open("web/$path"))
      } catch (_: Exception) { missing() }
     }
     override fun onReceivedHttpError(view: WebView, request: WebResourceRequest, response: android.webkit.WebResourceResponse) {
@@ -76,6 +90,8 @@ class MainActivity : Activity() {
     }
    }
   }
+  music=BundledMusic(this,web) { offline }
+  web.addJavascriptInterface(music,"TriviTVMusic")
   // The game occupies the full TV screen. Settings are reached with Back/Menu.
   root.addView(web,LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,0,1f))
   setContentView(root)
@@ -86,8 +102,9 @@ class MainActivity : Activity() {
  }
  private fun origin(uri: Uri): String = "${uri.scheme}://${uri.host}:${uri.port}"
  private fun missing() = android.webkit.WebResourceResponse("text/plain","UTF-8",404,"Not Found",emptyMap(),java.io.ByteArrayInputStream("Not found".toByteArray()))
- private fun connectToServer() { openGame(false) }
+ private fun connectToServer() { openGame(true) }
  private fun openGame(local: Boolean) {
+  if(::music.isInitialized)music.clear()
   generation++; val epoch=generation; offline=local; loaded=false
   val url=if(local)localUrl else liveUrl
   currentOrigin=origin(Uri.parse(url));web.stopLoading();web.loadUrl(url+"?language=uk");web.requestFocus()
@@ -95,11 +112,13 @@ class MainActivity : Activity() {
  }
  private fun showMenu() {
   if(menuDialog?.isShowing==true)return
+  web.evaluateJavascript("window.TriviTVAudio?.suspend(true)",null)
   menuDialog=android.app.AlertDialog.Builder(this)
    .setTitle("TriviTV POC · "+if(offline)"Локальна версія" else "Онлайн")
    .setItems(arrayOf("Продовжити","Оновити сторінку","Онлайн: остання версія","Локальна версія: 916 запитань","Вийти")) { _, item ->
     when(item) {1->web.reload();2->openGame(false);3->openGame(true);4->finish()};web.requestFocus()
    }.create()
+  menuDialog?.setOnDismissListener { web.evaluateJavascript("window.TriviTVAudio?.suspend(false)",null) }
   menuDialog?.show()
  }
  override fun dispatchKeyEvent(event: KeyEvent): Boolean {
@@ -127,5 +146,7 @@ class MainActivity : Activity() {
    if(handled=="true")web.evaluateJavascript("window.TriviTVRemote.back()",null) else showMenu()
   }
  }
- override fun onDestroy() { menuDialog?.dismiss();web.destroy(); super.onDestroy() }
+ override fun onPause() { if(::music.isInitialized)music.setForeground(false);web.evaluateJavascript("window.TriviTVAudio?.suspend(true)",null);web.onPause();super.onPause() }
+ override fun onResume() { super.onResume();if(::web.isInitialized){web.onResume();if(::music.isInitialized)music.setForeground(true);web.evaluateJavascript("window.TriviTVAudio?.suspend(false)",null)} }
+ override fun onDestroy() { menuDialog?.dismiss();if(::music.isInitialized)music.clear();web.removeJavascriptInterface("TriviTVMusic");web.destroy(); super.onDestroy() }
 }

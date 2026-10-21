@@ -1,0 +1,18 @@
+{
+  "apk": "TriviTV-TV-0.3.5-native-music.apk",
+  "bytes": 5154429,
+  "MB": 5.15,
+  "sha256": "a10b669a7ba65f619669941a5cc74355816f03f26f1a3a9b6b9f94340f554dce",
+  "versionCode": 8,
+  "bundledFilesMatched": 31,
+  "signatureVerified": true,
+  "sameSigningKey": true,
+  "zipAlignmentVerified": true,
+  "lintErrors": 0,
+  "lintWarnings": 3,
+  "nativeMusicBackend": "MediaPlayer from packaged asset descriptor",
+  "webMusicBackend": "HTML audio unchanged",
+  "bridgeIntegrationTest": "Mock native bridge in Edge passed; not actual Android playback",
+  "physicalTvTested": false,
+  "rootCauseConfirmed": false
+}

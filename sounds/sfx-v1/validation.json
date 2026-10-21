@@ -4,9 +4,7 @@
     "audio/highlight-b.wav",
     "audio/press-a.wav",
     "audio/back-a.wav",
-    "audio/back-b.wav",
     "audio/unavailable-a.wav",
-    "audio/unavailable-b.wav",
     "audio/question-a.wav",
     "audio/question-b.wav",
     "audio/locked-a.wav",
@@ -24,7 +22,7 @@
     "audio/complete-a.wav",
     "audio/complete-b.wav"
   ],
-  "count": 23,
+  "count": 21,
   "clipping": false,
   "subjectiveReview": "pending; not listened to by agent",
   "sourceZipSha256": "f2193d072726d6758a5f7871b2dcc54dcce0d5c35c6f0a62f92549b327c81232"

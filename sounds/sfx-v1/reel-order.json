@@ -13,38 +13,38 @@
   },
   {
     "event": "Unavailable action",
-    "start": 2.637
+    "start": 2.616
   },
   {
     "event": "Question appears",
-    "start": 3.602
+    "start": 3.48
   },
   {
     "event": "Answer locked",
-    "start": 4.892
+    "start": 4.771
   },
   {
     "event": "Choices revealed",
-    "start": 5.982
+    "start": 5.861
   },
   {
     "event": "Correct answer",
-    "start": 7.332
+    "start": 7.211
   },
   {
     "event": "Incorrect answer",
-    "start": 8.582
+    "start": 8.461
   },
   {
     "event": "Last three seconds",
-    "start": 9.752
+    "start": 9.631
   },
   {
     "event": "Time expired",
-    "start": 13.552
+    "start": 13.431
   },
   {
     "event": "Round complete",
-    "start": 16.452
+    "start": 16.331
   }
 ]

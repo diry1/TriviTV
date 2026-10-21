@@ -13,3 +13,6 @@ Installation: copy the APK to the TV using a USB drive or an existing trusted fi
 Build in this workspace using the local JDK 21, SDK platform 36/build-tools 35.0.0 under `.tools/android-build`, and `gradlew.bat --no-daemon assembleDebug`. `local.properties` points to the local SDK and is not committed. The existing Gradle wrapper verifies its distribution checksum. Keep the debug signing key for compatible APK updates; do not distribute its private key.
 
 Validation: compilation, Android lint, APK signature/manifest and bundled asset/count checks are recorded with the delivered artifact. No physical TV or Android emulator testing is claimed.
+
+## Audio test build 0.3.0 (versionCode 3)
+Current TV audio test opens bundled content by default so selected music and SFX work offline. Native WebView allows media playback without a gesture and serves Ogg/WAV with audio MIME types and byte-range responses; lifecycle/native menu suspend audio. Same package/signing key as POC2. Eight selected trivia tracks temporarily serve both Trivia and Millionaire; Millionaire repeats its track and remains untimed. Music/effects footer toggles persist. See artifacts/TriviTV-TV-Audio/START-HERE.txt for APK and validation. The live Site has not been updated.

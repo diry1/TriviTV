@@ -1,18 +1,20 @@
 # TriviTV
 
-Current delivery is the browser-only Ukrainian/Europe solo prototype in [`browser-site/dist/`](browser-site/dist/), with the TV launcher in [`android-tv-poc/`](android-tv-poc/). It preserves the supplied 916-question pool, original IDs/answer keys, attribution and gameplay rules. Start with [`PROJECT-HANDOVER.md`](PROJECT-HANDOVER.md).
+Ukrainian TV trivia and phone multiplayer, live at https://iggro.com. Browser TV interface: https://iggro.com/tv/.
 
-- Live browser prototype: https://trivitv-ua-europe-test.jauntysloth128.chatgpt.site
-- Browser source and validation instructions: [`browser-site/README.md`](browser-site/README.md).
-- Sideloadable TV build and instructions: [`artifacts/TriviTV-TV-POC2/`](artifacts/TriviTV-TV-POC2/).
-- Preserved authoritative question/editorial source: [`provided-916/`](provided-916/).
-- Eight selected trivia masters: [`sounds/SELECTED-TRACKS.md`](sounds/SELECTED-TRACKS.md) and [`sounds/selection.json`](sounds/selection.json).
-- Navigation/notification audition, revision 2: [`sounds/sfx-v1/`](sounds/sfx-v1/). Serve the repository locally and open `sounds/sfx-v1/index.html`, or open that file directly in a browser.
+Current version: **0.6.0 Turf War**. Main menu: Trivia (1–8), Millionaire (1), Imposter (3–8 phones), Turf War (2, TV remote + phone or two phones). Music, sound effects and accelerating final-ten-second countdown included.
 
-Music and sound effects are review assets; they have not yet been integrated into the game. UI sound source is Kenney CC0 with original synthesized result cues; provenance/license are included. Music sample provenance is recorded in each track folder. Raw Samples from Mars files, intermediate stems, rejected draft WAVs, local credentials, build caches and private conversation archives are excluded from this GitHub snapshot. They remain preserved in the original local workspace. Audio scripts retain local authoring paths and require the corresponding sample pack and numpy/scipy/soundfile; the committed WAV masters and audition page need no authoring dependencies.
+- [TV APK and install instructions](artifacts/TriviTV-TV-Turf-War/)
+- [Multiplayer source, deployment and rules](multiplayer/README.md)
+- [Project continuity and validation](PROJECT-HANDOVER.md)
+- [Browser source](browser-site/), [Android launcher](android-tv-poc/)
+- [Preserved 916-question bank and editorial sources](provided-916/)
+- [Sound audition](sounds/sfx-v1/index.html)
 
-## Run and validate
+Turf War uses a shared 5×5 board. Bid privately before the trivia question. Attacks have 10 seconds. Correct attacks capture unless the owner selected that same tile and also answered correctly. Contested tiles cool down one turn, with the last free tile exempt. Five straight tiles horizontally, vertically or diagonally wins.
 
-Serve `browser-site/dist/` with any static HTTP server. No application backend or accounts are required. For the browser QA suite, install Node.js, Microsoft Edge, then run `npm ci` and `npm test` inside `browser-site/`. The root Node server and original `android/` are historical; their instructions are retained in [`docs/legacy-server-README.md`](docs/legacy-server-README.md).
+For development: Node.js, then `npm ci` in multiplayer; `npm run prepare-assets`; `npm run dev`. With local service running, `npm test` exercises engine and HTTP/WebSocket integration. Deploy to the existing Cloudflare Workers account with `npm run deploy` after authenticating Wrangler. Credentials, local room state and caches are excluded.
 
-Question data retain OpenTriviaQA attribution and CC BY-SA 4.0 licensing. Preserve the selected bank and editorial decisions when making updates. No translation jobs or paid API requests are part of this prototype.
+Validation: 27 local tests and four public-service integration tests passed; Android build/lint, APK signing/alignment and all 39 bundled files verified. Physical TV testing of this version remains pending. Latest APK is 5,197,524 bytes.
+
+Question attribution: OpenTriviaQA, CC BY-SA 4.0. Preserve IDs, answer keys and editorial decisions. Audio provenance/licenses are included. Commercial raw sample copies, intermediate stems, rejected masters and private conversation history remain local. Existing root server and android/ are historical; see docs/legacy-server-README.md.

@@ -1,0 +1,6 @@
+TriviTV TV 0.3.1 session audio test
+Install TriviTV-TV-0.3.1-session-audio.apk over the previous version; same package and signing key.
+Eight approved music tracks extended to 180 seconds with crossfades. Music continues across questions and advances to another track on completion, in Trivia and Millionaire.
+Trivia review: Next is focused by default and skips the countdown; smaller grey Pause beside it pauses review/music. Existing automatic advance remains.
+Browser gameplay, all 916 question layouts, audio checks, Android build/lint, signature, alignment and bundled asset checks passed. Physical TV playback needs listening verification.
+Size: 18.07 MB (18070990 bytes).

@@ -1,0 +1,5256 @@
+{
+  "title": "Amber Rooms",
+  "duration": 130.16949152542372,
+  "bpm": 118,
+  "key": "B minor",
+  "changes_seconds": [
+    32.54237288135593,
+    65.08474576271186,
+    97.62711864406779
+  ],
+  "samples": {
+    "BD Machinedrum Smooth Vinyl SP.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\WAV\\01. Individual Hits\\01. Bass Drum\\BD Machinedrum Smooth Vinyl SP.wav",
+    "SD Mellow Perkons.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Perkons From Mars\\WAV\\01. One Shots\\01. Individual Hits\\03. Snare\\SD Mellow Perkons.wav",
+    "CH Submerge 808 Loops 120.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\808 Loops From Mars\\WAV\\08. Hi Hat\\CH\\CH Submerge 808 Loops 120.wav",
+    "Shaker Acoustic Air Vinyl SP Clean 02.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\WAV\\01. Individual Hits\\06. Shaker\\Shaker Acoustic Air Vinyl SP Clean 02.wav",
+    "Rim Tite Perkons Clean 02.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Perkons From Mars\\WAV\\01. One Shots\\01. Individual Hits\\04. Clap & Rim\\Rim Tite Perkons Clean 02.wav",
+    "OH Thin Perkons 02.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Perkons From Mars\\WAV\\01. One Shots\\01. Individual Hits\\05. Hi Hat\\OH Thin Perkons 02.wav",
+    "FX Guit Tone Vinyl SP G.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\WAV\\01. Individual Hits\\10. FX\\FX Guit Tone Vinyl SP G.wav"
+  },
+  "events": [
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 0.0,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 0.5084745762711864,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 1.0169491525423728,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 1.5254237288135593,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 0.521186440677966,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 1.5381355932203389,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 0.1271186440677966,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 0.3813559322033898,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 1.1440677966101696,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 54",
+      "start": 1.7796610169491525,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 0.2542372881355932,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo Bm",
+      "start": 0.635593220338983,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 1.271186440677966,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo Bm",
+      "start": 1.652542372881356,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 2.0338983050847457,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 2.542372881355932,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 3.0508474576271185,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 3.559322033898305,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 2.555084745762712,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 3.5720338983050848,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 2.1610169491525424,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 54",
+      "start": 2.923728813559322,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 3.432203389830508,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 2.796610169491525,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo Bm",
+      "start": 3.1779661016949152,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 3.6864406779661016,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo Bm",
+      "start": 4.067796610169491,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Tite Perkons rim",
+      "start": 3.1779661016949152,
+      "length": 0.015708333333333335
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 4.067796610169491,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 4.576271186440678,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 5.084745762711864,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 5.59322033898305,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 4.588983050847458,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 5.6059322033898304,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 4.194915254237288,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 4.4491525423728815,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 5.211864406779661,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 54",
+      "start": 5.847457627118644,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 4.322033898305085,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo Bm",
+      "start": 4.703389830508474,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 5.338983050847458,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo Bm",
+      "start": 5.720338983050847,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 6.101694915254237,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 6.610169491525424,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 7.11864406779661,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 7.627118644067796,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 6.622881355932203,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 7.639830508474576,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 6.228813559322034,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 54",
+      "start": 6.991525423728813,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 7.5,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 6.864406779661016,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo Bm",
+      "start": 7.245762711864407,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 7.7542372881355925,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo Bm",
+      "start": 8.135593220338983,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Tite Perkons rim",
+      "start": 7.245762711864407,
+      "length": 0.015708333333333335
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 8.135593220338983,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 8.64406779661017,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 9.152542372881356,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 9.661016949152541,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 8.656779661016948,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 9.67372881355932,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 8.262711864406779,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 8.516949152542372,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 9.279661016949152,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 9.915254237288135,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 8.389830508474576,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 8.771186440677965,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 9.406779661016948,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 9.788135593220339,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 10.169491525423728,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 10.677966101694915,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 11.1864406779661,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 11.694915254237287,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 10.690677966101694,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 11.707627118644066,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 10.296610169491524,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 11.059322033898304,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 11.567796610169491,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 10.932203389830509,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 11.313559322033898,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 11.822033898305085,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 12.203389830508474,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Tite Perkons rim",
+      "start": 11.313559322033898,
+      "length": 0.015708333333333335
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 12.203389830508474,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 12.711864406779661,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 13.220338983050848,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 13.728813559322033,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 12.72457627118644,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 13.741525423728811,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 12.33050847457627,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 12.584745762711863,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 13.347457627118644,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 13.983050847457626,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 12.457627118644067,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 12.838983050847457,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 13.47457627118644,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 13.85593220338983,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 14.23728813559322,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 14.745762711864407,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 15.254237288135592,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 15.762711864406779,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 14.758474576271185,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 15.775423728813557,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 14.364406779661016,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 15.127118644067796,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 15.635593220338983,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 15.0,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 15.38135593220339,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 15.889830508474576,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 16.271186440677965,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Tite Perkons rim",
+      "start": 15.38135593220339,
+      "length": 0.015708333333333335
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 16.271186440677965,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 16.779661016949152,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 17.28813559322034,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 17.796610169491526,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 16.79237288135593,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 17.809322033898304,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 16.39830508474576,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 16.652542372881356,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 17.415254237288135,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 50",
+      "start": 18.050847457627118,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 16.525423728813557,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo G",
+      "start": 16.906779661016948,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 17.54237288135593,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo G",
+      "start": 17.923728813559322,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 18.305084745762713,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 18.813559322033896,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 19.322033898305083,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 19.83050847457627,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 18.826271186440675,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 19.84322033898305,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 18.43220338983051,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 50",
+      "start": 19.194915254237287,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 19.703389830508474,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 19.06779661016949,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo G",
+      "start": 19.44915254237288,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 19.957627118644066,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo G",
+      "start": 20.338983050847457,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Tite Perkons rim",
+      "start": 19.44915254237288,
+      "length": 0.015708333333333335
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 20.338983050847457,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 20.847457627118644,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 21.35593220338983,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 21.864406779661017,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 20.860169491525422,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 21.877118644067796,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 20.466101694915253,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 20.720338983050848,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 21.483050847457626,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 50",
+      "start": 22.11864406779661,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 20.59322033898305,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo G",
+      "start": 20.97457627118644,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 21.610169491525422,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo G",
+      "start": 21.991525423728813,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 22.3728813559322,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 22.881355932203387,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 23.389830508474574,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 23.89830508474576,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 22.894067796610166,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 23.91101694915254,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 22.5,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 50",
+      "start": 23.26271186440678,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 23.771186440677965,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 23.135593220338983,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo G",
+      "start": 23.51694915254237,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 24.025423728813557,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo G",
+      "start": 24.406779661016948,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Tite Perkons rim",
+      "start": 23.51694915254237,
+      "length": 0.015708333333333335
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 24.406779661016948,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 24.915254237288135,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 25.423728813559322,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 25.93220338983051,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 24.927966101694913,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 25.944915254237287,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 24.533898305084744,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 24.78813559322034,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 25.550847457627118,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 26.1864406779661,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 24.66101694915254,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 25.04237288135593,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 25.677966101694913,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 26.059322033898304,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 26.440677966101696,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 26.94915254237288,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 27.457627118644066,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 27.966101694915253,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 26.961864406779657,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 27.97881355932203,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 26.56779661016949,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 27.33050847457627,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 27.838983050847457,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 27.203389830508474,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 27.58474576271186,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 28.09322033898305,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 28.47457627118644,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Tite Perkons rim",
+      "start": 27.58474576271186,
+      "length": 0.015708333333333335
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 28.47457627118644,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 28.983050847457626,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 29.491525423728813,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 30.0,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 28.995762711864405,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 30.01271186440678,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 28.601694915254235,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 28.85593220338983,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 29.61864406779661,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 30.25423728813559,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 28.72881355932203,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 29.110169491525422,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 29.745762711864405,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 30.127118644067796,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 30.508474576271183,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 31.01694915254237,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 31.525423728813557,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 32.03389830508475,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 31.02966101694915,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 32.04661016949152,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 30.635593220338983,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 31.39830508474576,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 31.906779661016948,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 31.271186440677965,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 31.652542372881353,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 32.16101694915254,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 32.54237288135593,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Tite Perkons rim",
+      "start": 31.652542372881353,
+      "length": 0.015708333333333335
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 32.54237288135593,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 33.050847457627114,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 33.559322033898304,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 34.06779661016949,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 33.0635593220339,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 34.08050847457627,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 32.66949152542373,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 32.92372881355932,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 33.6864406779661,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 54",
+      "start": 34.32203389830509,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 32.79661016949152,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 33.813559322033896,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 32.92372881355932,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 33.940677966101696,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 34.57627118644068,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 35.08474576271186,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 35.59322033898305,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 36.101694915254235,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 35.097457627118644,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 36.11440677966102,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 34.70338983050847,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 54",
+      "start": 35.46610169491525,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 35.974576271186436,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 35.33898305084745,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 36.228813559322035,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 34.95762711864407,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 35.974576271186436,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 36.610169491525426,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 37.11864406779661,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 37.62711864406779,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 38.13559322033898,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 37.13135593220339,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 38.148305084745765,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 36.73728813559322,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 36.99152542372881,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 37.75423728813559,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 54",
+      "start": 38.389830508474574,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 36.86440677966102,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 37.88135593220339,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 36.99152542372881,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 38.00847457627118,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 38.644067796610166,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 39.152542372881356,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 39.66101694915254,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 40.16949152542373,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 39.16525423728814,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 40.18220338983051,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 38.771186440677965,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 54",
+      "start": 39.53389830508475,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 40.04237288135593,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 39.40677966101695,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 40.29661016949152,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 39.02542372881356,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 40.04237288135593,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Thin Perkons open hat",
+      "start": 40.42372881355932,
+      "length": 0.2089375
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 40.67796610169491,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 41.1864406779661,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 41.69491525423729,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 42.20338983050847,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 41.199152542372886,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 42.21610169491525,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 40.80508474576271,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 41.059322033898304,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 41.82203389830508,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 42.45762711864407,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 40.932203389830505,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 41.94915254237288,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 41.059322033898304,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 42.07627118644068,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Distant guitar A",
+      "start": 41.56779661016949,
+      "length": 0.3539375
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 42.71186440677966,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 43.220338983050844,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 43.728813559322035,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 44.23728813559322,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 43.233050847457626,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 44.25,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 42.83898305084745,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 43.601694915254235,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 44.11016949152542,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 43.474576271186436,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 44.36440677966102,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 43.09322033898305,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 44.11016949152542,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 44.7457627118644,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 45.25423728813559,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 45.762711864406775,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 46.271186440677965,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 45.266949152542374,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 46.28389830508475,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 44.8728813559322,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 45.12711864406779,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 45.889830508474574,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 46.52542372881356,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 45.0,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 46.016949152542374,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 45.12711864406779,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 46.144067796610166,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 46.77966101694915,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 47.28813559322034,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 47.79661016949152,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 48.30508474576271,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 47.30084745762712,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 48.317796610169495,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 46.90677966101695,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 47.66949152542373,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 48.17796610169491,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 47.54237288135593,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 48.432203389830505,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 47.16101694915254,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 48.17796610169491,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Thin Perkons open hat",
+      "start": 48.559322033898304,
+      "length": 0.2089375
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 48.813559322033896,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 49.32203389830508,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 49.83050847457627,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 50.33898305084745,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 49.33474576271187,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 50.351694915254235,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 48.940677966101696,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 49.19491525423729,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 49.95762711864406,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 50",
+      "start": 50.59322033898305,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 49.06779661016949,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 50.08474576271186,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 49.19491525423729,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 50.21186440677966,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 50.847457627118644,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 51.35593220338983,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 51.86440677966102,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 52.3728813559322,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 51.36864406779661,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 52.38559322033898,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 50.974576271186436,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 50",
+      "start": 51.73728813559322,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 52.2457627118644,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 51.61016949152542,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 52.5,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 51.228813559322035,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 52.2457627118644,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 52.88135593220339,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 53.389830508474574,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 53.89830508474576,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 54.40677966101695,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 53.402542372881356,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 54.41949152542373,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 53.00847457627118,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 53.262711864406775,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 54.02542372881356,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 50",
+      "start": 54.66101694915254,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 53.13559322033898,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 54.152542372881356,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 53.262711864406775,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 54.27966101694915,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 54.91525423728813,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 55.42372881355932,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 55.932203389830505,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 56.440677966101696,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 55.436440677966104,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 56.45338983050848,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 55.04237288135593,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 50",
+      "start": 55.80508474576271,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 56.313559322033896,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 55.67796610169491,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 56.56779661016949,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 55.29661016949152,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 56.313559322033896,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Thin Perkons open hat",
+      "start": 56.69491525423729,
+      "length": 0.2089375
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 56.94915254237288,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 57.45762711864406,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 57.96610169491525,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 58.474576271186436,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 57.47033898305085,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 58.48728813559322,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 57.07627118644068,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 57.33050847457627,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 58.093220338983045,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 58.728813559322035,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 57.20338983050847,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 58.220338983050844,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 57.33050847457627,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 58.347457627118644,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Distant guitar A",
+      "start": 57.83898305084745,
+      "length": 0.3539375
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 58.983050847457626,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 59.49152542372881,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 60.0,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 60.50847457627118,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 59.50423728813559,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 60.521186440677965,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 59.11016949152542,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 59.8728813559322,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 60.381355932203384,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 59.7457627118644,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 60.63559322033898,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 59.36440677966102,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 60.381355932203384,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 61.01694915254237,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 61.52542372881356,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 62.03389830508474,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 62.54237288135593,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 61.53813559322034,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 62.55508474576271,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 61.144067796610166,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 61.39830508474576,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 62.16101694915254,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 62.79661016949152,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 61.271186440677965,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 62.28813559322034,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 61.39830508474576,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 62.41525423728813,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 63.050847457627114,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 63.559322033898304,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 64.0677966101695,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 64.57627118644068,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 63.57203389830509,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 64.58898305084746,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 63.17796610169491,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 63.940677966101696,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 64.44915254237287,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 63.813559322033896,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 64.70338983050847,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 63.432203389830505,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 64.44915254237287,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Thin Perkons open hat",
+      "start": 64.83050847457626,
+      "length": 0.2089375
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 65.08474576271186,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 65.59322033898304,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 66.10169491525423,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 66.61016949152543,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 65.60593220338983,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 66.62288135593221,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 65.21186440677965,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 65.46610169491525,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 54",
+      "start": 66.86440677966101,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 66.35593220338983,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo Bm",
+      "start": 66.73728813559322,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 67.11864406779661,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 67.62711864406779,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 68.13559322033898,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 68.64406779661017,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 67.63983050847457,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 68.65677966101696,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 67.2457627118644,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 54",
+      "start": 68.00847457627118,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 68.51694915254237,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 67.88135593220339,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo Bm",
+      "start": 68.26271186440678,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 68.77118644067797,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo Bm",
+      "start": 69.15254237288136,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 69.15254237288136,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 69.66101694915254,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 70.16949152542372,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 70.6779661016949,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 69.67372881355932,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 70.69067796610169,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 69.27966101694915,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 69.53389830508475,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 54",
+      "start": 70.9322033898305,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 70.42372881355932,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo Bm",
+      "start": 70.80508474576271,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 71.1864406779661,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 71.69491525423729,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 72.20338983050847,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 72.71186440677965,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 71.70762711864407,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 72.72457627118644,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 71.3135593220339,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 54",
+      "start": 72.07627118644068,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 72.58474576271186,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 71.94915254237287,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo Bm",
+      "start": 72.33050847457626,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 72.83898305084746,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo Bm",
+      "start": 73.22033898305085,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 73.22033898305085,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 73.72881355932203,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 74.23728813559322,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 74.7457627118644,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 73.74152542372882,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 74.75847457627118,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 73.34745762711864,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 73.60169491525423,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 75.0,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 74.49152542372882,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 74.8728813559322,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Distant guitar A",
+      "start": 74.11016949152543,
+      "length": 0.3539375
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 75.25423728813558,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 75.76271186440678,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 76.27118644067797,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 76.77966101694915,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 75.77542372881356,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 76.79237288135593,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 75.38135593220339,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 76.14406779661017,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 76.65254237288136,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 76.01694915254237,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 76.39830508474576,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 76.90677966101694,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 77.28813559322033,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 77.28813559322033,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 77.79661016949152,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 78.30508474576271,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 78.8135593220339,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 77.80932203389831,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 78.82627118644068,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 77.41525423728814,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 77.66949152542372,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 79.0677966101695,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 78.5593220338983,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 78.94067796610169,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 79.32203389830508,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 79.83050847457626,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 80.33898305084746,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 80.84745762711864,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 79.84322033898304,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 80.86016949152543,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 79.44915254237287,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 80.21186440677965,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 80.72033898305084,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 80.08474576271186,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 80.46610169491525,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 80.97457627118644,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 81.35593220338983,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 81.35593220338983,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 81.86440677966101,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 82.3728813559322,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 82.88135593220339,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 81.87711864406779,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 82.89406779661017,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 81.48305084745762,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 81.73728813559322,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 50",
+      "start": 83.13559322033898,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 82.62711864406779,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo G",
+      "start": 83.00847457627118,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 83.38983050847457,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 83.89830508474576,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 84.40677966101694,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 84.91525423728814,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 83.91101694915254,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 84.92796610169492,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 83.51694915254237,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 50",
+      "start": 84.27966101694915,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 84.78813559322033,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 84.15254237288136,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo G",
+      "start": 84.53389830508475,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 85.04237288135593,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo G",
+      "start": 85.42372881355932,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 85.42372881355932,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 85.9322033898305,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 86.44067796610169,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 86.94915254237287,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 85.94491525423729,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 86.96186440677965,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 85.55084745762711,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 85.80508474576271,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 50",
+      "start": 87.20338983050847,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 86.69491525423729,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo G",
+      "start": 87.07627118644068,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 87.45762711864407,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 87.96610169491525,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 88.47457627118644,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 88.98305084745762,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 87.97881355932203,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 88.9957627118644,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 87.58474576271186,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 50",
+      "start": 88.34745762711864,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 88.85593220338983,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 88.22033898305084,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo G",
+      "start": 88.60169491525423,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 89.11016949152543,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo G",
+      "start": 89.4915254237288,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 89.4915254237288,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 90.0,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 90.50847457627118,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 91.01694915254237,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 90.01271186440678,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 91.02966101694915,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 89.61864406779661,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 89.8728813559322,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 91.27118644067797,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 90.76271186440678,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 91.14406779661016,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Distant guitar A",
+      "start": 90.38135593220339,
+      "length": 0.3539375
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 91.52542372881355,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 92.03389830508475,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 92.54237288135593,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 93.05084745762711,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 92.04661016949153,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 93.0635593220339,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 91.65254237288136,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 92.41525423728814,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 92.92372881355932,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 92.28813559322033,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 92.66949152542372,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 93.1779661016949,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 93.5593220338983,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 93.5593220338983,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 94.06779661016948,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 94.57627118644068,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 95.08474576271186,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 94.08050847457628,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 95.09745762711864,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 93.6864406779661,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 93.94067796610169,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 95.33898305084746,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 94.83050847457626,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 95.21186440677965,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 95.59322033898304,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 96.10169491525423,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 96.61016949152543,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 97.11864406779661,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 96.11440677966101,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 97.13135593220339,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 95.72033898305084,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 96.48305084745762,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 96.9915254237288,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 96.35593220338983,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 96.73728813559322,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 97.2457627118644,
+      "length": 0.5
+    },
+    {
+      "track": "07 Distant guitar and air",
+      "voice": "Velvet echo A",
+      "start": 97.62711864406779,
+      "length": 0.5
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 97.62711864406779,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 98.13559322033898,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 98.64406779661016,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 99.15254237288136,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 98.14830508474576,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 99.16525423728814,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 97.75423728813558,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 98.00847457627118,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 98.77118644067797,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 54",
+      "start": 99.40677966101694,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 97.88135593220339,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 98.89830508474576,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 98.00847457627118,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 99.02542372881355,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 99.66101694915254,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 100.16949152542372,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 100.6779661016949,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 101.1864406779661,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 100.1822033898305,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 101.19915254237289,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 99.78813559322033,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 54",
+      "start": 100.55084745762711,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 101.0593220338983,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 100.42372881355932,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 101.3135593220339,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 100.04237288135593,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 101.0593220338983,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Tite Perkons rim",
+      "start": 100.80508474576271,
+      "length": 0.015708333333333335
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 101.69491525423729,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 102.20338983050847,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 102.71186440677965,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 103.22033898305084,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 102.21610169491525,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 103.23305084745762,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 101.82203389830508,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 102.07627118644068,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 102.83898305084745,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 54",
+      "start": 103.47457627118644,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 101.94915254237287,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 102.96610169491525,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 102.07627118644068,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 103.09322033898304,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 103.72881355932203,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 104.23728813559322,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 104.7457627118644,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 105.25423728813558,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 104.25,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 105.26694915254237,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 103.85593220338983,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 54",
+      "start": 104.61864406779661,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 47",
+      "start": 105.12711864406779,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 104.4915254237288,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet Bm",
+      "start": 105.38135593220339,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 104.11016949152543,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 105.12711864406779,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Tite Perkons rim",
+      "start": 104.8728813559322,
+      "length": 0.015708333333333335
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 105.76271186440678,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 106.27118644067797,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 106.77966101694915,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 107.28813559322033,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 106.28389830508475,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 107.30084745762711,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 105.88983050847457,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 106.14406779661016,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 106.90677966101694,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 107.54237288135593,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 106.01694915254237,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 107.03389830508475,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 106.14406779661016,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 107.16101694915254,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 107.79661016949152,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 108.30508474576271,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 108.8135593220339,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 109.32203389830508,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 108.3177966101695,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 109.33474576271186,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 107.92372881355932,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 108.6864406779661,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 109.19491525423729,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 108.5593220338983,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 109.44915254237287,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 108.1779661016949,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 109.19491525423729,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Tite Perkons rim",
+      "start": 108.94067796610169,
+      "length": 0.015708333333333335
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 109.83050847457626,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 110.33898305084745,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 110.84745762711864,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 111.35593220338983,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 110.35169491525424,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 111.36864406779661,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 109.95762711864407,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 110.21186440677965,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 110.97457627118644,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 111.61016949152543,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 110.08474576271186,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 111.10169491525423,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 110.21186440677965,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 111.22881355932203,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 111.86440677966101,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 112.3728813559322,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 112.88135593220339,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 113.38983050847457,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 112.38559322033898,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 113.40254237288136,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 111.9915254237288,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 112.75423728813558,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 113.26271186440677,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 112.62711864406779,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 113.51694915254237,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 112.2457627118644,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 113.26271186440677,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Tite Perkons rim",
+      "start": 113.00847457627118,
+      "length": 0.015708333333333335
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 113.89830508474576,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 114.40677966101694,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 114.91525423728812,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 115.42372881355932,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 114.41949152542372,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 115.4364406779661,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 114.02542372881355,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 114.27966101694915,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 115.04237288135593,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 50",
+      "start": 115.6779661016949,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 114.15254237288136,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 115.16949152542372,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 114.27966101694915,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 115.29661016949152,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 115.9322033898305,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 116.44067796610169,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 116.94915254237287,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 117.45762711864407,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 116.45338983050847,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 117.47033898305085,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 116.0593220338983,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 50",
+      "start": 116.82203389830508,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 117.33050847457626,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 116.69491525423729,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 117.58474576271186,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 116.3135593220339,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 117.33050847457626,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Tite Perkons rim",
+      "start": 117.07627118644068,
+      "length": 0.015708333333333335
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 117.96610169491525,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 118.47457627118644,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 118.98305084745762,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 119.4915254237288,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 118.48728813559322,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 119.50423728813558,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 118.09322033898304,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 118.34745762711864,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 119.11016949152541,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 50",
+      "start": 119.7457627118644,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 118.22033898305084,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 119.23728813559322,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 118.34745762711864,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 119.36440677966101,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 120.0,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 120.50847457627118,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 121.01694915254237,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 121.52542372881355,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 120.52118644067797,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 121.53813559322033,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 120.12711864406779,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 50",
+      "start": 120.88983050847457,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 43",
+      "start": 121.39830508474576,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 120.76271186440677,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet G",
+      "start": 121.65254237288136,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 120.38135593220339,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 121.39830508474576,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Tite Perkons rim",
+      "start": 121.14406779661016,
+      "length": 0.015708333333333335
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 122.03389830508473,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 122.54237288135593,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 123.05084745762711,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 123.5593220338983,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 122.55508474576271,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 123.57203389830508,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 122.16101694915254,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 122.41525423728812,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 123.1779661016949,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 123.8135593220339,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 122.28813559322033,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 123.30508474576271,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 122.41525423728812,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 123.4322033898305,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 124.06779661016948,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 124.57627118644068,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 125.08474576271186,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 125.59322033898304,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 124.58898305084746,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 125.60593220338983,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 124.19491525423729,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 124.95762711864407,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 125.46610169491525,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 124.83050847457626,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 125.72033898305084,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 124.44915254237287,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 125.46610169491525,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Tite Perkons rim",
+      "start": 125.21186440677965,
+      "length": 0.015708333333333335
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 126.10169491525423,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 126.61016949152541,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 127.11864406779661,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 127.62711864406779,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 126.62288135593221,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 127.63983050847457,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 126.22881355932203,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 126.48305084745762,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 127.2457627118644,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 127.88135593220339,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 126.35593220338983,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 127.3728813559322,
+      "length": 0.5
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 126.48305084745762,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 127.5,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 128.135593220339,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 128.64406779661016,
+      "length": 1.4967083333333333
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 129.15254237288136,
+      "length": 1.0169491525423666
+    },
+    {
+      "track": "01 Smooth kick",
+      "voice": "Smooth Machinedrum kick",
+      "start": 129.66101694915253,
+      "length": 0.5084745762711975
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 128.65677966101694,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "02 Mellow backbeat",
+      "voice": "Mellow Perkons snare",
+      "start": 129.6737288135593,
+      "length": 0.13152083333333334
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 128.26271186440678,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 52",
+      "start": 129.02542372881356,
+      "length": 0.32
+    },
+    {
+      "track": "05 Warm bass",
+      "voice": "Warm bass 45",
+      "start": 129.53389830508473,
+      "length": 0.32
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 128.89830508474574,
+      "length": 0.5
+    },
+    {
+      "track": "06 Velvet groove chords",
+      "voice": "Velvet A",
+      "start": 129.78813559322035,
+      "length": 0.3813559322033768
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 128.51694915254237,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Acoustic air shaker",
+      "start": 129.53389830508473,
+      "length": 0.16291666666666665
+    },
+    {
+      "track": "04 Organic percussion",
+      "voice": "Tite Perkons rim",
+      "start": 129.27966101694915,
+      "length": 0.015708333333333335
+    },
+    {
+      "track": "03 Submerge hat loop",
+      "voice": "Submerge 808 hats",
+      "start": 0.0,
+      "length": 16.271229166666668
+    },
+    {
+      "track": "03 Submerge hat loop",
+      "voice": "Submerge 808 hats",
+      "start": 16.271186440677965,
+      "length": 16.271229166666668
+    },
+    {
+      "track": "03 Submerge hat loop",
+      "voice": "Submerge 808 hats",
+      "start": 32.54237288135593,
+      "length": 16.271229166666668
+    },
+    {
+      "track": "03 Submerge hat loop",
+      "voice": "Submerge 808 hats",
+      "start": 48.813559322033896,
+      "length": 16.271229166666668
+    },
+    {
+      "track": "03 Submerge hat loop",
+      "voice": "Submerge 808 hats",
+      "start": 65.08474576271186,
+      "length": 16.271229166666668
+    },
+    {
+      "track": "03 Submerge hat loop",
+      "voice": "Submerge 808 hats",
+      "start": 81.35593220338983,
+      "length": 16.271229166666668
+    },
+    {
+      "track": "03 Submerge hat loop",
+      "voice": "Submerge 808 hats",
+      "start": 97.62711864406779,
+      "length": 16.271229166666668
+    },
+    {
+      "track": "03 Submerge hat loop",
+      "voice": "Submerge 808 hats",
+      "start": 113.89830508474576,
+      "length": 16.271186440677965
+    }
+  ],
+  "synthesized": "Soft simple triads and muted bass",
+  "status": "Draft 2 of 3, listening review pending"
+}

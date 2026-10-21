@@ -1,0 +1,7 @@
+TriviTV 0.5.0 party modes
+
+Install over existing TriviTV. Same app ID and signing key.
+Create a new room. TV remote player is included by default: join one phone and start.
+For phone-only play, turn off the TV remote player in the lobby and join at least two phones.
+Choose Trivia, Imposter or Territory Duel before creating a room. Imposter: 3-8 phones, private cards, 3-minute discussion, voting and one imposter guess. TV remote hosts only. Duel: exactly 2 players, attention/pattern challenges with optional bank questions; correct answers earn a tile on separate 5x5 boards; connect left to right. Remote + phone or two phones supported. Both connecting in the same round is a draw. Maximum 20 rounds. Service is live at https://iggro.com.
+Physical TV/phone testing remains pending.

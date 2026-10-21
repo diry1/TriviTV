@@ -1,0 +1,35 @@
+{
+  "apk": "TriviTV-TV-0.3.4-music.apk",
+  "bytes": 5146561,
+  "MB": 5.15,
+  "sha256": "5ef6c960ce6f311f3de82e187430511784650f6831ae2241c89f69f12af6af01",
+  "versionCode": 7,
+  "bundledFilesMatched": 30,
+  "signatureVerified": true,
+  "sameSigningKey": true,
+  "zipAlignmentVerified": true,
+  "menu": "Deep House original,60seconds looping",
+  "gameplay": [
+    "Low Tide user Export2,128seconds",
+    "Amber Rooms,130.1695seconds"
+  ],
+  "countdown": "10seconds,24kHz mono PCM16; original48kHz stereo master preserved",
+  "breakdown": {
+    "App, questions and other files": {
+      "bytes": 1068317,
+      "MB": 1.07,
+      "percent": 20.8
+    },
+    "Sound effects": {
+      "bytes": 989412,
+      "MB": 0.99,
+      "percent": 19.2
+    },
+    "Music": {
+      "bytes": 3088832,
+      "MB": 3.09,
+      "percent": 60.0
+    }
+  },
+  "physicalTvTested": false
+}

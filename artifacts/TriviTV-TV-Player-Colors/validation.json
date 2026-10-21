@@ -1,0 +1,12 @@
+{
+  "version": "0.4.2-player-colors",
+  "versionCode": 11,
+  "bytes": 5186141,
+  "sha256": "6473704beef317240ed6928b53bf85d173476188e4a4ff8253dd88f9e615cd3b",
+  "bundledFiles": 37,
+  "assetsMatch": true,
+  "serverTests": "10 passed, including stable eight-color assignment, slot reuse and room migration",
+  "browserTest": "Reveal dots match choices and roster colors; no clipping in observed viewport",
+  "deployment": "Live https://iggro.com; 42513c94-75ec-406c-8406-6bea2bdd063b",
+  "physicalTV": "Pending"
+}

@@ -1,0 +1,20 @@
+TriviTV TV audio test — 0.3.0-audio / versionCode 3
+
+Install TriviTV-TV-0.3.0-audio.apk over the previous TriviTV POC. Same package and signing key; no uninstall needed. Copy also saved to Desktop\trivitv.
+
+APK size: 7,481,832 bytes = 7.48 MB (7.14 MiB).
+
+This build opens the bundled game by default, with all audio available offline:
+- Clean 30-second menu music loop.
+- Eight selected one-minute tracks, shuffled without immediate repeats, used in both Trivia and Millionaire for this test.
+- Millionaire loops the chosen track while awaiting an answer; its gameplay remains untimed.
+- Trivia has the full three-second warning, timeout, answer-lock, correct/incorrect, reveal and completion cues.
+- Navigation uses the latest approved press/back sounds. Remaining cues use audition A provisionally.
+- Music ducks beneath effects. Music pauses during question/review pause and native app suspension/menu; stops for answer review/results as appropriate.
+- Footer buttons toggle music/effects separately and remember the choice. Arrow keys/OK work on these controls.
+
+Native Back/Menu still offers live and bundled versions. The public live Site has NOT been updated with audio; choose the bundled/local version for this test.
+
+Verified: build and Android lint (0 errors, 3 inherited warnings), APK v2 signature, same signing key as POC2, alignment, all 36 bundled source/media assets match, 916 questions, full browser games in both modes and all-question layout checks. Audio QA verifies all 21 media files, playback in both modes, pause/resume, three-second warning/timeout, correct/incorrect, mute persistence and layout. Native physical TV/emulator playback has not been tested here; this APK is for your TV listening and remote test.
+
+SHA256: 76e1db7f951ba791553d6933d518cc56e023562fa27d4a1ca304dbd2d789794a

@@ -1,0 +1,5 @@
+node_modules/
+.wrangler/
+public/tv/
+public/qr.js
+src/bank.json

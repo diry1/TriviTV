@@ -1,0 +1,19 @@
+{
+  "apk": "TriviTV-TV-0.3.0-audio.apk",
+  "bytes": 7481832,
+  "MB": 7.48,
+  "MiB": 7.14,
+  "sha256": "76e1db7f951ba791553d6933d518cc56e023562fa27d4a1ca304dbd2d789794a",
+  "versionCode": 3,
+  "package": "dev.trivitv.poc",
+  "bundledFilesMatched": 36,
+  "lintErrors": 0,
+  "lintWarnings": 3,
+  "musicTracks": 8,
+  "menuMusic": true,
+  "sfxEvents": 12,
+  "opensBundledByDefault": true,
+  "signatureV2Verified": true,
+  "previousSigningKeyMatches": true,
+  "physicalTvRuntimeTested": false
+}

@@ -49,50 +49,36 @@
     {
       "id": "back",
       "title": "Back / cancel",
-      "description": "A soft closing gesture.",
+      "description": "Selected by you: former 1.B (select_001), at its original level.",
       "selected": "A",
       "variants": [
         {
           "label": "A",
           "file": "audio/back-a.wav",
-          "source": "Kenney Interface Sounds / back_001.ogg (CC0), trimmed/EQ/gain/fades",
-          "duration": 0.064,
-          "peakDbfs": -9.65,
-          "rmsDbfs": -31.0
-        },
-        {
-          "label": "B",
-          "file": "audio/back-b.wav",
-          "source": "Kenney Interface Sounds / close_001.ogg (CC0), trimmed/EQ/gain/fades",
-          "duration": 0.148,
-          "peakDbfs": -19.12,
-          "rmsDbfs": -31.0
+          "source": "Kenney Interface Sounds / select_001.ogg (CC0), trimmed/EQ/gain/fades",
+          "duration": 0.043,
+          "peakDbfs": -18.14,
+          "rmsDbfs": -34.0
         }
-      ]
+      ],
+      "approval": "User selected former highlight B; exact processed audio preserved."
     },
     {
       "id": "unavailable",
       "title": "Unavailable action",
-      "description": "Muted feedback, distinct from an incorrect answer.",
+      "description": "Selected by you: former 3.A (back_001), at its original level.",
       "selected": "A",
       "variants": [
         {
           "label": "A",
           "file": "audio/unavailable-a.wav",
-          "source": "Kenney Interface Sounds / error_001.ogg (CC0), trimmed/EQ/gain/fades",
-          "duration": 0.165,
-          "peakDbfs": -14.19,
-          "rmsDbfs": -31.0
-        },
-        {
-          "label": "B",
-          "file": "audio/unavailable-b.wav",
-          "source": "Kenney Interface Sounds / switch_002.ogg (CC0), trimmed/EQ/gain/fades",
-          "duration": 0.151,
-          "peakDbfs": -12.87,
+          "source": "Kenney Interface Sounds / back_001.ogg (CC0), trimmed/EQ/gain/fades",
+          "duration": 0.064,
+          "peakDbfs": -9.65,
           "rmsDbfs": -31.0
         }
-      ]
+      ],
+      "approval": "User selected back A from revision 2; exact processed audio preserved."
     },
     {
       "id": "question",

@@ -1,0 +1,14 @@
+{
+  "version": "0.6.0-turf-war",
+  "versionCode": 13,
+  "bytes": 5197524,
+  "sha256": "9a4524003d362dca5664ed7e48f9a4ad9fbfb7b42d9cb5d20c9287b60ff9d2b4",
+  "bundledFiles": 39,
+  "assetsMatch": true,
+  "serverTests": "27 passed: Trivia, Imposter, Turf privacy/captures/defense/deadlines/cooldowns/five-lines",
+  "browserTest": "Four-mode menu and Turf question/selection TV960x540 checked; phone-first hidden bid verified",
+  "deployment": "Live https://iggro.com; 18c8e948-0fb0-49d8-b456-b7b9588f5eae",
+  "physicalTV": "Pending",
+  "publicTests": "4 passed on deployed HTTPS/WSS service",
+  "signature": "Verified; same update key; aligned"
+}

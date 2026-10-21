@@ -1,0 +1,9 @@
+TriviTV 0.6.0 Turf War
+
+Install over existing TriviTV. Same app ID and signing key. Start a NEW room.
+All four modes are on the main menu with player counts. Millionaire is solo.
+Turf: exactly two players, remote + phone or two phones, shared 5x5 board. Phone bids first before remote; bids hidden until both commit, then question appears. Bank questions only.
+Different squares: each correct answer captures the chosen tile. Attacker has 10 seconds. A correct attacker captures even if opponent correctly answers elsewhere.
+Same free square: first correct wins. Exact server-time tie: no capture. Same owned square: explicit defense; both correct means owner keeps it. Correct attacker captures only if defender is wrong or times out.
+Every contested tile cools down for the next turn; last free tile is exempt. Five in a straight horizontal, vertical or diagonal line wins. Simultaneous winning lines draw.
+Live service: https://iggro.com. Physical TV testing pending.

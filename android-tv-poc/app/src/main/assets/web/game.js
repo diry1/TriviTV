@@ -224,10 +224,10 @@ function beginReview(game, now) {
           endsAt: now + game.reviewDurationMs,
         };
 }
-export function next(game, now = Date.now()) {
+export function next(game, now = Date.now(), skipReview = false) {
   requireThat(game.phase === "reveal", "Reveal the answer first.", 409);
   requireThat(
-    game.settings.mode === "millionaire" ||
+    game.settings.mode === "millionaire" || skipReview ||
       (!game.review.paused && now >= game.review.endsAt),
     "The answer review is still running.",
     409,

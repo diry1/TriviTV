@@ -1,0 +1,6 @@
+TriviTV TV 0.3.3 Millionaire layout
+Install TriviTV-TV-0.3.3-millionaire.apk over the prior debug build. Same package/signing key.
+Millionaire: persistent points ladder beside the question; current rung, completed rungs and guaranteed1000/32000 milestones; earned/secured totals. Compact full ladder on portrait screens. Untimed rules,50:50 and walk-away preserved.
+Includes approved Low Tide v2 Export2 at original gain/duration, alongside original eight music tracks.
+Full browser games,916-question geometry, focused ladder and audioQA, Android build/lint, signature/alignment and bundled file checks passed. PhysicalTV test pending.
+Size 21.22 MB.

@@ -1,0 +1,7 @@
+TriviTV 0.4.0 multiplayer test build
+
+Install over existing TriviTV. Same app ID and signing key.
+Select the new multiplayer button. Create a room, scan with 2-8 phones, enter nicknames, then Start on TV.
+Multiplayer service is now live at https://iggro.com. Phones may use Wi-Fi or mobile data.
+Existing offline modes, approved music and remembered audio settings are retained.
+Physical TV/phone and smaller-screen checks remain pending.

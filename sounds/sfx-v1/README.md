@@ -14,3 +14,6 @@ No game integration or publication performed. Millionaire-specific lifeline, sus
 
 ## Revision 2 — user feedback
 Button pressed now uses former unavailable 4.B (switch_002) at the exact same processed level; one confirmed option. Both choices-revealed candidates replaced by new soft layered tones. Time-expired options are 2.1 seconds, sustained descending modern tones rather than a wah-wah effect. Warning is now a full three-second countdown recording with pulses at 0/1/2 seconds; trigger once when three seconds remain (do not schedule every second). Manifest contains 23 current cues; old audio preserved in archive-before-revision-2/. An obsolete press-b.wav may remain on disk but is not in the manifest. Prior one-tick warning instructions above are superseded. Browser playback, stop, navigation, export/mobile QA passed again. Subjective review pending.
+
+## Revision 3
+User selected Back/Cancel = revision 2's 1.B (select_001 at original -34dBFS RMS), Unavailable Action = revision 2's 3.A (back_001 at original -31dBFS RMS). Both are now single confirmed variants. Exact WAV equality verified against archived originals. Button press selection unchanged. Manifest now contains 21 current candidates; old unused WAVs remain on disk but are excluded from manifest. Browser QA passed again.

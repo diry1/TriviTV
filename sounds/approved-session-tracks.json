@@ -1,0 +1,15 @@
+{
+  "tracks": [
+    {
+      "title": "Low Tide \u2014 user mix",
+      "source": "TriviTV-Deep-Session-01-Low-Tide-user-export-2.wav",
+      "original_export": "deep-session-01/Exported/Low Tide v2 Export 2.wav",
+      "output": "audio/session-low-tide-user.ogg",
+      "duration": 128.0,
+      "sha256": "96ee8fadddd857209a3beb71dd1c872a948e03e04ff0aef7d044459b57e5cc8d",
+      "gain_db": 0,
+      "approved": true,
+      "notes": "User explicitly selected Export 2 for next build. Preserve mix and level, no previous mastering gain."
+    }
+  ]
+}

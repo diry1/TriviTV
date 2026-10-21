@@ -21,7 +21,7 @@ export async function localApi(path,body){
     switch(body.type){
       case 'start':rules.start(game,now);break;
       case 'answer':rules.answer(game,game.players[0].id,body.choice,now);break;
-      case 'next':rules.next(game,now);break;
+      case 'next':rules.next(game,now,body.skipReview===true&&game.settings.mode==='trivia');break;
       case 'pause':rules.pauseGame(game,now);break;
       case 'resume':rules.resumeGame(game,now);break;
       case 'fifty':rules.fifty(game);break;

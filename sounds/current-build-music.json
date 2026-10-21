@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Deep House \u0432\u0402\u201d original",
+    "source": "TriviTV-Trivia-03-Deep-House-60s-v1.wav",
+    "output": "audio/menu-deep-house.ogg",
+    "duration": 60.0,
+    "source_sha256": "094bb4ab14055126e7f33a7b0ebaf86666e3357b0e424e2641e2cd412105a7cd",
+    "gain_db": 0
+  },
+  {
+    "title": "Low Tide \u0432\u0402\u201d user Export 2",
+    "source": "TriviTV-Deep-Session-01-Low-Tide-user-export-2.wav",
+    "output": "audio/session-low-tide-user.ogg",
+    "duration": 128.0,
+    "source_sha256": "96ee8fadddd857209a3beb71dd1c872a948e03e04ff0aef7d044459b57e5cc8d",
+    "gain_db": 0
+  },
+  {
+    "title": "Amber Rooms",
+    "source": "TriviTV-Deep-Session-02-Amber-Rooms-130s-v1.wav",
+    "output": "audio/session-amber-rooms.ogg",
+    "duration": 130.1695,
+    "source_sha256": "b85362b6168d6a077daf5535eef4f5a79458abf2f69af07051a46b01b2b63b49",
+    "gain_db": 0
+  }
+]

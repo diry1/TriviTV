@@ -24,3 +24,5 @@ local.properties
 sounds/**/samples/
 sounds/**/archive-before-revision-2/
 sounds/sfx-v1/source/*.zip
+
+.wrangler/

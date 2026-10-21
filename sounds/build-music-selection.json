@@ -1,0 +1,8 @@
+{
+  "menu": {"title":"Deep House — original","source":"TriviTV-Trivia-03-Deep-House-60s-v1.wav","output":"audio/menu-deep-house.ogg"},
+  "tracks": [
+    {"title":"Low Tide — user Export 2","source":"TriviTV-Deep-Session-01-Low-Tide-user-export-2.wav","output":"audio/session-low-tide-user.ogg","duration":128},
+    {"title":"Amber Rooms","source":"TriviTV-Deep-Session-02-Amber-Rooms-130s-v1.wav","output":"audio/session-amber-rooms.ogg","duration":130.1695}
+  ],
+  "notes":"2026-10-21: user requested first deep house track for menu and longer tracks for gameplay for now. Preserve original source mixes/gains. This current build selection supersedes the legacy eight-track pool; source masters remain preserved."
+}

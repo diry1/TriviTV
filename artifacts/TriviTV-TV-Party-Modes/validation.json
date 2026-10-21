@@ -1,0 +1,13 @@
+{
+  "version": "0.5.0-party-modes",
+  "versionCode": 12,
+  "bytes": 5192563,
+  "sha256": "4149754cdb283cbefc8326d4a16bc07bf50d6c24d8269888e598a911292d412f",
+  "bundledFiles": 38,
+  "assetsMatch": true,
+  "serverTests": "19 passed: Trivia, private Imposter roles/votes/replay, Duel claims/ties/timeouts",
+  "browserTest": "Three independent phone sessions completed Imposter roles/discussion/votes/result; Imposter390x844 and Duel960x540 layout inspected; remote answer and automatic claim observed",
+  "deployment": "Live https://iggro.com; e2a282da-f1b0-438d-8643-f9b54bc9c866",
+  "physicalTV": "Pending",
+  "publicIntegration": "Four deployed HTTPS/WSS tests passed, including private roles/replay and a complete five-round Duel tie"
+}

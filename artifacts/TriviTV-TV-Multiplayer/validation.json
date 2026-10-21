@@ -1,0 +1,15 @@
+{
+  "version": "0.4.0-multiplayer",
+  "versionCode": 9,
+  "bytes": 5185078,
+  "sha256": "d26e69e0fc733c6cf48fc935ae379dd453ff99b283e553c41acc2c5a38c2de82",
+  "bundledFiles": 36,
+  "assetsMatch": true,
+  "serverTests": "6 passed: engine + real local Worker/SQLite/WebSocket",
+  "browserTest": "Two player sessions joined, answered, revealed and scored; host reload restored room",
+  "responsiveLimit": "Chrome viewport override had no effect; small-screen checks pending",
+  "deployment": "Live: https://iggro.com and https://www.iggro.com",
+  "physicalTV": "Not tested",
+  "cloudflareVersion": "3dc2c89d-f81f-438e-a485-95e0b7a59d16",
+  "publicIntegration": "Passed real HTTPS/WSS room lifecycle, joining, answer privacy, scoring, permissions and close"
+}

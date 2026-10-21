@@ -1,0 +1,5 @@
+Navigation: Kenney Interface Sounds (CC0), https://kenney.nl/assets/interface-sounds
+Result/countdown tones: original TriviTV synthesis, CC0.
+Music: original TriviTV compositions using Samples from Mars samples; provenance retained locally.
+Menu: Deep House original (60s). Gameplay: Low Tide user Export 2 (128s), Amber Rooms (130.1695s). Original mix gains preserved; Ogg Vorbis encoding.
+Current selection: sounds/build-music-selection.json.

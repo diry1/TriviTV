@@ -1,0 +1,11 @@
+{
+  "name": "trivitv-multiplayer",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-01",
+  "account_id": "c70a138fad31db1c4002c43ffef2e42a",
+  "workers_dev": false,
+  "routes": [{"pattern":"iggro.com/*","zone_name":"iggro.com"},{"pattern":"www.iggro.com/*","zone_name":"iggro.com"}],
+  "assets": {"directory":"./public","binding":"ASSETS","run_worker_first":["/api/*"]},
+  "durable_objects": {"bindings":[{"name":"ROOMS","class_name":"Room"},{"name":"LIMITS","class_name":"Limiter"}]},
+  "migrations": [{"tag":"v1","new_sqlite_classes":["Room","Limiter"]}]
+}

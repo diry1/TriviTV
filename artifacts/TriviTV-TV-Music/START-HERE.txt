@@ -1,0 +1,7 @@
+TriviTV TV 0.3.4 music
+Install TriviTV-TV-0.3.4-music.apk over previous debug build; same signing key.
+Menu: original Deep House60s looping. Gameplay: Low Tide user Export2(2:08) and Amber Rooms(2:10), continuous across questions and next track on end, in both game modes. Original mix levels preserved.
+Millionaire ladder and ten-second accelerating countdown retained.
+Only active music/SFX packaged; unused generated media removed from payload, original sources preserved. Countdown uses24kHz mono rather than48kHz stereo; timing/duration unchanged.
+Audio browserQA, Android build/lint, signature/alignment and exact bundled files verified. PhysicalTV listening pending.
+Size 5.15 MB.

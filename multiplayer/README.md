@@ -1,0 +1,54 @@
+# TriviTV multiplayer / iggro.com
+
+Independent Cloudflare Worker + SQLite-backed Durable Objects. User explicitly selected their own Cloudflare account/domain; this does not create another OpenAI Sites project or alter the preserved hosted solo Site identity.
+
+## Run
+
+Use Node 22+ with npm. From this directory:
+
+1. `npm ci`
+2. `npm run prepare-assets`
+3. `npm run dev` (local port 8787)
+4. In another terminal, `npm test` (includes integration tests against that local Worker).
+
+Root is the phone join screen. `/multi/host.html` creates and controls rooms. `/tv/` retains solo modes. Native app opens bundled `/multi/host.html`, using HTTPS/WSS API at iggro.com. Phones always use the deployed website. Source bank is copied unchanged from browser-site/dist/questions.json; never edit generated src/bank.json.
+
+## Rules and storage
+
+2–8 players, up to 10 unique questions from selected categories, 60 seconds each, 100 points per correct answer, no speed bonus. Everyone answering or the authoritative deadline triggers one reveal/scoring pass. Host controls Next, Pause and Close. Answer order is shuffled with the corresponding correct index. No random timeout choice in multiplayer; unanswered earns zero. Existing solo rules stay separate.
+
+Each room is its own Durable Object; persisted state and server alarms survive isolate eviction. Mutations are serialized. WebSocket subscriptions use hibernation and authenticate through a protocol header, avoiding secrets in URL/history. HTTP actions use bearer tokens. Public snapshots omit credentials, future questions, current correct answer and other players' choices until reveal. Reload/reconnection uses the locally stored role-specific token. Lobby players may leave and release their slot. After start the roster is fixed; a missing player is handled by question timeout.
+
+Rooms expire after four hours; the alarm deletes their persisted state. Room creation is limited to 20 per IP per hour, with an hourly hash-based limiter. No accounts, advertising, analytics or payment flow. Hosting free-tier limits still apply. The original question bank remains available for CC BY-SA provenance; this is a friendly game, not an anti-cheat system.
+
+## Deployment status
+
+Not deployed yet. GoDaddy registrar; Cloudflare authoritative DNS. Existing root/www are proxied to HOSTiQ. Intended cutover: Worker routes for iggro.com/* and www.iggro.com/*, preserving existing origin files for rollback. Account ID is in wrangler.jsonc. No DNS records, paid plan or existing website files were changed.
+
+Wrangler is installed but OAuth authorization is pending in Chrome. Requested scopes: account:read, user:read, workers:write, workers_routes:write, workers_scripts:write, zone:read, plus Wrangler's required offline access. This grants deployment capability and requires direct user approval. Do not copy browser cookies or retrieve private credentials. Re-run `wrangler login --browser=false --scopes account:read user:read workers:write workers_routes:write workers_scripts:write zone:read` if callback expires. Once authorized, add root/www routes and deploy; verify public health, HTTP actions and WSS through the domain.
+
+## Validation
+
+Six automated tests pass: source/correct-index linkage across shuffles; full 10-question games/ties; permissions/stale/duplicate choices; pause/timeout; room expiry/names/capacity; actual local Worker+SQLite+WebSocket lifecycle. Chrome UI verified two independent origins as player sessions, host lobby updates, answer lock/privacy, shared reveal, scores and host refresh restoration. QR generated locally. Native Gradle assemble/lint succeeded (0 errors, 3 inherited warnings); APK assets match source, same signing certificate, signature/alignment verified.
+
+Limits: Chrome viewport override had no effect, so actual phone/small-TV responsive layouts are pending. Physical TV/phone playback/runtime and public Cloudflare deployment remain unverified. Test APK: artifacts/TriviTV-TV-Multiplayer (5.19 MB). Multiplayer needs deployment first. Do not describe it as live until verified.
+
+## Deployment completed — 2026-10-21
+
+Scoped Wrangler OAuth succeeded after retrying a failed callback. Cloudflare Workers account initialization required opening its Workers dashboard; no paid plan added. Version 3dc2c89d-f81f-438e-a485-95e0b7a59d16 deployed to iggro.com/* and www.iggro.com/*. Public HTTPS/WSS integration test passes; Chrome confirms the new landing and host pages. Existing DNS/origin files retained. Earlier pending-deployment notes above are historical. APK unchanged and now has a live backend. Physical TV/phone and smaller-screen verification remain pending.
+
+## Party modes — 0.5.0, 2026-10-21
+
+New host setup has Trivia, Imposter and Territory Duel. `src/party-engine.js` owns rules and an original Ukrainian word collection; `public/multi/party-ui.js` owns new mode views. Existing Trivia rooms/bank/solo modes stay compatible. New rooms pass `mode` and optional `duelQuestions`; legacy clients default to Trivia.
+
+Imposter: 3–8 phone players, no remote participant. Per-phone role/word is returned only in that authenticated player's view; host never receives it before results. Exactly one imposter, other players share one word. Ready barrier then randomized spoken-clue order and 180-second discussion. Host may move to voting early; voting lasts up to60seconds. No self/duplicate votes; ballots hidden until result. A unique plurality naming the imposter wins for group; ties/no votes favor imposter. Imposter may submit one exact case-insensitive word guess during discussion/voting: correct wins for imposter, wrong wins for group. Replay reshuffles role/word. Pausing, expiry and reconnect retained. No word list copied from imposter.app.
+
+Duel: exactly2 players, remote+phone or2phones. Default challenges compare numbers/count symbols/complete arithmetic sequences; optional mixture with unchanged bank questions. Generated minigame challenges do not enter the916-question bank. Each player has an independent5x5 board, no speed bonus. Correct answer earns one adjacent tile (or any left-edge tile initially). Both players can claim in same round. Claim window20seconds then server selects first legal tile; incorrect/unanswered gets none. Four-neighbor connection left-to-right wins; resolve both earned claims before deciding so simultaneous connections draw. Max20rounds, then highest correct-answer score wins/ties draw. Host Next between rounds. Server-authoritative alarms now schedule every timed phase, including discussion/voting/claim. Tile remote navigation selects available row/column neighbors.
+
+Validation:19tests passed (existingTrivia + private roles, readiness, votes, guesses, replay, Duel graph/claims/ties/timeout/roundcap). Four integration tests also pass on deployed iggro.com. Browser used3independent sessions for full Imposter round, verified hidden TV roles and final result; Imposter phone390x844 screenshot and Duel TV960x540 board fit checked. QR canvas now forced square despite encoder inline dimensions. Physical TV/new-mode testing pending. APK0.5.0 versionCode12,5,192,563bytes,38bundledfilesmatch, signature/alignment andGradle/lint pass (0errors/3inheritedwarnings). Deploymente2a282da-f1b0-438d-8643-f9b54bc9c866.
+
+## Turf War / four-mode menu — 0.6.0, 2026-10-21
+Current accepted scope supersedes old Duel rules above. Four main-screen cards show Trivia1–8, Millionaire1, Imposter3–8 and Turf War2. Millionaire remains solo. Generated logic challenges removed; new Duel decks use only unchanged916bank. New src/turf-engine.js and public/multi/turf-ui.js own shared-board rules. Legacy active0.5 rooms retain old rules; create a NEW room.
+Shared5x5 owner board. Bid before question. Mixed controllers: phone commits first; remote cannot bid beforehand and cannot see phone tile until both commit. Two phones choose privately in either order. Reveal committed squares3.5s before same trivia question. Selection90s then missing bids auto-select first legal tile. Different squares: each correct answer captures own chosen square. Attacker has10s, others60s; correct attacker captures even if opponent answers correctly elsewhere, including reciprocal attacks. Explicit defense exception: both select owner's tile; attacker correct + owner wrong/timeout captures; both correct holds owner regardless speed. Same free square: first correct server-receipt wins, exact timestamp tie captures nothing;100ms settle window permits equal-time answers. Every contested tile cools for next turn, except last free tile. Five straight horizontal/vertical/diagonal wins, simultaneous lines draw. Previous vertical loss was old left-to-right connectivity rule. No20round limit; selected bank cycles with round-id guards. Pause preserves per-player deadlines; server alarms publish10s expiry.
+Validation:27local tests passed, plus4public HTTPS/WSS tests including reciprocal attacks and explicit defense. Initial repeated local run hit20rooms/hour limiter; fresh isolated local persistence passed without relaxing production limiter. API timing assertion allows response timestamp drift. Browser960x540 confirms main menu, Millionaire launch, phone-first secret bid, default remote tile focus, bid reveal then bank question and readable answer controls. Selected music unchanged and continuous between Turf phases. Gradle assemble/lint success,0errors/3inheritedwarnings. Signature same update key and zipalignment verified;39bundledfiles exact.
+LiveWorker18c8e948-0fb0-49d8-b456-b7b9588f5eae atiggro.com. APK artifacts/TriviTV-TV-Turf-War/TriviTV-TV-0.6.0-turf-war.apk,versionCode13,5,197,524bytes(5.20MB),SHA2569a4524003d362dca5664ed7e48f9a4ad9fbfb7b42d9cb5d20c9287b60ff9d2b4; copiedDesktop/trivitv. menu-preview.png/question-preview.png besideAPK. PhysicalTV testing pending. NoDNS/paidplan/GitHubpush changes.

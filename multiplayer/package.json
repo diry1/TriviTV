@@ -1,0 +1,1 @@
+{"name":"trivitv-multiplayer","private":true,"type":"module","scripts":{"dev":"wrangler dev --port 8787","deploy":"wrangler deploy","test":"node --test test/*.test.mjs","prepare-assets":"node prepare.mjs"},"devDependencies":{"wrangler":"^4.0.0","qrcode":"^1.5.4"}}

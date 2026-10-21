@@ -1,0 +1,16 @@
+{
+  "apk": "TriviTV-TV-0.3.1-session-audio.apk",
+  "bytes": 18070990,
+  "MB": 18.07,
+  "MiB": 17.23,
+  "sha256": "fd39b7d5eaf7d5bcc1b2ee231df472eb97058d543f0871ffbda54e00d56883cd",
+  "versionCode": 4,
+  "bundledFilesMatched": 36,
+  "lintErrors": 0,
+  "lintWarnings": 3,
+  "signatureVerified": true,
+  "previousSigningKeyMatches": true,
+  "zipAlignmentVerified": true,
+  "threeMinuteTracks": 8,
+  "physicalTvRuntimeTested": false
+}

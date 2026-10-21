@@ -1,5 +1,6 @@
 import {localApi,clearProgress} from './local-state.js';
 import {translate} from './i18n.js';
+import {audio} from './audio-player.js';
 const $=s=>document.querySelector(s), t=s=>translate(s,'uk');
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const app=$('#app');
@@ -10,23 +11,22 @@ const nav=(row,col)=>`data-row="${row}" data-col="${col}"`;
 function button(id,label,row,col,cls='secondary',disabled=false){return `<button id="${id}" class="${cls}" ${nav(row,col)} ${disabled?'disabled':''}>${label}</button>`;}
 function available(){return [...selected].reduce((n,c)=>n+(config.pools.uk.Europe.categories[c]||0),0);}
 function saveSettings(){try{localStorage.setItem('trivitv-browser-settings',JSON.stringify({mode,categories:[...selected]}));}catch{}}
-function home(){return `<section class="tv-home"><div class="screen-title"><div><div class="eyebrow">УКРАЇНСЬКА · ЄВРОПА</div><h1>Оберіть гру</h1></div><span id="pool-availability" class="pool-count">${available()} запитань</span></div>
- <div class="tv-modes">${['trivia','millionaire'].map((m,i)=>`<button id="mode-${m}" data-mode="${m}" ${nav(0,i)} class="mode ${mode===m?'active':''}" aria-pressed="${mode===m}"><span class="mode-icon ${i?'amber':''}">${i?'◇':'✳'}</span><strong>${i?'Мільйонер':'Вікторина'}</strong><p>${i?'Один гравець. Шлях до мільйона.':'Чотири відповіді. Перевірте свої знання.'}</p><small>${i?'До 15 запитань · 50:50 · Без таймера':'До 10 запитань · 60 секунд · 100 балів'}</small><span class="mode-check">${mode===m?'✓ Обрано':'Обрати'}</span></button>`).join('')}</div>
- <div class="home-actions">${button('settings',`Категорії <span>${selected.size} з ${config.categories.length}</span>`,1,0)}${button('create','Почати гру →',1,1,'primary',!available())}</div><p class="screen-hint">Стрілки — навігація · OK — вибір</p></section>`;}
+function home(){const modes=[['trivia','✳','Вікторина','1–8 гравців','Зіграйте самі або запросіть друзів із телефонами.'],['millionaire','◇','Мільйонер','1 гравець','15 сходинок, 50:50 та шлях до мільйона.'],['imposter','◉','Імпостер','3–8 гравців','Таємне слово на телефонах. Знайдіть імпостера.'],['duel','▦','Битва за поле','2 гравці','Обирайте клітинки. Відповідайте. Зберіть п’ять у ряд.']];return `<section class="tv-home all-modes-home"><div class="screen-title"><div><div class="eyebrow">УКРАЇНСЬКА · ЄВРОПА</div><h1>Оберіть гру</h1></div><span id="pool-availability" class="pool-count">${available()} запитань</span></div><div class="tv-modes">${modes.map(([m,icon,name,count,desc],i)=>`<button id="mode-${m}" data-mode="${m}" ${nav(Math.floor(i/2),i%2)} class="mode ${mode===m?'active':''}" aria-pressed="${mode===m}"><span class="mode-icon">${icon}</span><strong>${name}</strong><small class="player-count">${count}</small><p>${desc}</p><span class="mode-check">${mode===m?'✓ Обрано':'Обрати'}</span></button>`).join('')}</div><div class="home-actions">${button('settings',`Категорії <span>${selected.size} з ${config.categories.length}</span>`,2,0)}${button('create',['duel','imposter'].includes(mode)?'Створити кімнату →':'Грати одному →',2,1,'primary',!available())}</div><div class="home-extra"><p class="screen-hint">Стрілки — навігація · OK — вибір</p>${mode==='trivia'?button('party-trivia','Вікторина з друзями · 2–8 →',3,1):''}</div></section>`;}
 function settings(){const perPage=12,start=categoryPage*perPage,rows=config.categories.slice(start,start+perPage);return `<section class="settings-page"><div class="screen-title"><div><div class="eyebrow">НАЛАШТУВАННЯ</div><h1>Категорії</h1></div><span id="pool-availability" class="pool-count">${available()} запитань</span></div>
  <div class="settings-toolbar">${button('all-categories',selected.size===config.categories.length?'Зняти всі':'Обрати всі',0,0)}<span>${selected.size} з ${config.categories.length} обрано · ${categoryPage+1} / 2</span>${button('settings-done','Готово ✓',0,3,'primary')}</div>
  <div class="tv-categories">${rows.map((c,i)=>`<button id="cat-${start+i}" data-category="${esc(c)}" class="chip ${selected.has(c)?'selected':''}" aria-pressed="${selected.has(c)}" ${nav(1+Math.floor(i/4),i%4)}><strong>${esc(t(c))}</strong><span>${config.pools.uk.Europe.categories[c]}</span><b>${selected.has(c)?'✓':'+'}</b></button>`).join('')}</div><div class="page-actions">${button('categories-prev','← Попередні',4,0,'secondary',categoryPage===0)}<span>Усі категорії разом: 916 запитань</span>${button('categories-next','Наступні →',4,3,'secondary',categoryPage===1)}</div></section>`;}
+function prizeLadder(){return `<aside class="prize-ladder" aria-labelledby="ladder-title"><div class="ladder-heading"><span class="eyebrow">МІЛЬЙОНЕР · БАЛИ</span><h2 id="ladder-title">${state.ladder.at(-1)===1000000?'Шлях до мільйона':'Драбина балів'}</h2></div><ol class="ladder-steps" style="--ladder-count:${state.total}" reversed start="${state.total}">${state.ladder.map((value,i)=>{const current=i===state.index,safe=[4,9].includes(i),passed=i<state.index||current&&state.won>=value,failed=current&&state.finishReason==='wrong';return `<li data-step="${i+1}" class="ladder-step ${current?'current':''} ${safe?'milestone':''} ${passed?'passed':''} ${failed?'failed':''}" ${current?'aria-current="step"':''} aria-label="Запитання ${i+1}: ${value.toLocaleString('uk')} балів${safe?', гарантований рівень':''}${current?', поточне':''}"><span class="step-number">${i+1}</span><strong>${value.toLocaleString('uk')}</strong><span class="step-mark" aria-hidden="true">${failed?'×':passed?'✓':safe?'◆':current?'›':''}</span></li>`;}).reverse().join('')}</ol><div class="ladder-status"><div><span>Здобуто</span><strong id="ladder-won">${state.won.toLocaleString('uk')}</strong></div><div><span>Гарантовано</span><strong id="ladder-secured">${state.secured.toLocaleString('uk')}</strong></div></div><small class="ladder-legend">◆ Гарантований рівень</small></aside>`;}
 function game(){const q=state.question,revealed=['correct','reveal'].includes(state.phase),p=state.players[0],canAnswer=state.phase==='question'&&!state.questionPaused&&!p.answered,million=state.settings.mode==='millionaire';
  const picked=['answers','correct','reveal'].includes(state.phase);
  let actions='';
  if(state.phase==='question')actions=million?button('fifty',state.usedFifty?'50:50 · використано':'50:50',3,0,'secondary',state.usedFifty||p.answered)+button('walk','Забрати бали',3,1,'secondary',p.answered):button('pause-review',state.questionPaused?'Продовжити ▶':'Пауза Ⅱ',3,0);
- if(state.phase==='reveal')actions=million?button('next',state.finishReason==='wrong'||state.index===state.total-1?'Результат →':'Наступне запитання →',3,1,'primary'):button('pause-review',state.review?.paused?'Продовжити ▶':'Пауза Ⅱ',3,0);
+ if(state.phase==='reveal')actions=million?button('next',state.finishReason==='wrong'||state.index===state.total-1?'Результат →':'Наступне запитання →',3,1,'primary'):button('next',state.index===state.total-1?'Результат →':'Далі →',3,0,'primary')+button('pause-review',state.review?.paused?'Продовжити ▶':'Пауза Ⅱ',3,1,'review-pause');
  const message=state.phase==='question'?(state.questionPaused?'Гру призупинено':million?'Оберіть одну відповідь':'Оберіть відповідь. Після хвилини — випадковий вибір.'):state.phase==='answers'?'Відкриваємо ваш вибір…':state.phase==='correct'?'Правильна відповідь:':million?(state.finishReason==='wrong'?`Гру завершено · ${state.won.toLocaleString('uk')} балів`:'Правильна відповідь:'):'Правильна відповідь:';
- return `<section class="tv-game"><div class="game-meta"><span>${million?'МІЛЬЙОНЕР':'ВІКТОРИНА'} · ${state.index+1} / ${state.total}</span><span class="tag">${esc(t(q.category))}</span><strong class="prize">${million?`${state.ladder[state.index].toLocaleString('uk')} балів`:`${p.score} балів`}</strong>${!million?'<strong id="answer-countdown" class="timer" role="timer" aria-live="off"></strong>':''}</div>
+ return `<section class="tv-game ${million?'millionaire-game':''}">${million?'<div class="millionaire-stage">':''}<div class="game-meta"><span>${million?'МІЛЬЙОНЕР':'ВІКТОРИНА'} · ${state.index+1} / ${state.total}</span><span class="tag">${esc(t(q.category))}</span><strong class="prize">${million?`<small>НА КОНУ</small> ${state.ladder[state.index].toLocaleString('uk')} балів`:`${p.score} балів`}</strong>${!million?'<strong id="answer-countdown" class="timer" role="timer" aria-live="off"></strong>':''}</div>
  <div class="question-box"><h1 class="question" data-no-translate>${esc(q.text)}</h1></div>
  <div class="answers ${state.phase==='answers'?'revealing-picks':state.phase==='correct'?'revealing-correct':''}" data-stage="${state.phase}">${q.choices.map((choice,i)=>`<button id="answer-${i}" data-answer="${i}" ${nav(1+Math.floor(i/2),i%2)} class="answer ${picked&&p.answer===i?'picked':''} ${revealed&&i===q.correct?'correct':''} ${revealed&&p.answer===i&&i!==q.correct?'incorrect':''}" ${!canAnswer||q.eliminated.includes(i)?'disabled':''}><span>${'ABCD'[i]}</span><strong data-no-translate>${q.eliminated.includes(i)?'—':esc(choice)}</strong><b>${revealed&&i===q.correct?'✓':picked&&p.answer===i?'●':''}</b></button>`).join('')}</div>
  <div class="game-bottom"><div class="feedback" role="status"><span>${message}</span>${revealed&&state.finishReason!=='wrong'?`<strong data-no-translate>${esc(q.choices[q.correct])}</strong>`:''}${p.autoPicked?'<small>Випадковий вибір за таймером</small>':''}</div><div class="game-actions">${!million&&state.phase==='reveal'?'<div class="countdown-ring"><svg viewBox="0 0 48 48" aria-hidden="true"><circle class="ring-track" cx="24" cy="24" r="20"/><circle id="review-ring" class="ring-fill" cx="24" cy="24" r="20" pathLength="100" stroke-dasharray="100"/></svg></div>':''}${actions}</div></div>
- ${million?`<div class="climb-summary">Запитання ${state.index+1} з ${state.total} · Здобуто: ${state.won.toLocaleString('uk')} · Гарантовано: ${state.secured.toLocaleString('uk')} · Вершина: ${state.ladder.at(-1).toLocaleString('uk')}</div>`:''}</section>`;
+ ${million?`</div>${prizeLadder()}`:''}</section>`;
 }
 function results(){const million=state.settings.mode==='millionaire';return `<section class="tv-results"><div class="eyebrow">${million?'МІЛЬЙОНЕР':'ВІКТОРИНА'} · РЕЗУЛЬТАТ</div><div class="trophy">✦</div><h1>${state.finishReason==='walked'?'Вдалий вихід!':'Гру завершено!'}</h1><div class="big-score">${(million?state.won:state.players[0].score).toLocaleString('uk')} <small>балів</small></div><p>${state.finishReason==='completed'?'Ви пройшли всі запитання. Зіграємо ще?':state.finishReason==='wrong'?'Кожне запитання — нова нагода дізнатися більше.':'Ви забрали здобуті бали.'}</p><div class="result-actions">${button('restart','Зіграти ще →',0,0,'primary')}${button('finish','Обрати іншу гру',0,1)}</div></section>`;}
 const creditSections=[['Джерела запитань','База адаптована з OpenTriviaQA її спільноти авторів. Українські переклади та відбір для Європи збережено з наданої тестової версії TriviTV.','https://github.com/uberspot/OpenTriviaQA'],['Ліцензія CC BY-SA 4.0','Дані та переклади поширюються за Creative Commons Attribution–ShareAlike 4.0. При повторному використанні зберігайте авторство та умову ShareAlike.','https://creativecommons.org/licenses/by-sa/4.0/'],['Зміни та походження','Нормалізовано категорії, відсіяно структурні помилки, додано українські переклади та редакційний відбір ЄС. Збережено ID, варіанти відповідей і правильні відповіді. Ревізія джерела: dcc1cdf36c2985ed5c849d1f2265c5041ffcdfb9.','/questions.json'],['Тестова база','916 запитань у 20 категоріях. Переклади — чернетки; відбір консервативний, без незалежної перевірки всіх фактів. Складність не оцінена. Нових запитань не створено.','/credits.html']];
@@ -43,13 +43,14 @@ function render(preferred){
  $('#home').hidden=!state||screen==='credits';$('#home').textContent='Завершити гру';$('#home').dataset.row='-1';$('#home').dataset.col='1';
  $('#home').onclick=()=>showDialog('leave');
  const changed=current!==lastScreen||state?.question?.id!==lastQuestion;
- const defaultFocus=current==='home'?`mode-${mode}`:current==='settings'?'settings-done':current==='credits'?'credits-close':current==='results'?'restart':current==='lobby'?'start':state.phase==='question'?[...app.querySelectorAll('[data-answer]:not(:disabled)')][0]?.id:state.phase==='reveal'?(state.settings.mode==='millionaire'?'next':'pause-review'):null;
+ const defaultFocus=current==='home'?`mode-${mode}`:current==='settings'?'settings-done':current==='credits'?'credits-close':current==='results'?'restart':current==='lobby'?'start':state.phase==='question'?[...app.querySelectorAll('[data-answer]:not(:disabled)')][0]?.id:state.phase==='reveal'?'next':null;
  for(const el of app.querySelectorAll('button'))el.onclick=()=>handleClick(el);
  if(dialog)focusNode($('#dialog-cancel'));
  else if(preferred&&$(`#${preferred}`)&&!$(`#${preferred}`).disabled)focusNode($(`#${preferred}`));
  else if((changed||state?.phase!==lastPhase)&&defaultFocus)focusNode($(`#${defaultFocus}`));
  else if(previous&&$(`#${previous}`)&&!$(`#${previous}`).disabled)focusNode($(`#${previous}`));
  else if(defaultFocus)focusNode($(`#${defaultFocus}`));
+ audio.sync(state,current);
  lastScreen=current;lastQuestion=state?.question?.id;lastPhase=state?.phase;
  saveSettings();fitText();countdown();
 }
@@ -59,11 +60,13 @@ async function execute(work){if(busy)return;busy=true;try{await work();}catch(er
 function leave(){clearProgress();state=null;session=null;dialog=null;snapshot='';screen='home';try{localStorage.removeItem('trivitv-browser-session');}catch{}render();}
 function handleClick(el){
  if(el.disabled)return;
+ audio.cue(['settings-done','credits-close','dialog-cancel','categories-prev','credits-prev'].includes(el.id)?'back':'press');
  if(el.dataset.mode){mode=el.dataset.mode;render(el.id);return;}
  if(el.dataset.category){const c=el.dataset.category;selected.has(c)?selected.delete(c):selected.add(c);render(el.id);return;}
  if(el.dataset.answer!==undefined){action('answer',{choice:Number(el.dataset.answer)});return;}
  switch(el.id){
-  case 'create':case 'restart':startGame();break;
+  case 'multiplayer':case 'party-trivia':location.href='./multi/host.html?mode=trivia&create=1';break;
+  case 'create':case 'restart':if(['duel','imposter'].includes(mode))location.href='./multi/host.html?mode='+mode+'&create=1';else startGame();break;
   case 'start':action('start');break;
   case 'settings':screen='settings';categoryPage=0;render();break;
   case 'settings-done':screen='home';render('settings');break;
@@ -71,7 +74,7 @@ function handleClick(el){
   case 'categories-next':categoryPage=1;render('cat-12');break;
   case 'categories-prev':categoryPage=0;render('cat-0');break;
   case 'pause-review':action((state.phase==='question'?state.questionPaused:state.review?.paused)?'resume':'pause');break;
-  case 'next':action('next');break;
+  case 'next':action('next',{skipReview:state.settings.mode==='trivia'});break;
   case 'fifty':action('fifty');break;
   case 'walk':showDialog('walk');break;
   case 'finish':leave();break;
@@ -84,6 +87,7 @@ function handleClick(el){
 }
 function notify(text){$('#notice').textContent=text;$('#notice').hidden=false;clearTimeout(notify.timer);notify.timer=setTimeout(()=>$('#notice').hidden=true,5000);}
 function countdown(){
+ audio.tick();
  if(!state)return;
  const timer=$('#answer-countdown');if(timer){const remaining=state.questionPaused?state.questionRemainingMs:Math.max(0,(state.questionEndsAt||0)-Date.now());const s=Math.ceil(remaining/1000);timer.textContent=state.phase!=='question'?'':state.questionPaused?'Пауза':`${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}`;}
  if(state.review){const ms=state.review.paused?state.review.remainingMs:Math.max(0,state.review.endsAt-Date.now());$('#review-ring')?.setAttribute('stroke-dashoffset',String(100*(1-ms/state.review.durationMs)));}
@@ -91,7 +95,7 @@ function countdown(){
 // Explicit logical rows/columns, never off-screen geometry or browser spatial navigation.
 function remote(key,repeat=false){
  if(['Enter',' ','MediaPlayPause'].includes(key)&&repeat)return true;
- if(['Escape','BrowserBack','GoBack'].includes(key)){if(dialog){dialog=null;render();}else if(screen==='settings'){screen='home';render('settings');}else if(screen==='credits'){screen='home';render(returnFocus);}else if(state)showDialog('leave');return true;}
+ if(['Escape','BrowserBack','GoBack'].includes(key)){audio.cue('back');if(dialog){dialog=null;render();}else if(screen==='settings'){screen='home';render('settings');}else if(screen==='credits'){screen='home';render(returnFocus);}else if(state)showDialog('leave');return true;}
  if(key==='MediaPlayPause'&&state?.settings.mode==='trivia'&&['question','reveal'].includes(state.phase)){action((state.phase==='question'?state.questionPaused:state.review?.paused)?'resume':'pause');return true;}
  const scope=dialog?$('.tv-dialog'):document;
  const nodes=[...scope.querySelectorAll('button[data-row]:not(:disabled),a[data-row]')].filter(el=>el.getClientRects().length&&!el.closest('[hidden]'));
@@ -104,7 +108,7 @@ function remote(key,repeat=false){
  let target;
  if(vertical){const rows=[...new Set(nodes.map(n=>Number(n.dataset.row)))].filter(r=>(r-row)*sign>0).sort((a,b)=>(a-b)*sign);if(rows.length)target=nodes.filter(n=>Number(n.dataset.row)===rows[0]).sort((a,b)=>Math.abs(Number(a.dataset.col)-col)-Math.abs(Number(b.dataset.col)-col))[0];}
  else target=nodes.filter(n=>Number(n.dataset.row)===row&&(Number(n.dataset.col)-col)*sign>0).sort((a,b)=>(Number(a.dataset.col)-Number(b.dataset.col))*sign)[0];
- focusNode(target||active);return true;
+ if(target&&target!==active)audio.cue('highlight');focusNode(target||active);return true;
 }
 window.TriviTVRemote={key:remote,back:()=>remote('Escape')};
 document.addEventListener('keydown',e=>{if(remote(e.key,e.repeat)){e.preventDefault();e.stopImmediatePropagation();}},true);
@@ -121,9 +125,16 @@ $('.logo').tabIndex=-1;$('.logo').removeAttribute('href');$('.language-picker').
 const creditLink=$('footer a');creditLink.id='credits';creditLink.dataset.row='5';creditLink.dataset.col='0';creditLink.textContent='Джерела · CC BY-SA 4.0';
 creditLink.onclick=e=>{e.preventDefault();returnFocus=document.activeElement?.id||'settings';screen='credits';creditPage=0;render();};
 $('footer span').textContent='Стрілки · OK';$('.header-note').textContent='УКРАЇНСЬКА · ЄВРОПА';document.title='TriviTV · Українська · Європа';
+for(const [kind,label,col] of [['music','Музика',1],['effects','Звуки',2]]){
+ const control=document.createElement('button');control.id=`audio-${kind}`;control.className='quiet';control.dataset.row='5';control.dataset.col=col;
+ const update=()=>{control.textContent=`${label}: ${audio.settings[kind]?'увімк.':'вимк.'}`;control.setAttribute('aria-pressed',String(audio.settings[kind]));};update();
+ if(kind==='music')window.addEventListener('trivitv-audio-error',()=>{control.textContent='Музика: збій';control.setAttribute('aria-label',`Помилка музики: ${audio.status.lastError}. Натисніть, щоб вимкнути.`);});
+ control.onclick=()=>{audio.toggle(kind);update();if(kind==='effects'&&audio.settings.effects)audio.cue('press');};$('footer').append(control);
+}
 try{
  config=await localApi('/api/config');selected=new Set(config.categories);
- try{const saved=JSON.parse(localStorage.getItem('trivitv-browser-settings'));if(saved){mode=['trivia','millionaire'].includes(saved.mode)?saved.mode:'trivia';selected=new Set(saved.categories.filter(c=>config.categories.includes(c)));}}catch{}
+ try{const saved=JSON.parse(localStorage.getItem('trivitv-browser-settings'));if(saved){mode=['trivia','millionaire','imposter','duel'].includes(saved.mode)?saved.mode:'trivia';selected=new Set(saved.categories.filter(c=>config.categories.includes(c)));}}catch{}
+ const launch=new URLSearchParams(location.search);if(['trivia','millionaire'].includes(launch.get('mode')))mode=launch.get('mode');if(launch.get('start')==='1'){session=null;state=null;history.replaceState(null,'',location.pathname);await startGame();}
  if(session){try{state=await localApi('/api/rooms/local');if(state.phase==='lobby')state=await localApi('/api/rooms/local/action',{type:'start'});}catch{session=null;}}
  render();
  setInterval(async()=>{if(!state||busy)return;try{const next=await localApi('/api/rooms/local');const json=JSON.stringify(next);if(json!==snapshot){state=next;snapshot=json;if(screen!=='credits')render();}}catch(error){notify(error.message);}},100);

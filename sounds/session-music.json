@@ -1,0 +1,70 @@
+[
+  {
+    "source": "TriviTV-Trivia-01-60s-clean-v2.wav",
+    "output": "audio/session-01.ogg",
+    "duration": 180.0,
+    "method": "Approved master extended with 1.5-second crossfades; not newly composed",
+    "peak": 0.3816119432449341
+  },
+  {
+    "source": "TriviTV-Trivia-02-Caribbean-60s-v1.wav",
+    "output": "audio/session-02.ogg",
+    "duration": 180.0,
+    "method": "Approved master extended with 1.5-second crossfades; not newly composed",
+    "peak": 0.5102294683456421
+  },
+  {
+    "source": "TriviTV-Trivia-03-Deep-House-60s-v1.wav",
+    "output": "audio/session-03.ogg",
+    "duration": 180.0,
+    "method": "Approved master extended with 1.5-second crossfades; not newly composed",
+    "peak": 0.31374359130859375
+  },
+  {
+    "source": "TriviTV-Trivia-04-Italo-Disco-60s-v1.wav",
+    "output": "audio/session-04.ogg",
+    "duration": 180.0,
+    "method": "Approved master extended with 1.5-second crossfades; not newly composed",
+    "peak": 0.3550196886062622
+  },
+  {
+    "source": "TriviTV-House-03-Chicago-60s-v1.wav",
+    "output": "audio/session-05.ogg",
+    "duration": 180.0,
+    "method": "Approved master extended with 1.5-second crossfades; not newly composed",
+    "peak": 0.33573246002197266
+  },
+  {
+    "source": "TriviTV-House-06-Garage-60s-v1.wav",
+    "output": "audio/session-06.ogg",
+    "duration": 180.0,
+    "method": "Approved master extended with 1.5-second crossfades; not newly composed",
+    "peak": 0.3144698143005371
+  },
+  {
+    "source": "TriviTV-House-08-Deep-Vintage-60s-v1.wav",
+    "output": "audio/session-07.ogg",
+    "duration": 180.0,
+    "method": "Approved master extended with 1.5-second crossfades; not newly composed",
+    "peak": 0.4324831962585449
+  },
+  {
+    "source": "TriviTV-House-09-Deep-Dub-60s-v1.wav",
+    "output": "audio/session-08.ogg",
+    "duration": 180.0,
+    "method": "Approved master extended with 1.5-second crossfades; not newly composed",
+    "peak": 0.5199999809265137
+  },
+  {
+    "title": "Low Tide \u2014 user mix",
+    "source": "TriviTV-Deep-Session-01-Low-Tide-user-export-2.wav",
+    "original_export": "deep-session-01/Exported/Low Tide v2 Export 2.wav",
+    "output": "audio/session-low-tide-user.ogg",
+    "duration": 128.0,
+    "sha256": "96ee8fadddd857209a3beb71dd1c872a948e03e04ff0aef7d044459b57e5cc8d",
+    "gain_db": 0,
+    "approved": true,
+    "notes": "User explicitly selected Export 2 for next build. Preserve mix and level, no previous mastering gain.",
+    "method": "Approved user export; compressed at original duration and gain"
+  }
+]

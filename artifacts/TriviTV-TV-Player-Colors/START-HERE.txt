@@ -1,0 +1,7 @@
+TriviTV 0.4.2 player colors
+
+Install over existing TriviTV. Same app ID and signing key.
+Create a new room. TV remote player is included by default: join one phone and start.
+For phone-only play, turn off the TV remote player in the lobby and join at least two phones.
+TV arrows select answers; OK locks an answer. Each player scores independently. Service is live at https://iggro.com.
+Physical TV/phone testing remains pending.

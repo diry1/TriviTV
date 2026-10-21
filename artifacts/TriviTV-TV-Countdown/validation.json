@@ -1,0 +1,21 @@
+{
+  "apk": "TriviTV-TV-0.3.2-countdown.apk",
+  "bytes": 19991226,
+  "MB": 19.99,
+  "sha256": "9173baa612bed3339d835d1c72bf15954172f96cb45036fa90d4396acbfd9a32",
+  "versionCode": 5,
+  "versionName": "0.3.2-countdown",
+  "bundledFilesMatched": 37,
+  "lintErrors": 0,
+  "lintWarnings": 3,
+  "signatureVerified": true,
+  "previousSigningKeyMatches": true,
+  "zipAlignmentVerified": true,
+  "countdownSeconds": 10,
+  "countdownBpm": [
+    90,
+    240
+  ],
+  "physicalTvRuntimeTested": false,
+  "newMusicDraftBundled": false
+}

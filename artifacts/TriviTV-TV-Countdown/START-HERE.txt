@@ -1,0 +1,5 @@
+TriviTV TV 0.3.2 countdown test
+Install TriviTV-TV-0.3.2-countdown.apk over the previous version.
+Timed Trivia questions now have a separate accelerating metronome during the last ten seconds. Pause/background suspend it; resume seeks to the remaining time. It stops on answer lock/timeout. Millionaire remains untimed.
+Existing selected music retained. New Low Tide draft is separate in sounds/ pending listening review.
+Android build/lint, signing key, alignment, exact bundled assets and focused audio browser QA passed. Physical TV listening still required.

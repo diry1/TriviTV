@@ -69,8 +69,10 @@ def reveal(variant):
 event('highlight','Menu highlight','Very soft focus tick; should tolerate repeated arrow navigation.',[k('tick_001'),k('select_001')],-34)
 event('press','Button pressed','Selected by you: former 4.B (switch_002), at its original level.',[k('switch_002')],-31)
 events[-1]['approval']='User selected former unavailable B; exact processed audio preserved.'
-event('back','Back / cancel','A soft closing gesture.',[k('back_001'),k('close_001')],-31)
-event('unavailable','Unavailable action','Muted feedback, distinct from an incorrect answer.',[k('error_001'),k('switch_002')],-31)
+event('back','Back / cancel','Selected by you: former 1.B (select_001), at its original level.',[k('select_001')],-34)
+events[-1]['approval']='User selected former highlight B; exact processed audio preserved.'
+event('unavailable','Unavailable action','Selected by you: former 3.A (back_001), at its original level.',[k('back_001')],-31)
+events[-1]['approval']='User selected back A from revision 2; exact processed audio preserved.'
 event('question','Question appears','Brief attention cue before reading.',[k('question_001'),k('open_001')],-28)
 event('locked','Answer locked','Firm acknowledgement of the submitted answer.',[k('confirmation_001'),k('select_004')],-27)
 event('choices','Choices revealed','New soft layered reveal accents; both previous choices replaced.',[original(reveal(0)),original(reveal(1))],-29)
@@ -96,4 +98,4 @@ for e in events:
 (P/'validation.json').write_text(json.dumps({'validatedFiles':report,'count':len(report),'clipping':False,'subjectiveReview':'pending; not listened to by agent','sourceZipSha256':hashlib.sha256((P/'source/kenney_interface-sounds.zip').read_bytes()).hexdigest()},indent=2))
 template=(P/'page-template.html').read_text()
 (P/'index.html').write_text(template.replace('/*MANIFEST*/',json.dumps(manifest)))
-print('Created and verified 23 cues, 12 events, manifest, audition reel and offline review page.')
+print('Created and verified',len(report),'cues, 12 events, manifest, audition reel and offline review page.')

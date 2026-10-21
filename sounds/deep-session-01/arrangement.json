@@ -1,0 +1,5207 @@
+{
+  "title": "Low Tide",
+  "duration": 128,
+  "bpm": 120,
+  "key": "D minor / F major",
+  "changes_seconds": [
+    32,
+    64,
+    96
+  ],
+  "sources": {
+    "BD Gentle Perkons 03.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Perkons From Mars\\WAV\\01. One Shots\\01. Individual Hits\\01. Bass Drum\\BD Gentle Perkons 03.wav",
+    "Clap Soft Perkons Clean 02.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Perkons From Mars\\WAV\\01. One Shots\\01. Individual Hits\\04. Clap & Rim\\Clap Soft Perkons Clean 02.wav",
+    "CH Friendly 808 Loops 120.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\808 Loops From Mars\\WAV\\08. Hi Hat\\CH\\CH Friendly 808 Loops 120.wav",
+    "Shaker Soft Perkons 03.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Perkons From Mars\\WAV\\01. One Shots\\01. Individual Hits\\06. Shaker\\Shaker Soft Perkons 03.wav",
+    "Rim Acoustic Wood Vinyl SP 02.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\WAV\\01. Individual Hits\\04. Rim\\Rim Acoustic Wood Vinyl SP 02.wav",
+    "FX Trem Keys Vinyl SP D#m9.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\WAV\\01. Individual Hits\\10. FX\\FX Trem Keys Vinyl SP D#m9.wav",
+    "FX Sweet Key Vinyl SP F#maj7.wav": "C:\\Users\\User\\Downloads\\Torrents\\All the Samples from Mars 2025 Update [Samples from Mars]\\Vinyl SP From Mars\\WAV\\01. Individual Hits\\10. FX\\FX Sweet Key Vinyl SP F#maj7.wav"
+  },
+  "events": [
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 0.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 0.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 1.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 1.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 0.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 1.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 0.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 1.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 1.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 0.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 0.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 1.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 1.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 2.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 2.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 3.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 3.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 2.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 3.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 2.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 3.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 3.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 2.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 2.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 3.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 3.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 4.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 4.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 5.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 5.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 4.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 5.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 4.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 5.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 5.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 4.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 4.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 5.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 5.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 6.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 6.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 7.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 7.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 6.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 7.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 6.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 7.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 7.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 6.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 6.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 7.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 7.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 8.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 8.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 9.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 9.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 8.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 9.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 8.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 9.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 9.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 8.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 8.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 9.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 9.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 10.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 10.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 11.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 11.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 10.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 11.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 10.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 11.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 11.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 10.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 10.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 11.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 11.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 12.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 12.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 13.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 13.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 12.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 13.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 12.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 13.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 60",
+      "start": 13.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 12.375,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 12.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 13.375,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 13.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 14.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 14.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 15.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 15.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 14.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 15.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 14.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 15.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 60",
+      "start": 15.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 14.375,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 14.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 15.375,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 15.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 16.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 16.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 17.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 17.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 16.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 17.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 16.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 17.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 17.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 16.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 16.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 17.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 17.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 18.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 18.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 19.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 19.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 18.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 19.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 18.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 19.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 19.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 18.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 18.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 19.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 19.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 20.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 20.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 21.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 21.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 20.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 21.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 20.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 21.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 21.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 20.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 20.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 21.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 21.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 22.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 22.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 23.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 23.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 22.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 23.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 22.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 23.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 23.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 22.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 22.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 23.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 23.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 24.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 24.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 25.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 25.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 24.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 25.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 24.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 25.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 25.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 24.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 24.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 25.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 25.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 26.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 26.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 27.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 27.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 26.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 27.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 26.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 27.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 27.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 26.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 26.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 27.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 27.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 28.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 28.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 29.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 29.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 28.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 29.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 28.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 29.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 60",
+      "start": 29.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 28.375,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 28.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 29.375,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 29.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 30.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 30.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 31.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 31.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 30.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 31.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 30.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 31.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 60",
+      "start": 31.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 30.375,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 30.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 31.375,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 31.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 32.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 32.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 33.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 33.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 32.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 33.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 32.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 33.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 33.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 32.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 32.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 33.25,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 33.625,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 32.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 33.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 34.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 34.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 35.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 35.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 34.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 35.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 34.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 35.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 35.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 34.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 34.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 35.25,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 35.625,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 34.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 35.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Vinyl rim",
+      "start": 35.375,
+      "length": 0.08910416666666666
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 36.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 36.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 37.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 37.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 36.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 37.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 36.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 37.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 37.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 36.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 36.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 37.25,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 37.625,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 36.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 37.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 38.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 38.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 39.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 39.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 38.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 39.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 38.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 39.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 39.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 38.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 38.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 39.25,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 39.625,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 38.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 39.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Vinyl rim",
+      "start": 39.375,
+      "length": 0.08910416666666666
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 40.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 40.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 41.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 41.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 40.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 41.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 40.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 41.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 41.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 40.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 40.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 41.25,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 41.625,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 40.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 41.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 42.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 42.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 43.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 43.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 42.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 43.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 42.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 43.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 43.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 42.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 42.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 43.25,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 43.625,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 42.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 43.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Vinyl rim",
+      "start": 43.375,
+      "length": 0.08910416666666666
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 44.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 44.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 45.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 45.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 44.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 45.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 44.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 45.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 60",
+      "start": 45.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 44.375,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 44.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 45.25,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 45.625,
+      "length": 1.4515625
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 44.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 45.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 46.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 46.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 47.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 47.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 46.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 47.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 46.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 47.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 60",
+      "start": 47.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 46.375,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 46.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 47.25,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 47.625,
+      "length": 1.4515625
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 46.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 47.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Vinyl rim",
+      "start": 47.375,
+      "length": 0.08910416666666666
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 48.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 48.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 49.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 49.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 48.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 49.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 48.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 49.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 49.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 48.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 48.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 49.25,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 49.625,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 48.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 49.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 50.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 50.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 51.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 51.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 50.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 51.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 50.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 51.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 51.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 50.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 50.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 51.25,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 51.625,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 50.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 51.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Vinyl rim",
+      "start": 51.375,
+      "length": 0.08910416666666666
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 52.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 52.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 53.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 53.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 52.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 53.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 52.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 53.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 53.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 52.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 52.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 53.25,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 53.625,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 52.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 53.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 54.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 54.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 55.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 55.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 54.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 55.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 54.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 55.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 55.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 54.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 54.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 55.25,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 55.625,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 54.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 55.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Vinyl rim",
+      "start": 55.375,
+      "length": 0.08910416666666666
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 56.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 56.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 57.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 57.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 56.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 57.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 56.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 57.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 57.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 56.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 56.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 57.25,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 57.625,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 56.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 57.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 58.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 58.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 59.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 59.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 58.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 59.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 58.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 59.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 59.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 58.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 58.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 59.25,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 59.625,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 58.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 59.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Vinyl rim",
+      "start": 59.375,
+      "length": 0.08910416666666666
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 60.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 60.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 61.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 61.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 60.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 61.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 60.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 61.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 60",
+      "start": 61.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 60.375,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 60.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 61.25,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 61.625,
+      "length": 1.4515625
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 60.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 61.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 62.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 62.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 63.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 63.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 62.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 63.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 62.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 63.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 60",
+      "start": 63.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 62.375,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 62.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 63.25,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 63.625,
+      "length": 1.4515625
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 62.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 63.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Vinyl rim",
+      "start": 63.375,
+      "length": 0.08910416666666666
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 64.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 64.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 65.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 65.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 64.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 65.375,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 64.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 65.125,
+      "length": 1.6584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 66.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 66.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 67.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 67.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 66.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 67.375,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 66.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 67.125,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Vinyl rim",
+      "start": 67.375,
+      "length": 0.08910416666666666
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 68.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 68.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 69.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 69.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 68.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 69.375,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 68.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 69.125,
+      "length": 1.6584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 70.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 70.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 71.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 71.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 70.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 71.375,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 70.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 71.125,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Vinyl rim",
+      "start": 71.375,
+      "length": 0.08910416666666666
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 72.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 72.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 73.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 73.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 72.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 73.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 72.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 73.375,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 72.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 73.125,
+      "length": 1.6584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 74.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 74.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 75.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 75.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 74.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 75.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 74.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 75.375,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 74.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 75.125,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Vinyl rim",
+      "start": 75.375,
+      "length": 0.08910416666666666
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 76.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 76.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 77.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 77.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 76.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 77.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 76.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 77.375,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 76.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 77.125,
+      "length": 1.4515625
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 78.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 78.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 79.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 79.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 78.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 79.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 78.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 79.375,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 78.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 79.125,
+      "length": 1.4515625
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Vinyl rim",
+      "start": 79.375,
+      "length": 0.08910416666666666
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 80.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 80.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 81.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 81.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 80.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 81.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 80.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 81.375,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 80.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 81.125,
+      "length": 1.6584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 82.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 82.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 83.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 83.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 82.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 83.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 82.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 83.375,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 82.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 83.125,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Vinyl rim",
+      "start": 83.375,
+      "length": 0.08910416666666666
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 84.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 84.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 85.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 85.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 84.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 85.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 84.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 85.375,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 84.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 85.125,
+      "length": 1.6584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 86.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 86.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 87.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 87.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 86.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 87.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 86.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 87.375,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 86.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 87.125,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Vinyl rim",
+      "start": 87.375,
+      "length": 0.08910416666666666
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 88.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 88.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 89.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 89.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 88.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 89.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 88.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 89.375,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 88.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 89.125,
+      "length": 1.6584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 90.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 90.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 91.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 91.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 90.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 91.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 90.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 91.375,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 90.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 91.125,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Vinyl rim",
+      "start": 91.375,
+      "length": 0.08910416666666666
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 92.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 92.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 93.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 93.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 92.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 93.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 92.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 93.375,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 92.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 93.125,
+      "length": 1.4515625
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 94.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 94.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 95.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 95.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 94.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 95.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 94.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 95.375,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 94.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 95.125,
+      "length": 1.4515625
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Vinyl rim",
+      "start": 95.375,
+      "length": 0.08910416666666666
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 96.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 96.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 97.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 97.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 96.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 97.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 96.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 97.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 97.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 96.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 96.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 97.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 97.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 96.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 97.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 98.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 98.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 99.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 99.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 98.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 99.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 98.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 99.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 99.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 98.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 98.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 99.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 99.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 98.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 99.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 100.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 100.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 101.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 101.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 100.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 101.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 100.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 101.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 101.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 100.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 100.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 101.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 101.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 100.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 101.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 102.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 102.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 103.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 103.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 102.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 103.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 102.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 103.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 103.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 102.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 102.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 103.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 103.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 102.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 103.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 104.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 104.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 105.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 105.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 104.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 105.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 104.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 105.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 105.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 104.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 104.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 105.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 105.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 104.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 105.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 106.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 106.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 107.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 107.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 106.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 107.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 106.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 107.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 107.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 106.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 106.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 107.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 107.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 106.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 107.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 108.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 108.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 109.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 109.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 108.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 109.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 108.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 109.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 60",
+      "start": 109.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 108.375,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 108.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 109.375,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 109.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 108.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 109.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 110.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 110.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 111.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 111.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 110.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 111.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 110.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 111.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 60",
+      "start": 111.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 110.375,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 110.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 111.375,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 111.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 110.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 111.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 112.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 112.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 113.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 113.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 112.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 113.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 112.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 113.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 113.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 112.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 112.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 113.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 113.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 112.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 113.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 114.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 114.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 115.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 115.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 114.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 115.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 114.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 115.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 115.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 114.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 114.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 115.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 115.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 114.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 115.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 116.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 116.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 117.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 117.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 116.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 117.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 116.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 117.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 117.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 116.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 116.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 117.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 117.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 116.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 117.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 118.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 118.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 119.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 119.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 118.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 119.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 118.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 119.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 119.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 118.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 118.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 119.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 119.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 118.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 119.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 120.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 120.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 121.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 121.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 120.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 121.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 120.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 121.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 121.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 120.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 120.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 121.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 121.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 120.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 121.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 122.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 122.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 123.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 123.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 122.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 123.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 122.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 50",
+      "start": 123.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 57",
+      "start": 123.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 122.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 122.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Dm9 trem keys",
+      "start": 123.375,
+      "length": 1.6584375
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Dm9 soft echo",
+      "start": 123.75,
+      "length": 1.6584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 122.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 123.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 124.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 124.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 125.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 125.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 124.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 125.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 124.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 125.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 60",
+      "start": 125.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 124.375,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 124.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 125.375,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 125.75,
+      "length": 1.4515625
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 124.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 125.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 126.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 126.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 127.0,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "01 Perkons kick",
+      "voice": "Gentle Perkons kick",
+      "start": 127.5,
+      "length": 0.29139583333333335
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 126.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "02 Perkons clap",
+      "voice": "Soft Perkons clap",
+      "start": 127.505,
+      "length": 0.2999375
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 126.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 53",
+      "start": 127.25,
+      "length": 0.34
+    },
+    {
+      "track": "05 Muted mid bass",
+      "voice": "Bass 60",
+      "start": 127.625,
+      "length": 0.34
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 126.375,
+      "length": 1.4515625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 126.75,
+      "length": 1.25
+    },
+    {
+      "track": "06 Sampled ninth keys",
+      "voice": "Fmaj7 warm keys",
+      "start": 127.375,
+      "length": 0.625
+    },
+    {
+      "track": "07 Soft stereo echoes",
+      "voice": "Fmaj7 soft echo",
+      "start": 127.75,
+      "length": 0.25
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 126.125,
+      "length": 0.0584375
+    },
+    {
+      "track": "04 Shaker and rim",
+      "voice": "Quiet Perkons shaker",
+      "start": 127.375,
+      "length": 0.0584375
+    },
+    {
+      "track": "03 808 loop hats",
+      "voice": "Friendly 808 hats",
+      "start": 0,
+      "length": 16.000041666666668
+    },
+    {
+      "track": "03 808 loop hats",
+      "voice": "Friendly 808 hats",
+      "start": 16,
+      "length": 16.000041666666668
+    },
+    {
+      "track": "03 808 loop hats",
+      "voice": "Friendly 808 hats",
+      "start": 32,
+      "length": 16.000041666666668
+    },
+    {
+      "track": "03 808 loop hats",
+      "voice": "Friendly 808 hats",
+      "start": 48,
+      "length": 16.000041666666668
+    },
+    {
+      "track": "03 808 loop hats",
+      "voice": "Friendly 808 hats",
+      "start": 64,
+      "length": 16.000041666666668
+    },
+    {
+      "track": "03 808 loop hats",
+      "voice": "Friendly 808 hats",
+      "start": 80,
+      "length": 16.000041666666668
+    },
+    {
+      "track": "03 808 loop hats",
+      "voice": "Friendly 808 hats",
+      "start": 96,
+      "length": 16.000041666666668
+    },
+    {
+      "track": "03 808 loop hats",
+      "voice": "Friendly 808 hats",
+      "start": 112,
+      "length": 16
+    }
+  ],
+  "method": "Script prepares processed voices and native sample clips; Waveform final rendering"
+}

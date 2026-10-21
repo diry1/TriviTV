@@ -1,0 +1,23 @@
+{
+  "apk": "TriviTV-TV-0.3.3-millionaire.apk",
+  "bytes": 21215086,
+  "MB": 21.22,
+  "sha256": "9f06aadb4165cee4c7f0e7de18c8a2ea55a599be3a0d79554b8aafe9639e6006",
+  "versionCode": 6,
+  "versionName": "0.3.3-millionaire",
+  "bundledFilesMatched": 38,
+  "signatureVerified": true,
+  "previousSigningKeyMatches": true,
+  "zipAlignmentVerified": true,
+  "lintErrors": 0,
+  "lintWarnings": 3,
+  "ladderSteps": 15,
+  "guaranteedMilestones": [
+    1000,
+    32000
+  ],
+  "approvedLowTideExport2Included": true,
+  "musicTracks": 9,
+  "fullBankGeometryQuestions": 916,
+  "physicalTvTested": false
+}

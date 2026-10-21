@@ -1,0 +1,5 @@
+TriviTV TV0.3.5 native music playback test
+Install TriviTV-TV-0.3.5-native-music.apk over0.3.4; same signingkey, progress retained.
+Menu and long gameplay music now use Android MediaPlayer directly from APK assets, bypassing WebView music streaming/autoplay. Sound effects continue through WebView. Pause/background/menu/mute/ducking and playlist are retained. TV volume buttons use the music/media stream.
+Check footer Music is on (ћузика: ув≥мк.). Playback errors now appear as ћузика: зб≥й rather than silently reporting enabled.
+Android compilation/lint, signature/alignment, asset descriptors(uncompressed Ogg), exact bundled assets, browser audio and mock native bridge tests passed. No TV connected viaADB; actual physicalTV playback and original cause still unconfirmed.

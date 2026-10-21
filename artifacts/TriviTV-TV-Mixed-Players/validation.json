@@ -1,0 +1,12 @@
+{
+  "version": "0.4.1-mixed-players",
+  "versionCode": 10,
+  "bytes": 5185334,
+  "sha256": "d6f5e84e36dfafbfe70565f0967b273467edd3f747ec33aea5c0e44952dc3b09",
+  "bundledFiles": 36,
+  "assetsMatch": true,
+  "serverTests": "9 passed, including remote/phone and phone-only; public HTTPS/WSS tests passed",
+  "browserTest": "Arrows/OK remote answer plus one phone; both scored independently",
+  "deployment": "Live https://iggro.com; fb2f0898-de4d-43b4-9fb2-d486b3ddcd4b",
+  "physicalTV": "Pending"
+}
