@@ -1,0 +1,23 @@
+// Generated from category-difficulty.json by multiplayer/prepare.mjs.
+export default {
+  "Kids Trivia": 1,
+  "Animals": 2,
+  "Entertainment": 2,
+  "General Knowledge": 2,
+  "Geography": 3,
+  "Hobbies": 3,
+  "Movies": 3,
+  "Celebrities": 3,
+  "World": 3,
+  "History": 3,
+  "Music": 3,
+  "Television": 3,
+  "Science & Technology": 4,
+  "Arts & Humanities": 4,
+  "Literature": 4,
+  "People": 4,
+  "Sport": 4,
+  "Video Games": 4,
+  "Religion & Faith": 4,
+  "Brain Teasers": 4
+};

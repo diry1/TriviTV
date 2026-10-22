@@ -1,0 +1,1428 @@
+[
+  {
+    "id": "otqa:8ff600d9385167d30dbecf52",
+    "selection": "category-stratum",
+    "number": 1,
+    "english": {
+      "category": "Animals",
+      "text": "Why do cats go crazy over catnip?",
+      "choices": [
+        "Because it smells like a cat in heat",
+        "Because it smells like prey",
+        "Because it smells like tasty food",
+        "Because it is an aphrodisiac"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:8ff600d9385167d30dbecf52",
+      "text": "Чому коти шаленіють від котячої м’яти?",
+      "choices": [
+        "Тому що вона пахне котом у шлюбний період",
+        "Тому що вона пахне здобиччю",
+        "Тому що вона пахне смачною їжею",
+        "Тому що це афродизіак"
+      ],
+      "sourceHash": "a0144dd32b57ff09cea79c47e4afc7e408718e595fd32b164ba70b3d4f430be6",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:1bb4cfea9ffd14e040639843",
+    "selection": "category-stratum",
+    "number": 2,
+    "english": {
+      "category": "Animals",
+      "text": "This type of ant is considered the most venomous of all insects.",
+      "choices": [
+        "Jack jumper ant",
+        "Western brown ant",
+        "Bulldog ant",
+        "Fire ant"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:1bb4cfea9ffd14e040639843",
+      "text": "Цей тип мурах вважається найбільш отруйним з усіх комах.",
+      "choices": [
+        "Мураха-стрибунець (Jack jumper ant)",
+        "Західна рудувата мураха",
+        "Булдожня мураха",
+        "Вогняна мураха"
+      ],
+      "sourceHash": "6aa2146ab4536cfc596af70d1eb202685cc46d03f597e11ad866a58e1838c727",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:d0673a4c785555238b45562d",
+    "selection": "category-stratum",
+    "number": 3,
+    "english": {
+      "category": "Arts & Humanities",
+      "text": "What is the missing verb from the Chinese proverb originating from the works of Chinese philosopher Confucius, I hear and I ...; I see and I remember; I do and I understand?",
+      "choices": [
+        "Forget",
+        "Ignore",
+        "Learn",
+        "Discover"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:d0673a4c785555238b45562d",
+      "text": "Яке дієслово пропущене у китайській приказці з творів китайського філософа Конфуція: «Я чую, і я ...; я бачу, і я пам’ятаю; я роблю, і я розумію»?",
+      "choices": [
+        "Забуваю",
+        "Ігнорую",
+        "Вчуся",
+        "Відкриваю"
+      ],
+      "sourceHash": "59d754c3adc0c1bedd3513e6cbe36d08acfddee2d1a7a2d9dd71ef0af187a9cd",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:adc207c8314c27acaeda0c26",
+    "selection": "category-stratum",
+    "number": 4,
+    "english": {
+      "category": "Arts & Humanities",
+      "text": "What is the name of the dwelling place of the Norse gods?",
+      "choices": [
+        "Asgard",
+        "Olympia",
+        "Atlantis",
+        "Valhalla"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:adc207c8314c27acaeda0c26",
+      "text": "Як називається місце проживання норвезьких богів?",
+      "choices": [
+        "Асґард",
+        "Олімпія",
+        "Атлантида",
+        "Вальгалла"
+      ],
+      "sourceHash": "72d7e7b8f2a6c449b5c2c8fbdde0ee3a4c199ed5e07b068c6d3372534b2a5bb3",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:b578ab9c75790956eabe1f97",
+    "selection": "category-stratum",
+    "number": 5,
+    "english": {
+      "category": "Brain Teasers",
+      "text": "How does this proverb continue: The squeaking wheel gets ...",
+      "choices": [
+        "The grease",
+        "The rust",
+        "Removed",
+        "The broken"
+      ],
+      "correct": 0
+    },
+    "ukrainian": null
+  },
+  {
+    "id": "otqa:dc1e428a720a39e99d299c03",
+    "selection": "category-stratum",
+    "number": 6,
+    "english": {
+      "category": "Brain Teasers",
+      "text": "There are 15 birds sitting on the branches of a tree. A hunter goes by and shoots 3 of them. How many birds are left on the tree?",
+      "choices": [
+        "0",
+        "12",
+        "10",
+        "3"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:dc1e428a720a39e99d299c03",
+      "text": "На гілках дерева сидить 15 птахів. Мисливець проходить повз і стріляє у 3 з них. Скільки птахів залишилося на дереві?",
+      "choices": [
+        "0",
+        "12",
+        "10",
+        "3"
+      ],
+      "sourceHash": "a50136668668a2f68b49a15993f34327f50841aa6d37c426d3c30a72fd39aa1a",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:8989a2f1a08416c5586f664a",
+    "selection": "category-stratum",
+    "number": 7,
+    "english": {
+      "category": "Celebrities",
+      "text": "What is the title of the 2009 movie that is based on the life of rapper The Notorious B.I.G.?",
+      "choices": [
+        "Notorious",
+        "Life After Death",
+        "B.I.G.",
+        "Ready To Die"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:8989a2f1a08416c5586f664a",
+      "text": "Яка назва фільму 2009 року, заснованого на житті репера The Notorious B.I.G.?",
+      "choices": [
+        "Notorious",
+        "Life After Death",
+        "B.I.G.",
+        "Ready To Die"
+      ],
+      "sourceHash": "a2f47ac5f5387e5503d57dc7a236b41cdc871009efa38b540f8704f2e36fbd9b",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:288d8b48f33d758c4f7bfa99",
+    "selection": "category-stratum",
+    "number": 8,
+    "english": {
+      "category": "Celebrities",
+      "text": "Which is the missing word from the lyrics of the popular Aerosmith song I Dont Want To Miss A Thing: “I could stay awake, just to hear you _________”?",
+      "choices": [
+        "Breathing",
+        "Sleeping",
+        "Blinking",
+        "Walking"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:288d8b48f33d758c4f7bfa99",
+      "text": "Яке слово пропущене в тексті популярної пісні Aerosmith «I Don't Want To Miss A Thing»: «I could stay awake, just to hear you _________»?",
+      "choices": [
+        "Дихати",
+        "Спати",
+        "Моргати",
+        "Йти"
+      ],
+      "sourceHash": "26126b0b00af6b8d8feb5f0f1ae911f4ed3d9dcb9c7557feac030541a3d15119",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:24d4e6d4558e138f890e53c9",
+    "selection": "category-stratum",
+    "number": 9,
+    "english": {
+      "category": "Entertainment",
+      "text": "In the 1980 movie Popeye, which pair portrayed Popeye and Olive?",
+      "choices": [
+        "Robin Williams and Shelley Duvall",
+        "Robin Williams and Carol Lynnely",
+        "Robin Williams and Lily Tomlin",
+        "Ray Walston and Lily Tomlin"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:24d4e6d4558e138f890e53c9",
+      "text": "У фільмі «Попай» 1980 року, яка пара зіграла Попая і Олів?",
+      "choices": [
+        "Робін Вільямс і Шеллі Давал",
+        "Робін Вільямс і Керол Лінелі",
+        "Робін Вільямс і Лілі Томлін",
+        "Рей Уолстон і Лілі Томлін"
+      ],
+      "sourceHash": "9e4cb8299997e6a40926371536a2bd361c9422f8038d1f0724d6c8d1d1bec1ed",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:15946071e56465513cd32cf8",
+    "selection": "category-stratum",
+    "number": 10,
+    "english": {
+      "category": "Entertainment",
+      "text": "Which of the following best describes Andy and Roger’s youngest child in the comics FoxTrot?",
+      "choices": [
+        "A nerd",
+        "A jock",
+        "A sports addict",
+        "A TV addict"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:15946071e56465513cd32cf8",
+      "text": "Який опис найкраще підходить для наймолодшої дитини Енді й Роджера в коміксах FoxTrot?",
+      "choices": [
+        "Нерд",
+        "Атлет",
+        "Залежний від спорту",
+        "Залежний від телевізора"
+      ],
+      "sourceHash": "e2629a8e3f8d561712d7f1e9639ae684d9473885d723741cb1bda3a698ec19e6",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:ce4edc4a85f74a80ff2c7c7f",
+    "selection": "category-stratum",
+    "number": 11,
+    "english": {
+      "category": "General Knowledge",
+      "text": "This talkative nymph was trying to protect her nymph friends from being caught with Zeus, so she tried to distract Hera while the others escaped. She talked and talked, and Hera got sick of it so she cursed the nymph to repeat everything everybody else said. What is the name of this nymph?",
+      "choices": [
+        "Echo",
+        "Whisper",
+        "Marea",
+        "Creusa"
+      ],
+      "correct": 0
+    },
+    "ukrainian": null
+  },
+  {
+    "id": "otqa:8761fc2b1b08804b4edbb9d8",
+    "selection": "category-stratum",
+    "number": 12,
+    "english": {
+      "category": "General Knowledge",
+      "text": "Directly accessible. (adjective)",
+      "choices": [
+        "addressable",
+        "adresseable",
+        "addresable",
+        "adressable"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:8761fc2b1b08804b4edbb9d8",
+      "text": "Безпосередньо доступний. (прикметник)",
+      "choices": [
+        "addressable",
+        "adresseable",
+        "addresable",
+        "adressable"
+      ],
+      "sourceHash": "212a5c54d7da7cbe7192b0e2e0aad7a4778ad47bea2abba62eea375c5fa51cf7",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:e3e70c10d304c8dad8fc5aee",
+    "selection": "category-stratum",
+    "number": 13,
+    "english": {
+      "category": "Geography",
+      "text": "The Big Smoky Valley, that runs between the Toiyabe Range and the Toquima Range, is located in which US state?",
+      "choices": [
+        "Nevada",
+        "Minnesota",
+        "Indiana",
+        "Oregon"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:e3e70c10d304c8dad8fc5aee",
+      "text": "Велика Смокі-Велі, що розташована між хребтами Тойябе і Токамі, знаходиться в якому штаті США?",
+      "choices": [
+        "Невада",
+        "Міннесота",
+        "Індіана",
+        "Орегон"
+      ],
+      "sourceHash": "de0a69064a681ae60f64656e280605ef10ae7a24124063cba19cbb0e1ef85287",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:3a1eadfda5f30e7ce7ec8560",
+    "selection": "category-stratum",
+    "number": 14,
+    "english": {
+      "category": "Geography",
+      "text": "Which of these mountains is highest?",
+      "choices": [
+        "Mount McKinley",
+        "Puncak Jaya",
+        "Mount Elbrus",
+        "Mount Kilimanjaro"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:3a1eadfda5f30e7ce7ec8560",
+      "text": "Яка з цих гір найвища?",
+      "choices": [
+        "Гора Мак-Кінлі",
+        "Пунчак Джая",
+        "гора Ельбрус",
+        "гора Кіліманджаро"
+      ],
+      "sourceHash": "19379d63af080101f713076ff664cddf03f18b3177da8a54adc0879a2ec8bb6c",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:0139eb0a2c18a22157729df6",
+    "selection": "category-stratum",
+    "number": 15,
+    "english": {
+      "category": "History",
+      "text": "What conflict was initiated by a self-proclaimed mystic, named Hong Xiuquan, who claimed that he was the new Messiah?",
+      "choices": [
+        "Taiping Rebellion",
+        "Turko-Russian War",
+        "Opium Wars",
+        "Boxer Revolution"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:0139eb0a2c18a22157729df6",
+      "text": "Який конфлікт розпочав самопроголошений містик на ім’я Хун Сюцюань, який стверджував, що він новий Месія?",
+      "choices": [
+        "Повстання Тайпінів",
+        "Турко-російська війна",
+        "Опіумні війни",
+        "Боксерське повстання"
+      ],
+      "sourceHash": "ce767ec612b817d9149bd82a4d14cb213accb0d4f49bd57a70a6a2e0f2c4f3e4",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:6214d34be45b2a43b8063cc7",
+    "selection": "category-stratum",
+    "number": 16,
+    "english": {
+      "category": "History",
+      "text": "The Soviets, having lost the race for the Moon, redirected their efforts towards the construction of space stations. They became quite good at this uneasy task, but also experienced a great deal of problems. Due to a fatal malfunction of a valve, all three crew members of this space station died.",
+      "choices": [
+        "Soyuz 11",
+        "Soyuz 7",
+        "Soyuz 6",
+        "Soyuz 1"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:6214d34be45b2a43b8063cc7",
+      "text": "Радянські, програвши гонку за Місяць, перенаправили зусилля на будівництво космічних станцій. Вони досить добре впоралися з цим нелегким завданням, але також зіткнулися з багатьма проблемами. Через фатальну несправність клапана всі троє членів екіпажу цієї космічної станції загинули.",
+      "choices": [
+        "Союз 11",
+        "Союз 7",
+        "Союз 6",
+        "Союз 1"
+      ],
+      "sourceHash": "5178579034f960e4549a4d3ba7db1171446d60a4fe9d53769fb7f013af89d252",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:42ff9a20576b30d3a116b9d5",
+    "selection": "category-stratum",
+    "number": 17,
+    "english": {
+      "category": "Hobbies",
+      "text": "The dish called American fried rice is not in fact American. Where was it created?",
+      "choices": [
+        "Thailand",
+        "China",
+        "Italy",
+        "France"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:42ff9a20576b30d3a116b9d5",
+      "text": "Страва, яку називають американським смаженим рисом, насправді не є американською. Де вона була створена?",
+      "choices": [
+        "Таїланд",
+        "Китай",
+        "Італія",
+        "Франція"
+      ],
+      "sourceHash": "069c90eb7ff603a1438ac4c15e9cd22f38bf707823180078516e6887173166fe",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:98efd44a813b1df9aa8249d5",
+    "selection": "category-stratum",
+    "number": 18,
+    "english": {
+      "category": "Hobbies",
+      "text": "Having been cultivated for more than 1000 years, this is one of the oldest spices in the world. However, you should be aware of its hallucinogenic properties it taken in large quantities. In Asia, It was highly appreciated for its aphrodisiac qualities.",
+      "choices": [
+        "Nutmeg",
+        "Black pepper",
+        "Turmeric powder",
+        "Cinnamon"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:98efd44a813b1df9aa8249d5",
+      "text": "Вирощувана більше 1000 років, це одна з найстаріших спецій у світі. Однак треба бути уважним через її галюциногенні властивості при вживанні у великих кількостях. В Азії ця спеція високо цінувалася за свої афродизіакальні якості.",
+      "choices": [
+        "Мускатний горіх",
+        "Чорний перець",
+        "Порошок куркуми",
+        "Кориця"
+      ],
+      "sourceHash": "1b5db228758d6f3ddb721556e024d10dae7b5247cc147260dbb2d2c57e9383d8",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:96b333696ff88e3cfaf9fe0a",
+    "selection": "category-stratum",
+    "number": 19,
+    "english": {
+      "category": "Kids Trivia",
+      "text": "In the book The Wind in the Willows, shortly after his escape and still in disguise, Mr. Toad meets a bargewoman and tricks her into giving him a job. The bargewoman discovers Toads trick and throws him overboard. He steals her horse and sells it to a Gypsy for what?",
+      "choices": [
+        "Money and stew",
+        "A ride back to Toad Hall",
+        "Another disguise",
+        "A place to spend the night"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:96b333696ff88e3cfaf9fe0a",
+      "text": "У книзі «Вітер у вербах», одразу після втечі та все ще замаскований, містер Жаба зустрічає баржистку і обманом змушує її дати йому роботу. Баржистка виявляє обман і скидає його за борт. Він краде її коня і продає його цигану за що?",
+      "choices": [
+        "Гроші та рагу",
+        "Повернення назад до Тодового палацу",
+        "Інший маскарад",
+        "Місце для ночівлі"
+      ],
+      "sourceHash": "5c00a053ab2cc4f65d68c4bd6df3fd99ccec319a7edb56713b295340b9624fcd",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:9c8207d7b3b502e61ae7467c",
+    "selection": "category-stratum",
+    "number": 20,
+    "english": {
+      "category": "Kids Trivia",
+      "text": "In the book Prince Caspian, what is the name of the Captain of the Mice, whom Aslan rewards with a new tail for the loyalty of his troops?",
+      "choices": [
+        "Reepicheep",
+        "Peepicheek",
+        "Cheekipeep",
+        "Mickey"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:9c8207d7b3b502e61ae7467c",
+      "text": "Як звуть Капітана Мишей у книзі «Князь Каспіан», якого Аслан нагороджує новим хвостом за вірність своїх військ?",
+      "choices": [
+        "Ріпічіп",
+        "Піпічік",
+        "Чікіпіп",
+        "Мікі"
+      ],
+      "sourceHash": "85ccc7cdd1807f620c49b324f1830b0771df8770f90b1c7701b29be3fc605165",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:fbd6b8c95a9f4e9eea096338",
+    "selection": "category-stratum",
+    "number": 21,
+    "english": {
+      "category": "Literature",
+      "text": "The paraplegic Marty Coslaw is a character in which Stephen King story?",
+      "choices": [
+        "Silver Bullet",
+        "The Stand",
+        "Bag of Bones",
+        "Night Shift"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:fbd6b8c95a9f4e9eea096338",
+      "text": "Паралізований на нижні кінцівки Марті Козлоу – персонаж якої історії Стівена Кінга?",
+      "choices": [
+        "Срібна куля",
+        "Протистояння",
+        "Мішок кісток",
+        "Нічна зміна"
+      ],
+      "sourceHash": "326cbda9efb6ff01097b2560dbb1ec21673b2f159114ad44d3015e3ba38f5dce",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:48787dd35b1463594542aa7e",
+    "selection": "category-stratum",
+    "number": 22,
+    "english": {
+      "category": "Literature",
+      "text": "Which character of the novel The Amber Spyglass calls Lyra to the Land of the Dead?",
+      "choices": [
+        "Roger",
+        "John Parry",
+        "Lee Scoresby",
+        "Stanislaus Gruuman"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:48787dd35b1463594542aa7e",
+      "text": "Який персонаж роману «Янтарний шпигун» кличе Ліру до Країни Мертвих?",
+      "choices": [
+        "Роджер",
+        "Джон Гаррі",
+        "Лі Скорсбі",
+        "Станіслав Грууман"
+      ],
+      "sourceHash": "5ba8c7e377b4766f913538866aaeefe25f2a25b4136eb60bad3fcf3099bd72e5",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:6a18781caa5fb51444844f2c",
+    "selection": "category-stratum",
+    "number": 23,
+    "english": {
+      "category": "Movies",
+      "text": "This 2008 movie is a shot-for-shot remake of the 1997 Austrian film of the same name.",
+      "choices": [
+        "Funny Games",
+        "Ambrose, Louisiana",
+        "The Omen",
+        "The Echo"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:6a18781caa5fb51444844f2c",
+      "text": "Цей фільм 2008 року є покадровою копією однойменного австрійського фільму 1997 року.",
+      "choices": [
+        "Funny Games",
+        "Ambrose, Louisiana",
+        "The Omen",
+        "The Echo"
+      ],
+      "sourceHash": "05574dfd8740c10ea659fa6e3797a5103d3936c8fda445ac45ab0b8ab1a0b987",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:23ec79ec81fd542252986386",
+    "selection": "category-stratum",
+    "number": 24,
+    "english": {
+      "category": "Movies",
+      "text": "This actor, who played Juror #4 in the movie 12 Angry Men, also starred as Ev Hillman in the The Tommyknockers.",
+      "choices": [
+        "E. G. Marshall",
+        "Lee J. Cobb",
+        "Karl Malden",
+        "John Fiedler"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:23ec79ec81fd542252986386",
+      "text": "Цей актор, який грав присяжного №4 у фільмі «12 розлючених чоловіків», також зіграв Ев Гілмана у фільмі «Томмінокери».",
+      "choices": [
+        "І. Г. Маршалл",
+        "Лі Дж. Кобб",
+        "Карл Молден",
+        "Джон Фідлер"
+      ],
+      "sourceHash": "e6f9f4f2c45ff88892f3e3a95c392ab8a2eb693c7f42249de580adeb31f936c4",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:723fb1ee0e73c6514eda7031",
+    "selection": "category-stratum",
+    "number": 25,
+    "english": {
+      "category": "Music",
+      "text": "This group that performed at the Monterey Pop Festival included Danny Kolb, Steve Katz, Andy Kulberg and sometimes Al Kooper. What was the name of the band?",
+      "choices": [
+        "The Blues Project",
+        "The Eagles",
+        "America",
+        "The Butterfield Blues Band"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:723fb1ee0e73c6514eda7031",
+      "text": "Ця група, яка виступала на Monterey Pop Festival, включала Денні Колба, Стіва Кацa, Енді Кульберга і іноді Ела Купера. Як називалася ця група?",
+      "choices": [
+        "The Blues Project",
+        "The Eagles",
+        "America",
+        "The Butterfield Blues Band"
+      ],
+      "sourceHash": "51bb5210f795053704b0b5ed0bf46acab314fee111cd5eb94c13abfa4d2b0b44",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:e25578851cee8ac9ed52992d",
+    "selection": "category-stratum",
+    "number": 26,
+    "english": {
+      "category": "Music",
+      "text": "This musical icon from the 70s was married to James Taylor and had a monster hit titled Youre So Vain.",
+      "choices": [
+        "Carly Simon",
+        "Rhiannon Scorpio",
+        "Carole King",
+        "Mill E. Silverqueen"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:e25578851cee8ac9ed52992d",
+      "text": "Ця музична ікона 70-х була заміжня за Джеймсом Тейлором і має гучний хіт під назвою You’re So Vain.",
+      "choices": [
+        "Карлі Саймон",
+        "Ріаннон Скорпіо",
+        "Керол Кінг",
+        "Мілл Е. Сільверквін"
+      ],
+      "sourceHash": "c4d1842bddfd3f19c0e1018416d3453ca7ad9b0562cc398b93732d3eb1c87ab0",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:ad8af3170695185af269e0af",
+    "selection": "category-stratum",
+    "number": 27,
+    "english": {
+      "category": "People",
+      "text": "This Italian explored the east coast of South America much further south than any other European before and realized that this land was part of a new continent while many other European explorers crossing the Atlantic thought they were reaching Asia.",
+      "choices": [
+        "Amerigo Vespucci",
+        "Marco Polo",
+        "Christopher Columbus",
+        "Ferdinand Magellan"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:ad8af3170695185af269e0af",
+      "text": "Цей італієць дослідив східне узбережжя Південної Америки набагато південніше, ніж будь-хто інший із європейців до нього, і усвідомив, що ця земля є частиною нового континенту, тоді як багато інших європейських дослідників, що перетинали Атлантику, вважали, що вони досягають Азії.",
+      "choices": [
+        "Амеріго Веспуччі",
+        "Марко Поло",
+        "Христофор Колумб",
+        "Фердинанд Магеллан"
+      ],
+      "sourceHash": "4a917a97e9a35cf838a77bc5f34406f25f84be5754ab8e512349adf8f8118070",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:fd6b77898cf0cf886c017550",
+    "selection": "category-stratum",
+    "number": 28,
+    "english": {
+      "category": "People",
+      "text": "Idi Amin was a member of this tribe.",
+      "choices": [
+        "Kakwa",
+        "Langi",
+        "Masai",
+        "Acholi"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:fd6b77898cf0cf886c017550",
+      "text": "Іді Аміна належав до цього племені.",
+      "choices": [
+        "Каква",
+        "Лангі",
+        "Масай",
+        "Ачолі"
+      ],
+      "sourceHash": "b51da415f6d60c109b538fea7c82b78e407410a4ca4caf5af4e6d0fa2ae65e0a",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:20ca0d1266537cd218fb09b8",
+    "selection": "category-stratum",
+    "number": 29,
+    "english": {
+      "category": "Religion & Faith",
+      "text": "In the context of Judaism, who was Abrahams wife ?",
+      "choices": [
+        "Sarah",
+        "Leah",
+        "Rachel",
+        "Rebekkah"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:20ca0d1266537cd218fb09b8",
+      "text": "Хто була дружиною Авраама у контексті юдаїзму?",
+      "choices": [
+        "Сара",
+        "Лея",
+        "Рахіль",
+        "Ребекка"
+      ],
+      "sourceHash": "7778ddc521c41433b2265d0ddb357bc222e9710de4e04a0bdbc80a48dbe440b4",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:e040c7ce7b3630e4587ab022",
+    "selection": "category-stratum",
+    "number": 30,
+    "english": {
+      "category": "Religion & Faith",
+      "text": "This is the holiest city in Judaism and the spiritual center of the Jewish people. It also plays an important role in Christianity and Islam.",
+      "choices": [
+        "Jerusalem",
+        "Constantinople",
+        "Medina",
+        "Mecca"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:e040c7ce7b3630e4587ab022",
+      "text": "Це найсвятіше місто в юдаїзмі та духовний центр єврейського народу. Воно також відіграє важливу роль у християнстві та ісламі.",
+      "choices": [
+        "Єрусалим",
+        "Константинополь",
+        "Медіна",
+        "Мекка"
+      ],
+      "sourceHash": "a8347e16dab3a265fc7b1eb1213b00f1526fabe1fcfaabde4c90c0f2fc957e7e",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:999e9ee97c86473d7da9c264",
+    "selection": "category-stratum",
+    "number": 31,
+    "english": {
+      "category": "Science & Technology",
+      "text": "What is the lightest element that is a metal?",
+      "choices": [
+        "Lithium",
+        "Titanium",
+        "Cobalt",
+        "Boron"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:999e9ee97c86473d7da9c264",
+      "text": "Який найлегший елемент, що є металом?",
+      "choices": [
+        "Літій",
+        "Титан",
+        "Кобальт",
+        "Бор"
+      ],
+      "sourceHash": "af0514f94b96a52820e1735623adcac8c7541dd78c7191815e0bd86679493601",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:0ce031ab50ad42df8f937036",
+    "selection": "category-stratum",
+    "number": 32,
+    "english": {
+      "category": "Science & Technology",
+      "text": "How many teeth does an average human have?",
+      "choices": [
+        "32",
+        "28",
+        "29",
+        "34"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:0ce031ab50ad42df8f937036",
+      "text": "Скільки зубів має середня людина?",
+      "choices": [
+        "32",
+        "28",
+        "29",
+        "34"
+      ],
+      "sourceHash": "a4f4cda3f0e8329f9ac89b913a834ca38dee7f3e15f24a76926882acb93ea0c0",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:9ba3f2f0856c0cccc29f598e",
+    "selection": "category-stratum",
+    "number": 33,
+    "english": {
+      "category": "Sport",
+      "text": "Which of these baseball players has never played with the New York Mets?",
+      "choices": [
+        "Fran Healy",
+        "Bobby Valentine",
+        "Warren Spahn",
+        "Joe Torre"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:9ba3f2f0856c0cccc29f598e",
+      "text": "Який із цих гравців у бейсбол ніколи не грав за Нью-Йорк Метс?",
+      "choices": [
+        "Френ Гілі",
+        "Боббі Валентайн",
+        "Уоррен Спен",
+        "Джо Торре"
+      ],
+      "sourceHash": "71a9c184023f4603145ff3821c102039a74d68a72554dca9d4a1d792a9b5db46",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:fa06a42d3b7b554b03b928ca",
+    "selection": "category-stratum",
+    "number": 34,
+    "english": {
+      "category": "Sport",
+      "text": "What country did the first skater to land a single Salchow skate for?",
+      "choices": [
+        "Sweden",
+        "United States",
+        "Ukraine",
+        "Russia"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:fa06a42d3b7b554b03b928ca",
+      "text": "За яку країну катався перший ковзаняр, який виконав одиночний сальхов?",
+      "choices": [
+        "Швеція",
+        "Сполучені Штати",
+        "Україна",
+        "Росія"
+      ],
+      "sourceHash": "29f91f699f176f68bdf304e6e8c0419c8a9672f8dfb99b69c37c705bf1f2e786",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:abf540ce5d2063b5ce956e77",
+    "selection": "category-stratum",
+    "number": 35,
+    "english": {
+      "category": "Television",
+      "text": "What is the occupation of Charlie Harper on the show Two and a Half Men?",
+      "choices": [
+        "commercial jingle writer",
+        "realtor",
+        "Psychologist",
+        "chiropractor"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:abf540ce5d2063b5ce956e77",
+      "text": "Яка професія Чарлі Гарпера в серіалі «Два з половиною чоловіки»?",
+      "choices": [
+        "письменник рекламних джинглів",
+        "ріелтор",
+        "психолог",
+        "хіропрактор"
+      ],
+      "sourceHash": "8ca7e83806daf4b6bbb1ac2680b8849a07e8d030d6a9548e8006bd6fd45bbe49",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:ffd0155dcb4d50c787336dfa",
+    "selection": "category-stratum",
+    "number": 36,
+    "english": {
+      "category": "Television",
+      "text": "Which company produced the show St. Elsewhere?",
+      "choices": [
+        "MTM",
+        "Windevil",
+        "Miramar Productions",
+        "SKG"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:ffd0155dcb4d50c787336dfa",
+      "text": "Яка компанія створила телешоу «Святе місце» (St. Elsewhere)?",
+      "choices": [
+        "MTM",
+        "Windevil",
+        "Miramar Productions",
+        "SKG"
+      ],
+      "sourceHash": "eebc79d92be910c424933209314c786ce510df3b31d5a0c2e41fec0eb9e19e20",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:6474a7aa159b409b191e1fd3",
+    "selection": "category-stratum",
+    "number": 37,
+    "english": {
+      "category": "Video Games",
+      "text": "What city does Halo 3 ODST take place in?",
+      "choices": [
+        "New Mombasa",
+        "Voi",
+        "Toronto",
+        "New York"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:6474a7aa159b409b191e1fd3",
+      "text": "В якому місті відбуваються події Halo 3 ODST?",
+      "choices": [
+        "Нью-Момбаса",
+        "Вої",
+        "Торонто",
+        "Нью-Йорк"
+      ],
+      "sourceHash": "4e7190f396c14a7bc7e7ca5813f93a004848ee49a9b14565099c278d34bb4359",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:4834777e3548e26666127205",
+    "selection": "category-stratum",
+    "number": 38,
+    "english": {
+      "category": "Video Games",
+      "text": "Which of these games was not released by Nintendo?",
+      "choices": [
+        "Assassins Creed",
+        "Warioware",
+        "Mario Galaxy",
+        "Star Fox"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:4834777e3548e26666127205",
+      "text": "Яка з цих ігор не була випущена компанією Nintendo?",
+      "choices": [
+        "Assassins Creed",
+        "Warioware",
+        "Mario Galaxy",
+        "Star Fox"
+      ],
+      "sourceHash": "a16d3fae40950aa2512f8f743e5f76e115ae73724c51ad21ad843543b06a62c6",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:ac4332e8310d1deb5dbad643",
+    "selection": "category-stratum",
+    "number": 39,
+    "english": {
+      "category": "World",
+      "text": "What year was the Vatican City established?",
+      "choices": [
+        "1929",
+        "1957",
+        "1900",
+        "1870"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:ac4332e8310d1deb5dbad643",
+      "text": "У якому році було засновано Ватикан?",
+      "choices": [
+        "1929",
+        "1957",
+        "1900",
+        "1870"
+      ],
+      "sourceHash": "559c205932d290ddb0f6844448fcdb3230f10defb6abebffbe1ebfca911d9822",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:30c604f57cc950815f87ecb8",
+    "selection": "category-stratum",
+    "number": 40,
+    "english": {
+      "category": "World",
+      "text": "On Halloween, children go door-to-door and yell trick-or-threat. However, in Scotland it is likely to hear children saying this.",
+      "choices": [
+        "The sky is blue, the grass is green, may we have our Halloween.",
+        "My eyes are blue, your house is too, my baskets green, may I have my Halloween.",
+        "Give me your money!",
+        "I can smell something sweet around here."
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:30c604f57cc950815f87ecb8",
+      "text": "На Геловін діти ходять від хати до хати і вигукують «цукерки або смерть». Однак в Шотландії часто можна почути, як діти кажуть ось це.",
+      "choices": [
+        "Небо блакитне, трава зелена, дайте нам наш Геловін.",
+        "Очі у мене блакитні, твій дім теж, кошик зелений — дайте нам наш Геловін.",
+        "Дайте мені ваші гроші!",
+        "Я відчуваю запах чогось солодкого поблизу."
+      ],
+      "sourceHash": "74ec40b877cd3162d485258340e59d2356c4d1e43c51d28e83ba121d4314e0f2",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:002a050456cf833d90218ff5",
+    "selection": "targeted:pun",
+    "number": 41,
+    "english": {
+      "category": "General Knowledge",
+      "text": "Jokes about German sausages are the _________.",
+      "choices": [
+        "wurst",
+        "best",
+        "pits",
+        "worst"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:002a050456cf833d90218ff5",
+      "text": "Жарти про німецькі ковбаси — це _________.",
+      "choices": [
+        "wurst",
+        "найкращі",
+        "найгірші",
+        "провал"
+      ],
+      "sourceHash": "321333df6a2671f2965b5a0d110b9b906fbfd4c351ee7ff970aa402ba1b220a6",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:00005c2384668d6cda2e98c5",
+    "selection": "targeted:movie-history",
+    "number": 42,
+    "english": {
+      "category": "General Knowledge",
+      "text": "This 2009 film deals with Nelson Mandelas use of an integrated South African rugby team to help unify his nation.",
+      "choices": [
+        "Invictus",
+        "The Objective",
+        "Scrum",
+        "A Serious Man"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:00005c2384668d6cda2e98c5",
+      "text": "Цей фільм 2009 року розповідає про використання Нельсоном Манделою об’єднаної південноафриканської регбійної команди для допомоги в об’єднанні його країни.",
+      "choices": [
+        "Invictus",
+        "The Objective",
+        "Scrum",
+        "A Serious Man"
+      ],
+      "sourceHash": "43a84a7390511db42c796b8e9ee91364c6c358ffb2e5ab9983f6220cf100e4a0",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:264cb736acb765ab7ffc4131",
+    "selection": "targeted:book-title",
+    "number": 43,
+    "english": {
+      "category": "General Knowledge",
+      "text": "Lincoln is a historical novel by Gore Vidal, published in 1984. One of these statements about it is wrong.",
+      "choices": [
+        "It depicts the President through the eyes of foreign delegates.",
+        "It is set during the American Civil War.",
+        "It emphasizes the Presidents political and personal struggles.",
+        "It is never narrated from the Presidents point of view."
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:264cb736acb765ab7ffc4131",
+      "text": "«Лінкольн» — історичний роман Ґора Відала, опублікований у 1984 році. Одне з цих тверджень про нього є неправильним.",
+      "choices": [
+        "Він зображує президента очима іноземних делегатів.",
+        "Дія відбувається під час Громадянської війни в США.",
+        "Він акцентує увагу на політичних і особистих труднощах президента.",
+        "Ніколи не розповідається від імені президента."
+      ],
+      "sourceHash": "f8aa4371b0552f6dd9d25b5db605c6e8e222148ac0969ea987c50f973ca43a5d",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:1e8dff8aa1666333778f0283",
+    "selection": "targeted:michigan",
+    "number": 44,
+    "english": {
+      "category": "World",
+      "text": "What connects the upper and lower peninsulas of Michigan?",
+      "choices": [
+        "The Mackinac Bridge",
+        "The Ambassador Bridge",
+        "The Great Lakes Tunnel",
+        "The Peninsula Strait Bridge"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:1e8dff8aa1666333778f0283",
+      "text": "Що з'єднує верхній і нижній півострови штату Мічиган?",
+      "choices": [
+        "Міст Макінак",
+        "Міст Амбасадор",
+        "Тунель Великих озер",
+        "Міст Проливу Півострова"
+      ],
+      "sourceHash": "ad2888fa06c25d90004197fb832b1575db1283874f820117b39f080c00546160",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:9f72f3441586396dfc0c5951",
+    "selection": "targeted:lake-victoria",
+    "number": 45,
+    "english": {
+      "category": "Geography",
+      "text": "The Nile is generally considered the longest river in the world. The source of this mighty river remained unknown for centuries. Finally Lake Victoria was decided to be its source, although there are other theories. Lake Victoria is located on the territories of these three countries.",
+      "choices": [
+        "Uganda, Kenya and Tanzania",
+        "Sudan, Ethiopia and Kenya",
+        "Zambia, Angola and Sudan",
+        "Egypt, Morocco and Zimbabwe"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:9f72f3441586396dfc0c5951",
+      "text": "Ніл зазвичай вважається найдовшою рікою світу. Джерело цієї могутньої ріки залишалося невідомим століттями. Нарешті було вирішено, що це озеро Вікторія, хоча існують й інші теорії. Озеро Вікторія розташоване на території цих трьох країн.",
+      "choices": [
+        "Уганда, Кенія та Танзанія",
+        "Судан, Ефіопія та Кенія",
+        "Замбія, Ангола та Судан",
+        "Єгипет, Марокко та Зімбабве"
+      ],
+      "sourceHash": "41ce408f59736c793dce33a3df61a2a644978a6b46590e8e8203e71f673a9306",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:02537cd98a017381077e2d38",
+    "selection": "targeted:date-answer",
+    "number": 46,
+    "english": {
+      "category": "Entertainment",
+      "text": "In what year did Hulk Hogan make his debut in the World Wrestling Federation?",
+      "choices": [
+        "1979",
+        "1980",
+        "1983",
+        "1977"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:02537cd98a017381077e2d38",
+      "sourceHash": "ab3ef4e0c1b8edeec0ac18761c97be17c6be1c4f34864e3559f10dfde41ffdce",
+      "text": "У якому році Галк Гоган дебютував у Всесвітній федерації реслінгу (WWF)?",
+      "choices": [
+        "1979",
+        "1980",
+        "1983",
+        "1977"
+      ],
+      "status": "draft",
+      "method": "AI-assisted translation; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:2cf9c76af98bfb1892cecd0d",
+    "selection": "targeted:negative",
+    "number": 47,
+    "english": {
+      "category": "Entertainment",
+      "text": "Which of these creatures is not featured in the exhibit of the world famous SeaWorld attraction Wild Arctic?",
+      "choices": [
+        "Penguin",
+        "Beluga Whale",
+        "Polar Bear",
+        "Walrus"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:2cf9c76af98bfb1892cecd0d",
+      "text": "Яка з цих істот не представлена на виставці всесвітньо відомої атракції SeaWorld Wild Arctic?",
+      "choices": [
+        "Пінгвін",
+        "Білуга",
+        "Білий ведмідь",
+        "Морж"
+      ],
+      "sourceHash": "f98904e115e92cce0c9c0e91c4c5ff8e4dfd427c56a1a4fcab3a2184549f9fbf",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:04450ab5ee40cd4553861bca",
+    "selection": "targeted:oscar",
+    "number": 48,
+    "english": {
+      "category": "Movies",
+      "text": "At the 71st Academy Awards in 1999, both Judi Dench and Cate Blanchett were nominated for Academy Awards for Best Supporting Actress and Best Actress respectively, for portraying the same character in different movies. Name the character.",
+      "choices": [
+        "Queen Elizabeth I",
+        "Joan of Arc",
+        "Virginia Woolf",
+        "Virgin Mary"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:04450ab5ee40cd4553861bca",
+      "text": "На 71-й церемонії вручення премій Академії у 1999 році і Джуді Денч, і Кейт Бланшетт були номіновані відповідно на премії за кращу жіночу роль другого плану та кращу жіночу роль за виконання одного й того ж персонажа в різних фільмах. Назвіть цього персонажа.",
+      "choices": [
+        "Королева Єлизавета I",
+        "Жанна д’Арк",
+        "Вірджинія Вулф",
+        "Діва Марія"
+      ],
+      "sourceHash": "012d99f3bac71578dbc69ecdb50403248d2a7c3eacdc387fefa58c43a21912a5",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "id": "otqa:014cebf21e474adef879f7d8",
+    "selection": "targeted:ambiguous-georgia",
+    "number": 49,
+    "english": {
+      "category": "Music",
+      "text": "What T.V. show did a recreation of the song The Devil Went Down to Georgia in one of its episodes?",
+      "choices": [
+        "The Muppets",
+        "The Simpsons",
+        "Arthur",
+        "Family Guy"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:014cebf21e474adef879f7d8",
+      "text": "Який телевізійний серіал відтворив пісню «Диявол в Грузію пішов» в одному зі своїх епізодів?",
+      "choices": [
+        "Маппети",
+        "Сімпсони",
+        "Артур",
+        "Американський тато"
+      ],
+      "sourceHash": "474a34c4b8cab316df8b8e6869a9476da9c33e5f2f110eb90490cdba42f6ec65",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  },
+  {
+    "number": 50,
+    "id": "otqa:be5b2cf08ff274576eb1ef06",
+    "selection": "targeted:brand",
+    "english": {
+      "category": "World",
+      "text": "Adidas was a company of two brothers. In 1948 one of them - Rudolf, left it and created his own brand. Which is it?",
+      "choices": [
+        "Puma",
+        "Kenvelo",
+        "Umbro",
+        "Reebok"
+      ],
+      "correct": 0
+    },
+    "ukrainian": {
+      "id": "otqa:be5b2cf08ff274576eb1ef06",
+      "text": "Adidas був компанією двох братів. У 1948 році один із них — Рудольф — пішов і створив власний бренд. Який саме?",
+      "choices": [
+        "Puma",
+        "Kenvelo",
+        "Umbro",
+        "Reebok"
+      ],
+      "sourceHash": "633602d54aadee866edfb98e4d8d6d9cacff0893fa19dbe1d89c6d8d14320d24",
+      "status": "draft",
+      "method": "OpenAI gpt-4.1-mini; not independently reviewed"
+    }
+  }
+]

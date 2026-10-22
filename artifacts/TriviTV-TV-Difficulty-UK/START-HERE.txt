@@ -1,0 +1,11 @@
+TriviTV 0.11.0 — Ukrainian question difficulty build
+
+7,104 Ukrainian Fun v3 questions across 19 categories. VersionCode18, same dev.trivitv.poc package and signing key. Install as update and start a NEW game/room.
+
+Uses per-question 1–5 star scores from quality-full-v1. Existing translation flags do not exclude further questions; translation repairs have not been applied.
+
+Trivia first five questions35/50/15/0/0; next20/45/30/5/0; next10/35/40/15/0; next5/30/40/23/2; from21onward5/25/40/27/3 percent for1..5stars. Small stages use randomized rounding and spread choices; late100-question cycles exact. Categories proportional to eligible counts within each star; missing stars substitute nearest available level; questions do not repeat until whole selected pool exhausted. Solo starts3lives, every5correct adds1max5, ends atzero.
+
+Millionaire strict questions1=1star;2–5=2stars;6–10=3stars;11–14=4stars;15=5stars. Warns before start when chosen categories lack required supply; no difficulty substitution.
+
+Music/SFX/artwork/layout retained. Phone rooms and iggro.com/tv are updated to matching bank/Trivia selector; create a NEW room. Physical TV validation pending.

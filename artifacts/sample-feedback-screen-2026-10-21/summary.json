@@ -1,0 +1,21 @@
+{
+  "baselinePotential": 24931,
+  "newHolds": 1409,
+  "remainingPotential": 23522,
+  "reductionPercent": 5.65,
+  "overlappingNewReasons": {
+    "fan_or_biography_minutiae": 592,
+    "precise_dates_or_records": 56,
+    "missing_media_or_context": 14,
+    "specialist_detail": 39,
+    "near_identical_answer_choices": 198,
+    "song_or_album_detail": 382,
+    "us_state_detail": 14,
+    "numeric_or_number_word_choices": 70,
+    "us_specific": 84
+  },
+  "humanKeepConflictsPreserved": 16,
+  "fullMainBankPatternsMatched": 5701,
+  "method": "Deterministic/heuristic generalization of sample feedback; NOT complete semantic review. Surviving questions are not approved.",
+  "runtimeChanged": false
+}

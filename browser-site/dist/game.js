@@ -1,3 +1,4 @@
+import {weightedQuestions,triviaQuestions,millionaireQuestions} from './difficulty.mjs';
 const randomInt = max => { const range=4294967296; const limit=range-range%max; const values=new Uint32Array(1); do { crypto.getRandomValues(values); } while(values[0]>=limit); return values[0]%max; };
 const randomUUID=()=>crypto.randomUUID();
 import { categories, questionPool } from "./questions.js";
@@ -51,18 +52,10 @@ export function selectQuestions(settings) {
     pool.length,
   );
   requireThat(count > 0, "No questions match these settings.");
-  // Use source difficulty when available, with explicitly unrated questions as a fallback.
-  let chosen;
-  if (settings.mode === "millionaire") {
-    const groups = [1, 2, 3, null].map((d) =>
-      shuffle(pool.filter((q) => q.difficulty === d)),
-    );
-    chosen = [];
-    while (chosen.length < count && groups.some((g) => g.length))
-      for (const group of groups)
-        if (group.length && chosen.length < count) chosen.push(group.pop());
-    chosen.sort((a, b) => (a.difficulty ?? 4) - (b.difficulty ?? 4));
-  } else chosen = shuffle(pool).slice(0, count);
+  const chosen = settings.mode==='millionaire'?millionaireQuestions(pool):triviaQuestions(pool,count,undefined,{startIndex:0,seed:settings.difficultySeed});
+  return shuffleChoices(chosen);
+}
+function shuffleChoices(chosen){
   return chosen.map((q) => {
     const order = shuffle([0, 1, 2, 3]);
     return {
@@ -82,10 +75,12 @@ export function createGame(
     correctRevealMs = CORRECT_REVEAL_MS,
   } = {},
 ) {
+  settings={...settings,difficultySeed:settings.difficultySeed??randomInt(4294967295)};
   const selected = selectQuestions(settings);
   return {
     settings: {
       mode: settings.mode,
+      difficultySeed: settings.difficultySeed,
       region: settings.region,
       language: settings.language ?? "en",
       categories: [...new Set(settings.categories)],
@@ -102,6 +97,7 @@ export function createGame(
     won: 0,
     secured: 0,
     finishReason: null,
+    lifeState: settings.mode === 'trivia' ? {enabled:false,lives:3,maxLives:5,streak:0,lastChange:0} : null,
     reviewDurationMs,
     answerDurationMs,
     answersRevealMs,
@@ -146,9 +142,12 @@ export function addPlayer(game, name, local = false) {
 export function start(game, now = Date.now()) {
   requireThat(game.phase === "lobby", "Game already started.", 409);
   requireThat(game.players.length > 0, "Add at least one player.");
+  if(game.lifeState)game.lifeState.enabled=!game.party&&game.players.length===1;
+  if(game.lifeState?.enabled)game.survival={round:0,cycle:0,seenIds:game.questions.map(q=>q.id)};
   beginQuestion(game, now);
 }
 function beginQuestion(game, now) {
+  if(game.lifeState)game.lifeState.lastChange=0;
   game.phase = "question";
   game.questionEndsAt =
     game.settings.mode === "trivia" ? now + game.answerDurationMs : null;
@@ -161,7 +160,7 @@ export function answer(game, playerId, choice, now = Date.now()) {
   requireThat(!game.questionPaused, "The game is paused by Player 1.", 409);
   requireThat(
     game.questionEndsAt === null || now < game.questionEndsAt,
-    "Time is up. Unanswered picks are assigned randomly.",
+    "Time is up.",
     409,
   );
   requireThat(
@@ -199,6 +198,16 @@ function revealCorrect(game, now) {
   const correct = game.questions[game.index].correct;
   for (const p of game.players)
     if (game.answers[p.id] === correct) game.scores[p.id] += 100;
+  if(game.lifeState?.enabled){
+    const life=game.lifeState,right=game.answers[game.players[0].id]===correct;
+    if(right){
+      life.streak++;
+      if(life.streak===5){life.streak=0;if(life.lives<life.maxLives){life.lives++;life.lastChange=1;}}
+    }else{
+      life.streak=0;life.lives=Math.max(0,life.lives-1);life.lastChange=-1;
+      if(life.lives===0)game.finishReason='no-lives';
+    }
+  }
   if (game.settings.mode === "millionaire") {
     const right = game.answers[game.players[0].id] === correct;
     if (right) {
@@ -234,14 +243,23 @@ export function next(game, now = Date.now(), skipReview = false) {
   );
   game.review = null;
   if (
-    game.finishReason === "wrong" ||
-    game.index === game.questions.length - 1
+    game.finishReason === "wrong" || game.finishReason === 'no-lives' ||
+    (!game.lifeState?.enabled && game.index === game.questions.length - 1)
   ) {
     game.phase = "finished";
     game.finishReason ??= "completed";
     return;
   }
-  game.index++;
+  if(game.lifeState?.enabled){
+    game.survival.round++;
+    if(game.index===game.questions.length-1){
+      const pool=questionPool(game.settings.language,game.settings.region).filter(q=>game.settings.categories.includes(q.category));
+      let seen=new Set(game.survival.seenIds),available=pool.filter(q=>!seen.has(q.id));
+      if(!available.length){game.survival.cycle++;game.survival.seenIds=[];available=pool;}
+      const chosen=triviaQuestions(available,10,undefined,{startIndex:game.survival.round,seed:game.settings.difficultySeed});
+      game.questions=shuffleChoices(chosen);game.index=0;game.survival.seenIds.push(...chosen.map(q=>q.id));
+    }else game.index++;
+  }else game.index++;
   game.answers = {};
   game.eliminated = [];
   game.autoPicked = [];
@@ -261,7 +279,7 @@ export function advance(game, now = Date.now()) {
   if (game.phase === "question") {
     for (const player of game.players)
       if (!(player.id in game.answers)) {
-        game.answers[player.id] = randomInt(4);
+        game.answers[player.id] = game.lifeState?.enabled ? null : randomInt(4);
         game.autoPicked.push(player.id);
       }
     reveal(game, now);
@@ -365,8 +383,8 @@ export function view(game, viewerId = null, now = Date.now()) {
     review: game.review
       ? { ...game.review, durationMs: game.reviewDurationMs }
       : null,
-    index: game.index,
-    total: game.questions.length,
+    index: game.lifeState?.enabled ? game.survival.round : game.index,
+    total: game.lifeState?.enabled ? null : game.questions.length,
     players: game.players.map((p) => ({
       ...p,
       score: game.scores[p.id],
@@ -394,6 +412,7 @@ export function view(game, viewerId = null, now = Date.now()) {
     won: game.won,
     secured: game.secured,
     finishReason: game.finishReason,
+    lifeState: game.lifeState?.enabled ? {...game.lifeState} : null,
     ladder: ladder.slice(0, game.questions.length),
   };
 }

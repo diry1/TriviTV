@@ -1,0 +1,41 @@
+{
+  "model": "gpt-6-luna",
+  "budgetUsd": 5.0,
+  "pricingUsdPerMillion": {
+    "input": 0.1,
+    "cached": 0.01,
+    "cache_write": 0.125,
+    "output": 0.5
+  },
+  "processing": "standard; explicit token output caps; conservative reservations",
+  "seed": "luna-balanced-v1",
+  "perCategory": 125,
+  "total": 2500,
+  "categories": [
+    "Animals",
+    "Arts & Humanities",
+    "Brain Teasers",
+    "Celebrities",
+    "Entertainment",
+    "General Knowledge",
+    "Geography",
+    "History",
+    "Hobbies",
+    "Kids Trivia",
+    "Literature",
+    "Movies",
+    "Music",
+    "People",
+    "Religion & Faith",
+    "Science & Technology",
+    "Sport",
+    "Television",
+    "Video Games",
+    "World"
+  ],
+  "selection": "Deterministic SHA256 shuffle within each category; interleave one per category per round. All full-master categories, not a change to EU/Fun eligibility.",
+  "sourceMasterCount": 38926,
+  "sourceAndNonSemanticTagsSha256": "a55891f59e02a375cd7412e37fea319f7b93d9356fcad55262f94feaa90081f7",
+  "instructionsSha256": "d7380e59c434b201425f2c6c37c2b73891fed8e58cb883d72a20d488f1b21538",
+  "vocabularySha256": "f9df893f483b3adb447030a44c2d1c386a5fcf561593e199d775f2c7dbdb3df4"
+}

@@ -16,6 +16,7 @@ jobs:
       - run: npm test
       - run: npm run test:translations
       - run: npm run test:bank
+      - run: node --test game-rules/*.test.mjs
       - run: npx playwright install --with-deps chromium
       - run: npm run test:browser
   android:
@@ -29,8 +30,8 @@ jobs:
       - uses: android-actions/setup-android@v3
       - run: sdkmanager 'platforms;android-36' 'build-tools;35.0.0'
       - run: ./gradlew --no-daemon assembleDebug
-        working-directory: android
+        working-directory: android-tv-poc
       - uses: actions/upload-artifact@v4
         with:
           name: trivitv-debug
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          path: android-tv-poc/app/build/outputs/apk/debug/app-debug.apk

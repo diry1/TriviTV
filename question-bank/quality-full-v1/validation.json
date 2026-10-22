@@ -1,0 +1,12 @@
+{
+  "uniqueQuestions": 7104,
+  "reusedPilotPreserved": 200,
+  "newlyAssessed": 6904,
+  "exactSourceAndTranslationFingerprints": true,
+  "exactPublishedEntitySpans": true,
+  "allRequestsCompleted": true,
+  "masterUnchanged": true,
+  "runtimeUnchanged": true,
+  "uniqueEntityPairs": 20747,
+  "knownAdditionalCostUsd": 1.8949973000000002
+}

@@ -1,3 +1,4 @@
+import {triviaQuestions} from '../../game-rules/difficulty.mjs';
 import {isTurf,turfTick,turfAction,turfView} from './turf-engine.js';
 import {minPlayers,maxPlayers,beginImposter,beginDuel,revealDuel,partyTick,partyAction,partyView} from './party-engine.js';
 import {PLAYER_COLORS} from '../public/multi/player-colors.js';
@@ -10,7 +11,8 @@ export function createRoom(code,bank,categories,now=Date.now(),options={}){
  const mode=options.mode||'trivia';requireThat(['trivia','imposter','duel'].includes(mode),'Оберіть режим');
  const available=[...new Set(bank.map(q=>q.category))];
  requireThat(Array.isArray(categories)&&categories.length&&categories.every(c=>available.includes(c)),'Оберіть категорії');
- let questions=shuffled(bank.filter(q=>categories.includes(q.category))).slice(0,mode==='duel'?916:10).map(q=>{
+ const pool=bank.filter(q=>categories.includes(q.category));
+ let questions=(mode==='trivia'?triviaQuestions(pool,10):shuffled(pool).slice(0,916)).map(q=>{
   const order=shuffled([0,1,2,3]);return {id:q.id,text:q.text,category:q.category,choices:order.map(i=>q.choices[i]),correct:order.indexOf(q.correct)};
  });
  if(mode==='imposter')questions=[];

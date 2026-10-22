@@ -1,0 +1,8 @@
+{
+  "desktop": true,
+  "mobile": true,
+  "pagination": true,
+  "statusAndDifficultyFilters": true,
+  "search": true,
+  "errors": []
+}

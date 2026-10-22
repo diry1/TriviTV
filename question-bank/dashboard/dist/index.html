@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>TriviTV · Question bank</title><link rel="stylesheet" href="/style.css"></head><body>
+<header><div class="brand">TRIVITV <span>EDITORIAL DESK</span></div><span class="local">● Local · Backend only</span></header>
+<main><div class="heading"><div><p class="eyebrow">THE QUESTION LIBRARY</p><h1>A better bank starts here.</h1><p class="sub">Explore, filter and export questions across your working sheets.</p></div><div class="actions"><button id="csv">↓ Export CSV</button><button id="json" class="secondary">JSON</button></div></div>
+<nav aria-label="Question sheets"><button data-sheet="main" class="active">Main <span id="main-count">—</span></button><button data-sheet="eu">EU <span id="eu-count">—</span></button><button data-sheet="ua">UA <span id="ua-count">—</span></button><button data-sheet="fun">Fun Bank <span id="fun-count">—</span></button></nav>
+<div id="sheet-note" class="note"></div>
+<section class="workspace"><aside><div class="filter-title"><h2>Filters</h2><button id="reset" class="text">Reset</button></div>
+<label>Search questions & answers<input id="search" placeholder="Keywords or question ID" type="search"></label>
+<label>Category<select id="category"><option value="">All categories</option></select></label>
+<label>EU editorial status<select id="status"><option value="">Any status</option><option value="candidate">Screened draft</option><option value="hold">Held / unassessed</option><option value="exclude">Excluded</option></select></label>
+<label id="pool-label">Pool<select id="pool"><option value="">All in this sheet</option><option value="included">EU included</option><option value="potential">UA potential (includes unassessed)</option><option value="unassessed">UA unassessed potential only</option></select></label>
+<label>Ukrainian translation<select id="translation"><option value="">Any</option><option value="present">Available</option><option value="missing">Missing</option></select></label>
+<hr><h3>Tags</h3><label>Add a tag filter<input id="tag-search" type="search" placeholder="Search tags…" autocomplete="off"></label><div id="tag-options"></div>
+<label>Include matching<select id="match"><option value="all">All selected tags (AND)</option><option value="any">Any selected tag (OR)</option></select></label><div id="chosen-tags"></div>
+<p class="tip">Use + to include a tag or − to exclude it. Tags from different sources stay attached to the same question ID.</p></aside>
+<section class="results"><div class="toolbar"><div><strong id="total">Loading…</strong><span id="range"></span></div><label>Sort <select id="sort"><option value="id">Question ID</option><option value="category">Category</option><option value="text">Question text</option></select></label></div>
+<div id="error" role="alert" hidden></div><div class="table-wrap"><table><thead><tr><th>QUESTION / ID</th><th>CATEGORY</th><th>STATUS</th><th>TAGS</th></tr></thead><tbody id="rows"></tbody></table></div><div id="empty" hidden>No questions match these filters. Try clearing a tag or changing the pool.</div>
+<footer><span>Open a question to compare English and Ukrainian.</span><div><button id="prev" class="secondary">← Previous</button><span id="page"></span><button id="next" class="secondary">Next →</button></div></footer></section></section>
+<p class="footnote">Draft community content · OpenTriviaQA contributors · CC BY-SA 4.0 · Filtering does not verify facts or translated titles.</p></main>
+<dialog id="detail"><div class="dialog-top"><h2>Question detail</h2><button id="close" aria-label="Close question detail">✕</button></div><div id="detail-content"></div></dialog>
+<script src="/app.js" type="module"></script></body></html>

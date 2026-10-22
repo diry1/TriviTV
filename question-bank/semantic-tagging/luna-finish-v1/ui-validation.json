@@ -1,0 +1,10 @@
+{
+  "desktop": true,
+  "mobile": true,
+  "cards": 50,
+  "pagination": true,
+  "category": true,
+  "pool": true,
+  "search": true,
+  "errors": []
+}

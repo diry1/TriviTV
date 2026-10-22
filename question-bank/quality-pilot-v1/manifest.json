@@ -1,0 +1,31 @@
+{
+  "sourcePool": 7104,
+  "selected": 200,
+  "seed": "quality-pilot-v1",
+  "selection": "Up to five per category, then deterministic shuffled remainder; oversamples rare categories; not a prevalence estimator.",
+  "perCategory": {
+    "Animals": 13,
+    "Arts & Humanities": 5,
+    "Brain Teasers": 6,
+    "Celebrities": 6,
+    "Entertainment": 3,
+    "General Knowledge": 24,
+    "Geography": 12,
+    "History": 13,
+    "Hobbies": 15,
+    "Kids Trivia": 5,
+    "Literature": 5,
+    "Movies": 5,
+    "Music": 9,
+    "People": 10,
+    "Science & Technology": 18,
+    "Sport": 11,
+    "Television": 6,
+    "Video Games": 5,
+    "World": 29
+  },
+  "bankSha256": "aef5fd6887d8a4942517617f4f1080bb41643ff01a72f76218a351a4b997e1ff",
+  "runtimeSha256": "b9f5907c2c1e2d7dbca01428a916b8d51dc36193ec71822b0b38b6c2b97e4eea",
+  "model": "gpt-6-luna",
+  "safetyCeilingUsd": 0.5
+}

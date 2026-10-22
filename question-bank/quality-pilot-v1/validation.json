@@ -1,0 +1,11 @@
+{
+  "uniqueQuestions": 200,
+  "categories": 19,
+  "liveSourceAndTranslationFingerprints": true,
+  "exactEntitySpans": 830,
+  "invalidEntitySpansWithheld": 12,
+  "masterAndRuntimeUnchanged": true,
+  "apiRequests": 20,
+  "apiCostUsd": 0.054488,
+  "externalVerificationScopeLimited": true
+}

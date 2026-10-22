@@ -2,3 +2,17 @@
 data/opentriviaqa/** -text -whitespace
 # The deterministic importer and manifest provide a reviewable summary of this large generated file.
 data/opentriviaqa/questions.json -diff
+
+/question-bank/questions.json -diff
+/question-bank/quality-full-v1/assessment.json -diff
+*.tar.gz binary
+*.json.gz binary
+
+/question-bank/**/*.json -text
+/question-bank/**/*.json.gz binary
+/browser-site/dist/questions.json -text
+/android-tv-poc/app/src/main/assets/web/questions.json -text
+
+/question-bank/**/*.json -whitespace
+/browser-site/dist/questions.json -whitespace
+/android-tv-poc/app/src/main/assets/web/questions.json -whitespace

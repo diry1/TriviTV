@@ -1,0 +1,9 @@
+{
+  "uniqueCoverage": 38926,
+  "newUnique": 1130,
+  "sourceAndNonSemanticUnchanged": true,
+  "fingerprintsVerified": true,
+  "semanticSourceUnionVerified": true,
+  "allNewRequestsCompleted": true,
+  "newCostBelowSafetyCeiling": true
+}

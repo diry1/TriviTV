@@ -1,0 +1,150 @@
+{
+  "questions": 7104,
+  "sourcePool": 7104,
+  "categories": 19,
+  "difficulty": {
+    "1": 383,
+    "2": 2071,
+    "3": 2792,
+    "4": 1773,
+    "5": 85
+  },
+  "readingBurden": {
+    "low": 4684,
+    "medium": 2064,
+    "high": 356
+  },
+  "translationStatus": {
+    "pass": 2095,
+    "needs-source-verification": 2849,
+    "needs-repair": 2160
+  },
+  "withSourceConcerns": 5161,
+  "entityPairs": 29703,
+  "withheldEntityPairs": 292,
+  "targetedExternalChecks": 3,
+  "reviewerCorrections": 5,
+  "additionalCostUsd": 1.8949973000000002,
+  "reusedPilot": 200,
+  "newlyAssessed": 6904,
+  "costUsd": 1.9494853000000003,
+  "bankUnchanged": true,
+  "uniqueEntityPairs": 20747,
+  "namePairsFlaggedForResearch": 9043,
+  "difficultyByCategory": {
+    "Animals": {
+      "1": 21,
+      "2": 129,
+      "3": 199,
+      "4": 96,
+      "5": 2
+    },
+    "Arts & Humanities": {
+      "3": 4,
+      "4": 4
+    },
+    "Brain Teasers": {
+      "1": 11,
+      "2": 24,
+      "3": 20,
+      "4": 9
+    },
+    "Celebrities": {
+      "2": 11,
+      "3": 30,
+      "4": 27
+    },
+    "Entertainment": {
+      "3": 2,
+      "4": 1
+    },
+    "General Knowledge": {
+      "1": 73,
+      "2": 345,
+      "3": 502,
+      "4": 344,
+      "5": 17
+    },
+    "Geography": {
+      "1": 37,
+      "2": 156,
+      "3": 121,
+      "4": 55,
+      "5": 1
+    },
+    "History": {
+      "1": 4,
+      "2": 139,
+      "3": 248,
+      "4": 175,
+      "5": 10
+    },
+    "Hobbies": {
+      "1": 24,
+      "2": 152,
+      "3": 211,
+      "4": 126,
+      "5": 5
+    },
+    "Kids Trivia": {
+      "1": 33,
+      "2": 14,
+      "3": 14,
+      "4": 6,
+      "5": 2
+    },
+    "Literature": {
+      "3": 2,
+      "4": 4
+    },
+    "Movies": {
+      "2": 2,
+      "3": 12,
+      "4": 5
+    },
+    "Music": {
+      "2": 53,
+      "3": 114,
+      "4": 60,
+      "5": 4
+    },
+    "People": {
+      "1": 6,
+      "2": 154,
+      "3": 275,
+      "4": 166,
+      "5": 6
+    },
+    "Science & Technology": {
+      "1": 71,
+      "2": 298,
+      "3": 318,
+      "4": 187,
+      "5": 8
+    },
+    "Sport": {
+      "1": 6,
+      "2": 80,
+      "3": 160,
+      "4": 181,
+      "5": 22
+    },
+    "Television": {
+      "2": 3,
+      "3": 9,
+      "4": 16
+    },
+    "Video Games": {
+      "3": 1,
+      "4": 2,
+      "5": 2
+    },
+    "World": {
+      "1": 97,
+      "2": 511,
+      "3": 550,
+      "4": 309,
+      "5": 6
+    }
+  }
+}

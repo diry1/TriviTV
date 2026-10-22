@@ -1,0 +1,44 @@
+{
+  "otqa:75041124a8ecb370435089c5": [
+    "custom:semantic:topic:language"
+  ],
+  "otqa:74af08675d6ad5e589a2f559": [
+    "custom:semantic:topic:medicine"
+  ],
+  "otqa:9d585a4769c9f2ec93135590": [
+    "custom:semantic:topic:video-games"
+  ],
+  "otqa:4cbe74350a32e5a11f28e984": [
+    "custom:semantic:topic:medicine"
+  ],
+  "otqa:de98dd8fb6910c51378cf7ba": [
+    "custom:semantic:topic:science"
+  ],
+  "otqa:6ce03aafb18e1e357ffe1486": [
+    "custom:semantic:topic:radio"
+  ],
+  "otqa:90af2989c9468eee80112e8b": [
+    "custom:semantic:topic:animation"
+  ],
+  "otqa:f022d6d2c305ab90629998a5": [
+    "custom:semantic:topic:people"
+  ],
+  "otqa:6de7dc486068b3c4ffb6915c": [
+    "custom:semantic:topic:books"
+  ],
+  "otqa:daa5ab068d37adcb81552b48": [
+    "custom:semantic:topic:people"
+  ],
+  "otqa:d8e89d8de4f6389379db6388": [
+    "custom:semantic:topic:music"
+  ],
+  "otqa:cb244b8c8bd2280f89437dc2": [
+    "custom:semantic:topic:sport"
+  ],
+  "otqa:51f3f507024d2abca5e223d5": [
+    "custom:semantic:topic:philosophy"
+  ],
+  "otqa:fe06d6791dc494806509833a": [
+    "custom:semantic:topic:everyday-life"
+  ]
+}

@@ -1,0 +1,944 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "art/party-arena.png",
+      "bytes": 1621218,
+      "sha256": "69a7332a369a038b3bdf1b40f399400101005b2bca36d589eb1ae7419e64226a",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA"
+    },
+    {
+      "path": "art/party-arena.webp",
+      "bytes": 169348,
+      "sha256": "9f4b7962b71227e685337f5480b307689b657af1feb01182cbb49809b686de84",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA"
+    },
+    {
+      "path": "asset-sheet.html",
+      "bytes": 4431,
+      "sha256": "d6faa3d96d6bd86416541c9306cab37a699197776c5b859c1195085404aa12d0"
+    },
+    {
+      "path": "asset-sheet.png",
+      "bytes": 121886,
+      "sha256": "ef66c3edbfb21f2ab63e1870149efe810819e53d7c628e47b1ae77fd50887b37",
+      "width": 1280,
+      "height": 900,
+      "mode": "RGB"
+    },
+    {
+      "path": "avatars/bat-badge.svg",
+      "bytes": 549,
+      "sha256": "a5e60b8b7af52af3b8aac4743de9b09ee257bf80dad74bb83da6ed35d65d7db0",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "avatars/bat.svg",
+      "bytes": 344,
+      "sha256": "ef66956e728642cf4a6521ffa478c0622ec0f9d22e96282a071d8fffc0f92e0f",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "avatars/deer-badge.svg",
+      "bytes": 594,
+      "sha256": "84cc7cc18713d99a60dff5487eeb295b8176f2fd72e62ee681922373d510a98d",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "avatars/deer.svg",
+      "bytes": 389,
+      "sha256": "4756427e2122a526b2dbf5b0ec48b68ee71310ab3aec8f25435a1e8e2e168d33",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "avatars/fox-badge.svg",
+      "bytes": 531,
+      "sha256": "222feb7dcf4b183acca40791f9f19d44d9bcdbee195f54b0f696342f04bb7cd9",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "avatars/fox.svg",
+      "bytes": 326,
+      "sha256": "7cfdf28c27099e2f166331e05909430c422ffe4c4b709b5fa1167630ff269346",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "avatars/lion-badge.svg",
+      "bytes": 794,
+      "sha256": "93851fe7ee81a680dd5ef3652f9e164ef46cdb5eb98ada85cd55ffcb16780921",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "avatars/lion.svg",
+      "bytes": 589,
+      "sha256": "f9b70ed9ce2f0ceb29328523fef6756825d5613419d24fee3de3ff93f7779a55",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "avatars/owl-badge.svg",
+      "bytes": 611,
+      "sha256": "47d7ef1a38832c05210657600ec2c63a5efbd6edac0e82fe3dba434f9adb60b9",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "avatars/owl.svg",
+      "bytes": 406,
+      "sha256": "6bcac6e319823113d443fdc407ee472ad4ace46bd742986353bb4fec814136f8",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "avatars/rabbit-badge.svg",
+      "bytes": 608,
+      "sha256": "c8897b98cae4756d5ffcad357f1d308b1cb73cf7d3f5f901c1264feec6b2acb5",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "avatars/rabbit.svg",
+      "bytes": 403,
+      "sha256": "1f921ddf6a4088ffb2a7cc79146104969f70b6e07236fe28fe8bd2208400bab2",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "avatars/turtle-badge.svg",
+      "bytes": 608,
+      "sha256": "9b895943855cb00e1f080a07a79af6b1e3dcfeb1614f812255b37bd88e719a13",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "avatars/turtle.svg",
+      "bytes": 403,
+      "sha256": "5405e783e51d41eeb87371047fc1636d504cd44a69deb3942afb927b00c7c549",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "avatars/whale-badge.svg",
+      "bytes": 537,
+      "sha256": "c78afd330add4bc47aaa8c949e9c7b7603428bf81e326910ad4933f1eb91181d",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "avatars/whale.svg",
+      "bytes": 332,
+      "sha256": "53a73c9df0027489aec49cd971f582a19ee513ee778d22888c17e6ecb898e7c8",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "backgrounds/imposter.svg",
+      "bytes": 577,
+      "sha256": "2b7e9ffb5f1abc489798d1163212bf3678b23e22b78146ebfb79076e0ca7b3db",
+      "width": 1920,
+      "height": 1080,
+      "viewBox": "0 0 1920 1080"
+    },
+    {
+      "path": "backgrounds/menu.svg",
+      "bytes": 577,
+      "sha256": "0eaa4235b77f0ab94637877f6f00a05e1c1390195c24e76afd6024e93eec8f2c",
+      "width": 1920,
+      "height": 1080,
+      "viewBox": "0 0 1920 1080"
+    },
+    {
+      "path": "backgrounds/millionaire.svg",
+      "bytes": 577,
+      "sha256": "42ed64a6234d7ac0977253ae3be5e773214d1d22a8bb181aaf20e34d074b7ad3",
+      "width": 1920,
+      "height": 1080,
+      "viewBox": "0 0 1920 1080"
+    },
+    {
+      "path": "backgrounds/trivia.svg",
+      "bytes": 577,
+      "sha256": "8211f136901fc502ef2ec696b2b802c8634730c2c9fc2e1eb0a81eb8a8489149",
+      "width": 1920,
+      "height": 1080,
+      "viewBox": "0 0 1920 1080"
+    },
+    {
+      "path": "backgrounds/turf.svg",
+      "bytes": 577,
+      "sha256": "1de156227dc459a6ec71e92d10f3b3dca120f8fedbcd34a07cd620b9f51fbb52",
+      "width": 1920,
+      "height": 1080,
+      "viewBox": "0 0 1920 1080"
+    },
+    {
+      "path": "brand/app-mark.svg",
+      "bytes": 656,
+      "sha256": "a6739e0b9f33073282d66dfbb544a32a3522431ff317622c0b9135d09def0240",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "brand/decorations.svg",
+      "bytes": 1024,
+      "sha256": "65cec18044f52bdbb6a2f978c871997ac1da00780daaacc7b483ffbe0635f412",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "brand/wordmark-cream.svg",
+      "bytes": 717,
+      "sha256": "1527be3732e9e4edd5452f9b1e4f91982ccbede17dd7380fa048cc735eabdbda",
+      "width": 520,
+      "height": 180,
+      "viewBox": "0 0 520 180"
+    },
+    {
+      "path": "brand/wordmark-navy.svg",
+      "bytes": 717,
+      "sha256": "80d6b623ef0e0382531291d093e78e9d79e5d74dfb24d217946395a0764fc58e",
+      "width": 520,
+      "height": 180,
+      "viewBox": "0 0 520 180"
+    },
+    {
+      "path": "icons/back.svg",
+      "bytes": 270,
+      "sha256": "c8afe4dc54ab95bb023b745e07db0a24703359139432c41444eb561ae7b64691",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "icons/check.svg",
+      "bytes": 261,
+      "sha256": "6d1aeff07bb55e8be7f2f58edfaf917a50a96c72b50870ca7a1e963c94a49072",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "icons/cross.svg",
+      "bytes": 267,
+      "sha256": "1593f68d1ddf37d943751a7b99798da61866312a3439f6092e849207667cf09e",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "icons/flag.svg",
+      "bytes": 270,
+      "sha256": "b5435e9ce5d096c4d3c4f7e3af3ceef4743fce42fe3e501eeac7743f68bf016f",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "icons/hourglass.svg",
+      "bytes": 298,
+      "sha256": "6f48e7753968a155dfbfb3e5cf99c8810819415eeb02dca57073b0edc8008ccd",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "icons/lock.svg",
+      "bytes": 287,
+      "sha256": "56ee2329a3e71493db52a5703016ad952f93dcfb52d016ced206371827113f34",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "icons/mute.svg",
+      "bytes": 295,
+      "sha256": "ed0aa283016fb58c64c553893f390da47daf1fbeb02fe9b30538144987c9a76f",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "icons/next.svg",
+      "bytes": 271,
+      "sha256": "f675dd96370c9dec4df4c187803bc551b95daff08e4f54b82dfe42260247e8a3",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "icons/pause.svg",
+      "bytes": 275,
+      "sha256": "f9e9b0eae640b6aa970a81d25cdcd4864d296564b5331d92fe81e2a09ebef0e4",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "icons/phone.svg",
+      "bytes": 319,
+      "sha256": "b6628a10c6fbcbf07e11d4d40c3b83f9625877a74f254f8c66bab2517b3e5b77",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "icons/play.svg",
+      "bytes": 262,
+      "sha256": "006a75fc75e311401c740c764dcd4e8bfcaaf97d5fd51130cb773362ff22b63d",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "icons/remote.svg",
+      "bytes": 342,
+      "sha256": "f219a3227ea19d0393c78759e386eb44018a6b895c48a6bc46cac3f3a426ee75",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "icons/reveal.svg",
+      "bytes": 295,
+      "sha256": "c3174e83437c2d84458b03b74d51039828c3f6215a9386e413e7e9dfb596f599",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "icons/settings.svg",
+      "bytes": 413,
+      "sha256": "d554f636358c22540213d8f200cf434c7c6020e8ec5fe18d0550177e68bc57f1",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "icons/trophy.svg",
+      "bytes": 331,
+      "sha256": "7506917f2e9b7f30aeba7df9a484b834706e0ee502ef5dac6cb36a551a078fca",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "icons/volume.svg",
+      "bytes": 308,
+      "sha256": "3f92af5f1329c036c3bd8850886b1218287c2bd539039ce4edd9b75cd04c8b71",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "index.html",
+      "bytes": 27145,
+      "sha256": "b8db5f0c49aa40f4f0e46a8b01ed0704751d7e13fc637a97b9b2a56bc862594f"
+    },
+    {
+      "path": "modes/imposter.svg",
+      "bytes": 2355,
+      "sha256": "aba88331fdcada3807260537c824e5430922b07fcb36c97de1975a64de16d130",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "modes/millionaire.svg",
+      "bytes": 2292,
+      "sha256": "d27d48f825112ee3123e53772b326da10d5c4b02c24104e568a16d18029f6885",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "modes/trivia.svg",
+      "bytes": 2522,
+      "sha256": "7919a6ef04ab65c7ca5a93b51178b93d93ff3d21d823db7fc864ee66ab935adf",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "modes/turf.svg",
+      "bytes": 4724,
+      "sha256": "dc99d79cf5a147dafba5fc6d83b77eecb8a9442ad9ef07b831324dd2be6965a2",
+      "width": 256,
+      "height": 256,
+      "viewBox": "0 0 256 256"
+    },
+    {
+      "path": "panels/button-correct.svg",
+      "bytes": 506,
+      "sha256": "54a63bba1b328fec7e4c079f5a93f19691ac9675108b5eadb120862669a5c513",
+      "width": 320,
+      "height": 96,
+      "viewBox": "0 0 320 96"
+    },
+    {
+      "path": "panels/button-default.svg",
+      "bytes": 506,
+      "sha256": "54a63bba1b328fec7e4c079f5a93f19691ac9675108b5eadb120862669a5c513",
+      "width": 320,
+      "height": 96,
+      "viewBox": "0 0 320 96"
+    },
+    {
+      "path": "panels/button-disabled.svg",
+      "bytes": 526,
+      "sha256": "c338f8739f380ca916ea5b3d0f643f177e9348196d3ceb3de8cc1bb2a92bc65a",
+      "width": 320,
+      "height": 96,
+      "viewBox": "0 0 320 96"
+    },
+    {
+      "path": "panels/button-focus.svg",
+      "bytes": 652,
+      "sha256": "4cbb87ad38473b5a9391488e69d1d7884d4d96e97bbdfc66e79417002bdc5d09",
+      "width": 320,
+      "height": 96,
+      "viewBox": "0 0 320 96"
+    },
+    {
+      "path": "panels/button-incorrect.svg",
+      "bytes": 506,
+      "sha256": "c037a1688d894786cad00a6cfca761cdd9a9a3c5be141b76a3254ad9170f0f86",
+      "width": 320,
+      "height": 96,
+      "viewBox": "0 0 320 96"
+    },
+    {
+      "path": "panels/button-locked.svg",
+      "bytes": 506,
+      "sha256": "009a00be9fd0f15ad0e637b5a6ba2782561db90e6d6abac6a8ffa09d7ef4097d",
+      "width": 320,
+      "height": 96,
+      "viewBox": "0 0 320 96"
+    },
+    {
+      "path": "panels/button-pressed.svg",
+      "bytes": 507,
+      "sha256": "0ec278b91bfd17abbb10fc0167c9e9404c83930923dc6d9731b3a4276a38a009",
+      "width": 320,
+      "height": 96,
+      "viewBox": "0 0 320 96"
+    },
+    {
+      "path": "panels/question.svg",
+      "bytes": 506,
+      "sha256": "d50dc6588f01a8a52906c67289dcb12df76d6cebc5fdad1110bcaaafae6b6b26",
+      "width": 640,
+      "height": 210,
+      "viewBox": "0 0 640 210"
+    },
+    {
+      "path": "panels/tile-cooldown.svg",
+      "bytes": 968,
+      "sha256": "633826c740bf2404fa938237b5676fa893cf93624629d2373ccd27f3f8a061cf",
+      "width": 100,
+      "height": 100,
+      "viewBox": "0 0 100 100"
+    },
+    {
+      "path": "panels/tile.svg",
+      "bytes": 406,
+      "sha256": "f24fcc408d06d6518226a18c5329fefd6148d13e883ad43921ba691657e43b26",
+      "width": 100,
+      "height": 100,
+      "viewBox": "0 0 100 100"
+    },
+    {
+      "path": "png/avatars/bat-badge.png",
+      "bytes": 17604,
+      "sha256": "58aab019f272262a1a090c3a1cf29398c8f55401a8858a396322e1de09c6b96e",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/avatars/bat.png",
+      "bytes": 8434,
+      "sha256": "dfc081d2833a9208891cdeffa55b1abaff68b612e8cc2958adbf83c730f5b106",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/avatars/deer-badge.png",
+      "bytes": 17804,
+      "sha256": "f2731a14e9c5a6c5370de965abe94a7642dcd560d22a6d254ffc05678c9a54d3",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/avatars/deer.png",
+      "bytes": 8086,
+      "sha256": "db385c0c956c357621a118fcff1b7a4ea30c5b95c48098c43bf32944d681e307",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/avatars/fox-badge.png",
+      "bytes": 18256,
+      "sha256": "80f13a6192474905f5b3a75e15468c3e45d54529b5149a2bda867fd21f364c43",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/avatars/fox.png",
+      "bytes": 8559,
+      "sha256": "cca3ed445d95a735975a3b50e4ab4fe398097273c86219945bf98148a9b39118",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/avatars/lion-badge.png",
+      "bytes": 18678,
+      "sha256": "18f2c86a57206bb301257398b620fd0a8e406a385c2bf8b376b4e22827831feb",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/avatars/lion.png",
+      "bytes": 9517,
+      "sha256": "f023d0e4eacd8a9e275f28f9300389612f6a66135feb0188f9a6666324db9d40",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/avatars/owl-badge.png",
+      "bytes": 17789,
+      "sha256": "02d9eff076e0bd745a9718f64e6b1c339389feee0d9961dc2fa9e8eb517582e2",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/avatars/owl.png",
+      "bytes": 9090,
+      "sha256": "df7ca2d3f7bb34649b2e8dd66afd4c2313fa8806572dfa8ebad46fed546b7060",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/avatars/rabbit-badge.png",
+      "bytes": 18536,
+      "sha256": "70d243d40ee74c2cc7f1229254893c02dcac6cecb5ffc6a681e49fcb5b26d3f6",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/avatars/rabbit.png",
+      "bytes": 9514,
+      "sha256": "79a47c4f048afd32e1dc8b7e89f441fdb7f63c59e1c2db32ffcdd583a7600555",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/avatars/turtle-badge.png",
+      "bytes": 17152,
+      "sha256": "187e70369791ce88c9c5d4fde161ce338da8a1742f457b616635181948e8244b",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/avatars/turtle.png",
+      "bytes": 7919,
+      "sha256": "a340aff15441cb15cbfeaf0ddb1360c3780f32d85a25d9388f1ddd49f797e3ae",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/avatars/whale-badge.png",
+      "bytes": 17719,
+      "sha256": "fbacb1816d80475c4b5a6489ee6422419ab41c64ad926e1c4b3729d73255eb7e",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/avatars/whale.png",
+      "bytes": 8734,
+      "sha256": "e9a2bcdfd507e1a90b821e8acd5c540c09c2e12104ec32d903459929d12c9b10",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/backgrounds/imposter.png",
+      "bytes": 108354,
+      "sha256": "01c162a84186f43fbb0dd4d03c628cf7916f2e4d1afdcfb2f7da2fb72b9d8599",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/backgrounds/menu.png",
+      "bytes": 142632,
+      "sha256": "89f0147fbfbf59033c7483ade4292a2640634f2dfd41941cc6a5f1a69ca17168",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/backgrounds/millionaire.png",
+      "bytes": 111891,
+      "sha256": "98dd8bd2e68e9e873c211014bb46e6fbe2702454c47c9586331baf5ae12148fb",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/backgrounds/trivia.png",
+      "bytes": 103084,
+      "sha256": "777637637ed1d97379b6b3ace373e6fa1832940aa90141abc6524b2d845db0fc",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/backgrounds/turf.png",
+      "bytes": 106320,
+      "sha256": "44258a5f0b6f516f3fa565e05f79216ed9ac3eaa5045f2de178f70868d9dd11d",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/brand/app-mark.png",
+      "bytes": 15434,
+      "sha256": "d4e7e4f210c126e0ca1e4f217d664d59105f0888df273aae7c58be7750ba083f",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/brand/decorations.png",
+      "bytes": 10337,
+      "sha256": "c3c14cee659461a8879c09022f3b1a1457a181540729e7edc3470a50cc965440",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/brand/wordmark-cream.png",
+      "bytes": 20817,
+      "sha256": "5a1950e1c214c29657d6e5a8f686a3b268ae9bbd3239f7e6f0d5e6a931747b3c",
+      "width": 1040,
+      "height": 360,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/brand/wordmark-navy.png",
+      "bytes": 20822,
+      "sha256": "7729f97dc5313c9280f654ec2680f002aa2fd88d8bbc10f37f7a4312e2954880",
+      "width": 1040,
+      "height": 360,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/icons/back.png",
+      "bytes": 6403,
+      "sha256": "1a9239d84a7c6ff3f08b2a49a9f7b71e002494a7bb4b090c83be5fca72fc3186",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/icons/check.png",
+      "bytes": 5779,
+      "sha256": "847581ee8ccfddfc25e3a2028eeda70af9e7e625dd7cbadbb670b0177d076ab4",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/icons/cross.png",
+      "bytes": 3686,
+      "sha256": "f43c5ac2d917b145bd42e7c9d55d0129a64d2fd6880e1091209f3b18ee0ee103",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/icons/flag.png",
+      "bytes": 5509,
+      "sha256": "b94228851c9dce53ddedb99ad40fc2c14eb9d09a493a74182afcb1498bf75c5a",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/icons/hourglass.png",
+      "bytes": 7188,
+      "sha256": "2e4bf6b29d972e59c34d03b0fee5e2d92c9eb3706d77d5d16d1d083b41a484f9",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/icons/lock.png",
+      "bytes": 6670,
+      "sha256": "9ce0e95caa9f8b995c19d9aab6f6553d3c7701b69f2a1a990e7b71a50a8c3070",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/icons/mute.png",
+      "bytes": 8427,
+      "sha256": "2f8bc77bb45d62ca4c50dcb48afbc1784a829e612ccfd0ad579d5c7f83a6c442",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/icons/next.png",
+      "bytes": 4713,
+      "sha256": "7cafd5039ea3f46754a6c3d3b8b61556ab1b8a5c3af217681ce807238b4d258e",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/icons/pause.png",
+      "bytes": 4463,
+      "sha256": "368585a712959420283eac5f390f359a9659b47273d0933e3489b45215b439f2",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/icons/phone.png",
+      "bytes": 6421,
+      "sha256": "4657d3e8ce271a646c8d462429e6c5250c018f468940aac6ba47abcac14fe98a",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/icons/play.png",
+      "bytes": 4130,
+      "sha256": "0ce7ff762e730b18e8ba18d8300aac29a49551b082a55ea18ff0076fba7cf991",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/icons/remote.png",
+      "bytes": 10413,
+      "sha256": "15ce9afe0714d2e3b4ddad5a5fca9b6e0d3af6b1a76afb39c03948e1b7c8da9d",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/icons/reveal.png",
+      "bytes": 6193,
+      "sha256": "4a095b9dc4ca94ebc045a048666d4452b252337b4d76125d2f2eaf47fb00519b",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/icons/settings.png",
+      "bytes": 14509,
+      "sha256": "98fd1e1a5ad1472131592324a3a517edb3beba01a67ab18e0f84525a1c72eadc",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/icons/trophy.png",
+      "bytes": 10215,
+      "sha256": "9c77829354d58a86f8941454412bc6af0fbf94b9d693e946250f0cfb4107fa1c",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/icons/volume.png",
+      "bytes": 12019,
+      "sha256": "4be617ef606a0efc3ffc8ae5f9ca8e52019f0cb9931856aaaa89cc2e0fe25897",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/modes/imposter.png",
+      "bytes": 26058,
+      "sha256": "8b39149023e7266af12f85edc674c5e5b099364af1fb31becaaa68f67a0424ee",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/modes/millionaire.png",
+      "bytes": 15306,
+      "sha256": "bfb49e8e6bff655c20c9c5e644d59110b598f700e878a8912e3088f657da8e74",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/modes/trivia.png",
+      "bytes": 29385,
+      "sha256": "a02751bfce2d96484e788873b2491557ac7313b041a4575eef91e52dfbdde393",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/modes/turf.png",
+      "bytes": 22056,
+      "sha256": "2b132b997d75af178794026bd289feb771946c036053d01ee735ec330e2c7627",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/panels/button-correct.png",
+      "bytes": 3559,
+      "sha256": "83b19834c1c175bd8657e7ebd97721895d4153c17bb553e5a8617c392ea39594",
+      "width": 640,
+      "height": 192,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/panels/button-default.png",
+      "bytes": 3559,
+      "sha256": "83b19834c1c175bd8657e7ebd97721895d4153c17bb553e5a8617c392ea39594",
+      "width": 640,
+      "height": 192,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/panels/button-disabled.png",
+      "bytes": 3403,
+      "sha256": "ffe5e880d2d1c22a9e29bdc1c6807397af143356cf68d052d947ae635f559959",
+      "width": 640,
+      "height": 192,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/panels/button-focus.png",
+      "bytes": 3681,
+      "sha256": "cb2941981984af2ac5f0ce7de2ffadcb27d37df755163a1673253499012ec9bb",
+      "width": 640,
+      "height": 192,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/panels/button-incorrect.png",
+      "bytes": 3566,
+      "sha256": "2cb7ae901d26af74edbd565b5a3d8422f5e344b362dc21c8277df21c212cb2e4",
+      "width": 640,
+      "height": 192,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/panels/button-locked.png",
+      "bytes": 3568,
+      "sha256": "e2e3d898f61d6169803bbeae61cb209be1a91f5f2faaafe931a4e2276b5076f9",
+      "width": 640,
+      "height": 192,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/panels/button-pressed.png",
+      "bytes": 3371,
+      "sha256": "91b4d9308b77edfc0e8592c7b5e6513fefe6d36d2e554064f2c919d62c4f74a9",
+      "width": 640,
+      "height": 192,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/panels/question.png",
+      "bytes": 12114,
+      "sha256": "757f6dd6a5bc179c857d3e9c42f7a1b2748d6901b930e6b021499a55f676f04f",
+      "width": 1280,
+      "height": 420,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/panels/tile-cooldown.png",
+      "bytes": 4068,
+      "sha256": "579e1c42a371018908390bc80319d99cc976d2c2efa5dc7248786e11bffd3e42",
+      "width": 200,
+      "height": 200,
+      "mode": "RGBA"
+    },
+    {
+      "path": "png/panels/tile.png",
+      "bytes": 3207,
+      "sha256": "2035ff6d9ab9a7ec2a8ea403efd3f380ccff0c7c4c6be5b33494d9ec6e88e35b",
+      "width": 200,
+      "height": 200,
+      "mode": "RGBA"
+    },
+    {
+      "path": "PROMPT.md",
+      "bytes": 1840,
+      "sha256": "aefd91e7ddc620cfba20201e983d17c86dbac3d2f96a8ae5230507143ea8830a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4100,
+      "sha256": "353d2b5641cf489866fdc6c398b8f23700d4508621455a2500e076a6b8eeeffb"
+    },
+    {
+      "path": "theme.css",
+      "bytes": 1703,
+      "sha256": "ef47d516745ed1f69cda4a80adc5cc301ddc390ec03925ea3989ee0e550c5d83"
+    },
+    {
+      "path": "tokens.json",
+      "bytes": 1216,
+      "sha256": "48d9e10996f4a57d08480a033225755665028d5539ca4fd8c310280f4372c392"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1005,
+      "sha256": "207e4773c91bdd99591930710893da5903927163af8c7c69b8821698c357f743"
+    }
+  ]
+}

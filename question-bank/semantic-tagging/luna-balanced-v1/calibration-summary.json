@@ -1,0 +1,14 @@
+{
+  "questions": 50,
+  "topicMeanJaccard": 0.9033333333333333,
+  "allTagsMeanJaccard": 0.6505122655122655,
+  "independentAccuracyBenchmark": false,
+  "findings": [
+    "Broad topics are more consistent than narrow localization and audience facets.",
+    "High-confidence validated assignments only; medium/low and invalid evidence stay in proposals.",
+    "Missing title/answer-distinction risks on reviewed examples show that absence of a model risk tag is not approval.",
+    "Existing human-owned assignments take precedence; calibration does not alter pilot tags.",
+    "Initial malformed output retained and billed in ledger; fixed family-prefix contract before production.",
+    "Cache-write tokens billed at the published cache-write rate; ledger includes them."
+  ]
+}

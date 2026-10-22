@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 const base=process.env.TRIVITV_TEST_URL||'http://127.0.0.1:8787';
 async function api(path,data,token){const r=await fetch(base+'/api'+path,{method:data?'POST':'GET',headers:{...(data?{'content-type':'application/json'}:{}),...(token?{authorization:'Bearer '+token}:{})},body:data?JSON.stringify(data):undefined});return {status:r.status,...await r.json()};}
 test('real Worker/SQLite room lifecycle, WebSocket, private answers, reconnect, permissions',async()=>{
- const config=await api('/config');assert.equal(config.count,916);
+ const config=await api('/config');assert.equal(config.count,JSON.parse(await (await import('node:fs/promises')).readFile(new URL('../src/bank.json',import.meta.url),'utf8')).length);
  const host=await api('/rooms',{categories:config.categories,remotePlayer:false});assert.equal(host.status,200);
  const path='/rooms/'+host.code;
  const a=await api(path+'/join',{name:'Оля'}),b=await api(path+'/join',{name:'Макс'});

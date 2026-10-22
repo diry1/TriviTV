@@ -1,0 +1,4382 @@
+{
+  "records": [
+    {
+      "id": "otqa:8ff600d9385167d30dbecf52",
+      "category": "Animals",
+      "sourceFingerprint": "df2e76dc1a7737f70bdcf1ca42e5f99bbd3daa926f6fceeefca311d550667243",
+      "translationFingerprint": "b53d35b3a0c400ff0ee05ff6f698f4a6ad7d06147ebe50fdd154a95baf6413c3",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e7585b60afe8eff016ad9f61ee65487d28336955dbc7f35cb",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:animals",
+          "evidence": "Why do cats go crazy over catnip?",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:plants",
+          "evidence": "catnip",
+          "confidence": "high"
+        },
+        {
+          "tag": "subject:animal-behaviour",
+          "evidence": "Why do cats go crazy over catnip?",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "Why do cats go crazy over catnip?",
+          "confidence": "high"
+        }
+      ],
+      "entities": [],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:1bb4cfea9ffd14e040639843",
+      "category": "Animals",
+      "sourceFingerprint": "8856ecbb1e8576c1c2353e23055798c59644337fc2204138d0059be3e65849e4",
+      "translationFingerprint": "057773d7031e9b05fbd1d0325094c25454e035e6040bf9a608c997bc2a1603f9",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e7585b60afe8eff016ad9f61ee65487d28336955dbc7f35cb",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:animals",
+          "evidence": "This type of ant",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "This type of ant is considered the most venomous of all insects.",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Jack jumper ant",
+          "role": "choice:0",
+          "kind": "location",
+          "confidence": "medium",
+          "regions": [
+            "oceania"
+          ]
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": [
+        {
+          "tag": "location-mention:oceania",
+          "reason": "Non-high confidence",
+          "evidence": "Jack jumper ant"
+        }
+      ]
+    },
+    {
+      "id": "otqa:d0673a4c785555238b45562d",
+      "category": "Arts & Humanities",
+      "sourceFingerprint": "7fac0ef883ec99ceb1a6c266d20ade8aec6ee9adf26a93e8098b34dfa8ebeb4d",
+      "translationFingerprint": "02120565c7f378c03ef4c49bcc41b73b3e8bafe7fa26a6797a99e31303bd495e",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e7585b60afe8eff016ad9f61ee65487d28336955dbc7f35cb",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:philosophy",
+          "evidence": "Chinese philosopher Confucius",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:language",
+          "evidence": "What is the missing verb",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:missing-word",
+          "evidence": "What is the missing verb",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:quote-identification",
+          "evidence": "I hear and I ...; I see and I remember; I do and I understand?",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:historical-figure-name",
+          "evidence": "Confucius",
+          "confidence": "high"
+        },
+        {
+          "tag": "translation-uk-risk:proverb-localization",
+          "evidence": "Chinese proverb",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Confucius",
+          "role": "prompt",
+          "kind": "historical-figure-name",
+          "confidence": "high",
+          "regions": [
+            "asia"
+          ]
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": [
+        {
+          "tag": "translation-uk-risk:quote-localization",
+          "reason": "Non-high confidence",
+          "evidence": "I hear and I ...; I see and I remember; I do and I understand?"
+        },
+        {
+          "tag": "location-mention:asia",
+          "reason": "No matching location entity evidence"
+        }
+      ]
+    },
+    {
+      "id": "otqa:adc207c8314c27acaeda0c26",
+      "category": "Arts & Humanities",
+      "sourceFingerprint": "a0195da49cf103886623ce266b44602f1ceef779c45713174066c0796a074fbc",
+      "translationFingerprint": "58f4748702c0f462027cd3029b9c3c9ee028c1f5053d41cf71721b7ff3544153",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e7585b60afe8eff016ad9f61ee65487d28336955dbc7f35cb",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:religion",
+          "evidence": "dwelling place of the Norse gods",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "What is the name of the dwelling place",
+          "confidence": "high"
+        }
+      ],
+      "entities": [],
+      "eras": [],
+      "notes": [],
+      "proposals": [
+        {
+          "tag": "topic:history",
+          "reason": "Non-high confidence",
+          "evidence": "Norse gods"
+        }
+      ]
+    },
+    {
+      "id": "otqa:b578ab9c75790956eabe1f97",
+      "category": "Brain Teasers",
+      "sourceFingerprint": "a70ebd81d74460e0a60de08ff383fe7d9c2ff7a1bec0143b2f8efe9be8623e02",
+      "translationFingerprint": null,
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e7585b60afe8eff016ad9f61ee65487d28336955dbc7f35cb",
+      "translationExamined": false,
+      "assignments": [
+        {
+          "tag": "topic:language",
+          "evidence": "How does this proverb continue",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:missing-word",
+          "evidence": "The squeaking wheel gets ...",
+          "confidence": "high"
+        },
+        {
+          "tag": "translation-uk-risk:proverb-localization",
+          "evidence": "The squeaking wheel gets ...",
+          "confidence": "high"
+        }
+      ],
+      "entities": [],
+      "eras": [],
+      "notes": [
+        "Ukrainian translation is missing."
+      ],
+      "proposals": []
+    },
+    {
+      "id": "otqa:dc1e428a720a39e99d299c03",
+      "category": "Brain Teasers",
+      "sourceFingerprint": "9079f0713102ce5e0a17b8f77614b3704d3bab82dc93aa6b66d710c5e8fa60e2",
+      "translationFingerprint": "21bde5a959bb4418a0be5a864a1a29721f6d7a3e79302cd9d6a0a8519c20cc22",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e7585b60afe8eff016ad9f61ee65487d28336955dbc7f35cb",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:animals",
+          "evidence": "15 birds sitting on the branches of a tree",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:riddle",
+          "evidence": "A hunter goes by and shoots 3 of them. How many birds are left on the tree?",
+          "confidence": "high"
+        }
+      ],
+      "entities": [],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:8989a2f1a08416c5586f664a",
+      "category": "Celebrities",
+      "sourceFingerprint": "d29fc2882bf1335b87579e42a290818c3ed61842bcbea680e69e0088f55e3851",
+      "translationFingerprint": "3baddd7139367d245e791ebe96480374be42098e1cf9e6c62a1d72f8410bdf5d",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e7585b60afe8eff016ad9f61ee65487d28336955dbc7f35cb",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:movies",
+          "evidence": "title of the 2009 movie",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:music",
+          "evidence": "rapper The Notorious B.I.G.",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "What is the title of the 2009 movie",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:movie-title",
+          "evidence": "Notorious",
+          "confidence": "high"
+        },
+        {
+          "tag": "era:2000s",
+          "evidence": "2009 movie",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Notorious",
+          "role": "choice:0",
+          "kind": "movie-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "Life After Death",
+          "role": "choice:1",
+          "kind": "book-title",
+          "confidence": "medium",
+          "regions": []
+        },
+        {
+          "surface": "B.I.G.",
+          "role": "choice:2",
+          "kind": "song-title",
+          "confidence": "medium",
+          "regions": []
+        },
+        {
+          "surface": "Ready To Die",
+          "role": "choice:3",
+          "kind": "book-title",
+          "confidence": "medium",
+          "regions": []
+        }
+      ],
+      "eras": [
+        {
+          "value": "2000s",
+          "confidence": "high",
+          "role": "work-release",
+          "evidence": "2009 movie"
+        }
+      ],
+      "notes": [],
+      "proposals": [
+        {
+          "tag": "entity-kind:book-title",
+          "reason": "Non-high confidence",
+          "evidence": "Life After Death"
+        },
+        {
+          "tag": "entity-kind:song-title",
+          "reason": "Non-high confidence",
+          "evidence": "B.I.G."
+        },
+        {
+          "tag": "entity-kind:book-title",
+          "reason": "Non-high confidence",
+          "evidence": "Ready To Die"
+        }
+      ]
+    },
+    {
+      "id": "otqa:288d8b48f33d758c4f7bfa99",
+      "category": "Celebrities",
+      "sourceFingerprint": "d4099842252f7a06fed8459dc2c3995e65fc2e2079e0be5dc58e4fe79ed01c45",
+      "translationFingerprint": "34328577469d52718140a0bac3678bb25d91cdb23f8beeb3b8bf3bfbc067d3d8",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e7585b60afe8eff016ad9f61ee65487d28336955dbc7f35cb",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:music",
+          "evidence": "lyrics of the popular Aerosmith song",
+          "confidence": "high"
+        },
+        {
+          "tag": "subject:song-lyrics",
+          "evidence": "missing word from the lyrics",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:missing-word",
+          "evidence": "Which is the missing word from the lyrics",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:brand-name",
+          "evidence": "Aerosmith",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:song-title",
+          "evidence": "I Dont Want To Miss A Thing",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Aerosmith",
+          "role": "prompt",
+          "kind": "brand-name",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "I Dont Want To Miss A Thing",
+          "role": "prompt",
+          "kind": "song-title",
+          "confidence": "high",
+          "regions": []
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": [
+        {
+          "tag": "translation-uk-risk:quote-localization",
+          "reason": "Non-high confidence",
+          "evidence": "I could stay awake, just to hear you _________"
+        }
+      ]
+    },
+    {
+      "id": "otqa:24d4e6d4558e138f890e53c9",
+      "category": "Entertainment",
+      "sourceFingerprint": "a182a430637673e12aa4711d77dbe39f664b65e4bbf4af2c0d876b08059d0a66",
+      "translationFingerprint": "7e234e63c1cfdeaba60c5968132df49fdf4394a81997dc468f3879a3f8524a43",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e7585b60afe8eff016ad9f61ee65487d28336955dbc7f35cb",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:movies",
+          "evidence": "In the 1980 movie Popeye",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:actors",
+          "evidence": "which pair portrayed Popeye and Olive?",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "which pair portrayed Popeye and Olive?",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:movie-title",
+          "evidence": "Popeye",
+          "confidence": "high"
+        },
+        {
+          "tag": "era:1980s",
+          "evidence": "1980 movie",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Popeye",
+          "role": "prompt",
+          "kind": "movie-title",
+          "confidence": "high",
+          "regions": []
+        }
+      ],
+      "eras": [
+        {
+          "value": "1980s",
+          "confidence": "high",
+          "role": "work-release",
+          "evidence": "1980 movie"
+        }
+      ],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:15946071e56465513cd32cf8",
+      "category": "Entertainment",
+      "sourceFingerprint": "04235829acf1981c812e19f4e805806b203512df92d18c1c9b27a3d609d0aeaa",
+      "translationFingerprint": "c25d098f206860de75dd243b75dcd2e8efb86651e76e7d3b6f24229fb5ac47f7",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e7585b60afe8eff016ad9f61ee65487d28336955dbc7f35cb",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:comics",
+          "evidence": "in the comics FoxTrot",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "Which of the following best describes",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:brand-name",
+          "evidence": "FoxTrot",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "FoxTrot",
+          "role": "prompt",
+          "kind": "brand-name",
+          "confidence": "high",
+          "regions": []
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": [
+        {
+          "tag": "topic:actors",
+          "reason": "Non-high confidence",
+          "evidence": "Andy and Roger’s youngest child"
+        }
+      ]
+    },
+    {
+      "id": "otqa:ce4edc4a85f74a80ff2c7c7f",
+      "category": "General Knowledge",
+      "sourceFingerprint": "456342f7d5ac1b3c97fa2a3f78efb2fa89de305029f9db9d92ca20b4af07109e",
+      "translationFingerprint": null,
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0d3fc8ba7e18d29c016ad9f62c606487d280a222f9ab8af6d7",
+      "translationExamined": false,
+      "assignments": [
+        {
+          "tag": "topic:religion",
+          "evidence": "Hera",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "What is the name of this nymph?",
+          "confidence": "high"
+        }
+      ],
+      "entities": [],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:8761fc2b1b08804b4edbb9d8",
+      "category": "General Knowledge",
+      "sourceFingerprint": "5a827c7b5d975cda4c7d7c57b4d98828bf69fb17e924de8c8930fb1b27a48561",
+      "translationFingerprint": "d13383ccc8242b9316c92f69e87d88cc199a62c3f7c4092b58cfd3978d1c4e79",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0d3fc8ba7e18d29c016ad9f62c606487d280a222f9ab8af6d7",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:language",
+          "evidence": "Directly accessible. (adjective)",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:definition",
+          "evidence": "Directly accessible. (adjective)",
+          "confidence": "high"
+        },
+        {
+          "tag": "translation-uk-risk:english-spelling",
+          "evidence": "addressable",
+          "confidence": "high"
+        }
+      ],
+      "entities": [],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:e3e70c10d304c8dad8fc5aee",
+      "category": "Geography",
+      "sourceFingerprint": "76b8a1c465e737a44706d09c793894834a9d40614643ba924ce35fdd989429af",
+      "translationFingerprint": "5caaafc746ce6de83d2be06d8754fb249cdaaf5789a68fa746cb1cce46591060",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0d3fc8ba7e18d29c016ad9f62c606487d280a222f9ab8af6d7",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:geography",
+          "evidence": "The Big Smoky Valley",
+          "confidence": "high"
+        },
+        {
+          "tag": "subject:us-states",
+          "evidence": "which US state?",
+          "confidence": "high"
+        },
+        {
+          "tag": "audience:us-specific",
+          "evidence": "Toiyabe Range and the Toquima Range",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "is located in which US state?",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:usa",
+          "evidence": "US state",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:north-america",
+          "evidence": "US state",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "US",
+          "role": "prompt",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "usa",
+            "north-america"
+          ]
+        },
+        {
+          "surface": "Nevada",
+          "role": "choice:0",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "usa",
+            "north-america"
+          ]
+        },
+        {
+          "surface": "Minnesota",
+          "role": "choice:1",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "usa",
+            "north-america"
+          ]
+        },
+        {
+          "surface": "Indiana",
+          "role": "choice:2",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "usa",
+            "north-america"
+          ]
+        },
+        {
+          "surface": "Oregon",
+          "role": "choice:3",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "usa",
+            "north-america"
+          ]
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:3a1eadfda5f30e7ce7ec8560",
+      "category": "Geography",
+      "sourceFingerprint": "252915274930f91408d7c6ebe9c14765776a1d20d9d27eb7392c3e672cee4a3b",
+      "translationFingerprint": "538130896554df449134e37e8c421a85334f765f195cb96a71d49a8e1e53190d",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0d3fc8ba7e18d29c016ad9f62c606487d280a222f9ab8af6d7",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:geography",
+          "evidence": "Which of these mountains is highest?",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:comparison",
+          "evidence": "is highest?",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:north-america",
+          "evidence": "Mount McKinley",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:oceania",
+          "evidence": "Puncak Jaya",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:europe",
+          "evidence": "Mount Elbrus",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:africa",
+          "evidence": "Mount Kilimanjaro",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Mount McKinley",
+          "role": "choice:0",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "north-america"
+          ]
+        },
+        {
+          "surface": "Puncak Jaya",
+          "role": "choice:1",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "oceania"
+          ]
+        },
+        {
+          "surface": "Mount Elbrus",
+          "role": "choice:2",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "europe"
+          ]
+        },
+        {
+          "surface": "Mount Kilimanjaro",
+          "role": "choice:3",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "africa"
+          ]
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:0139eb0a2c18a22157729df6",
+      "category": "History",
+      "sourceFingerprint": "6d6d70008611136e77094fc42854dfe52d25101c970fe9a032a132e8806736d3",
+      "translationFingerprint": "e0e115b7e0ebc7d84bef661a5e4cd659e826fc032918fd99d8c9f806b1d94893",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0d3fc8ba7e18d29c016ad9f62c606487d280a222f9ab8af6d7",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:history",
+          "evidence": "What conflict was initiated",
+          "confidence": "high"
+        },
+        {
+          "tag": "subject:warfare",
+          "evidence": "What conflict",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "What conflict",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:historical-figure-name",
+          "evidence": "Hong Xiuquan",
+          "confidence": "high",
+          "derivedFrom": "entity"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Hong Xiuquan",
+          "role": "prompt",
+          "kind": "historical-figure-name",
+          "confidence": "high",
+          "regions": [
+            "asia"
+          ]
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": [
+        {
+          "tag": "location-mention:asia",
+          "reason": "No matching location entity evidence"
+        }
+      ]
+    },
+    {
+      "id": "otqa:6214d34be45b2a43b8063cc7",
+      "category": "History",
+      "sourceFingerprint": "9bf90e83ff0c04233e24ecc96b4bb00e4b2950efc9f86e52871b4c7ef4f29b2f",
+      "translationFingerprint": "61ef6451dfd2d33b510cbf5df51097364b20573723e2d7f512a6f63a3c770cbb",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0d3fc8ba7e18d29c016ad9f62c606487d280a222f9ab8af6d7",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:history",
+          "evidence": "The Soviets, having lost the race for the Moon",
+          "confidence": "high"
+        },
+        {
+          "tag": "subject:space",
+          "evidence": "construction of space stations",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:event-detail",
+          "evidence": "all three crew members of this space station died",
+          "confidence": "high"
+        }
+      ],
+      "entities": [],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:42ff9a20576b30d3a116b9d5",
+      "category": "Hobbies",
+      "sourceFingerprint": "a394136ce0ebf4b0948ab6ea716d7c1064a3a363a0e85af029e8f76bc0afb5cb",
+      "translationFingerprint": "f5d87c2c1ff2e7db390bef2d888ff34167e6cc9b6dc10dc4d4668a43846c7434",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0d3fc8ba7e18d29c016ad9f62c606487d280a222f9ab8af6d7",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:food",
+          "evidence": "The dish called American fried rice",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:geography",
+          "evidence": "Where was it created?",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "Where was it created?",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:asia",
+          "evidence": "Thailand",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:europe",
+          "evidence": "Italy",
+          "confidence": "high",
+          "derivedFrom": "entity"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Thailand",
+          "role": "choice:0",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "asia"
+          ]
+        },
+        {
+          "surface": "China",
+          "role": "choice:1",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "asia"
+          ]
+        },
+        {
+          "surface": "Italy",
+          "role": "choice:2",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "europe"
+          ]
+        },
+        {
+          "surface": "France",
+          "role": "choice:3",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "europe"
+          ]
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:98efd44a813b1df9aa8249d5",
+      "category": "Hobbies",
+      "sourceFingerprint": "de9cb103fbd46807b0829b001042c6b2fc619d60c1a524d7ffa17d22071439c4",
+      "translationFingerprint": "9a1fdd99450086b3bfebbef9db5d713ecd24e2802af3739d56c5528be5985a59",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0d3fc8ba7e18d29c016ad9f62c606487d280a222f9ab8af6d7",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:food",
+          "evidence": "one of the oldest spices in the world",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:plants",
+          "evidence": "Having been cultivated",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "this is one of the oldest spices",
+          "confidence": "high"
+        }
+      ],
+      "entities": [],
+      "eras": [],
+      "notes": [],
+      "proposals": [
+        {
+          "tag": "location-mention:asia",
+          "reason": "No matching location entity evidence"
+        }
+      ]
+    },
+    {
+      "id": "otqa:96b333696ff88e3cfaf9fe0a",
+      "category": "Kids Trivia",
+      "sourceFingerprint": "fce9bb2cfc1cc0db34051b91d59c28eae9a6c3673191d76cd0e9ab9780455f0b",
+      "translationFingerprint": "2d00d6637d6dad7d7c42aa1a9d717d62bc5535324164607926f26d61fcc0dd50",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0d3fc8ba7e18d29c016ad9f62c606487d280a222f9ab8af6d7",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:books",
+          "evidence": "In the book The Wind in the Willows",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:event-detail",
+          "evidence": "sells it to a Gypsy for what?",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:book-title",
+          "evidence": "The Wind in the Willows",
+          "confidence": "high"
+        },
+        {
+          "tag": "translation-uk-risk:title-localization",
+          "evidence": "The Wind in the Willows",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "The Wind in the Willows",
+          "role": "prompt",
+          "kind": "book-title",
+          "confidence": "high",
+          "regions": []
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:9c8207d7b3b502e61ae7467c",
+      "category": "Kids Trivia",
+      "sourceFingerprint": "d3e206acf85f3726104b6e9a2a9f980f945502bf6795cf2f8b161a0d4ce8c1ee",
+      "translationFingerprint": "2fbbf54a66af6566c5cebfb4799a06c5f7d71c880ebd6de6643358a890ae02eb",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0d3fc8ba7e18d29c016ad9f62c606487d280a222f9ab8af6d7",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:books",
+          "evidence": "In the book Prince Caspian",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "what is the name of the Captain of the Mice",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:book-title",
+          "evidence": "Prince Caspian",
+          "confidence": "high"
+        },
+        {
+          "tag": "translation-uk-risk:title-localization",
+          "evidence": "Prince Caspian",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Prince Caspian",
+          "role": "prompt",
+          "kind": "book-title",
+          "confidence": "high",
+          "regions": []
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": [
+        {
+          "tag": "translation-uk-risk:character-name",
+          "reason": "Non-high confidence",
+          "evidence": "Reepicheep"
+        }
+      ]
+    },
+    {
+      "id": "otqa:fbd6b8c95a9f4e9eea096338",
+      "category": "Literature",
+      "sourceFingerprint": "c32b3d02fa96dc6d2661fc5037c90f51059a44cd3f31ca48c965acc8b78fc0e9",
+      "translationFingerprint": "53622a4734abf71b1dbe43a8fba9c062c7926216d22b4a526de327c59b2b164f",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0b61f3c8f64e89ef016ad9f63cc6ec87d2aab1cd9920959085",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:books",
+          "evidence": "Stephen King story",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "character in which Stephen King story?",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:book-title",
+          "evidence": "Silver Bullet",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Silver Bullet",
+          "role": "choice:0",
+          "kind": "book-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "The Stand",
+          "role": "choice:1",
+          "kind": "book-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "Bag of Bones",
+          "role": "choice:2",
+          "kind": "book-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "Night Shift",
+          "role": "choice:3",
+          "kind": "book-title",
+          "confidence": "high",
+          "regions": []
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": [
+        {
+          "tag": "translation-uk-risk:title-localization",
+          "reason": "Validator withheld unknown tag or non-exact evidence",
+          "evidence": "Срібна куля"
+        }
+      ]
+    },
+    {
+      "id": "otqa:48787dd35b1463594542aa7e",
+      "category": "Literature",
+      "sourceFingerprint": "189c583f706d47fc41fa3359bba7bde2035fde270e1bd0e676904cc3e313b5be",
+      "translationFingerprint": "ccc0ebb4d9f2a7c3a428d25de64947e1f68dea5ae58bc2d1a97a484596aebe8c",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0b61f3c8f64e89ef016ad9f63cc6ec87d2aab1cd9920959085",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:books",
+          "evidence": "novel The Amber Spyglass",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "Which character",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:book-title",
+          "evidence": "The Amber Spyglass",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "The Amber Spyglass",
+          "role": "prompt",
+          "kind": "book-title",
+          "confidence": "high",
+          "regions": []
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": [
+        {
+          "tag": "translation-uk-risk:title-localization",
+          "reason": "Validator withheld unknown tag or non-exact evidence",
+          "evidence": "«Янтарний шпигун»"
+        }
+      ]
+    },
+    {
+      "id": "otqa:6a18781caa5fb51444844f2c",
+      "category": "Movies",
+      "sourceFingerprint": "80229bb4e8dfd6daa18737efa468752b1797302a9cbbe6880867382514c630ac",
+      "translationFingerprint": "15d0bb6f06c741295d4ca9a9e2c8fc0f1862b05bb96ecfd15c8b2501915a146a",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0b61f3c8f64e89ef016ad9f63cc6ec87d2aab1cd9920959085",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:movies",
+          "evidence": "This 2008 movie",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "This 2008 movie",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:movie-title",
+          "evidence": "Funny Games",
+          "confidence": "high"
+        },
+        {
+          "tag": "era:2000s",
+          "evidence": "2008 movie",
+          "confidence": "high"
+        },
+        {
+          "tag": "era:1990s",
+          "evidence": "1997 Austrian film",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Funny Games",
+          "role": "choice:0",
+          "kind": "movie-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "The Omen",
+          "role": "choice:2",
+          "kind": "movie-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "The Echo",
+          "role": "choice:3",
+          "kind": "movie-title",
+          "confidence": "high",
+          "regions": []
+        }
+      ],
+      "eras": [
+        {
+          "value": "2000s",
+          "confidence": "high",
+          "role": "work-release",
+          "evidence": "This 2008 movie"
+        },
+        {
+          "value": "1990s",
+          "confidence": "high",
+          "role": "work-release",
+          "evidence": "1997 Austrian film"
+        }
+      ],
+      "notes": [],
+      "proposals": [
+        {
+          "tag": "translation-uk-risk:title-localization",
+          "reason": "Non-high confidence",
+          "evidence": "Funny Games"
+        },
+        {
+          "tag": "location-mention:europe",
+          "reason": "No matching location entity evidence"
+        }
+      ]
+    },
+    {
+      "id": "otqa:23ec79ec81fd542252986386",
+      "category": "Movies",
+      "sourceFingerprint": "adfcb43e35cced6189a8dcf65bbe3499e3308c09746a055e61f639e823950973",
+      "translationFingerprint": "6e42f54570dceadf67149d5a258ff495a3b75f024b9d975a4c288705f2f03881",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0b61f3c8f64e89ef016ad9f63cc6ec87d2aab1cd9920959085",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:movies",
+          "evidence": "movie 12 Angry Men",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:actors",
+          "evidence": "This actor",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:biography-detail",
+          "evidence": "also starred as Ev Hillman",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "This actor",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:movie-title",
+          "evidence": "12 Angry Men",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:television-title",
+          "evidence": "The Tommyknockers",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "12 Angry Men",
+          "role": "prompt",
+          "kind": "movie-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "The Tommyknockers",
+          "role": "prompt",
+          "kind": "television-title",
+          "confidence": "high",
+          "regions": []
+        }
+      ],
+      "eras": [],
+      "notes": [
+        "The Tommyknockers is a television miniseries, not a movie."
+      ],
+      "proposals": [
+        {
+          "tag": "translation-uk-risk:title-localization",
+          "reason": "Validator withheld unknown tag or non-exact evidence",
+          "evidence": "«12 розлючених чоловіків»"
+        }
+      ]
+    },
+    {
+      "id": "otqa:723fb1ee0e73c6514eda7031",
+      "category": "Music",
+      "sourceFingerprint": "961c25b066a010abd8b38a9fef9d6e3897f90183d8d9e624808526f0ae4fcbdd",
+      "translationFingerprint": "25248e6c7e78a92df44036893024a20e35d80382cd27a87513b9d719163a6aef",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0b61f3c8f64e89ef016ad9f63cc6ec87d2aab1cd9920959085",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:music",
+          "evidence": "What was the name of the band?",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "What was the name of the band?",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:north-america",
+          "evidence": "Monterey Pop Festival",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:usa",
+          "evidence": "Monterey Pop Festival",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:brand-name",
+          "evidence": "The Blues Project",
+          "confidence": "high",
+          "derivedFrom": "entity"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Monterey",
+          "role": "prompt",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "usa",
+            "north-america"
+          ]
+        },
+        {
+          "surface": "The Blues Project",
+          "role": "choice:0",
+          "kind": "brand-name",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "The Eagles",
+          "role": "choice:1",
+          "kind": "brand-name",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "America",
+          "role": "choice:2",
+          "kind": "brand-name",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "The Butterfield Blues Band",
+          "role": "choice:3",
+          "kind": "brand-name",
+          "confidence": "high",
+          "regions": []
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:e25578851cee8ac9ed52992d",
+      "category": "Music",
+      "sourceFingerprint": "e21f9b8967aa118776267160a132c6281291e7eccaa0a372c10105470913fb9a",
+      "translationFingerprint": "72388ea65ea9cd452723d637240b9bf46efe71add326e328df34cc3b3df71da9",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0b61f3c8f64e89ef016ad9f63cc6ec87d2aab1cd9920959085",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:music",
+          "evidence": "monster hit titled Youre So Vain",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:biography-detail",
+          "evidence": "was married to James Taylor",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "This musical icon",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:song-title",
+          "evidence": "Youre So Vain",
+          "confidence": "high"
+        },
+        {
+          "tag": "era:1970s",
+          "evidence": "musical icon from the 70s",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Youre So Vain",
+          "role": "prompt",
+          "kind": "song-title",
+          "confidence": "high",
+          "regions": []
+        }
+      ],
+      "eras": [
+        {
+          "value": "1970s",
+          "confidence": "high",
+          "role": "subject-active-period",
+          "evidence": "musical icon from the 70s"
+        }
+      ],
+      "notes": [],
+      "proposals": [
+        {
+          "tag": "topic:actors",
+          "reason": "Non-high confidence",
+          "evidence": "musical icon from the 70s"
+        },
+        {
+          "tag": "translation-uk-risk:proper-name-localization",
+          "reason": "Validator withheld unknown tag or non-exact evidence",
+          "evidence": "Карлі Саймон"
+        }
+      ]
+    },
+    {
+      "id": "otqa:ad8af3170695185af269e0af",
+      "category": "People",
+      "sourceFingerprint": "7a5202ab47150c84d5a14fedd44b01726dfa0a5db082a113a186601611750fc8",
+      "translationFingerprint": "82aab4cb529a667ef503bada3db7785d650b7322cd8579c89407d0d6ed3fab1c",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0b61f3c8f64e89ef016ad9f63cc6ec87d2aab1cd9920959085",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:history",
+          "evidence": "This Italian explored",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:geography",
+          "evidence": "east coast of South America",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:biography-detail",
+          "evidence": "This Italian explored",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "This Italian",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:south-america",
+          "evidence": "South America",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:asia",
+          "evidence": "reaching Asia",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:historical-figure-name",
+          "evidence": "Amerigo Vespucci",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Amerigo Vespucci",
+          "role": "choice:0",
+          "kind": "historical-figure-name",
+          "confidence": "high",
+          "regions": [
+            "europe"
+          ]
+        },
+        {
+          "surface": "Marco Polo",
+          "role": "choice:1",
+          "kind": "historical-figure-name",
+          "confidence": "high",
+          "regions": [
+            "europe",
+            "asia"
+          ]
+        },
+        {
+          "surface": "Christopher Columbus",
+          "role": "choice:2",
+          "kind": "historical-figure-name",
+          "confidence": "high",
+          "regions": [
+            "europe"
+          ]
+        },
+        {
+          "surface": "Ferdinand Magellan",
+          "role": "choice:3",
+          "kind": "historical-figure-name",
+          "confidence": "high",
+          "regions": [
+            "europe"
+          ]
+        },
+        {
+          "surface": "South America",
+          "role": "prompt",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "south-america"
+          ]
+        },
+        {
+          "surface": "Asia",
+          "role": "prompt",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "asia"
+          ]
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": [
+        {
+          "tag": "location-mention:europe",
+          "reason": "No matching location entity evidence"
+        }
+      ]
+    },
+    {
+      "id": "otqa:fd6b77898cf0cf886c017550",
+      "category": "People",
+      "sourceFingerprint": "5fbc9c563878483e8804e066d2c5e047f2fb3ac36ddbb498c805cf7c7b0ed752",
+      "translationFingerprint": "4bafaf59fd08929a340cd51cf27f671e4e29db1b88fb1330deade06bad18c996",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0b61f3c8f64e89ef016ad9f63cc6ec87d2aab1cd9920959085",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:history",
+          "evidence": "Idi Amin was a member",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:politics",
+          "evidence": "Idi Amin",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "this tribe",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:historical-figure-name",
+          "evidence": "Idi Amin",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Idi Amin",
+          "role": "prompt",
+          "kind": "historical-figure-name",
+          "confidence": "high",
+          "regions": [
+            "africa"
+          ]
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:20ca0d1266537cd218fb09b8",
+      "category": "Religion & Faith",
+      "sourceFingerprint": "7ba3b5980faa31eaed9ac2c29ce33bad09069e74449718847a20f2fb5a859f3c",
+      "translationFingerprint": "253754a15d3b295f12b3befa8edd0b616a1ea02d4b93419552bc0f2590d838a0",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0b61f3c8f64e89ef016ad9f63cc6ec87d2aab1cd9920959085",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:religion",
+          "evidence": "In the context of Judaism",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "who was Abrahams wife",
+          "confidence": "high"
+        }
+      ],
+      "entities": [],
+      "eras": [],
+      "notes": [
+        "The prompt does not specify which textual tradition or account is intended."
+      ],
+      "proposals": [
+        {
+          "tag": "entity-kind:historical-figure-name",
+          "reason": "Abraham is a scriptural figure; historical status is not assumed."
+        },
+        {
+          "tag": "translation-uk-risk:missing-context",
+          "reason": "Non-high confidence",
+          "evidence": "In the context of Judaism"
+        }
+      ]
+    },
+    {
+      "id": "otqa:e040c7ce7b3630e4587ab022",
+      "category": "Religion & Faith",
+      "sourceFingerprint": "09c2ddd370b3b1d9c02880acaf908efa9cc63e43abaef4fab3e8f3d6eff373b9",
+      "translationFingerprint": "b427346f17dc5da105027731c65ff7695d69f2cb6ad108adec8eeba18d2ce738",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0b61f3c8f64e89ef016ad9f63cc6ec87d2aab1cd9920959085",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:religion",
+          "evidence": "holiest city in Judaism",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:geography",
+          "evidence": "This is the holiest city",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "This is the holiest city",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:asia",
+          "evidence": "Jerusalem",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:europe",
+          "evidence": "Constantinople",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Jerusalem",
+          "role": "choice:0",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "asia"
+          ]
+        },
+        {
+          "surface": "Constantinople",
+          "role": "choice:1",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "europe",
+            "asia"
+          ]
+        },
+        {
+          "surface": "Medina",
+          "role": "choice:2",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "asia"
+          ]
+        },
+        {
+          "surface": "Mecca",
+          "role": "choice:3",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "asia"
+          ]
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": [
+        {
+          "tag": "entity-kind:historical-figure-name",
+          "reason": "Non-high confidence",
+          "evidence": "Jewish people"
+        }
+      ]
+    },
+    {
+      "id": "otqa:999e9ee97c86473d7da9c264",
+      "category": "Science & Technology",
+      "sourceFingerprint": "7de4deb74067851dd9f84471a0bb08da140620278760e5b3ab074026dbbbdd3c",
+      "translationFingerprint": "908465082a1e773050a49fe901e3d7e14b39134709c9b4e389ee7734821b5cdd",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_064c73a3ba8dca0c016ad9f654538c87d28d06b295d8b55df1",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:science",
+          "evidence": "lightest element that is a metal",
+          "confidence": "high"
+        },
+        {
+          "tag": "subject:chemistry",
+          "evidence": "element that is a metal",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "What is the lightest element",
+          "confidence": "high"
+        }
+      ],
+      "entities": [],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:0ce031ab50ad42df8f937036",
+      "category": "Science & Technology",
+      "sourceFingerprint": "3ac26cbb414745b726f7da2d8ad190d4a0a83c4cbafb4ea76f33c02752559606",
+      "translationFingerprint": "301be0ded7975017451c2f552a2b67304e20c7110a967f30694e0442fd633e12",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_064c73a3ba8dca0c016ad9f654538c87d28d06b295d8b55df1",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:medicine",
+          "evidence": "human",
+          "confidence": "high"
+        },
+        {
+          "tag": "subject:anatomy",
+          "evidence": "How many teeth",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:number-recall",
+          "evidence": "How many teeth",
+          "confidence": "high"
+        },
+        {
+          "tag": "translation-uk-risk:missing-context",
+          "evidence": "an average human",
+          "confidence": "high"
+        }
+      ],
+      "entities": [],
+      "eras": [],
+      "notes": [
+        "The expected tooth count depends on age and whether wisdom teeth are included; the question does not specify either."
+      ],
+      "proposals": []
+    },
+    {
+      "id": "otqa:9ba3f2f0856c0cccc29f598e",
+      "category": "Sport",
+      "sourceFingerprint": "8c3ca9414dae52dec7caef063e3abbce7adeddcfec5305f0eb352e276c9b0e26",
+      "translationFingerprint": "4c18aad22ae764369ca51cad3d7be4ba67dc945b6df892fca28643bfd9d50fb9",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_064c73a3ba8dca0c016ad9f654538c87d28d06b295d8b55df1",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:sport",
+          "evidence": "baseball players",
+          "confidence": "high"
+        },
+        {
+          "tag": "subject:us-sports-leagues",
+          "evidence": "New York Mets",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:negative-question",
+          "evidence": "has never played",
+          "confidence": "high"
+        },
+        {
+          "tag": "audience:us-specific",
+          "evidence": "New York Mets",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:usa",
+          "evidence": "New York",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:north-america",
+          "evidence": "New York",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:brand-name",
+          "evidence": "New York Mets",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "New York Mets",
+          "role": "prompt",
+          "kind": "brand-name",
+          "confidence": "high",
+          "regions": [
+            "usa",
+            "north-america"
+          ]
+        },
+        {
+          "surface": "New York",
+          "role": "prompt",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "usa",
+            "north-america"
+          ]
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:fa06a42d3b7b554b03b928ca",
+      "category": "Sport",
+      "sourceFingerprint": "caa046f53521123445a743f5c5711f862f8546f28fa5fba121ec5b9445657e9d",
+      "translationFingerprint": "f68b517fc6b9a95cc28bd7002cb700f85fc18357e889329a0a92403f75e2ce3d",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_064c73a3ba8dca0c016ad9f654538c87d28d06b295d8b55df1",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:sport",
+          "evidence": "first skater to land a single Salchow",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:geography",
+          "evidence": "What country",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "What country did the first skater",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:europe",
+          "evidence": "Ukraine",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:usa",
+          "evidence": "United States",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:north-america",
+          "evidence": "United States",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:asia",
+          "evidence": "Russia",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Sweden",
+          "role": "choice:0",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "europe"
+          ]
+        },
+        {
+          "surface": "United States",
+          "role": "choice:1",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "usa",
+            "north-america"
+          ]
+        },
+        {
+          "surface": "Ukraine",
+          "role": "choice:2",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "europe"
+          ]
+        },
+        {
+          "surface": "Russia",
+          "role": "choice:3",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "europe",
+            "asia"
+          ]
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:abf540ce5d2063b5ce956e77",
+      "category": "Television",
+      "sourceFingerprint": "3a67f6c16b40ae5cdb7ba47608631c2ff2789808e6354431f10cd0f3f10218d5",
+      "translationFingerprint": "058735aee891ff334e93fb245d4af27c9573903d14145109eaec0d2396dd334b",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_064c73a3ba8dca0c016ad9f654538c87d28d06b295d8b55df1",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:television",
+          "evidence": "on the show Two and a Half Men",
+          "confidence": "high"
+        },
+        {
+          "tag": "subject:screen-characters",
+          "evidence": "Charlie Harper",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "What is the occupation",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:television-title",
+          "evidence": "Two and a Half Men",
+          "confidence": "high"
+        },
+        {
+          "tag": "translation-uk-risk:character-name",
+          "evidence": "Charlie Harper",
+          "confidence": "high"
+        },
+        {
+          "tag": "translation-uk-risk:title-localization",
+          "evidence": "Two and a Half Men",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Two and a Half Men",
+          "role": "prompt",
+          "kind": "television-title",
+          "confidence": "high",
+          "regions": []
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:ffd0155dcb4d50c787336dfa",
+      "category": "Television",
+      "sourceFingerprint": "dad28358b0f0859da5c7b10bea29997d8d39a1793b22a7eefa3db456db9cdf11",
+      "translationFingerprint": "687e884b856c027c5209ea08d4e8475d421ddb9779a5885f602c9cc773e48198",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_064c73a3ba8dca0c016ad9f654538c87d28d06b295d8b55df1",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:television",
+          "evidence": "produced the show St. Elsewhere",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:business",
+          "evidence": "Which company produced",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "Which company produced",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:television-title",
+          "evidence": "St. Elsewhere",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:brand-name",
+          "evidence": "MTM",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "St. Elsewhere",
+          "role": "prompt",
+          "kind": "television-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "MTM",
+          "role": "choice:0",
+          "kind": "brand-name",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "Windevil",
+          "role": "choice:1",
+          "kind": "brand-name",
+          "confidence": "medium",
+          "regions": []
+        },
+        {
+          "surface": "Miramar Productions",
+          "role": "choice:2",
+          "kind": "brand-name",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "SKG",
+          "role": "choice:3",
+          "kind": "brand-name",
+          "confidence": "high",
+          "regions": []
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:6474a7aa159b409b191e1fd3",
+      "category": "Video Games",
+      "sourceFingerprint": "85dc5bec83a1d464700a550a7d747af257ef4cb4390889e22de74600e2c93a27",
+      "translationFingerprint": "54fce0431cfa3352f4034cca138183a42bc3ecc33c97a6061fde000f9ab1781d",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_064c73a3ba8dca0c016ad9f654538c87d28d06b295d8b55df1",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:video-games",
+          "evidence": "Halo 3 ODST",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:geography",
+          "evidence": "What city",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "What city does Halo 3 ODST take place in",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:video-game-title",
+          "evidence": "Halo 3 ODST",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:north-america",
+          "evidence": "New York",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:usa",
+          "evidence": "New York",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Halo 3 ODST",
+          "role": "prompt",
+          "kind": "video-game-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "Toronto",
+          "role": "choice:2",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "north-america"
+          ]
+        },
+        {
+          "surface": "New York",
+          "role": "choice:3",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "usa",
+            "north-america"
+          ]
+        }
+      ],
+      "eras": [],
+      "notes": [
+        "New Mombasa is a fictional city, so it is not recorded as a real-world location mention."
+      ],
+      "proposals": []
+    },
+    {
+      "id": "otqa:4834777e3548e26666127205",
+      "category": "Video Games",
+      "sourceFingerprint": "114b707e17383d197ef7efd76bf3e0b817a83bda9ea4e30e919e10397b91cb12",
+      "translationFingerprint": "d6978154b02237c933d9d633dac8e01c5a42ffadaf581e3756fb06f31a0a7728",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_064c73a3ba8dca0c016ad9f654538c87d28d06b295d8b55df1",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:video-games",
+          "evidence": "Which of these games",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:negative-question",
+          "evidence": "was not released by Nintendo",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:brand-name",
+          "evidence": "Nintendo",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:video-game-title",
+          "evidence": "Assassins Creed",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Nintendo",
+          "role": "prompt",
+          "kind": "brand-name",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "Assassins Creed",
+          "role": "choice:0",
+          "kind": "video-game-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "Warioware",
+          "role": "choice:1",
+          "kind": "video-game-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "Mario Galaxy",
+          "role": "choice:2",
+          "kind": "video-game-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "Star Fox",
+          "role": "choice:3",
+          "kind": "video-game-title",
+          "confidence": "high",
+          "regions": []
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": [
+        {
+          "tag": "translation-uk-risk:english-spelling",
+          "reason": "The game title appears without an apostrophe; check standardized title styling before treating this as a localization risk."
+        },
+        {
+          "tag": "translation-uk-risk:title-localization",
+          "reason": "Non-high confidence",
+          "evidence": "Assassins Creed"
+        }
+      ]
+    },
+    {
+      "id": "otqa:ac4332e8310d1deb5dbad643",
+      "category": "World",
+      "sourceFingerprint": "80f745e049c8a86c101b22faaf90aa906856bcc7f91cb5a6a8ca9c486ea44c0f",
+      "translationFingerprint": "f306fd3e88d2e92e7983647afb4c7b2d3521e5ef227cdc45d390e4fc58a4fb25",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_064c73a3ba8dca0c016ad9f654538c87d28d06b295d8b55df1",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:history",
+          "evidence": "Vatican City established",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:geography",
+          "evidence": "Vatican City",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:date-recall",
+          "evidence": "What year",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:europe",
+          "evidence": "Vatican City",
+          "confidence": "high"
+        },
+        {
+          "tag": "era:1920s",
+          "evidence": "1929",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Vatican City",
+          "role": "prompt",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "europe"
+          ]
+        }
+      ],
+      "eras": [
+        {
+          "value": "1920s",
+          "confidence": "high",
+          "role": "event-year",
+          "evidence": "1929"
+        }
+      ],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:30c604f57cc950815f87ecb8",
+      "category": "World",
+      "sourceFingerprint": "1da9e4cbd19d92fdd31a8d957adf7f9a78eb92a925484ee81f6d6a6f2bfb10fc",
+      "translationFingerprint": "9664237d7cb71972387d30f16cd0b4adc6bd37b1be21251bcb1071166c085a9c",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_064c73a3ba8dca0c016ad9f654538c87d28d06b295d8b55df1",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:customs",
+          "evidence": "On Halloween, children go door-to-door",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:language",
+          "evidence": "children saying this",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:quote-identification",
+          "evidence": "children saying this",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:europe",
+          "evidence": "Scotland",
+          "confidence": "high"
+        },
+        {
+          "tag": "translation-uk-risk:quote-localization",
+          "evidence": "The sky is blue, the grass is green",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Scotland",
+          "role": "prompt",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "europe"
+          ]
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:002a050456cf833d90218ff5",
+      "category": "General Knowledge",
+      "sourceFingerprint": "8fdde9faad1aafe4ed63d691aa96cdbc5b5228089c3937efa273a17e8017f1c8",
+      "translationFingerprint": "d79b706c27be644451f2322bdab34e97c495f72dc898ba228d61f5a0c5bb524c",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e0b6f5623915ba5016ad9f6834c4c87d284125aa646308621",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:language",
+          "evidence": "Jokes about German sausages are the _________.",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:food",
+          "evidence": "German sausages",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:missing-word",
+          "evidence": "are the _________.",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:wordplay",
+          "evidence": "wurst",
+          "confidence": "high"
+        },
+        {
+          "tag": "style:humor",
+          "evidence": "Jokes about German sausages",
+          "confidence": "high"
+        },
+        {
+          "tag": "translation-uk-risk:wordplay",
+          "evidence": "wurst",
+          "confidence": "high"
+        }
+      ],
+      "entities": [],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:00005c2384668d6cda2e98c5",
+      "category": "General Knowledge",
+      "sourceFingerprint": "e39d3c79817fa927dfc8281826080ed4b90248b7f203acec3836213c54ce0f1a",
+      "translationFingerprint": "9f8837ed0042d0784929634b306d48a8d08b1b231522a1276ef3619289d39b08",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e0b6f5623915ba5016ad9f6834c4c87d284125aa646308621",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:movies",
+          "evidence": "This 2009 film",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:history",
+          "evidence": "Nelson Mandelas use",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:sport",
+          "evidence": "rugby team",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "This 2009 film deals with",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:movie-title",
+          "evidence": "Invictus",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:historical-figure-name",
+          "evidence": "Nelson Mandelas",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:africa",
+          "evidence": "South African rugby team",
+          "confidence": "high"
+        },
+        {
+          "tag": "era:2000s",
+          "evidence": "This 2009 film",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Invictus",
+          "role": "choice:0",
+          "kind": "movie-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "The Objective",
+          "role": "choice:1",
+          "kind": "movie-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "A Serious Man",
+          "role": "choice:3",
+          "kind": "movie-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "Nelson Mandelas",
+          "role": "prompt",
+          "kind": "historical-figure-name",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "South African",
+          "role": "prompt",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "africa"
+          ]
+        }
+      ],
+      "eras": [
+        {
+          "value": "2000s",
+          "confidence": "high",
+          "role": "work-release",
+          "evidence": "This 2009 film"
+        }
+      ],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:264cb736acb765ab7ffc4131",
+      "category": "General Knowledge",
+      "sourceFingerprint": "2ec02ff31dd13e4364d916d3ee0b1463f07c73c25035749898b5f0f7aa4b2932",
+      "translationFingerprint": "325618c051ffb6aa93aba46595dbd115142788082266f696c3eba45c1436a00b",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e0b6f5623915ba5016ad9f6834c4c87d284125aa646308621",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:books",
+          "evidence": "historical novel by Gore Vidal",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:history",
+          "evidence": "during the American Civil War",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:politics",
+          "evidence": "the Presidents political and personal struggles",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:negative-question",
+          "evidence": "One of these statements about it is wrong.",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:book-title",
+          "evidence": "Lincoln is a historical novel",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:usa",
+          "evidence": "American Civil War",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:north-america",
+          "evidence": "American Civil War",
+          "confidence": "high"
+        },
+        {
+          "tag": "era:1980s",
+          "evidence": "published in 1984",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Lincoln",
+          "role": "prompt",
+          "kind": "book-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "American Civil War",
+          "role": "choice:1",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "usa",
+            "north-america"
+          ]
+        }
+      ],
+      "eras": [
+        {
+          "value": "1980s",
+          "confidence": "high",
+          "role": "work-release",
+          "evidence": "published in 1984"
+        }
+      ],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:1e8dff8aa1666333778f0283",
+      "category": "World",
+      "sourceFingerprint": "8f16b425774bb87ffc98561db3c23602d564a9269df3bff3450899253839700f",
+      "translationFingerprint": "b71c2ae63f66d07dabfdd2e3005ce757c8787b7e5c78ca5fb623290a105a6cc6",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e0b6f5623915ba5016ad9f6834c4c87d284125aa646308621",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:geography",
+          "evidence": "upper and lower peninsulas of Michigan",
+          "confidence": "high"
+        },
+        {
+          "tag": "subject:landmarks",
+          "evidence": "The Mackinac Bridge",
+          "confidence": "high"
+        },
+        {
+          "tag": "subject:us-states",
+          "evidence": "Michigan",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "What connects",
+          "confidence": "high"
+        },
+        {
+          "tag": "audience:us-specific",
+          "evidence": "peninsulas of Michigan",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:usa",
+          "evidence": "Michigan",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:north-america",
+          "evidence": "Michigan",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Michigan",
+          "role": "prompt",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "usa",
+            "north-america"
+          ]
+        },
+        {
+          "surface": "The Mackinac Bridge",
+          "role": "choice:0",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "usa",
+            "north-america"
+          ]
+        },
+        {
+          "surface": "The Ambassador Bridge",
+          "role": "choice:1",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "usa",
+            "north-america"
+          ]
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:9f72f3441586396dfc0c5951",
+      "category": "Geography",
+      "sourceFingerprint": "bedf65ef398f5634747d4dddb0a65dcc0ebff66bf41fb933e70d524785790fa6",
+      "translationFingerprint": "87aa3dabf9571109c150f183cac6dbdc2bdb255122435b90bd69b7164242a944",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e0b6f5623915ba5016ad9f6834c4c87d284125aa646308621",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:geography",
+          "evidence": "Lake Victoria is located on the territories of these three countries.",
+          "confidence": "high"
+        },
+        {
+          "tag": "subject:countries",
+          "evidence": "Uganda, Kenya and Tanzania",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "these three countries",
+          "confidence": "high"
+        },
+        {
+          "tag": "location-mention:africa",
+          "evidence": "Lake Victoria",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Lake Victoria",
+          "role": "prompt",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "africa"
+          ]
+        },
+        {
+          "surface": "Uganda",
+          "role": "choice:0",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "africa"
+          ]
+        },
+        {
+          "surface": "Kenya",
+          "role": "choice:0",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "africa"
+          ]
+        },
+        {
+          "surface": "Tanzania",
+          "role": "choice:0",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "africa"
+          ]
+        },
+        {
+          "surface": "Sudan",
+          "role": "choice:1",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "africa"
+          ]
+        },
+        {
+          "surface": "Ethiopia",
+          "role": "choice:1",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "africa"
+          ]
+        },
+        {
+          "surface": "Zambia",
+          "role": "choice:2",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "africa"
+          ]
+        },
+        {
+          "surface": "Angola",
+          "role": "choice:2",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "africa"
+          ]
+        },
+        {
+          "surface": "Egypt",
+          "role": "choice:3",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "africa"
+          ]
+        },
+        {
+          "surface": "Morocco",
+          "role": "choice:3",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "africa"
+          ]
+        },
+        {
+          "surface": "Zimbabwe",
+          "role": "choice:3",
+          "kind": "location",
+          "confidence": "high",
+          "regions": [
+            "africa"
+          ]
+        }
+      ],
+      "eras": [],
+      "notes": [
+        "The source describes Lake Victoria as a decided source of the Nile while acknowledging other theories; source attribution is debated."
+      ],
+      "proposals": []
+    },
+    {
+      "id": "otqa:02537cd98a017381077e2d38",
+      "category": "Entertainment",
+      "sourceFingerprint": "886562462946bb6573f1b7709e65ca4979d14b04822ef83378979a79562156b6",
+      "translationFingerprint": "9980444cbcf824465f05907cfb86af423eb2dc473df79bbb8882942961735bac",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e0b6f5623915ba5016ad9f6834c4c87d284125aa646308621",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:sport",
+          "evidence": "World Wrestling Federation",
+          "confidence": "high"
+        },
+        {
+          "tag": "subject:celebrity-biography",
+          "evidence": "Hulk Hogan make his debut",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:date-recall",
+          "evidence": "In what year",
+          "confidence": "high"
+        },
+        {
+          "tag": "era:1970s",
+          "evidence": "1979",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:brand-name",
+          "evidence": "World Wrestling Federation",
+          "confidence": "high",
+          "derivedFrom": "entity"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "World Wrestling Federation",
+          "role": "prompt",
+          "kind": "brand-name",
+          "confidence": "high",
+          "regions": []
+        }
+      ],
+      "eras": [
+        {
+          "value": "1970s",
+          "confidence": "high",
+          "role": "event-year",
+          "evidence": "1979"
+        }
+      ],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:2cf9c76af98bfb1892cecd0d",
+      "category": "Entertainment",
+      "sourceFingerprint": "24e596a9dc31ddb8ea1a576a12a60724550d516002783d0fea8ae69835e0f125",
+      "translationFingerprint": "a310a3adf1caca4c2bd12dd3b8f1f8d39e96d5a19617fe62d64b17e0afeaf7b5",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e0b6f5623915ba5016ad9f6834c4c87d284125aa646308621",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:animals",
+          "evidence": "Which of these creatures",
+          "confidence": "high"
+        },
+        {
+          "tag": "subject:polar-regions",
+          "evidence": "Wild Arctic",
+          "confidence": "high"
+        },
+        {
+          "tag": "subject:habitats",
+          "evidence": "exhibit of the world famous SeaWorld attraction Wild Arctic",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:negative-question",
+          "evidence": "Which of these creatures is not featured",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:brand-name",
+          "evidence": "SeaWorld",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "SeaWorld",
+          "role": "prompt",
+          "kind": "brand-name",
+          "confidence": "high",
+          "regions": []
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": []
+    },
+    {
+      "id": "otqa:04450ab5ee40cd4553861bca",
+      "category": "Movies",
+      "sourceFingerprint": "27d831ad10d4bb0cffff07abde7a14f3e2a9e392eab87e6bb36b7b05e4f339f4",
+      "translationFingerprint": "6a3910431d728fa69c9298148e19f6d0ac63eb5eb0ae20b1ef88da3cdb35ef2b",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e0b6f5623915ba5016ad9f6834c4c87d284125aa646308621",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:movies",
+          "evidence": "portraying the same character in different movies",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:actors",
+          "evidence": "Judi Dench and Cate Blanchett",
+          "confidence": "high"
+        },
+        {
+          "tag": "subject:film-awards",
+          "evidence": "71st Academy Awards",
+          "confidence": "high"
+        },
+        {
+          "tag": "subject:oscars",
+          "evidence": "Academy Awards for Best Supporting Actress and Best Actress",
+          "confidence": "high"
+        },
+        {
+          "tag": "subject:screen-characters",
+          "evidence": "Name the character.",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "Name the character.",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:historical-figure-name",
+          "evidence": "Queen Elizabeth I",
+          "confidence": "high"
+        },
+        {
+          "tag": "era:1990s",
+          "evidence": "in 1999",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Queen Elizabeth I",
+          "role": "choice:0",
+          "kind": "historical-figure-name",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "Joan of Arc",
+          "role": "choice:1",
+          "kind": "historical-figure-name",
+          "confidence": "high",
+          "regions": [
+            "europe"
+          ]
+        },
+        {
+          "surface": "Virginia Woolf",
+          "role": "choice:2",
+          "kind": "historical-figure-name",
+          "confidence": "medium",
+          "regions": [
+            "europe"
+          ]
+        }
+      ],
+      "eras": [
+        {
+          "value": "1990s",
+          "confidence": "high",
+          "role": "award-year",
+          "evidence": "71st Academy Awards in 1999"
+        }
+      ],
+      "notes": [],
+      "proposals": [
+        {
+          "tag": "entity-kind:historical-figure-name",
+          "reason": "Virgin Mary is an option, but scriptural historicity is not assumed."
+        }
+      ]
+    },
+    {
+      "id": "otqa:014cebf21e474adef879f7d8",
+      "category": "Music",
+      "sourceFingerprint": "407a1760360881d39e05186bfb3d37cf633a1c447cf4eccb001da51e35fd7323",
+      "translationFingerprint": "db7e6a09a36badf761c85e4fa869751c0494995dad66638c65c10dcae806a59b",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e0b6f5623915ba5016ad9f6834c4c87d284125aa646308621",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:television",
+          "evidence": "What T.V. show",
+          "confidence": "high"
+        },
+        {
+          "tag": "topic:music",
+          "evidence": "the song The Devil Went Down to Georgia",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "What T.V. show",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:television-title",
+          "evidence": "The Simpsons",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:song-title",
+          "evidence": "The Devil Went Down to Georgia",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "The Muppets",
+          "role": "choice:0",
+          "kind": "television-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "The Simpsons",
+          "role": "choice:1",
+          "kind": "television-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "Arthur",
+          "role": "choice:2",
+          "kind": "television-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "Family Guy",
+          "role": "choice:3",
+          "kind": "television-title",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "The Devil Went Down to Georgia",
+          "role": "prompt",
+          "kind": "song-title",
+          "confidence": "high",
+          "regions": []
+        }
+      ],
+      "eras": [],
+      "notes": [],
+      "proposals": [
+        {
+          "tag": "location-mention:usa",
+          "reason": "Georgia appears in the song title; the prompt does not make clear whether it refers to the US state."
+        },
+        {
+          "tag": "location-mention:usa",
+          "reason": "Non-high confidence",
+          "evidence": "Georgia"
+        },
+        {
+          "tag": "location-mention:north-america",
+          "reason": "Non-high confidence",
+          "evidence": "Georgia"
+        }
+      ]
+    },
+    {
+      "id": "otqa:be5b2cf08ff274576eb1ef06",
+      "category": "World",
+      "sourceFingerprint": "0e01ed46a25b4648cb591e557fa9cd7049365373d1edb89fc1a09e4f77830d99",
+      "translationFingerprint": "514679065bf479ff0be96aaf9d48dd3c5daa8d2dc76cf50ad3016c53f4bf11ba",
+      "model": "gpt-6-luna",
+      "vocabularyVersion": 2,
+      "responseId": "resp_0e0b6f5623915ba5016ad9f6834c4c87d284125aa646308621",
+      "translationExamined": true,
+      "assignments": [
+        {
+          "tag": "topic:business",
+          "evidence": "Adidas was a company of two brothers",
+          "confidence": "high"
+        },
+        {
+          "tag": "form:identification",
+          "evidence": "Which is it?",
+          "confidence": "high"
+        },
+        {
+          "tag": "entity-kind:brand-name",
+          "evidence": "Puma",
+          "confidence": "high"
+        },
+        {
+          "tag": "era:1940s",
+          "evidence": "In 1948",
+          "confidence": "high"
+        }
+      ],
+      "entities": [
+        {
+          "surface": "Adidas",
+          "role": "prompt",
+          "kind": "brand-name",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "Puma",
+          "role": "choice:0",
+          "kind": "brand-name",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "Kenvelo",
+          "role": "choice:1",
+          "kind": "brand-name",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "Umbro",
+          "role": "choice:2",
+          "kind": "brand-name",
+          "confidence": "high",
+          "regions": []
+        },
+        {
+          "surface": "Reebok",
+          "role": "choice:3",
+          "kind": "brand-name",
+          "confidence": "high",
+          "regions": []
+        }
+      ],
+      "eras": [
+        {
+          "value": "1940s",
+          "confidence": "high",
+          "role": "event-year",
+          "evidence": "In 1948"
+        }
+      ],
+      "notes": [],
+      "proposals": []
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "otqa:00005c2384668d6cda2e98c5",
+      "expected": [
+        "entity-kind:historical-figure-name",
+        "entity-kind:movie-title",
+        "era:2000s",
+        "form:identification",
+        "location-mention:africa",
+        "topic:history",
+        "topic:movies",
+        "topic:sport",
+        "translation-uk-risk:title-localization"
+      ],
+      "actual": [
+        "entity-kind:historical-figure-name",
+        "entity-kind:movie-title",
+        "era:2000s",
+        "form:identification",
+        "location-mention:africa",
+        "topic:history",
+        "topic:movies",
+        "topic:sport"
+      ],
+      "missing": [
+        "translation-uk-risk:title-localization"
+      ],
+      "extra": [],
+      "jaccard": 0.8888888888888888
+    },
+    {
+      "id": "otqa:002a050456cf833d90218ff5",
+      "expected": [
+        "form:wordplay",
+        "location-mention:europe",
+        "style:humor",
+        "topic:food",
+        "topic:language",
+        "translation-uk-risk:answer-distinction",
+        "translation-uk-risk:wordplay"
+      ],
+      "actual": [
+        "form:missing-word",
+        "form:wordplay",
+        "style:humor",
+        "topic:food",
+        "topic:language",
+        "translation-uk-risk:wordplay"
+      ],
+      "missing": [
+        "location-mention:europe",
+        "translation-uk-risk:answer-distinction"
+      ],
+      "extra": [
+        "form:missing-word"
+      ],
+      "jaccard": 0.625
+    },
+    {
+      "id": "otqa:0139eb0a2c18a22157729df6",
+      "expected": [
+        "entity-kind:historical-figure-name",
+        "form:identification",
+        "subject:warfare",
+        "topic:history",
+        "topic:religion",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "actual": [
+        "entity-kind:historical-figure-name",
+        "form:identification",
+        "subject:warfare",
+        "topic:history"
+      ],
+      "missing": [
+        "topic:religion",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "extra": [],
+      "jaccard": 0.6666666666666666
+    },
+    {
+      "id": "otqa:014cebf21e474adef879f7d8",
+      "expected": [
+        "entity-kind:song-title",
+        "entity-kind:television-title",
+        "form:identification",
+        "topic:music",
+        "topic:television",
+        "translation-uk-risk:answer-distinction",
+        "translation-uk-risk:title-localization"
+      ],
+      "actual": [
+        "entity-kind:song-title",
+        "entity-kind:television-title",
+        "form:identification",
+        "topic:music",
+        "topic:television"
+      ],
+      "missing": [
+        "translation-uk-risk:answer-distinction",
+        "translation-uk-risk:title-localization"
+      ],
+      "extra": [],
+      "jaccard": 0.7142857142857143
+    },
+    {
+      "id": "otqa:02537cd98a017381077e2d38",
+      "expected": [
+        "audience:us-specific",
+        "entity-kind:brand-name",
+        "era:1970s",
+        "form:date-recall",
+        "subject:celebrity-biography",
+        "topic:sport",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "actual": [
+        "entity-kind:brand-name",
+        "era:1970s",
+        "form:date-recall",
+        "subject:celebrity-biography",
+        "topic:sport"
+      ],
+      "missing": [
+        "audience:us-specific",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "extra": [],
+      "jaccard": 0.7142857142857143
+    },
+    {
+      "id": "otqa:04450ab5ee40cd4553861bca",
+      "expected": [
+        "entity-kind:historical-figure-name",
+        "era:1990s",
+        "form:event-detail",
+        "subject:film-awards",
+        "subject:oscars",
+        "topic:actors",
+        "topic:history",
+        "topic:movies",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "actual": [
+        "entity-kind:historical-figure-name",
+        "era:1990s",
+        "form:identification",
+        "subject:film-awards",
+        "subject:oscars",
+        "subject:screen-characters",
+        "topic:actors",
+        "topic:movies"
+      ],
+      "missing": [
+        "form:event-detail",
+        "topic:history",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "extra": [
+        "form:identification",
+        "subject:screen-characters"
+      ],
+      "jaccard": 0.5454545454545454
+    },
+    {
+      "id": "otqa:0ce031ab50ad42df8f937036",
+      "expected": [
+        "form:number-recall",
+        "subject:anatomy",
+        "topic:science",
+        "translation-uk-risk:missing-context"
+      ],
+      "actual": [
+        "form:number-recall",
+        "subject:anatomy",
+        "topic:medicine",
+        "translation-uk-risk:missing-context"
+      ],
+      "missing": [
+        "topic:science"
+      ],
+      "extra": [
+        "topic:medicine"
+      ],
+      "jaccard": 0.6
+    },
+    {
+      "id": "otqa:15946071e56465513cd32cf8",
+      "expected": [
+        "audience:specialist-knowledge",
+        "form:biography-detail",
+        "topic:comics",
+        "translation-uk-risk:character-name"
+      ],
+      "actual": [
+        "entity-kind:brand-name",
+        "form:identification",
+        "topic:comics"
+      ],
+      "missing": [
+        "audience:specialist-knowledge",
+        "form:biography-detail",
+        "translation-uk-risk:character-name"
+      ],
+      "extra": [
+        "entity-kind:brand-name",
+        "form:identification"
+      ],
+      "jaccard": 0.16666666666666666
+    },
+    {
+      "id": "otqa:1bb4cfea9ffd14e040639843",
+      "expected": [
+        "form:comparison",
+        "topic:animals",
+        "translation-uk-risk:scientific-terminology"
+      ],
+      "actual": [
+        "form:identification",
+        "topic:animals"
+      ],
+      "missing": [
+        "form:comparison",
+        "translation-uk-risk:scientific-terminology"
+      ],
+      "extra": [
+        "form:identification"
+      ],
+      "jaccard": 0.25
+    },
+    {
+      "id": "otqa:1e8dff8aa1666333778f0283",
+      "expected": [
+        "audience:us-specific",
+        "form:identification",
+        "location-mention:north-america",
+        "location-mention:usa",
+        "subject:landmarks",
+        "subject:us-states",
+        "topic:geography",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "actual": [
+        "audience:us-specific",
+        "form:identification",
+        "location-mention:north-america",
+        "location-mention:usa",
+        "subject:landmarks",
+        "subject:us-states",
+        "topic:geography"
+      ],
+      "missing": [
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "extra": [],
+      "jaccard": 0.875
+    },
+    {
+      "id": "otqa:20ca0d1266537cd218fb09b8",
+      "expected": [
+        "form:biography-detail",
+        "topic:religion",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "actual": [
+        "form:identification",
+        "topic:religion"
+      ],
+      "missing": [
+        "form:biography-detail",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "extra": [
+        "form:identification"
+      ],
+      "jaccard": 0.25
+    },
+    {
+      "id": "otqa:23ec79ec81fd542252986386",
+      "expected": [
+        "audience:specialist-knowledge",
+        "entity-kind:movie-title",
+        "form:identification",
+        "subject:screen-characters",
+        "topic:actors",
+        "topic:movies",
+        "translation-uk-risk:character-name",
+        "translation-uk-risk:title-localization"
+      ],
+      "actual": [
+        "entity-kind:movie-title",
+        "entity-kind:television-title",
+        "form:biography-detail",
+        "form:identification",
+        "topic:actors",
+        "topic:movies"
+      ],
+      "missing": [
+        "audience:specialist-knowledge",
+        "subject:screen-characters",
+        "translation-uk-risk:character-name",
+        "translation-uk-risk:title-localization"
+      ],
+      "extra": [
+        "entity-kind:television-title",
+        "form:biography-detail"
+      ],
+      "jaccard": 0.4
+    },
+    {
+      "id": "otqa:24d4e6d4558e138f890e53c9",
+      "expected": [
+        "entity-kind:movie-title",
+        "era:1980s",
+        "form:identification",
+        "subject:screen-characters",
+        "topic:actors",
+        "topic:movies",
+        "translation-uk-risk:character-name",
+        "translation-uk-risk:title-localization"
+      ],
+      "actual": [
+        "entity-kind:movie-title",
+        "era:1980s",
+        "form:identification",
+        "topic:actors",
+        "topic:movies"
+      ],
+      "missing": [
+        "subject:screen-characters",
+        "translation-uk-risk:character-name",
+        "translation-uk-risk:title-localization"
+      ],
+      "extra": [],
+      "jaccard": 0.625
+    },
+    {
+      "id": "otqa:264cb736acb765ab7ffc4131",
+      "expected": [
+        "audience:specialist-knowledge",
+        "entity-kind:book-title",
+        "entity-kind:historical-figure-name",
+        "era:1980s",
+        "form:negative-question",
+        "location-mention:north-america",
+        "location-mention:usa",
+        "subject:us-presidents",
+        "topic:books",
+        "topic:history",
+        "topic:politics",
+        "translation-uk-risk:title-localization"
+      ],
+      "actual": [
+        "entity-kind:book-title",
+        "era:1980s",
+        "form:negative-question",
+        "location-mention:north-america",
+        "location-mention:usa",
+        "topic:books",
+        "topic:history",
+        "topic:politics"
+      ],
+      "missing": [
+        "audience:specialist-knowledge",
+        "entity-kind:historical-figure-name",
+        "subject:us-presidents",
+        "translation-uk-risk:title-localization"
+      ],
+      "extra": [],
+      "jaccard": 0.6666666666666666
+    },
+    {
+      "id": "otqa:288d8b48f33d758c4f7bfa99",
+      "expected": [
+        "entity-kind:song-title",
+        "form:missing-word",
+        "subject:song-lyrics",
+        "topic:music",
+        "translation-uk-risk:answer-distinction",
+        "translation-uk-risk:quote-localization"
+      ],
+      "actual": [
+        "entity-kind:brand-name",
+        "entity-kind:song-title",
+        "form:missing-word",
+        "subject:song-lyrics",
+        "topic:music"
+      ],
+      "missing": [
+        "translation-uk-risk:answer-distinction",
+        "translation-uk-risk:quote-localization"
+      ],
+      "extra": [
+        "entity-kind:brand-name"
+      ],
+      "jaccard": 0.5714285714285714
+    },
+    {
+      "id": "otqa:2cf9c76af98bfb1892cecd0d",
+      "expected": [
+        "audience:specialist-knowledge",
+        "entity-kind:brand-name",
+        "form:negative-question",
+        "topic:animals",
+        "topic:hobbies",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "actual": [
+        "entity-kind:brand-name",
+        "form:negative-question",
+        "subject:habitats",
+        "subject:polar-regions",
+        "topic:animals"
+      ],
+      "missing": [
+        "audience:specialist-knowledge",
+        "topic:hobbies",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "extra": [
+        "subject:habitats",
+        "subject:polar-regions"
+      ],
+      "jaccard": 0.375
+    },
+    {
+      "id": "otqa:30c604f57cc950815f87ecb8",
+      "expected": [
+        "form:quote-identification",
+        "location-mention:europe",
+        "topic:customs",
+        "topic:language",
+        "translation-uk-risk:idiom",
+        "translation-uk-risk:quote-localization"
+      ],
+      "actual": [
+        "form:quote-identification",
+        "location-mention:europe",
+        "topic:customs",
+        "topic:language",
+        "translation-uk-risk:quote-localization"
+      ],
+      "missing": [
+        "translation-uk-risk:idiom"
+      ],
+      "extra": [],
+      "jaccard": 0.8333333333333334
+    },
+    {
+      "id": "otqa:3a1eadfda5f30e7ce7ec8560",
+      "expected": [
+        "form:comparison",
+        "location-mention:africa",
+        "location-mention:north-america",
+        "location-mention:oceania",
+        "location-mention:usa",
+        "topic:geography",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "actual": [
+        "form:comparison",
+        "location-mention:africa",
+        "location-mention:europe",
+        "location-mention:north-america",
+        "location-mention:oceania",
+        "topic:geography"
+      ],
+      "missing": [
+        "location-mention:usa",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "extra": [
+        "location-mention:europe"
+      ],
+      "jaccard": 0.625
+    },
+    {
+      "id": "otqa:42ff9a20576b30d3a116b9d5",
+      "expected": [
+        "form:identification",
+        "location-mention:asia",
+        "location-mention:europe",
+        "subject:countries",
+        "topic:food",
+        "topic:geography"
+      ],
+      "actual": [
+        "form:identification",
+        "location-mention:asia",
+        "location-mention:europe",
+        "topic:food",
+        "topic:geography"
+      ],
+      "missing": [
+        "subject:countries"
+      ],
+      "extra": [],
+      "jaccard": 0.8333333333333334
+    },
+    {
+      "id": "otqa:4834777e3548e26666127205",
+      "expected": [
+        "entity-kind:brand-name",
+        "entity-kind:video-game-title",
+        "form:negative-question",
+        "topic:business",
+        "topic:video-games"
+      ],
+      "actual": [
+        "entity-kind:brand-name",
+        "entity-kind:video-game-title",
+        "form:negative-question",
+        "topic:video-games"
+      ],
+      "missing": [
+        "topic:business"
+      ],
+      "extra": [],
+      "jaccard": 0.8
+    },
+    {
+      "id": "otqa:48787dd35b1463594542aa7e",
+      "expected": [
+        "entity-kind:book-title",
+        "form:identification",
+        "topic:books",
+        "translation-uk-risk:character-name",
+        "translation-uk-risk:title-localization"
+      ],
+      "actual": [
+        "entity-kind:book-title",
+        "form:identification",
+        "topic:books"
+      ],
+      "missing": [
+        "translation-uk-risk:character-name",
+        "translation-uk-risk:title-localization"
+      ],
+      "extra": [],
+      "jaccard": 0.6
+    },
+    {
+      "id": "otqa:6214d34be45b2a43b8063cc7",
+      "expected": [
+        "form:event-detail",
+        "subject:space",
+        "topic:history",
+        "topic:science"
+      ],
+      "actual": [
+        "form:event-detail",
+        "subject:space",
+        "topic:history"
+      ],
+      "missing": [
+        "topic:science"
+      ],
+      "extra": [],
+      "jaccard": 0.75
+    },
+    {
+      "id": "otqa:6474a7aa159b409b191e1fd3",
+      "expected": [
+        "entity-kind:video-game-title",
+        "form:identification",
+        "location-mention:north-america",
+        "location-mention:usa",
+        "subject:cities",
+        "topic:video-games",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "actual": [
+        "entity-kind:video-game-title",
+        "form:identification",
+        "location-mention:north-america",
+        "location-mention:usa",
+        "topic:geography",
+        "topic:video-games"
+      ],
+      "missing": [
+        "subject:cities",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "extra": [
+        "topic:geography"
+      ],
+      "jaccard": 0.625
+    },
+    {
+      "id": "otqa:6a18781caa5fb51444844f2c",
+      "expected": [
+        "entity-kind:movie-title",
+        "era:1990s",
+        "era:2000s",
+        "form:identification",
+        "location-mention:europe",
+        "location-mention:north-america",
+        "location-mention:usa",
+        "topic:movies",
+        "translation-uk-risk:title-localization"
+      ],
+      "actual": [
+        "entity-kind:movie-title",
+        "era:1990s",
+        "era:2000s",
+        "form:identification",
+        "topic:movies"
+      ],
+      "missing": [
+        "location-mention:europe",
+        "location-mention:north-america",
+        "location-mention:usa",
+        "translation-uk-risk:title-localization"
+      ],
+      "extra": [],
+      "jaccard": 0.5555555555555556
+    },
+    {
+      "id": "otqa:723fb1ee0e73c6514eda7031",
+      "expected": [
+        "audience:specialist-knowledge",
+        "form:identification",
+        "topic:music",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "actual": [
+        "entity-kind:brand-name",
+        "form:identification",
+        "location-mention:north-america",
+        "location-mention:usa",
+        "topic:music"
+      ],
+      "missing": [
+        "audience:specialist-knowledge",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "extra": [
+        "entity-kind:brand-name",
+        "location-mention:north-america",
+        "location-mention:usa"
+      ],
+      "jaccard": 0.2857142857142857
+    },
+    {
+      "id": "otqa:8761fc2b1b08804b4edbb9d8",
+      "expected": [
+        "form:definition",
+        "topic:language",
+        "translation-uk-risk:answer-distinction",
+        "translation-uk-risk:english-spelling"
+      ],
+      "actual": [
+        "form:definition",
+        "topic:language",
+        "translation-uk-risk:english-spelling"
+      ],
+      "missing": [
+        "translation-uk-risk:answer-distinction"
+      ],
+      "extra": [],
+      "jaccard": 0.75
+    },
+    {
+      "id": "otqa:8989a2f1a08416c5586f664a",
+      "expected": [
+        "entity-kind:movie-title",
+        "era:2000s",
+        "form:identification",
+        "subject:celebrity-biography",
+        "topic:movies",
+        "topic:music",
+        "translation-uk-risk:title-localization"
+      ],
+      "actual": [
+        "entity-kind:movie-title",
+        "era:2000s",
+        "form:identification",
+        "topic:movies",
+        "topic:music"
+      ],
+      "missing": [
+        "subject:celebrity-biography",
+        "translation-uk-risk:title-localization"
+      ],
+      "extra": [],
+      "jaccard": 0.7142857142857143
+    },
+    {
+      "id": "otqa:8ff600d9385167d30dbecf52",
+      "expected": [
+        "form:identification",
+        "subject:animal-behaviour",
+        "topic:animals",
+        "topic:plants"
+      ],
+      "actual": [
+        "form:identification",
+        "subject:animal-behaviour",
+        "topic:animals",
+        "topic:plants"
+      ],
+      "missing": [],
+      "extra": [],
+      "jaccard": 1.0
+    },
+    {
+      "id": "otqa:96b333696ff88e3cfaf9fe0a",
+      "expected": [
+        "audience:specialist-knowledge",
+        "entity-kind:book-title",
+        "form:event-detail",
+        "topic:books",
+        "translation-uk-risk:character-name",
+        "translation-uk-risk:title-localization"
+      ],
+      "actual": [
+        "entity-kind:book-title",
+        "form:event-detail",
+        "topic:books",
+        "translation-uk-risk:title-localization"
+      ],
+      "missing": [
+        "audience:specialist-knowledge",
+        "translation-uk-risk:character-name"
+      ],
+      "extra": [],
+      "jaccard": 0.6666666666666666
+    },
+    {
+      "id": "otqa:98efd44a813b1df9aa8249d5",
+      "expected": [
+        "form:identification",
+        "location-mention:asia",
+        "topic:food",
+        "topic:plants"
+      ],
+      "actual": [
+        "form:identification",
+        "topic:food",
+        "topic:plants"
+      ],
+      "missing": [
+        "location-mention:asia"
+      ],
+      "extra": [],
+      "jaccard": 0.75
+    },
+    {
+      "id": "otqa:999e9ee97c86473d7da9c264",
+      "expected": [
+        "form:comparison",
+        "subject:chemistry",
+        "topic:science",
+        "translation-uk-risk:scientific-terminology"
+      ],
+      "actual": [
+        "form:identification",
+        "subject:chemistry",
+        "topic:science"
+      ],
+      "missing": [
+        "form:comparison",
+        "translation-uk-risk:scientific-terminology"
+      ],
+      "extra": [
+        "form:identification"
+      ],
+      "jaccard": 0.4
+    },
+    {
+      "id": "otqa:9ba3f2f0856c0cccc29f598e",
+      "expected": [
+        "audience:us-specific",
+        "entity-kind:brand-name",
+        "form:negative-question",
+        "location-mention:north-america",
+        "location-mention:usa",
+        "subject:us-sports-leagues",
+        "topic:sport",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "actual": [
+        "audience:us-specific",
+        "entity-kind:brand-name",
+        "form:negative-question",
+        "location-mention:north-america",
+        "location-mention:usa",
+        "subject:us-sports-leagues",
+        "topic:sport"
+      ],
+      "missing": [
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "extra": [],
+      "jaccard": 0.875
+    },
+    {
+      "id": "otqa:9c8207d7b3b502e61ae7467c",
+      "expected": [
+        "entity-kind:book-title",
+        "form:identification",
+        "topic:books",
+        "translation-uk-risk:answer-distinction",
+        "translation-uk-risk:character-name",
+        "translation-uk-risk:title-localization"
+      ],
+      "actual": [
+        "entity-kind:book-title",
+        "form:identification",
+        "topic:books",
+        "translation-uk-risk:title-localization"
+      ],
+      "missing": [
+        "translation-uk-risk:answer-distinction",
+        "translation-uk-risk:character-name"
+      ],
+      "extra": [],
+      "jaccard": 0.6666666666666666
+    },
+    {
+      "id": "otqa:9f72f3441586396dfc0c5951",
+      "expected": [
+        "form:identification",
+        "location-mention:africa",
+        "subject:countries",
+        "topic:geography",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "actual": [
+        "form:identification",
+        "location-mention:africa",
+        "subject:countries",
+        "topic:geography"
+      ],
+      "missing": [
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "extra": [],
+      "jaccard": 0.8
+    },
+    {
+      "id": "otqa:abf540ce5d2063b5ce956e77",
+      "expected": [
+        "entity-kind:television-title",
+        "form:biography-detail",
+        "subject:screen-characters",
+        "topic:television",
+        "translation-uk-risk:character-name",
+        "translation-uk-risk:title-localization"
+      ],
+      "actual": [
+        "entity-kind:television-title",
+        "form:identification",
+        "subject:screen-characters",
+        "topic:television",
+        "translation-uk-risk:character-name",
+        "translation-uk-risk:title-localization"
+      ],
+      "missing": [
+        "form:biography-detail"
+      ],
+      "extra": [
+        "form:identification"
+      ],
+      "jaccard": 0.7142857142857143
+    },
+    {
+      "id": "otqa:ac4332e8310d1deb5dbad643",
+      "expected": [
+        "era:1920s",
+        "form:date-recall",
+        "location-mention:europe",
+        "topic:geography",
+        "topic:history"
+      ],
+      "actual": [
+        "era:1920s",
+        "form:date-recall",
+        "location-mention:europe",
+        "topic:geography",
+        "topic:history"
+      ],
+      "missing": [],
+      "extra": [],
+      "jaccard": 1.0
+    },
+    {
+      "id": "otqa:ad8af3170695185af269e0af",
+      "expected": [
+        "entity-kind:historical-figure-name",
+        "form:identification",
+        "location-mention:asia",
+        "location-mention:europe",
+        "location-mention:south-america",
+        "topic:geography",
+        "topic:history",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "actual": [
+        "entity-kind:historical-figure-name",
+        "form:biography-detail",
+        "form:identification",
+        "location-mention:asia",
+        "location-mention:south-america",
+        "topic:geography",
+        "topic:history"
+      ],
+      "missing": [
+        "location-mention:europe",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "extra": [
+        "form:biography-detail"
+      ],
+      "jaccard": 0.6666666666666666
+    },
+    {
+      "id": "otqa:adc207c8314c27acaeda0c26",
+      "expected": [
+        "form:identification",
+        "subject:mythology",
+        "topic:religion",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "actual": [
+        "form:identification",
+        "topic:religion"
+      ],
+      "missing": [
+        "subject:mythology",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "extra": [],
+      "jaccard": 0.5
+    },
+    {
+      "id": "otqa:b578ab9c75790956eabe1f97",
+      "expected": [
+        "form:missing-word",
+        "topic:language",
+        "translation-uk-risk:idiom",
+        "translation-uk-risk:proverb-localization"
+      ],
+      "actual": [
+        "form:missing-word",
+        "topic:language",
+        "translation-uk-risk:proverb-localization"
+      ],
+      "missing": [
+        "translation-uk-risk:idiom"
+      ],
+      "extra": [],
+      "jaccard": 0.75
+    },
+    {
+      "id": "otqa:be5b2cf08ff274576eb1ef06",
+      "expected": [
+        "entity-kind:brand-name",
+        "era:1940s",
+        "form:identification",
+        "topic:business",
+        "topic:history"
+      ],
+      "actual": [
+        "entity-kind:brand-name",
+        "era:1940s",
+        "form:identification",
+        "topic:business"
+      ],
+      "missing": [
+        "topic:history"
+      ],
+      "extra": [],
+      "jaccard": 0.8
+    },
+    {
+      "id": "otqa:ce4edc4a85f74a80ff2c7c7f",
+      "expected": [
+        "form:identification",
+        "subject:mythology",
+        "topic:religion"
+      ],
+      "actual": [
+        "form:identification",
+        "topic:religion"
+      ],
+      "missing": [
+        "subject:mythology"
+      ],
+      "extra": [],
+      "jaccard": 0.6666666666666666
+    },
+    {
+      "id": "otqa:d0673a4c785555238b45562d",
+      "expected": [
+        "entity-kind:historical-figure-name",
+        "form:missing-word",
+        "form:quote-identification",
+        "location-mention:asia",
+        "topic:language",
+        "topic:philosophy",
+        "translation-uk-risk:quote-localization"
+      ],
+      "actual": [
+        "entity-kind:historical-figure-name",
+        "form:missing-word",
+        "form:quote-identification",
+        "topic:language",
+        "topic:philosophy",
+        "translation-uk-risk:proverb-localization"
+      ],
+      "missing": [
+        "location-mention:asia",
+        "translation-uk-risk:quote-localization"
+      ],
+      "extra": [
+        "translation-uk-risk:proverb-localization"
+      ],
+      "jaccard": 0.625
+    },
+    {
+      "id": "otqa:dc1e428a720a39e99d299c03",
+      "expected": [
+        "form:riddle",
+        "topic:animals"
+      ],
+      "actual": [
+        "form:riddle",
+        "topic:animals"
+      ],
+      "missing": [],
+      "extra": [],
+      "jaccard": 1.0
+    },
+    {
+      "id": "otqa:e040c7ce7b3630e4587ab022",
+      "expected": [
+        "form:identification",
+        "location-mention:asia",
+        "location-mention:europe",
+        "subject:cities",
+        "topic:geography",
+        "topic:religion",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "actual": [
+        "form:identification",
+        "location-mention:asia",
+        "location-mention:europe",
+        "topic:geography",
+        "topic:religion"
+      ],
+      "missing": [
+        "subject:cities",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "extra": [],
+      "jaccard": 0.7142857142857143
+    },
+    {
+      "id": "otqa:e25578851cee8ac9ed52992d",
+      "expected": [
+        "entity-kind:song-title",
+        "era:1970s",
+        "form:biography-detail",
+        "subject:celebrity-biography",
+        "topic:music"
+      ],
+      "actual": [
+        "entity-kind:song-title",
+        "era:1970s",
+        "form:biography-detail",
+        "form:identification",
+        "topic:music"
+      ],
+      "missing": [
+        "subject:celebrity-biography"
+      ],
+      "extra": [
+        "form:identification"
+      ],
+      "jaccard": 0.6666666666666666
+    },
+    {
+      "id": "otqa:e3e70c10d304c8dad8fc5aee",
+      "expected": [
+        "audience:us-specific",
+        "form:identification",
+        "location-mention:north-america",
+        "location-mention:usa",
+        "subject:us-states",
+        "topic:geography",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "actual": [
+        "audience:us-specific",
+        "form:identification",
+        "location-mention:north-america",
+        "location-mention:usa",
+        "subject:us-states",
+        "topic:geography"
+      ],
+      "missing": [
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "extra": [],
+      "jaccard": 0.8571428571428571
+    },
+    {
+      "id": "otqa:fa06a42d3b7b554b03b928ca",
+      "expected": [
+        "form:event-detail",
+        "location-mention:europe",
+        "location-mention:north-america",
+        "location-mention:usa",
+        "subject:countries",
+        "topic:geography",
+        "topic:sport",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "actual": [
+        "form:identification",
+        "location-mention:asia",
+        "location-mention:europe",
+        "location-mention:north-america",
+        "location-mention:usa",
+        "topic:geography",
+        "topic:sport"
+      ],
+      "missing": [
+        "form:event-detail",
+        "subject:countries",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "extra": [
+        "form:identification",
+        "location-mention:asia"
+      ],
+      "jaccard": 0.5
+    },
+    {
+      "id": "otqa:fbd6b8c95a9f4e9eea096338",
+      "expected": [
+        "entity-kind:book-title",
+        "form:identification",
+        "topic:books",
+        "translation-uk-risk:character-name",
+        "translation-uk-risk:title-localization"
+      ],
+      "actual": [
+        "entity-kind:book-title",
+        "form:identification",
+        "topic:books"
+      ],
+      "missing": [
+        "translation-uk-risk:character-name",
+        "translation-uk-risk:title-localization"
+      ],
+      "extra": [],
+      "jaccard": 0.6
+    },
+    {
+      "id": "otqa:fd6b77898cf0cf886c017550",
+      "expected": [
+        "audience:specialist-knowledge",
+        "entity-kind:historical-figure-name",
+        "form:biography-detail",
+        "topic:history",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "actual": [
+        "entity-kind:historical-figure-name",
+        "form:identification",
+        "topic:history",
+        "topic:politics"
+      ],
+      "missing": [
+        "audience:specialist-knowledge",
+        "form:biography-detail",
+        "translation-uk-risk:proper-name-localization"
+      ],
+      "extra": [
+        "form:identification",
+        "topic:politics"
+      ],
+      "jaccard": 0.2857142857142857
+    },
+    {
+      "id": "otqa:ffd0155dcb4d50c787336dfa",
+      "expected": [
+        "audience:specialist-knowledge",
+        "entity-kind:brand-name",
+        "entity-kind:television-title",
+        "form:identification",
+        "topic:business",
+        "topic:television",
+        "translation-uk-risk:title-localization"
+      ],
+      "actual": [
+        "entity-kind:brand-name",
+        "entity-kind:television-title",
+        "form:identification",
+        "topic:business",
+        "topic:television"
+      ],
+      "missing": [
+        "audience:specialist-knowledge",
+        "translation-uk-risk:title-localization"
+      ],
+      "extra": [],
+      "jaccard": 0.7142857142857143
+    }
+  ],
+  "meanTagJaccard": 0.6505122655122655,
+  "notIndependentAccuracy": true
+}

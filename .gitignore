@@ -26,3 +26,18 @@ sounds/**/archive-before-revision-2/
 sounds/sfx-v1/source/*.zip
 
 .wrangler/
+
+# Rebuildable bank derivatives and local audit working copies
+/question-bank/questions.csv
+/question-bank/tag-provenance.json
+/question-bank/**/responses/
+/question-bank/semantic-tagging/luna-*/questions.*
+/question-bank/semantic-tagging/luna-*/translations.uk.json
+/question-bank/semantic-tagging/luna-*/all-audit.json
+/question-bank/semantic-tagging/luna-*/review.html
+/question-bank/semantic-tagging/luna-*/preview.png
+/question-bank/quality-full-v1/review.html
+/question-bank/quality-full-v1/review.csv
+/question-bank/quality-full-v1/name-verification-queue.csv
+/question-bank/quality-full-v1/preview.png
+sounds/**/.tmp_*

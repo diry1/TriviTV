@@ -1,0 +1,7 @@
+{
+  "continue-1324": {
+    "replacement": "continue-1324-repair-timeout-reviewed",
+    "reason": "TimeoutError after 240 seconds; no response returned or response ID available with store:false. Original maximum cost remains reserved; targeted replacement explicitly reviewed before submission.",
+    "originalReservationRetained": true
+  }
+}

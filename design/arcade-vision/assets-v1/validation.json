@@ -1,0 +1,40 @@
+{
+  "svgAssets": 55,
+  "pngExports": 55,
+  "modeIllustrations": 4,
+  "playerAnimals": 8,
+  "animalVariants": [
+    "monochrome",
+    "colored-badge"
+  ],
+  "controlIcons": 16,
+  "panelAssets": 10,
+  "backgrounds": 5,
+  "brandAssets": 4,
+  "arena": {
+    "size": [
+      1536,
+      1024
+    ],
+    "alphaRange": [
+      0,
+      254
+    ],
+    "cornerAlpha": 0
+  },
+  "checks": [
+    "SVG parsing/viewBoxes",
+    "all PNG exports decode",
+    "arena alpha verified",
+    "eight unique player colors",
+    "static gallery links exist",
+    "browser visual review and sample mode switching"
+  ],
+  "limitations": [
+    "Not integrated into live game or APK",
+    "Generated illustration shades are not an indexed six-color palette",
+    "Player colors require animal/number labels for accessibility",
+    "SVG wordmarks reference Arial/system sans-serif; PNGs freeze typography"
+  ],
+  "generation": "Built-in image_gen for arena; original code-authored vectors/CSS"
+}

@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-22",
+  "newlyClassified": 35258,
+  "classifiedCombined": 37796,
+  "unclassifiedMain": 1130,
+  "uniqueIds": true,
+  "questionTextChoicesCorrectIndexesAndNonSemanticTagsUnchanged": true,
+  "allOwnedSemanticSourcesMatchMaster": true,
+  "standaloneMatchesMaster": true,
+  "cumulativeCostUsd": 4.970016289999999,
+  "ceilingUsd": 5,
+  "uncertainReservedUsd": 0.02439625,
+  "committedCeilingUsd": 4.99441254,
+  "allRequestsAccounted": true,
+  "continuedRequests": 1910,
+  "knownUsageResponses": 1909,
+  "uncertainRequests": 1,
+  "continuedUsage": {
+    "input_tokens": 12331544,
+    "output_tokens": 7907825
+  },
+  "eligibilityUnchanged": true,
+  "reviewUI": {
+    "questions": 37796,
+    "pagination": true,
+    "categoryFilter": true,
+    "tagSearch": true,
+    "funFilter": true,
+    "desktopWidth": 1440,
+    "mobileWidth": 390,
+    "noHorizontalOverflow": true,
+    "browserErrors": []
+  },
+  "tests": {
+    "continuation": 6,
+    "classifier": 8,
+    "masterIntegrity": 6,
+    "pilotIntegrity": "pass"
+  },
+  "remainingByCategory": {
+    "General Knowledge": 1130
+  },
+  "fullyClassifiedCategories": 19,
+  "dashboardServesMergedTags": true,
+  "localPaidRunnerActive": false
+}

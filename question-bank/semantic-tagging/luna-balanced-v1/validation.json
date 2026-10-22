@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-22",
+  "selected": 2500,
+  "equalCategoryCounts": true,
+  "categories": 20,
+  "perCategory": 125,
+  "masterRecords": 38926,
+  "questionContentAnswerKeysAndAllNonSemanticTagsUnchanged": true,
+  "ownedSourcesMatchMergedSemanticTags": true,
+  "standaloneMatchesMaster": true,
+  "allRequestsAccounted": true,
+  "apiCalls": 131,
+  "budgetUsd": 5,
+  "calculatedTokenCostUsd": 0.313091635,
+  "classifierTestsPassed": 8,
+  "masterIntegrityTestsPassed": 6,
+  "pilotIntegrityCheck": "pass",
+  "unresolvedTopics": 6,
+  "reviewUI": {
+    "desktopWidth": 1440,
+    "mobileWidth": 390,
+    "noHorizontalOverflow": true,
+    "pagination": true,
+    "categoryFilter": true,
+    "tagSearch": true,
+    "funFilter": true,
+    "browserErrors": []
+  },
+  "dashboardServesMergedTags": true
+}

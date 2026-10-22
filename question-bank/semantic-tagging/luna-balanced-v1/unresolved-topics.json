@@ -1,0 +1,321 @@
+[
+  {
+    "id": "otqa:c73cf2f1b77b3dd9af04dd96",
+    "category": "Celebrities",
+    "sourceFingerprint": "4f8a405d18f1fbe1fe93b2099edd395ed14a8889856b19839da2cd2df5b7474b",
+    "translationFingerprint": "507eba5a2886b697080ecd3ff12d7545fe7dbe967911db89cd30ad0f96bc62e1",
+    "model": "gpt-6-luna",
+    "vocabularyVersion": 2,
+    "responseId": "resp_0d413b6978a2064f016ad9f77b41c487d2bc6e5a03fc0f46a0",
+    "translationExamined": true,
+    "assignments": [
+      {
+        "tag": "form:identification",
+        "evidence": "What is Hoops McCanns daytime profession?",
+        "confidence": "high"
+      }
+    ],
+    "entities": [],
+    "eras": [],
+    "notes": [
+      "No high-confidence in-vocabulary topic; requires topic/vocabulary review, not a forced source-category tag."
+    ],
+    "proposals": [
+      {
+        "tag": "topic:comics",
+        "reason": "Non-high confidence",
+        "evidence": "Hoops McCanns"
+      },
+      {
+        "tag": "translation-uk-risk:proper-name-localization",
+        "reason": "Non-high confidence",
+        "evidence": "Hoops McCanns"
+      },
+      {
+        "tag": "topic:unresolved",
+        "reason": "No high-confidence topic; held for review"
+      }
+    ],
+    "reviewerAdditions": []
+  },
+  {
+    "id": "otqa:1dec6115c05ed15e2554fb36",
+    "category": "Entertainment",
+    "sourceFingerprint": "767ff8a8160b0720e9fd38e9092b0f83bd3263bdae7a795228ed8f55cc996590",
+    "translationFingerprint": "13d1709a7cc454ac6537effc2d0cc570d400c381f5858759a691f13d9691c2fd",
+    "model": "gpt-6-luna",
+    "vocabularyVersion": 2,
+    "responseId": "resp_0c46a10e16d27c7d016ad9f77b413887d29cfa9f08d0a8695f",
+    "translationExamined": true,
+    "assignments": [
+      {
+        "tag": "form:identification",
+        "evidence": "What was Alfred the butlers original family name?",
+        "confidence": "high"
+      }
+    ],
+    "entities": [],
+    "eras": [],
+    "notes": [
+      "The prompt does not identify which Alfred; the character context is missing.",
+      "No high-confidence in-vocabulary topic; requires topic/vocabulary review, not a forced source-category tag."
+    ],
+    "proposals": [
+      {
+        "tag": "topic:television",
+        "reason": "Alfred may refer to a television character, but the prompt gives no show or context."
+      },
+      {
+        "tag": "topic:comics",
+        "reason": "Non-high confidence",
+        "evidence": "Alfred the butlers"
+      },
+      {
+        "tag": "translation-uk-risk:character-name",
+        "reason": "Non-high confidence",
+        "evidence": "Alfred the butlers"
+      },
+      {
+        "tag": "topic:unresolved",
+        "reason": "No high-confidence topic; held for review"
+      }
+    ],
+    "reviewerAdditions": []
+  },
+  {
+    "id": "otqa:1e3e5aceb7e7d142d1f41149",
+    "category": "Entertainment",
+    "sourceFingerprint": "0606986bbe086492feb98c974e83015a9c194b430fcf84752ded2a28ff8bbddc",
+    "translationFingerprint": "68e6a87d37404d9d7bbd6358cf25feba5992fe7f37f9200c2f84e70d908eded3",
+    "model": "gpt-6-luna",
+    "vocabularyVersion": 2,
+    "responseId": "resp_007c9d4c5923e099016ad9f77b349487d2a7898754b122a4c9",
+    "translationExamined": true,
+    "assignments": [
+      {
+        "tag": "form:negative-question",
+        "evidence": "Which of the following is NOT",
+        "confidence": "high"
+      },
+      {
+        "tag": "form:identification",
+        "evidence": "one of the four Junkies",
+        "confidence": "high"
+      }
+    ],
+    "entities": [],
+    "eras": [],
+    "notes": [
+      "Translation was supplied; the four Junkies' show/context is not identified in the prompt.",
+      "No high-confidence in-vocabulary topic; requires topic/vocabulary review, not a forced source-category tag."
+    ],
+    "proposals": [
+      {
+        "tag": "topic:television",
+        "reason": "Non-high confidence",
+        "evidence": "the four Junkies"
+      },
+      {
+        "tag": "topic:unresolved",
+        "reason": "No high-confidence topic; held for review"
+      }
+    ],
+    "reviewerAdditions": []
+  },
+  {
+    "id": "otqa:1eae66e65fa878cb85760ac0",
+    "category": "Sport",
+    "sourceFingerprint": "6276fa424c57954dc4a92d73cf74ae5ffc9e46a0298e9b31d914bc7680582784",
+    "translationFingerprint": "47ba78b83b7fe0bd138602d5ec149efafa1f761bde3a2ab7d1caeb3c3317dfae",
+    "model": "gpt-6-luna",
+    "vocabularyVersion": 2,
+    "responseId": "resp_0be637eee4d78636016ad9f7fe404c87d282f5ef62f56c16bf",
+    "translationExamined": true,
+    "assignments": [
+      {
+        "tag": "form:identification",
+        "evidence": "What phrase would you connect",
+        "confidence": "high"
+      },
+      {
+        "tag": "style:humor",
+        "evidence": "sounds like the noise my old car made but its not",
+        "confidence": "high"
+      },
+      {
+        "tag": "location-mention:south-america",
+        "evidence": "African slaves in Brazil",
+        "confidence": "high"
+      },
+      {
+        "tag": "era:1980s",
+        "evidence": "Founded in 1980",
+        "confidence": "high"
+      }
+    ],
+    "entities": [
+      {
+        "surface": "Potosi region of Bolivia",
+        "role": "choice:0",
+        "kind": "location",
+        "confidence": "high",
+        "regions": [
+          "south-america"
+        ]
+      },
+      {
+        "surface": "Bolivia",
+        "role": "choice:0",
+        "kind": "location",
+        "confidence": "high",
+        "regions": [
+          "south-america"
+        ]
+      },
+      {
+        "surface": "Brazil",
+        "role": "choice:3",
+        "kind": "location",
+        "confidence": "high",
+        "regions": [
+          "south-america"
+        ]
+      }
+    ],
+    "eras": [
+      {
+        "value": "1980s",
+        "confidence": "high",
+        "role": "event-year",
+        "evidence": "Founded in 1980"
+      }
+    ],
+    "notes": [
+      "No high-confidence in-vocabulary topic; requires topic/vocabulary review, not a forced source-category tag."
+    ],
+    "proposals": [
+      {
+        "tag": "topic:sport",
+        "reason": "Non-high confidence",
+        "evidence": "this art"
+      },
+      {
+        "tag": "topic:language",
+        "reason": "Non-high confidence",
+        "evidence": "Tinku sounds like"
+      },
+      {
+        "tag": "entity:location",
+        "reason": "Non-exact entity span",
+        "evidence": "Mexico"
+      },
+      {
+        "tag": "location-mention:north-america",
+        "reason": "No matching location entity evidence"
+      },
+      {
+        "tag": "location-mention:africa",
+        "reason": "No matching location entity evidence"
+      },
+      {
+        "tag": "topic:unresolved",
+        "reason": "No high-confidence topic; held for review"
+      }
+    ],
+    "reviewerAdditions": []
+  },
+  {
+    "id": "otqa:d392fe284c7a669978868d76",
+    "category": "Literature",
+    "sourceFingerprint": "1f4d078364fa6cc32fc00172275474c2624670262315cfbe173b17ea7628a997",
+    "translationFingerprint": "780b5afd6d612596625578e948ece2e1541208b76c74736fbf6a9e44f29828df",
+    "model": "gpt-6-luna",
+    "vocabularyVersion": 2,
+    "responseId": "resp_043adb7c26fadb28016ad9f83cb7a487d28db4a3042b380642",
+    "translationExamined": true,
+    "assignments": [
+      {
+        "tag": "subject:screen-characters",
+        "evidence": "child carried by Susannah/Mia",
+        "confidence": "high"
+      },
+      {
+        "tag": "form:identification",
+        "evidence": "was called what",
+        "confidence": "high"
+      }
+    ],
+    "entities": [
+      {
+        "surface": "Mordred",
+        "role": "choice:0",
+        "kind": "book-title",
+        "confidence": "low",
+        "regions": []
+      }
+    ],
+    "eras": [],
+    "notes": [
+      "No high-confidence in-vocabulary topic; requires topic/vocabulary review, not a forced source-category tag."
+    ],
+    "proposals": [
+      {
+        "tag": "entity-kind:book-title",
+        "reason": "The prompt appears to refer to characters in The Dark Tower, but no book title is stated; Mordred is a character name, not a book title."
+      },
+      {
+        "tag": "topic:books",
+        "reason": "The prompt likely concerns a literary work, but does not identify it explicitly."
+      },
+      {
+        "tag": "topic:books",
+        "reason": "Non-high confidence",
+        "evidence": "Susannah/Mia"
+      },
+      {
+        "tag": "topic:unresolved",
+        "reason": "No high-confidence topic; held for review"
+      }
+    ],
+    "reviewerAdditions": []
+  },
+  {
+    "id": "otqa:3d79815256c7e141dc9ae2ab",
+    "category": "Hobbies",
+    "sourceFingerprint": "6b28acaba6b7619a89f6244500e08ff1db66351bf0b38d32737b7c07bfe80674",
+    "translationFingerprint": "6e999db6313667430d7f9ca53fc90ea54e961529428dfb5fae587422808fa1d5",
+    "model": "gpt-6-luna",
+    "vocabularyVersion": 2,
+    "responseId": "resp_06b72d43b407b0ff016ad9f85b5fb887d2b459b3bcb629488d",
+    "translationExamined": true,
+    "assignments": [
+      {
+        "tag": "form:identification",
+        "evidence": "How many groups are the twelve signs arranged in?",
+        "confidence": "high"
+      }
+    ],
+    "entities": [],
+    "eras": [],
+    "notes": [
+      "The prompt does not explicitly identify the twelve signs as zodiac signs.",
+      "No high-confidence in-vocabulary topic; requires topic/vocabulary review, not a forced source-category tag."
+    ],
+    "proposals": [
+      {
+        "tag": "form:number-recall",
+        "reason": "The question asks how many groups, but the expected response is a grouping arrangement rather than a single memorized quantity."
+      },
+      {
+        "tag": "topic:religion",
+        "reason": "Non-high confidence",
+        "evidence": "twelve signs"
+      },
+      {
+        "tag": "topic:unresolved",
+        "reason": "No high-confidence topic; held for review"
+      }
+    ],
+    "reviewerAdditions": []
+  }
+]

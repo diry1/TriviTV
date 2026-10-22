@@ -1,0 +1,20 @@
+[
+  {
+    "id": "otqa:95855dd6104c164499e6b6aa",
+    "scope": "Ukrainian spelling of Ingolstadt only; does not verify other choices or the entire question",
+    "finding": "Інгольштадт matches Audi Ukrainian primary material.",
+    "url": "https://media.audi.com/is/content/audi/country/de/de/rechtliches/betroffenenrechte/erprobungsfahrzeuge/Privacy-Policy_Ukrainisch.pdf"
+  },
+  {
+    "id": "otqa:56e6dedbe276694c96bf0f8d",
+    "scope": "Country/capital names and keyed capital only; other distractors not verified",
+    "finding": "Бахрейн / Манама supported by Encyclopedia of Modern Ukraine.",
+    "url": "https://esu.com.ua/article-41305"
+  },
+  {
+    "id": "otqa:21dc3a09bf02c304d63dd922",
+    "scope": "English MLB event identity; NOT Ukrainian player-name spelling verification",
+    "finding": "MLB primary source identifies Len Barker and the 15 May 1981 event, confirming residual league trivia.",
+    "url": "https://www.mlb.com/braves/video/bb-moments-barker-s-perfecto-c3235117"
+  }
+]

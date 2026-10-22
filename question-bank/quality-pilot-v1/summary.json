@@ -1,0 +1,30 @@
+{
+  "questions": 200,
+  "sourcePool": 7104,
+  "categories": 19,
+  "difficulty": {
+    "1": 12,
+    "2": 52,
+    "3": 79,
+    "4": 52,
+    "5": 5
+  },
+  "readingBurden": {
+    "low": 129,
+    "medium": 61,
+    "high": 10
+  },
+  "translationStatus": {
+    "pass": 58,
+    "needs-source-verification": 88,
+    "needs-repair": 54
+  },
+  "withSourceConcerns": 157,
+  "entityPairs": 830,
+  "withheldEntityPairs": 12,
+  "targetedExternalChecks": 3,
+  "reviewerCorrections": 5,
+  "costUsd": 0.054488,
+  "projectedSameModelPass7104Usd": 1.9354137599999999,
+  "bankUnchanged": true
+}

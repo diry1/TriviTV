@@ -1,0 +1,61 @@
+{
+  "revision": 3,
+  "records": {
+    "otqa:00005c2384668d6cda2e98c5": {
+      "category": null,
+      "status": {},
+      "tags": []
+    }
+  },
+  "history": [
+    {
+      "id": "otqa:00005c2384668d6cda2e98c5",
+      "at": "2026-10-22T08:52:24.704740+00:00",
+      "revision": 1,
+      "before": {},
+      "after": {
+        "category": "Science & Technology",
+        "status": {
+          "en": "hold"
+        },
+        "tags": [
+          "custom:manual:qa-persistence-test"
+        ]
+      }
+    },
+    {
+      "id": "otqa:00005c2384668d6cda2e98c5",
+      "at": "2026-10-22T08:54:26.455049+00:00",
+      "revision": 2,
+      "before": {
+        "category": "Science & Technology",
+        "status": {
+          "en": "hold"
+        },
+        "tags": [
+          "custom:manual:qa-persistence-test"
+        ]
+      },
+      "after": {
+        "category": null,
+        "status": {},
+        "tags": []
+      }
+    },
+    {
+      "id": "otqa:00005c2384668d6cda2e98c5",
+      "at": "2026-10-22T09:27:39.356844+00:00",
+      "revision": 3,
+      "before": {
+        "category": null,
+        "status": {},
+        "tags": []
+      },
+      "after": {
+        "category": null,
+        "status": {},
+        "tags": []
+      }
+    }
+  ]
+}

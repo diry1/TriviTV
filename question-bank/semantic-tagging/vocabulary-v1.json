@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "status": "draft-for-pilot",
+  "tagPrefix": "custom:semantic:",
+  "backendOnly": true,
+  "families": {
+    "topic": [
+      "animals",
+      "plants",
+      "food",
+      "geography",
+      "history",
+      "science",
+      "medicine",
+      "technology",
+      "mathematics",
+      "movies",
+      "television",
+      "music",
+      "books",
+      "visual-art",
+      "theatre",
+      "actors",
+      "sport",
+      "video-games",
+      "language",
+      "religion",
+      "politics",
+      "everyday-life",
+      "hobbies",
+      "customs"
+    ],
+    "subject": [
+      "film-awards",
+      "oscars",
+      "habitats",
+      "polar-regions",
+      "animal-behaviour",
+      "anatomy",
+      "space",
+      "chemistry",
+      "inventions",
+      "countries",
+      "cities",
+      "flags",
+      "landmarks",
+      "rulers",
+      "warfare",
+      "celebrity-biography",
+      "football",
+      "us-sports-leagues",
+      "us-presidents",
+      "us-states",
+      "song-lyrics",
+      "albums",
+      "film-characters",
+      "mythology"
+    ],
+    "form": [
+      "identification",
+      "comparison",
+      "negative-question",
+      "definition",
+      "date-recall",
+      "number-recall",
+      "calculation",
+      "sequence",
+      "riddle",
+      "wordplay",
+      "quote-identification",
+      "song-identification",
+      "biography-detail",
+      "event-detail",
+      "rule-knowledge"
+    ],
+    "style": [
+      "humor"
+    ],
+    "audience": [
+      "us-specific",
+      "ukraine-specific",
+      "europe-specific",
+      "specialist-knowledge"
+    ],
+    "translation-uk-risk": [
+      "wordplay",
+      "idiom",
+      "english-spelling",
+      "title-localization",
+      "character-name",
+      "proper-name-localization",
+      "scientific-terminology",
+      "unit-conversion",
+      "quote-localization",
+      "answer-distinction",
+      "missing-context"
+    ],
+    "entity-kind": [
+      "movie-title",
+      "book-title",
+      "brand-name",
+      "historical-figure-name"
+    ],
+    "location-mention": [
+      "usa",
+      "europe",
+      "asia",
+      "africa",
+      "north-america",
+      "south-america",
+      "oceania",
+      "antarctica"
+    ]
+  },
+  "dynamicFamilies": {
+    "era": {
+      "format": "YYYYs",
+      "example": "1990s",
+      "requiredEvidence": "Explicit date or reliably identified subject era relevant to the knowledge being asked; record role separately.",
+      "roles": [
+        "work-release",
+        "award-year",
+        "event-year",
+        "subject-active-period"
+      ]
+    }
+  },
+  "assignmentRules": {
+    "minimumTopics": 1,
+    "maximumTopicsNormally": 3,
+    "maximumSubjectsNormally": 3,
+    "maximumTagsNormally": 12,
+    "confidence": [
+      "high",
+      "medium",
+      "low"
+    ],
+    "confidenceIsCalibratedProbability": false,
+    "evidenceRequired": true,
+    "uncertainAssignments": "Keep as proposals in audit, not silently publish as definite tags.",
+    "unknownIsNotSafe": true,
+    "preserveSourceCategory": true,
+    "classificationIsNotFactualVerification": true,
+    "taggingDoesNotChangePoolEligibility": true,
+    "taggingDoesNotChangeCorrectAnswers": true,
+    "locationMentionsAreNotAudienceJudgements": true,
+    "locationMentionScope": "Prompt and all answer options, including distractors; retain surface name, role, region and uncertainty separately."
+  }
+}

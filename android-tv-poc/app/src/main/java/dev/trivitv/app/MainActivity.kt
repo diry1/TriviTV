@@ -68,8 +68,8 @@ class MainActivity : Activity() {
      if(path.split('/').any { it==".." || it.isBlank() } || path.contains('\\')) return missing()
      return try {
       val extension=path.substringAfterLast('.')
-      val mime=when(extension) { "ogg"->"audio/ogg";"wav"->"audio/wav";"js"->"text/javascript";"css"->"text/css";"json"->"application/json";"txt"->"text/plain";else->"text/html" }
-      if(extension in listOf("ogg","wav")) {
+      val mime=when(extension) { "ogg"->"audio/ogg";"wav"->"audio/wav";"js","mjs"->"text/javascript";"css"->"text/css";"json"->"application/json";"txt"->"text/plain";"svg"->"image/svg+xml";"png"->"image/png";"webp"->"image/webp";"jpg","jpeg"->"image/jpeg";else->"text/html" }
+      if(extension in listOf("ogg","wav","png","webp","jpg","jpeg")) {
        val bytes=assets.open("web/$path").use { it.readBytes() }
        val range=request.requestHeaders.entries.firstOrNull { it.key.equals("Range",true) }?.value
        val match=range?.let { Regex("bytes=(\\d+)-(\\d*)").matchEntire(it) }

@@ -1,0 +1,137 @@
+[
+  {
+    "id": "otqa:75041124a8ecb370435089c5",
+    "sourceFingerprint": "ce4115a5b3a0c73297d4c041e529ff020a0f1fb0e07b27feb24c75f340e0831d",
+    "tag": "topic:language",
+    "evidence": "4IS",
+    "confidence": "high",
+    "reviewer": "Codex content review",
+    "rationale": "Rebus/number-letter pronunciation tests language, rather than memorized vehicle facts."
+  },
+  {
+    "id": "otqa:74af08675d6ad5e589a2f559",
+    "sourceFingerprint": "fd7a2bffc04d60fd26a30f271ea8bb2f16197bcc0ad04b29329aaa392e2fb76c",
+    "tag": "topic:medicine",
+    "evidence": "ailments",
+    "confidence": "high",
+    "reviewer": "Codex content review",
+    "rationale": "Question explicitly asks about ailments; restore topic after model evidence excerpt failed exact match."
+  },
+  {
+    "id": "otqa:9d585a4769c9f2ec93135590",
+    "sourceFingerprint": "1a0f09bde64267b3731df498f80be509a59b62a5cd51c5784c256635d9435256",
+    "tag": "topic:video-games",
+    "evidence": "Sims 2 University expansion pack",
+    "confidence": "high",
+    "reviewer": "Codex content review",
+    "rationale": "Explicit game expansion title; model evidence added a non-source The prefix."
+  },
+  {
+    "id": "otqa:4cbe74350a32e5a11f28e984",
+    "sourceFingerprint": "e958983e6f79a289da801604871077f50bc89a9026339ce6fb7dcb0a24ead50f",
+    "tag": "topic:medicine",
+    "evidence": "disorders",
+    "confidence": "high",
+    "reviewer": "Codex content review",
+    "rationale": "Explicit disorder/condition identification; author profession alone does not make it literary-work knowledge."
+  },
+  {
+    "id": "otqa:de98dd8fb6910c51378cf7ba",
+    "sourceFingerprint": "80f080db1bb8b473451995fa4fe7a99394f8d569bc4dd62e210ebc4d59bb2891",
+    "tag": "topic:science",
+    "evidence": "organelles",
+    "confidence": "high",
+    "reviewer": "Codex content review",
+    "rationale": "Explicit cellular biology terminology establishes science topic."
+  },
+  {
+    "id": "otqa:6ce03aafb18e1e357ffe1486",
+    "sourceFingerprint": "cfc817c0f7d792bdd444c2955995569586ccf0ae46f9c6af253a9ced8669f009",
+    "tag": "topic:radio",
+    "evidence": "radio station",
+    "confidence": "high",
+    "reviewer": "Codex content review",
+    "vocabularyVersion": 3,
+    "rationale": "Explicit radio broadcasting, a vocabulary gap rather than television."
+  },
+  {
+    "id": "otqa:90af2989c9468eee80112e8b",
+    "sourceFingerprint": "dded0e2cf38f7d19faef18a66c6521ebeadec25a7860e7d3b911aca0eee26eb9",
+    "tag": "topic:animation",
+    "evidence": "anime character Sasuke",
+    "confidence": "high",
+    "reviewer": "Codex content review",
+    "vocabularyVersion": 3,
+    "rationale": "Explicit anime character; source Video Games category does not establish game knowledge."
+  },
+  {
+    "id": "otqa:f022d6d2c305ab90629998a5",
+    "sourceFingerprint": "0a86f682a06612c16238c409e3531cb4fa9d482115921fe103dced0ff821cf2c",
+    "tag": "topic:people",
+    "evidence": "personal 2008 interview",
+    "confidence": "high",
+    "reviewer": "Codex content review",
+    "vocabularyVersion": 3,
+    "rationale": "Personal biographical interview detail, not a question about musical work."
+  },
+  {
+    "id": "otqa:6de7dc486068b3c4ffb6915c",
+    "sourceFingerprint": "72370b61888ea451eb8d619e74fea090d67dfd0bd0c637f63c30a5b231eb5a1e",
+    "tag": "topic:books",
+    "evidence": "the Dursleys send Harry",
+    "confidence": "high",
+    "reviewer": "Codex content review",
+    "vocabularyVersion": 3,
+    "rationale": "Recognizable Harry Potter family/plot detail; retain missing-work-context note, no answer correction."
+  },
+  {
+    "id": "otqa:daa5ab068d37adcb81552b48",
+    "sourceFingerprint": "dad7914206ad348c442daba66381c930a0684ed81e10f0c5c526131884841693",
+    "tag": "topic:people",
+    "evidence": "Miss America title holders",
+    "confidence": "high",
+    "reviewer": "Codex content review",
+    "vocabularyVersion": 3,
+    "rationale": "Biographical/pageant title-holder count; no requirement to force it into acting or music."
+  },
+  {
+    "id": "otqa:d8e89d8de4f6389379db6388",
+    "sourceFingerprint": "41220a3b690af69c3bf2fcb11f2671a5bd3dbe9c42ce058e5c7efd9b27372969",
+    "tag": "topic:music",
+    "evidence": "Smash Hit Mony, Mony",
+    "confidence": "high",
+    "reviewer": "Codex content review",
+    "vocabularyVersion": 3,
+    "rationale": "Explicit group/hit-song identification even though original category is People."
+  },
+  {
+    "id": "otqa:cb244b8c8bd2280f89437dc2",
+    "sourceFingerprint": "bdf4ab14b6d0844ae390ac3150e8d3834af84ac9c16d41ac53b25ec97af6b688",
+    "tag": "topic:sport",
+    "evidence": "Baseball Hall of Fame",
+    "confidence": "high",
+    "reviewer": "Codex content review",
+    "vocabularyVersion": 3,
+    "rationale": "Explicit baseball-player jersey detail."
+  },
+  {
+    "id": "otqa:51f3f507024d2abca5e223d5",
+    "sourceFingerprint": "9bb5666382e59e9863ebfc5ad241a1633fa3936cb888c851e8374647a2a70834",
+    "tag": "topic:philosophy",
+    "evidence": "it is a paradox",
+    "confidence": "high",
+    "reviewer": "Codex content review",
+    "vocabularyVersion": 3,
+    "rationale": "Self-referential barber paradox; the canonical answer explicitly identifies a paradox."
+  },
+  {
+    "id": "otqa:fe06d6791dc494806509833a",
+    "sourceFingerprint": "a4885e1f1f78dc9fe3c3b3527362cd1cbc7be830106171dce6e32972255b63d4",
+    "tag": "topic:everyday-life",
+    "evidence": "stairs",
+    "confidence": "high",
+    "reviewer": "Codex content review",
+    "vocabularyVersion": 3,
+    "rationale": "Household-object positional riddle, with rug/scarf/curtain/towel alternatives; no specialized subject required."
+  }
+]

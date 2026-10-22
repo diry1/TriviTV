@@ -1,0 +1,24 @@
+{
+  "overlappingGroups": {
+    "US-specific / too American": 4220,
+    "Numeric choices / dates / calculation effort": 3128,
+    "Song identification or song details without audio": 1995,
+    "Obscure / specialist / fan minutiae": 1095,
+    "Word meanings / etymology (heuristic holds)": 1029,
+    "Religion category": 480,
+    "Wording / translation / terminology / units": 366,
+    "Previously reviewed exclusions / revise / undecided": 169,
+    "Missing required image / audio / context": 127,
+    "Pokemon / Guitar Hero": 67,
+    "Category mismatch": 14,
+    "Age / sensitive content review": 10,
+    "Older entertainment review": 6
+  },
+  "uniqueFilteredOrHeld": 11682,
+  "multipleGroups": 1001,
+  "previousOutcomesAmongBlocked": {
+    "exclude": 7234,
+    "hold": 4331,
+    "candidate": 117
+  }
+}

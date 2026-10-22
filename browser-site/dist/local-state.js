@@ -1,4 +1,5 @@
 import * as rules from './game.js';
+import {millionaireAvailability} from './difficulty.mjs';
 import { questions,categories } from './questions.js';
 const key='trivitv-browser-progress-v1';
 let game;
@@ -7,7 +8,8 @@ function persist(){try{localStorage.setItem(key,JSON.stringify(game));}catch{thr
 export function clearProgress(){game=null;localStorage.removeItem(key);}
 function tick(){if(!game)return;let changed=false;for(let i=0;i<100;i++){const deadline=rules.nextDeadline(game);if(deadline===null||Date.now()<deadline)break;changed=rules.advance(game,deadline)||changed;}if(changed)persist();}
 export async function localApi(path,body){
-  if(path==='/api/config')return {categories,partyDemo:false,bank:{count:916},languages:{uk:{count:916}},pools:{uk:{Europe:{count:916,categories:Object.fromEntries(categories.map(c=>[c,questions.filter(q=>q.category===c).length]))}}}};
+  if(path==='/api/config')return {categories,partyDemo:false,bank:{count:questions.length},languages:{uk:{count:questions.length}},pools:{uk:{Europe:{count:questions.length,categories:Object.fromEntries(categories.map(c=>[c,questions.filter(q=>q.category===c).length]))}}}};
+  if(path==='/api/millionaire-availability')return millionaireAvailability(questions.filter(q=>body.categories.includes(q.category)));
   if(path==='/api/rooms'){
     game=rules.createGame({...body,language:'uk',region:'Europe'});
     rules.addPlayer(game,'Гравець',true);persist();

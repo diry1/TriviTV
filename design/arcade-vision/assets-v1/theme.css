@@ -1,0 +1,12 @@
+/* TriviTV playful arcade asset theme; opt in with class arcade. */
+:root{--cream:#F6E7C8;--navy:#1B233F;--teal:#16A6A4;--coral:#F06D5F;--mango:#F5B940;--lavender:#A88BEB;--p1:#6599D1;--p2:#D99B63;--p3:#79AE84;--p4:#A18BC5;--p5:#CD87AA;--p6:#C5B56C;--p7:#70B8BF;--p8:#C6C8CE}
+.arcade{font-family:'Segoe UI',Arial,sans-serif;color:var(--cream);background:var(--navy)}
+.arcade button,.arcade .button{font:inherit;font-weight:800;font-size:1rem;border:3px solid var(--navy);border-radius:16px;background:var(--teal);color:var(--navy);padding:14px 23px;box-shadow:0 6px 0 var(--navy),inset 0 2px 0 #ffffff55;cursor:pointer;transition:transform 100ms ease,box-shadow 100ms ease}
+.arcade button:focus-visible,.arcade .is-focus{outline:3px solid var(--cream);outline-offset:3px;background:var(--mango)}
+.arcade button:active,.arcade .is-pressed{transform:translateY(4px);box-shadow:0 2px 0 var(--navy),inset 0 2px 0 #ffffff33}
+.arcade .is-correct{background:var(--teal)}.arcade .is-incorrect{background:var(--coral)}.arcade .is-locked{background:var(--lavender)}.arcade button:disabled{background:#596179;color:#E0E3EA;cursor:default;transform:none;box-shadow:none}
+.arcade .panel{border:3px solid var(--navy);border-radius:24px;background:var(--cream);color:var(--navy);padding:24px;box-shadow:0 8px 0 #12192e}
+.arcade .animal{width:48px;height:48px;object-fit:contain}.arcade .mode-symbol{width:112px;height:112px;object-fit:contain}
+@media(prefers-reduced-motion:reduce){.arcade *{transition:none!important}}
+
+.arcade .control-icon{display:inline-block;width:1.5em;height:1.5em;background:currentColor;mask:var(--icon) center/contain no-repeat;-webkit-mask:var(--icon) center/contain no-repeat}

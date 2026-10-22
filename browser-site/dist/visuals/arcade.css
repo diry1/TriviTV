@@ -1,0 +1,126 @@
+/* Shared production skin. Layout and remote-control state remain owned by each game. */
+:root{--arc-cream:#F6E7C8;--arc-navy:#1B233F;--arc-teal:#16A6A4;--arc-coral:#F06D5F;--arc-mango:#F5B940;--arc-lavender:#A88BEB}
+body.arcade-ui{--bg:#1B233F;--panel:#26324E;--line:#525E7C;--lime:#16A6A4;--amber:#F5B940;--muted:#D5D6E8;--text:#F6E7C8;font-family:'Segoe UI',Arial,sans-serif;color:var(--arc-cream);background:#1B233F url('./backgrounds/trivia.svg') center/cover fixed;color-scheme:dark}
+body.arcade-ui[data-screen=home],body.arcade-ui[data-phase=setup]{background-image:url('./backgrounds/menu.svg')}
+body.arcade-ui[data-visual-mode=millionaire]:not([data-screen=home]){background-image:url('./backgrounds/millionaire.svg')}
+body.arcade-ui[data-visual-mode=imposter]:not([data-screen=home]){background-image:url('./backgrounds/imposter.svg')}
+body.arcade-ui[data-visual-mode=duel]:not([data-screen=home]){background-image:url('./backgrounds/turf.svg')}
+.arcade-ui .logo{display:block;line-height:0;flex-shrink:0;letter-spacing:0;font-size:0}
+.arcade-ui .logo img{display:block;width:clamp(130px,17vw,250px);height:7vh;min-height:34px;object-fit:contain;object-position:left center}
+.arcade-ui h1,.arcade-ui h2{font-weight:900;letter-spacing:-.5px;text-shadow:0 2px 0 #10182d60}
+.arcade-ui p,.arcade-ui .intro-note,.arcade-ui .status{color:#D9DBE9}
+.arcade-ui button,.arcade-ui .button{border:2px solid var(--arc-navy);border-radius:13px;background:#334262;color:var(--arc-cream);box-shadow:0 4px 0 #10182D,inset 0 2px 0 #ffffff28;font-weight:750;transition:none}
+.arcade-ui button:focus,.arcade-ui button:focus-visible,.arcade-ui a:focus-visible,.arcade-ui summary:focus-visible{outline:3px solid var(--arc-mango);outline-offset:3px;box-shadow:0 4px 0 #10182D,0 0 0 5px #1b233f88}
+.arcade-ui button:focus:not(.primary):not(.mode):not(.answer):not(.tile){background:#455778}
+.arcade-ui button:active:not(:disabled){box-shadow:0 1px 0 #10182D,inset 0 2px 0 #ffffff22}
+.arcade-ui button.primary{background:var(--arc-mango);color:var(--arc-navy);border-color:var(--arc-navy)}
+.arcade-ui button.primary:focus{background:#FFD27D;color:var(--arc-navy)}
+.arcade-ui button:disabled{opacity:.58;cursor:default}
+.arcade-ui .eyebrow{color:var(--arc-mango)}
+.arcade-ui footer,.arcade-ui footer a{color:#D8D9E6}
+.arcade-ui header button,.arcade-ui footer button{box-shadow:0 2px 0 #10182D}
+.arcade-ui .tag,.arcade-ui .pill{color:var(--arc-cream);background:#26334e;border:1px solid #8290A9}
+.arcade-ui .panel,.arcade-ui .join-card,.arcade-ui .tv-dialog{background:#29354F;border:3px solid var(--arc-navy);box-shadow:0 7px 0 #10182D;border-radius:22px}
+.arcade-ui .question-box{background:var(--arc-cream);color:var(--arc-navy);border:3px solid var(--arc-navy);border-radius:18px;padding:1.1vh 1.25vw;box-shadow:0 5px 0 #10182D}
+.arcade-ui .question-box h1{text-shadow:none}
+.arcade-ui button.answer{border:3px solid var(--arc-navy);background:var(--arc-cream);color:var(--arc-navy);box-shadow:0 5px 0 #10182D,inset 0 2px 0 #fff9;border-radius:15px;font-weight:800}
+.arcade-ui .answer>span:first-child{background:var(--arc-navy);color:var(--arc-cream);border-radius:9px;font-weight:900}
+.arcade-ui .answer:disabled{opacity:.83}
+.arcade-ui .answer.correct{background:var(--arc-teal);color:var(--arc-navy);border-color:var(--arc-cream);opacity:1}
+.arcade-ui .answer.incorrect,.arcade-ui .answer.wrong{background:var(--arc-coral);color:var(--arc-navy);opacity:1}
+.arcade-ui .answer.selected,.arcade-ui .answer.picked{outline:3px solid var(--arc-mango);outline-offset:1px;opacity:1}
+.arcade-ui .answer.correct::after{content:'✓';font-weight:900;color:var(--arc-navy);margin-left:auto}
+.arcade-ui .answer.incorrect::after,.arcade-ui .answer.wrong::after{content:'×';font-weight:900;color:var(--arc-navy);margin-left:auto}
+.arcade-ui .answer>b:empty{display:none}
+.arcade-ui .timer{color:var(--arc-mango);font-weight:900;text-shadow:0 2px 0 var(--arc-navy)}
+.arcade-ui .feedback,.arcade-ui .feedback>strong{color:var(--arc-cream)}
+.arcade-ui .prize{color:var(--arc-mango)}
+.arcade-ui .prize-ladder{background:#29334e;border:3px solid var(--arc-navy);border-radius:18px;box-shadow:0 5px 0 #10182D}
+.arcade-ui .ladder-step{border-radius:7px;color:#F1EBE5;background:#37405E}
+.arcade-ui .ladder-step.current{background:var(--arc-mango);color:var(--arc-navy);border-color:var(--arc-cream);font-weight:900}
+.arcade-ui .ladder-step.passed{color:#84D0C3}.arcade-ui .ladder-step.current.passed{color:var(--arc-navy)}
+.arcade-ui .ladder-status strong{color:var(--arc-mango)}
+.arcade-ui .chip.selected{background:#28545F;border-color:var(--arc-teal);color:var(--arc-cream)}
+.arcade-ui .tv-categories .chip>b{color:var(--arc-mango)}
+.arcade-ui .trophy{width:12vh;height:12vh;font-size:0;background:url('./icons/trophy.svg') center/contain no-repeat;filter:drop-shadow(0 2px 0 #F6E7C8)}
+.arcade-ui .big-score{color:var(--arc-mango)}
+/* Four illustrated mode cards, with explicit horizontal remote navigation. */
+.solo-tv.arcade-ui .all-modes-home{grid-template-rows:auto minmax(0,1fr) auto auto;gap:1.4vh}
+.solo-tv.arcade-ui .all-modes-home .tv-modes{grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:1fr;gap:1.4vw}
+.solo-tv.arcade-ui .all-modes-home .mode{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:.9vh;padding:1.4vh 1vw;background:var(--arc-cream);color:var(--arc-navy);border:3px solid var(--arc-navy);border-radius:18px;box-shadow:0 6px 0 #10182D;min-height:0;text-align:center;overflow:visible}
+.solo-tv.arcade-ui .all-modes-home .mode.active{background:var(--arc-cream);border-color:var(--arc-navy);outline:3px solid var(--arc-mango);outline-offset:3px}
+.solo-tv.arcade-ui .all-modes-home .mode:focus{outline:3px solid #fff;outline-offset:3px;box-shadow:0 6px 0 #10182D,0 0 0 7px var(--arc-mango)}
+.solo-tv.arcade-ui .all-modes-home .mode-icon{display:block;flex:1;min-height:9vh;width:100%;height:auto;margin:0}
+.solo-tv.arcade-ui .mode-icon img{width:100%;height:100%;max-height:24vh;object-fit:contain;display:block}
+.solo-tv.arcade-ui .all-modes-home .mode strong{font-size:clamp(16px,2.8vh,29px);line-height:1.1;white-space:nowrap}
+.solo-tv.arcade-ui .all-modes-home .mode .player-count{color:var(--arc-navy);background:#1b233f10;border:1px solid #1b233f30;padding:4px 9px;font-weight:800;font-size:clamp(11px,1.8vh,18px)}
+.solo-tv.arcade-ui .all-modes-home .mode p{color:#39425D;font-size:clamp(11px,1.65vh,17px);line-height:1.2;min-height:2.4em;max-width:22ch}
+.solo-tv.arcade-ui .home-actions{grid-template-columns:1fr 1fr}.solo-tv.arcade-ui .home-actions button{padding:1.3vh 1.4vw}
+.solo-tv.arcade-ui .home-actions span{color:inherit;opacity:.8}
+.solo-tv.arcade-ui .pool-count{color:var(--arc-cream)}
+.solo-tv.arcade-ui[data-screen=home]{background-image:linear-gradient(#1b233f20,#1b233f66),url('./backgrounds/menu.svg')}
+.solo-tv.arcade-ui[data-screen=home] header{position:relative}
+.solo-tv.arcade-ui[data-screen=home] .screen-title h1{font-size:clamp(23px,4vh,44px)}
+.solo-tv.arcade-ui .home-extra button{background:#334262}
+/* Animal player badges carry a number as well as color. Compact dots remain on answers. */
+.arcade-ui .player-dot{position:relative;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;border:0;background:var(--player-color);border-radius:8px;box-shadow:0 2px 0 #10182D;overflow:visible;font-style:normal}
+.arcade-ui .player-dot img{width:100%;height:100%;display:block;object-fit:contain}
+.arcade-ui .player-dot>span{position:absolute;right:-3px;bottom:-3px;display:grid;place-items:center;min-width:11px;height:11px;padding:0 2px;border-radius:3px;background:var(--arc-navy);color:var(--arc-cream);font:800 8px/1 Arial;border:1px solid var(--player-color)}
+.arcade-ui .player>.player-dot{width:36px;height:36px;flex-basis:36px}
+.arcade-ui .scoreboard .player>.player-dot{width:26px;height:26px;flex-basis:26px}
+.arcade-ui .answer-votes .player-dot{width:25px;height:25px;flex-basis:25px}
+.arcade-ui .turf-grid .player-dot{width:17px;height:17px;flex-basis:17px}
+.arcade-ui .turf-grid .player-dot>span{min-width:8px;height:8px;font-size:6px;right:-1px;bottom:-1px}
+.arcade-ui .player{background:#2B3854;border:2px solid var(--arc-navy);border-radius:13px;box-shadow:0 3px 0 #10182D;color:var(--arc-cream)}
+.arcade-ui .player small{color:#D5D6E8}
+.arcade-ui .player.done{border-color:#58C1B8}
+.arcade-ui .answer.has-votes{padding-bottom:42px}
+/* Room / phone experience shares the artwork and colors. */
+.arcade-ui.party-app .party-modes button,.arcade-ui .game-link{background:var(--arc-cream);color:var(--arc-navy);border:3px solid var(--arc-navy);box-shadow:0 5px 0 #10182D;border-radius:18px;gap:8px}
+.arcade-ui.party-app .party-modes button.chosen{outline:3px solid var(--arc-mango);outline-offset:2px}
+.arcade-ui .party-modes button>span{display:block;width:100%;height:13vh;min-height:55px}
+.arcade-ui .mode-art{display:block;width:100%;height:100%;max-height:150px;object-fit:contain}
+.arcade-ui .party-modes small,.arcade-ui .game-link small{color:#414A65}
+.arcade-ui .game-link strong{color:var(--arc-navy)}
+.arcade-ui .game-link .mode-art{height:100px}
+.arcade-ui .setup-panel{padding:20px}.arcade-ui .setup-panel h1{margin:8px 0 16px}
+.arcade-ui .qr-panel{border:3px solid var(--arc-navy);box-shadow:0 6px 0 #10182D;background:var(--arc-cream)}
+.arcade-ui .qr-panel canvas{border:7px solid white;border-radius:7px;box-sizing:content-box;max-width:calc(100% - 14px)}
+.arcade-ui .qr-panel .code{color:var(--arc-navy);letter-spacing:4px}
+.arcade-ui .qr-panel p{color:#3A435F}
+.arcade-ui .hero>div:first-child{position:relative;padding-bottom:180px;background:url('./art/party-arena.webp') left bottom/270px auto no-repeat}
+.arcade-ui .hero h1 em{color:var(--arc-mango)}
+.arcade-ui .join-card input{background:#1B233F;border:2px solid #8190AC;color:var(--arc-cream)}
+.arcade-ui .join-card label{color:var(--arc-cream)}
+.arcade-ui .category-list label{background:#344564;color:var(--arc-cream)}
+.arcade-ui .secret-card{background:#3B3154;border:3px solid var(--arc-lavender);box-shadow:0 6px 0 #10182D}
+.arcade-ui .turf-grid .tile{background:#344A62;border:2px solid var(--arc-navy);border-radius:10px;box-shadow:0 3px 0 #10182D}
+.arcade-ui .turf-grid .tile.available{background:#426575}
+.arcade-ui .turf-grid .tile.owned{background:var(--territory-color);opacity:1;color:var(--arc-navy)}
+.arcade-ui .turf-grid .tile small{color:#E1E6EE}
+.arcade-ui .turf-grid .tile.owned small{color:var(--arc-navy)}
+.arcade-ui .turf-grid .tile.bid-mark{border-color:var(--arc-mango);opacity:1}
+.arcade-ui .turf-grid .tile.winning{box-shadow:inset 0 0 0 3px var(--arc-cream),0 3px 0 #10182D}
+.arcade-ui .turf-grid .tile.cooling{background:repeating-linear-gradient(135deg,#3B3855,#3B3855 6px,#252D45 6px,#252D45 12px);opacity:1;color:var(--arc-cream)}
+.arcade-ui .turf-bid-summary{color:var(--arc-cream)}
+.arcade-ui .turf-layout aside{padding:12px;background:#26334d;border:2px solid var(--arc-navy);border-radius:16px}
+.arcade-ui.party-app .question{background:var(--arc-cream);color:var(--arc-navy);border:3px solid var(--arc-navy);border-radius:15px;padding:10px 14px;box-shadow:0 5px 0 #10182D;text-shadow:none}
+.arcade-ui.party-app .question .player-dot{box-shadow:none}
+@media(min-width:900px) and (max-height:700px){
+ .arcade-ui .setup-panel h1{font-size:28px}.arcade-ui .party-modes button{padding:9px}.arcade-ui .party-modes button>strong{font-size:16px}.arcade-ui .party-modes small{font-size:11px}.arcade-ui .setup-panel>p{font-size:12px;margin:8px 0}.arcade-ui .setup-panel .actions{margin-top:12px}
+ .arcade-ui .player>.player-dot{width:28px;height:28px;flex-basis:28px}.arcade-ui .scoreboard .player>.player-dot{width:23px;height:23px;flex-basis:23px}
+ .arcade-ui .turf-layout aside{padding:8px}.arcade-ui .turf-layout{grid-template-columns:min(42vh,400px) 1fr}
+ .arcade-ui.party-app .question{padding:8px 11px}.arcade-ui .answer:focus{outline-offset:1px}.arcade-ui .party-stage h1{font-size:27px}
+ .arcade-ui[data-role=host] .room-title{margin-bottom:9px}.arcade-ui[data-role=host] .room-title h1{font-size:28px;margin:4px 0}
+ .arcade-ui[data-role=host] .qr-panel{padding:9px}.arcade-ui[data-role=host] .qr-panel canvas{width:160px!important;height:160px!important}
+ .arcade-ui[data-role=host] .qr-panel p{font-size:12px;line-height:1.35;margin:5px 0}.arcade-ui[data-role=host] .qr-panel .code{font-size:27px}
+}
+@media(max-width:700px){
+ .solo-tv.arcade-ui .all-modes-home .tv-modes{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:12px}
+ .solo-tv.arcade-ui .all-modes-home .mode{padding:9px;gap:4px}.solo-tv.arcade-ui .all-modes-home .mode-icon{display:block;min-height:30px;max-height:9vh}.solo-tv.arcade-ui .mode-icon img{max-height:9vh}
+ .solo-tv.arcade-ui .all-modes-home .mode strong{font-size:17px}.solo-tv.arcade-ui .all-modes-home .mode p{font-size:11px;min-height:0}.solo-tv.arcade-ui .all-modes-home .mode .player-count{font-size:11px;padding:3px 7px}
+ .arcade-ui .logo img{width:140px;height:44px}.arcade-ui .party-modes button>span{height:85px}.arcade-ui .hero>div:first-child{padding-bottom:0;background:none}
+ .arcade-ui.party-app .question{padding:13px;font-size:23px}.arcade-ui .answer.has-votes{padding-bottom:43px}.arcade-ui .player>.player-dot{width:32px;height:32px;flex-basis:32px}
+ .arcade-ui .turf-layout aside{padding:9px}.arcade-ui .turf-grid .tile{padding:5px}.arcade-ui .join-card{padding:22px}
+}
+@media(prefers-reduced-motion:reduce){.arcade-ui *{transition:none!important;animation:none!important}}

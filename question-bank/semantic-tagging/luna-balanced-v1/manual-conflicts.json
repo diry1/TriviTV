@@ -1,0 +1,188 @@
+[
+  {
+    "id": "otqa:9c8207d7b3b502e61ae7467c",
+    "keptManual": [
+      "custom:semantic:entity-kind:book-title",
+      "custom:semantic:form:identification",
+      "custom:semantic:topic:books",
+      "custom:semantic:translation-uk-risk:answer-distinction",
+      "custom:semantic:translation-uk-risk:character-name",
+      "custom:semantic:translation-uk-risk:title-localization"
+    ],
+    "modelProposal": [
+      "custom:semantic:entity-kind:book-title",
+      "custom:semantic:form:identification",
+      "custom:semantic:topic:books"
+    ]
+  },
+  {
+    "id": "otqa:24d4e6d4558e138f890e53c9",
+    "keptManual": [
+      "custom:semantic:entity-kind:movie-title",
+      "custom:semantic:era:1980s",
+      "custom:semantic:form:identification",
+      "custom:semantic:subject:screen-characters",
+      "custom:semantic:topic:actors",
+      "custom:semantic:topic:movies",
+      "custom:semantic:translation-uk-risk:character-name",
+      "custom:semantic:translation-uk-risk:title-localization"
+    ],
+    "modelProposal": [
+      "custom:semantic:entity-kind:movie-title",
+      "custom:semantic:era:1980s",
+      "custom:semantic:form:identification",
+      "custom:semantic:subject:screen-characters",
+      "custom:semantic:topic:actors",
+      "custom:semantic:topic:movies"
+    ]
+  },
+  {
+    "id": "otqa:fd6b77898cf0cf886c017550",
+    "keptManual": [
+      "custom:semantic:audience:specialist-knowledge",
+      "custom:semantic:entity-kind:historical-figure-name",
+      "custom:semantic:form:biography-detail",
+      "custom:semantic:topic:history",
+      "custom:semantic:translation-uk-risk:proper-name-localization"
+    ],
+    "modelProposal": [
+      "custom:semantic:entity-kind:historical-figure-name",
+      "custom:semantic:form:biography-detail",
+      "custom:semantic:subject:celebrity-biography",
+      "custom:semantic:topic:history"
+    ]
+  },
+  {
+    "id": "otqa:48787dd35b1463594542aa7e",
+    "keptManual": [
+      "custom:semantic:entity-kind:book-title",
+      "custom:semantic:form:identification",
+      "custom:semantic:topic:books",
+      "custom:semantic:translation-uk-risk:character-name",
+      "custom:semantic:translation-uk-risk:title-localization"
+    ],
+    "modelProposal": [
+      "custom:semantic:entity-kind:book-title",
+      "custom:semantic:form:identification",
+      "custom:semantic:topic:books"
+    ]
+  },
+  {
+    "id": "otqa:b578ab9c75790956eabe1f97",
+    "keptManual": [
+      "custom:semantic:form:missing-word",
+      "custom:semantic:topic:language",
+      "custom:semantic:translation-uk-risk:idiom",
+      "custom:semantic:translation-uk-risk:proverb-localization"
+    ],
+    "modelProposal": [
+      "custom:semantic:form:missing-word",
+      "custom:semantic:topic:language",
+      "custom:semantic:translation-uk-risk:proverb-localization"
+    ]
+  },
+  {
+    "id": "otqa:264cb736acb765ab7ffc4131",
+    "keptManual": [
+      "custom:semantic:audience:specialist-knowledge",
+      "custom:semantic:entity-kind:book-title",
+      "custom:semantic:entity-kind:historical-figure-name",
+      "custom:semantic:era:1980s",
+      "custom:semantic:form:negative-question",
+      "custom:semantic:location-mention:north-america",
+      "custom:semantic:location-mention:usa",
+      "custom:semantic:subject:us-presidents",
+      "custom:semantic:topic:books",
+      "custom:semantic:topic:history",
+      "custom:semantic:topic:politics",
+      "custom:semantic:translation-uk-risk:title-localization"
+    ],
+    "modelProposal": [
+      "custom:semantic:entity-kind:book-title",
+      "custom:semantic:era:1980s",
+      "custom:semantic:location-mention:north-america",
+      "custom:semantic:location-mention:usa",
+      "custom:semantic:topic:books",
+      "custom:semantic:topic:history"
+    ]
+  },
+  {
+    "id": "otqa:6214d34be45b2a43b8063cc7",
+    "keptManual": [
+      "custom:semantic:form:event-detail",
+      "custom:semantic:subject:space",
+      "custom:semantic:topic:history",
+      "custom:semantic:topic:science"
+    ],
+    "modelProposal": [
+      "custom:semantic:form:identification",
+      "custom:semantic:subject:space",
+      "custom:semantic:topic:history",
+      "custom:semantic:topic:science"
+    ]
+  },
+  {
+    "id": "otqa:15946071e56465513cd32cf8",
+    "keptManual": [
+      "custom:semantic:audience:specialist-knowledge",
+      "custom:semantic:form:biography-detail",
+      "custom:semantic:topic:comics",
+      "custom:semantic:translation-uk-risk:character-name"
+    ],
+    "modelProposal": [
+      "custom:semantic:entity-kind:brand-name",
+      "custom:semantic:form:identification",
+      "custom:semantic:topic:comics"
+    ]
+  },
+  {
+    "id": "otqa:9f72f3441586396dfc0c5951",
+    "keptManual": [
+      "custom:semantic:form:identification",
+      "custom:semantic:location-mention:africa",
+      "custom:semantic:subject:countries",
+      "custom:semantic:topic:geography",
+      "custom:semantic:translation-uk-risk:proper-name-localization"
+    ],
+    "modelProposal": [
+      "custom:semantic:form:identification",
+      "custom:semantic:location-mention:africa",
+      "custom:semantic:subject:countries",
+      "custom:semantic:topic:geography"
+    ]
+  },
+  {
+    "id": "otqa:4834777e3548e26666127205",
+    "keptManual": [
+      "custom:semantic:entity-kind:brand-name",
+      "custom:semantic:entity-kind:video-game-title",
+      "custom:semantic:form:negative-question",
+      "custom:semantic:topic:business",
+      "custom:semantic:topic:video-games"
+    ],
+    "modelProposal": [
+      "custom:semantic:entity-kind:brand-name",
+      "custom:semantic:entity-kind:video-game-title",
+      "custom:semantic:form:negative-question",
+      "custom:semantic:topic:video-games"
+    ]
+  },
+  {
+    "id": "otqa:2cf9c76af98bfb1892cecd0d",
+    "keptManual": [
+      "custom:semantic:audience:specialist-knowledge",
+      "custom:semantic:entity-kind:brand-name",
+      "custom:semantic:form:negative-question",
+      "custom:semantic:topic:animals",
+      "custom:semantic:topic:hobbies",
+      "custom:semantic:translation-uk-risk:proper-name-localization"
+    ],
+    "modelProposal": [
+      "custom:semantic:entity-kind:brand-name",
+      "custom:semantic:form:identification",
+      "custom:semantic:form:negative-question",
+      "custom:semantic:topic:animals",
+      "custom:semantic:topic:business"
+    ]
+  }
+]

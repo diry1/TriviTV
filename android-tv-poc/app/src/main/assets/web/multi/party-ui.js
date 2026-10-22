@@ -1,7 +1,8 @@
+import {modeArt} from './visual-identity.js';
 import {renderTurf} from './turf-ui.js';
 const voteLabel=n=>n+' '+(n%10===1&&n%100!==11?'голос':n%10>=2&&n%10<=4&&(n%100<12||n%100>14)?'голоси':'голосів');
 export const MODES={trivia:{name:'Вікторина',icon:'✳',description:'1–8 гравців · 10 запитань · одному або з друзями'},imposter:{name:'Імпостер',icon:'◉',description:'3–8 гравців із телефонами · секретне слово · блеф і голосування'},duel:{name:'Битва за поле',icon:'▦',description:'2 гравці · спільне поле · вікторина · п’ять у ряд'},millionaire:{name:'Мільйонер',icon:'◇',description:'1 гравець · 15 запитань · 50:50'}};
-export function modePicker(mode,esc){return `<div class="party-modes">${Object.entries(MODES).map(([id,m])=>`<button type="button" id="mode-${id}" data-new-mode="${id}" class="${mode===id?'chosen':''}" aria-pressed="${mode===id}"><span>${m.icon}</span><strong>${m.name}</strong><small>${m.description}</small></button>`).join('')}</div>`;}
+export function modePicker(mode,esc){return `<div class="party-modes">${Object.entries(MODES).map(([id,m])=>`<button type="button" id="mode-${id}" data-new-mode="${id}" class="${mode===id?'chosen':''}" aria-pressed="${mode===id}"><span>${modeArt(id)}</span><strong>${m.name}</strong><small>${m.description}</small></button>`).join('')}</div>`;}
 export function renderParty(s,{host,esc,btn,players,playerDot,roleVisible}){
  if(!s||s.phase==='lobby'||s.phase==='closed')return null;if(s.mode==='duel'&&s.duel?.version===2)return renderTurf(s,{host,esc,btn,players,playerDot});
  const me=s.players.find(p=>p.id===s.you),title=MODES[s.mode]?.name;

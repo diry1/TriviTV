@@ -1,0 +1,398 @@
+{
+  "otqa:8ff600d9385167d30dbecf52": [
+    "custom:semantic:form:identification",
+    "custom:semantic:subject:animal-behaviour",
+    "custom:semantic:topic:animals",
+    "custom:semantic:topic:plants"
+  ],
+  "otqa:1bb4cfea9ffd14e040639843": [
+    "custom:semantic:form:comparison",
+    "custom:semantic:topic:animals",
+    "custom:semantic:translation-uk-risk:scientific-terminology"
+  ],
+  "otqa:d0673a4c785555238b45562d": [
+    "custom:semantic:entity-kind:historical-figure-name",
+    "custom:semantic:form:missing-word",
+    "custom:semantic:form:quote-identification",
+    "custom:semantic:location-mention:asia",
+    "custom:semantic:topic:language",
+    "custom:semantic:topic:philosophy",
+    "custom:semantic:translation-uk-risk:quote-localization"
+  ],
+  "otqa:adc207c8314c27acaeda0c26": [
+    "custom:semantic:form:identification",
+    "custom:semantic:subject:mythology",
+    "custom:semantic:topic:religion",
+    "custom:semantic:translation-uk-risk:proper-name-localization"
+  ],
+  "otqa:b578ab9c75790956eabe1f97": [
+    "custom:semantic:form:missing-word",
+    "custom:semantic:topic:language",
+    "custom:semantic:translation-uk-risk:idiom",
+    "custom:semantic:translation-uk-risk:proverb-localization"
+  ],
+  "otqa:dc1e428a720a39e99d299c03": [
+    "custom:semantic:form:riddle",
+    "custom:semantic:topic:animals"
+  ],
+  "otqa:8989a2f1a08416c5586f664a": [
+    "custom:semantic:entity-kind:movie-title",
+    "custom:semantic:era:2000s",
+    "custom:semantic:form:identification",
+    "custom:semantic:subject:celebrity-biography",
+    "custom:semantic:topic:movies",
+    "custom:semantic:topic:music",
+    "custom:semantic:translation-uk-risk:title-localization"
+  ],
+  "otqa:288d8b48f33d758c4f7bfa99": [
+    "custom:semantic:entity-kind:song-title",
+    "custom:semantic:form:missing-word",
+    "custom:semantic:subject:song-lyrics",
+    "custom:semantic:topic:music",
+    "custom:semantic:translation-uk-risk:answer-distinction",
+    "custom:semantic:translation-uk-risk:quote-localization"
+  ],
+  "otqa:24d4e6d4558e138f890e53c9": [
+    "custom:semantic:entity-kind:movie-title",
+    "custom:semantic:era:1980s",
+    "custom:semantic:form:identification",
+    "custom:semantic:subject:screen-characters",
+    "custom:semantic:topic:actors",
+    "custom:semantic:topic:movies",
+    "custom:semantic:translation-uk-risk:character-name",
+    "custom:semantic:translation-uk-risk:title-localization"
+  ],
+  "otqa:15946071e56465513cd32cf8": [
+    "custom:semantic:audience:specialist-knowledge",
+    "custom:semantic:form:biography-detail",
+    "custom:semantic:topic:comics",
+    "custom:semantic:translation-uk-risk:character-name"
+  ],
+  "otqa:ce4edc4a85f74a80ff2c7c7f": [
+    "custom:semantic:form:identification",
+    "custom:semantic:subject:mythology",
+    "custom:semantic:topic:religion"
+  ],
+  "otqa:8761fc2b1b08804b4edbb9d8": [
+    "custom:semantic:form:definition",
+    "custom:semantic:topic:language",
+    "custom:semantic:translation-uk-risk:answer-distinction",
+    "custom:semantic:translation-uk-risk:english-spelling"
+  ],
+  "otqa:e3e70c10d304c8dad8fc5aee": [
+    "custom:semantic:audience:us-specific",
+    "custom:semantic:form:identification",
+    "custom:semantic:location-mention:north-america",
+    "custom:semantic:location-mention:usa",
+    "custom:semantic:subject:us-states",
+    "custom:semantic:topic:geography",
+    "custom:semantic:translation-uk-risk:proper-name-localization"
+  ],
+  "otqa:3a1eadfda5f30e7ce7ec8560": [
+    "custom:semantic:form:comparison",
+    "custom:semantic:location-mention:africa",
+    "custom:semantic:location-mention:north-america",
+    "custom:semantic:location-mention:oceania",
+    "custom:semantic:location-mention:usa",
+    "custom:semantic:topic:geography",
+    "custom:semantic:translation-uk-risk:proper-name-localization"
+  ],
+  "otqa:0139eb0a2c18a22157729df6": [
+    "custom:semantic:entity-kind:historical-figure-name",
+    "custom:semantic:form:identification",
+    "custom:semantic:subject:warfare",
+    "custom:semantic:topic:history",
+    "custom:semantic:topic:religion",
+    "custom:semantic:translation-uk-risk:proper-name-localization"
+  ],
+  "otqa:6214d34be45b2a43b8063cc7": [
+    "custom:semantic:form:event-detail",
+    "custom:semantic:subject:space",
+    "custom:semantic:topic:history",
+    "custom:semantic:topic:science"
+  ],
+  "otqa:42ff9a20576b30d3a116b9d5": [
+    "custom:semantic:form:identification",
+    "custom:semantic:location-mention:asia",
+    "custom:semantic:location-mention:europe",
+    "custom:semantic:subject:countries",
+    "custom:semantic:topic:food",
+    "custom:semantic:topic:geography"
+  ],
+  "otqa:98efd44a813b1df9aa8249d5": [
+    "custom:semantic:form:identification",
+    "custom:semantic:location-mention:asia",
+    "custom:semantic:topic:food",
+    "custom:semantic:topic:plants"
+  ],
+  "otqa:96b333696ff88e3cfaf9fe0a": [
+    "custom:semantic:audience:specialist-knowledge",
+    "custom:semantic:entity-kind:book-title",
+    "custom:semantic:form:event-detail",
+    "custom:semantic:topic:books",
+    "custom:semantic:translation-uk-risk:character-name",
+    "custom:semantic:translation-uk-risk:title-localization"
+  ],
+  "otqa:9c8207d7b3b502e61ae7467c": [
+    "custom:semantic:entity-kind:book-title",
+    "custom:semantic:form:identification",
+    "custom:semantic:topic:books",
+    "custom:semantic:translation-uk-risk:answer-distinction",
+    "custom:semantic:translation-uk-risk:character-name",
+    "custom:semantic:translation-uk-risk:title-localization"
+  ],
+  "otqa:fbd6b8c95a9f4e9eea096338": [
+    "custom:semantic:entity-kind:book-title",
+    "custom:semantic:form:identification",
+    "custom:semantic:topic:books",
+    "custom:semantic:translation-uk-risk:character-name",
+    "custom:semantic:translation-uk-risk:title-localization"
+  ],
+  "otqa:48787dd35b1463594542aa7e": [
+    "custom:semantic:entity-kind:book-title",
+    "custom:semantic:form:identification",
+    "custom:semantic:topic:books",
+    "custom:semantic:translation-uk-risk:character-name",
+    "custom:semantic:translation-uk-risk:title-localization"
+  ],
+  "otqa:6a18781caa5fb51444844f2c": [
+    "custom:semantic:entity-kind:movie-title",
+    "custom:semantic:era:1990s",
+    "custom:semantic:era:2000s",
+    "custom:semantic:form:identification",
+    "custom:semantic:location-mention:europe",
+    "custom:semantic:location-mention:north-america",
+    "custom:semantic:location-mention:usa",
+    "custom:semantic:topic:movies",
+    "custom:semantic:translation-uk-risk:title-localization"
+  ],
+  "otqa:23ec79ec81fd542252986386": [
+    "custom:semantic:audience:specialist-knowledge",
+    "custom:semantic:entity-kind:movie-title",
+    "custom:semantic:form:identification",
+    "custom:semantic:subject:screen-characters",
+    "custom:semantic:topic:actors",
+    "custom:semantic:topic:movies",
+    "custom:semantic:translation-uk-risk:character-name",
+    "custom:semantic:translation-uk-risk:title-localization"
+  ],
+  "otqa:723fb1ee0e73c6514eda7031": [
+    "custom:semantic:audience:specialist-knowledge",
+    "custom:semantic:form:identification",
+    "custom:semantic:topic:music",
+    "custom:semantic:translation-uk-risk:proper-name-localization"
+  ],
+  "otqa:e25578851cee8ac9ed52992d": [
+    "custom:semantic:entity-kind:song-title",
+    "custom:semantic:era:1970s",
+    "custom:semantic:form:biography-detail",
+    "custom:semantic:subject:celebrity-biography",
+    "custom:semantic:topic:music"
+  ],
+  "otqa:ad8af3170695185af269e0af": [
+    "custom:semantic:entity-kind:historical-figure-name",
+    "custom:semantic:form:identification",
+    "custom:semantic:location-mention:asia",
+    "custom:semantic:location-mention:europe",
+    "custom:semantic:location-mention:south-america",
+    "custom:semantic:topic:geography",
+    "custom:semantic:topic:history",
+    "custom:semantic:translation-uk-risk:proper-name-localization"
+  ],
+  "otqa:fd6b77898cf0cf886c017550": [
+    "custom:semantic:audience:specialist-knowledge",
+    "custom:semantic:entity-kind:historical-figure-name",
+    "custom:semantic:form:biography-detail",
+    "custom:semantic:topic:history",
+    "custom:semantic:translation-uk-risk:proper-name-localization"
+  ],
+  "otqa:20ca0d1266537cd218fb09b8": [
+    "custom:semantic:form:biography-detail",
+    "custom:semantic:topic:religion",
+    "custom:semantic:translation-uk-risk:proper-name-localization"
+  ],
+  "otqa:e040c7ce7b3630e4587ab022": [
+    "custom:semantic:form:identification",
+    "custom:semantic:location-mention:asia",
+    "custom:semantic:location-mention:europe",
+    "custom:semantic:subject:cities",
+    "custom:semantic:topic:geography",
+    "custom:semantic:topic:religion",
+    "custom:semantic:translation-uk-risk:proper-name-localization"
+  ],
+  "otqa:999e9ee97c86473d7da9c264": [
+    "custom:semantic:form:comparison",
+    "custom:semantic:subject:chemistry",
+    "custom:semantic:topic:science",
+    "custom:semantic:translation-uk-risk:scientific-terminology"
+  ],
+  "otqa:0ce031ab50ad42df8f937036": [
+    "custom:semantic:form:number-recall",
+    "custom:semantic:subject:anatomy",
+    "custom:semantic:topic:science",
+    "custom:semantic:translation-uk-risk:missing-context"
+  ],
+  "otqa:9ba3f2f0856c0cccc29f598e": [
+    "custom:semantic:audience:us-specific",
+    "custom:semantic:entity-kind:brand-name",
+    "custom:semantic:form:negative-question",
+    "custom:semantic:location-mention:north-america",
+    "custom:semantic:location-mention:usa",
+    "custom:semantic:subject:us-sports-leagues",
+    "custom:semantic:topic:sport",
+    "custom:semantic:translation-uk-risk:proper-name-localization"
+  ],
+  "otqa:fa06a42d3b7b554b03b928ca": [
+    "custom:semantic:form:event-detail",
+    "custom:semantic:location-mention:europe",
+    "custom:semantic:location-mention:north-america",
+    "custom:semantic:location-mention:usa",
+    "custom:semantic:subject:countries",
+    "custom:semantic:topic:geography",
+    "custom:semantic:topic:sport",
+    "custom:semantic:translation-uk-risk:proper-name-localization"
+  ],
+  "otqa:abf540ce5d2063b5ce956e77": [
+    "custom:semantic:entity-kind:television-title",
+    "custom:semantic:form:biography-detail",
+    "custom:semantic:subject:screen-characters",
+    "custom:semantic:topic:television",
+    "custom:semantic:translation-uk-risk:character-name",
+    "custom:semantic:translation-uk-risk:title-localization"
+  ],
+  "otqa:ffd0155dcb4d50c787336dfa": [
+    "custom:semantic:audience:specialist-knowledge",
+    "custom:semantic:entity-kind:brand-name",
+    "custom:semantic:entity-kind:television-title",
+    "custom:semantic:form:identification",
+    "custom:semantic:topic:business",
+    "custom:semantic:topic:television",
+    "custom:semantic:translation-uk-risk:title-localization"
+  ],
+  "otqa:6474a7aa159b409b191e1fd3": [
+    "custom:semantic:entity-kind:video-game-title",
+    "custom:semantic:form:identification",
+    "custom:semantic:location-mention:north-america",
+    "custom:semantic:location-mention:usa",
+    "custom:semantic:subject:cities",
+    "custom:semantic:topic:video-games",
+    "custom:semantic:translation-uk-risk:proper-name-localization"
+  ],
+  "otqa:4834777e3548e26666127205": [
+    "custom:semantic:entity-kind:brand-name",
+    "custom:semantic:entity-kind:video-game-title",
+    "custom:semantic:form:negative-question",
+    "custom:semantic:topic:business",
+    "custom:semantic:topic:video-games"
+  ],
+  "otqa:ac4332e8310d1deb5dbad643": [
+    "custom:semantic:era:1920s",
+    "custom:semantic:form:date-recall",
+    "custom:semantic:location-mention:europe",
+    "custom:semantic:topic:geography",
+    "custom:semantic:topic:history"
+  ],
+  "otqa:30c604f57cc950815f87ecb8": [
+    "custom:semantic:form:quote-identification",
+    "custom:semantic:location-mention:europe",
+    "custom:semantic:topic:customs",
+    "custom:semantic:topic:language",
+    "custom:semantic:translation-uk-risk:idiom",
+    "custom:semantic:translation-uk-risk:quote-localization"
+  ],
+  "otqa:002a050456cf833d90218ff5": [
+    "custom:semantic:form:wordplay",
+    "custom:semantic:location-mention:europe",
+    "custom:semantic:style:humor",
+    "custom:semantic:topic:food",
+    "custom:semantic:topic:language",
+    "custom:semantic:translation-uk-risk:answer-distinction",
+    "custom:semantic:translation-uk-risk:wordplay"
+  ],
+  "otqa:00005c2384668d6cda2e98c5": [
+    "custom:semantic:entity-kind:historical-figure-name",
+    "custom:semantic:entity-kind:movie-title",
+    "custom:semantic:era:2000s",
+    "custom:semantic:form:identification",
+    "custom:semantic:location-mention:africa",
+    "custom:semantic:topic:history",
+    "custom:semantic:topic:movies",
+    "custom:semantic:topic:sport",
+    "custom:semantic:translation-uk-risk:title-localization"
+  ],
+  "otqa:264cb736acb765ab7ffc4131": [
+    "custom:semantic:audience:specialist-knowledge",
+    "custom:semantic:entity-kind:book-title",
+    "custom:semantic:entity-kind:historical-figure-name",
+    "custom:semantic:era:1980s",
+    "custom:semantic:form:negative-question",
+    "custom:semantic:location-mention:north-america",
+    "custom:semantic:location-mention:usa",
+    "custom:semantic:subject:us-presidents",
+    "custom:semantic:topic:books",
+    "custom:semantic:topic:history",
+    "custom:semantic:topic:politics",
+    "custom:semantic:translation-uk-risk:title-localization"
+  ],
+  "otqa:1e8dff8aa1666333778f0283": [
+    "custom:semantic:audience:us-specific",
+    "custom:semantic:form:identification",
+    "custom:semantic:location-mention:north-america",
+    "custom:semantic:location-mention:usa",
+    "custom:semantic:subject:landmarks",
+    "custom:semantic:subject:us-states",
+    "custom:semantic:topic:geography",
+    "custom:semantic:translation-uk-risk:proper-name-localization"
+  ],
+  "otqa:9f72f3441586396dfc0c5951": [
+    "custom:semantic:form:identification",
+    "custom:semantic:location-mention:africa",
+    "custom:semantic:subject:countries",
+    "custom:semantic:topic:geography",
+    "custom:semantic:translation-uk-risk:proper-name-localization"
+  ],
+  "otqa:02537cd98a017381077e2d38": [
+    "custom:semantic:audience:us-specific",
+    "custom:semantic:entity-kind:brand-name",
+    "custom:semantic:era:1970s",
+    "custom:semantic:form:date-recall",
+    "custom:semantic:subject:celebrity-biography",
+    "custom:semantic:topic:sport",
+    "custom:semantic:translation-uk-risk:proper-name-localization"
+  ],
+  "otqa:2cf9c76af98bfb1892cecd0d": [
+    "custom:semantic:audience:specialist-knowledge",
+    "custom:semantic:entity-kind:brand-name",
+    "custom:semantic:form:negative-question",
+    "custom:semantic:topic:animals",
+    "custom:semantic:topic:hobbies",
+    "custom:semantic:translation-uk-risk:proper-name-localization"
+  ],
+  "otqa:04450ab5ee40cd4553861bca": [
+    "custom:semantic:entity-kind:historical-figure-name",
+    "custom:semantic:era:1990s",
+    "custom:semantic:form:event-detail",
+    "custom:semantic:subject:film-awards",
+    "custom:semantic:subject:oscars",
+    "custom:semantic:topic:actors",
+    "custom:semantic:topic:history",
+    "custom:semantic:topic:movies",
+    "custom:semantic:translation-uk-risk:proper-name-localization"
+  ],
+  "otqa:014cebf21e474adef879f7d8": [
+    "custom:semantic:entity-kind:song-title",
+    "custom:semantic:entity-kind:television-title",
+    "custom:semantic:form:identification",
+    "custom:semantic:topic:music",
+    "custom:semantic:topic:television",
+    "custom:semantic:translation-uk-risk:answer-distinction",
+    "custom:semantic:translation-uk-risk:title-localization"
+  ],
+  "otqa:be5b2cf08ff274576eb1ef06": [
+    "custom:semantic:entity-kind:brand-name",
+    "custom:semantic:era:1940s",
+    "custom:semantic:form:identification",
+    "custom:semantic:topic:business",
+    "custom:semantic:topic:history"
+  ]
+}

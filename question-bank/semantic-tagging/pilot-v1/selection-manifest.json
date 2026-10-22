@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "population": "Complete English master, 38,926 records; not limited to Fun/EU",
+  "stratifiedSelection": {
+    "algorithm": "Sort IDs within each source category by SHA256(UTF8(\"semantic-pilot-v1|\" + id)); choose first 2",
+    "categories": 20,
+    "perCategory": 2
+  },
+  "targetedSelection": [
+    {
+      "id": "otqa:002a050456cf833d90218ff5",
+      "purpose": "pun"
+    },
+    {
+      "id": "otqa:00005c2384668d6cda2e98c5",
+      "purpose": "movie-history"
+    },
+    {
+      "id": "otqa:264cb736acb765ab7ffc4131",
+      "purpose": "book-title"
+    },
+    {
+      "id": "otqa:1e8dff8aa1666333778f0283",
+      "purpose": "michigan"
+    },
+    {
+      "id": "otqa:9f72f3441586396dfc0c5951",
+      "purpose": "lake-victoria"
+    },
+    {
+      "id": "otqa:02537cd98a017381077e2d38",
+      "purpose": "date-answer"
+    },
+    {
+      "id": "otqa:2cf9c76af98bfb1892cecd0d",
+      "purpose": "negative"
+    },
+    {
+      "id": "otqa:04450ab5ee40cd4553861bca",
+      "purpose": "oscar"
+    },
+    {
+      "id": "otqa:014cebf21e474adef879f7d8",
+      "purpose": "ambiguous-georgia"
+    },
+    {
+      "id": "otqa:be5b2cf08ff274576eb1ef06",
+      "purpose": "brand"
+    }
+  ],
+  "translationJoin": "canonical id; missing drafts retained",
+  "limitations": [
+    "Disproportionate category coverage; not prevalence weighted.",
+    "Ten deliberately selected edge cases; not an independent accuracy benchmark.",
+    "Six overlap with existing human decisions (3 Keep, 3 Exclude); calibration only.",
+    "No factual or licensed-title reference lookup performed; uncertain labels remain proposals."
+  ]
+}

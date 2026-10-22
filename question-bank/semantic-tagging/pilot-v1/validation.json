@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-22",
+  "pilotCheck": "pass; 50 records, vocabulary, fingerprints, evidence spans, era roles and cross-case assertions",
+  "masterIntegrityTests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "dashboardReadsMergedTags": true,
+  "htmlReview": {
+    "cards": 50,
+    "desktopWidth": 1440,
+    "mobileWidth": 390,
+    "horizontalOverflow": false
+  },
+  "unchanged": {
+    "masterCount": 38926,
+    "questionTextAndAnswerKeys": true,
+    "allNonSemanticTags": true,
+    "EUen": 27948,
+    "EUukScreened": 799,
+    "apkAndPublicDeployment": true
+  }
+}

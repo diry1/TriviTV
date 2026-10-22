@@ -1,0 +1,172 @@
+{
+  "version": "0.11.0-difficulty-uk",
+  "versionCode": 18,
+  "bytes": 6507251,
+  "MB": 6.51,
+  "MiB": 6.21,
+  "sha256": "60ca9af396e1464691141f0e546a400fc84624fc4d9381a45c8d9f1baa882857",
+  "questionCount": 7104,
+  "categories": 19,
+  "assetFilesMatched": 104,
+  "compressedParts": {
+    "app-and-other": 958488,
+    "audio": 4078244,
+    "questions": 1217143,
+    "visuals": 232136
+  },
+  "bank": {
+    "pool": "fun",
+    "count": 7104,
+    "categories": {
+      "Animals": 447,
+      "Arts & Humanities": 8,
+      "Brain Teasers": 64,
+      "Celebrities": 68,
+      "Entertainment": 3,
+      "General Knowledge": 1281,
+      "Geography": 370,
+      "History": 576,
+      "Hobbies": 518,
+      "Kids Trivia": 69,
+      "Literature": 6,
+      "Movies": 19,
+      "Music": 231,
+      "People": 607,
+      "Science & Technology": 882,
+      "Sport": 449,
+      "Television": 28,
+      "Video Games": 5,
+      "World": 1473
+    },
+    "runtimeBytes": 5344195,
+    "sha256": "5536298c991a43bac39d96635308ec4083de78297928122a62bb5cbe843ec7c8",
+    "status": "strict-fun-semantic-and-localization-screened-drafts",
+    "source": "OpenTriviaQA contributors",
+    "license": "CC-BY-SA-4.0",
+    "translationHolds": 0,
+    "translationHoldReasonsOverlapping": {},
+    "notes": "Strict Fun v2 holds all tagged translation risks and unverified movie/book titles; machine screening is not factual certification. No backend tags included."
+  },
+  "layout": {
+    "functional": {
+      "completeGames": [
+        "Trivia continues after 10, ends at zero lives",
+        "Millionaire 15/15"
+      ],
+      "navigation": "exact expected focus sequence",
+      "noScroll": true,
+      "settingsPaging": true,
+      "pauseAndProgressReload": true,
+      "lifeline": true,
+      "creditsPaging": true,
+      "browserErrors": []
+    },
+    "geometry": {
+      "questions": 7104,
+      "modes": 2,
+      "issues": [],
+      "issueCount": 0
+    }
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 3
+  },
+  "signature": "v2; same update certificate",
+  "zipAlignment": "passed",
+  "tests": "19 difficulty/solo tests; local multiplayer tests; TV UI and full-bank layouts passed",
+  "physicalTV": "Pending",
+  "difficultyRules": {
+    "questionScores": true,
+    "starCounts": {
+      "1": 383,
+      "2": 2071,
+      "3": 2792,
+      "4": 1773,
+      "5": 85
+    },
+    "triviaMixes": [
+      [
+        35,
+        50,
+        15,
+        0,
+        0
+      ],
+      [
+        20,
+        45,
+        30,
+        5,
+        0
+      ],
+      [
+        10,
+        35,
+        40,
+        15,
+        0
+      ],
+      [
+        5,
+        30,
+        40,
+        23,
+        2
+      ],
+      [
+        5,
+        25,
+        40,
+        27,
+        3
+      ]
+    ],
+    "millionaire": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5
+    ],
+    "missingMillionaireBucket": "warning before start, no substitution",
+    "missingTriviaBucket": "nearest available star, lower wins tie",
+    "categoryWeighting": "proportional to eligible count inside chosen star"
+  },
+  "difficultyUI": {
+    "missingBucketWarning": true,
+    "noInvalidStart": true,
+    "exactMillionaireDeck": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5
+    ]
+  },
+  "deploymentVersion": "878d70ac-8587-4bc1-b7c4-f55eeee75e10",
+  "publicHttpsWssIntegrationTests": {
+    "passed": 4,
+    "failed": 0
+  }
+}

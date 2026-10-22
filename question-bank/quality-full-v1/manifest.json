@@ -1,0 +1,33 @@
+{
+  "sourcePool": 7104,
+  "reusedPilot": 200,
+  "newQuestions": 6904,
+  "model": "gpt-6-luna",
+  "additionalSafetyCeilingUsd": 5,
+  "authorization": "User: proceed with all 7104, API limits are up",
+  "bankSha256": "aef5fd6887d8a4942517617f4f1080bb41643ff01a72f76218a351a4b997e1ff",
+  "runtimeSha256": "b9f5907c2c1e2d7dbca01428a916b8d51dc36193ec71822b0b38b6c2b97e4eea",
+  "instructionsSha256": "4e28a50666d3d5ce35e5102635e275f86e1f71baef07826b8f6d399db4aea47a",
+  "pilotAuditSha256": "08a9c83ba917cbbdc4858409659fafdc7a6a23fc6723b35445a2df1616e385bb",
+  "perCategory": {
+    "Science & Technology": 882,
+    "People": 607,
+    "Animals": 447,
+    "History": 576,
+    "General Knowledge": 1281,
+    "World": 1473,
+    "Music": 231,
+    "Sport": 449,
+    "Geography": 370,
+    "Hobbies": 518,
+    "Kids Trivia": 69,
+    "Brain Teasers": 64,
+    "Celebrities": 68,
+    "Video Games": 5,
+    "Television": 28,
+    "Movies": 19,
+    "Literature": 6,
+    "Arts & Humanities": 8,
+    "Entertainment": 3
+  }
+}

@@ -1,0 +1,226 @@
+[
+  {
+    "id": "otqa:028cae80d423158923664989",
+    "category": "Science & Technology",
+    "text": "What is the chemical symbol for Thorium?",
+    "matches": [
+      {
+        "rule": "specialist_detail",
+        "evidence": "chemical symbol",
+        "confidence": "pattern-match-not-semantic-verification"
+      }
+    ],
+    "outcome": "preserved-human-keep",
+    "sourceHash": "3176b1d07715d92c7aac0a60b9c0f97a1d1900efae6416ba345ec257b12476a3"
+  },
+  {
+    "id": "otqa:0394def8a3da58a2e98da0a7",
+    "category": "General Knowledge",
+    "text": "If two systems are in thermodynamic equilibrium with a third system then they are in thermodynamic equilibrium with each other. Which law is this?",
+    "matches": [
+      {
+        "rule": "near_identical_answer_choices",
+        "evidence": "All multiword answer pairs have >0.68 normalized text similarity.",
+        "confidence": "heuristic-hold"
+      }
+    ],
+    "outcome": "preserved-human-keep",
+    "sourceHash": "fe20e49d061a8d18bb05ef6cc502f279ac58ba2fcc644a715a52fa54e4e4a5cc"
+  },
+  {
+    "id": "otqa:03e13b227c2e794a20c471cc",
+    "category": "Sport",
+    "text": "What is the maximum length of a modern day cricket test match?",
+    "matches": [
+      {
+        "rule": "numeric_or_number_word_choices",
+        "evidence": "All four alternatives are numeric or spelled-out numbers.",
+        "confidence": "deterministic-feature"
+      }
+    ],
+    "outcome": "preserved-human-keep",
+    "sourceHash": "6fa474c930d1b17e2730b82f0a293f81d9c8641a64ded7d080aadbb50268178d"
+  },
+  {
+    "id": "otqa:053f53d593d719d2f83cadd2",
+    "category": "Hobbies",
+    "text": "Although the Parker Brothers company states that the right length of a Monopoly game should be about 45 minutes, the game often continues for hours because of the hard-to-reach terminating conditions. How much did the longest Monopoly game on record last according to the toy company Hasbro (owner of Parker Brothers)?",
+    "matches": [
+      {
+        "rule": "numeric_or_number_word_choices",
+        "evidence": "All four alternatives are numeric or spelled-out numbers.",
+        "confidence": "deterministic-feature"
+      }
+    ],
+    "outcome": "preserved-human-keep",
+    "sourceHash": "d62d3f4ef3be44a848f2c0340dd75b3cc9e4441768813416ed50a740eb806a1b"
+  },
+  {
+    "id": "otqa:0558833ac00060f2a8243703",
+    "category": "World",
+    "text": "In America, it is not unusual to find buildings with no thirteenth floor. In Japan, which floor of a hotel might one find missing?",
+    "matches": [
+      {
+        "rule": "numeric_or_number_word_choices",
+        "evidence": "All four alternatives are numeric or spelled-out numbers.",
+        "confidence": "deterministic-feature"
+      }
+    ],
+    "outcome": "preserved-human-keep",
+    "sourceHash": "683d34db62280c8294e30d3a6268131599e41a7c0003c413221ed9f43de0a6e6"
+  },
+  {
+    "id": "otqa:066421a06742c48480172075",
+    "category": "Kids Trivia",
+    "text": "In the Disney movie Sleeping Beauty, Princess Aurora is born to King Stefan and Queen Leah and they name her Aurora after what Roman goddess?",
+    "matches": [
+      {
+        "rule": "near_identical_answer_choices",
+        "evidence": "All multiword answer pairs have >0.68 normalized text similarity.",
+        "confidence": "heuristic-hold"
+      }
+    ],
+    "outcome": "preserved-human-keep",
+    "sourceHash": "e286351fb2f4787933ca49ab0916e6c2a401150edea51b45260e45ca12e0d28a"
+  },
+  {
+    "id": "otqa:06fa8605e9b8f1dd130c9308",
+    "category": "Movies",
+    "text": "Which of these ladies played the role of Shelby Eatenton-Latcherie in the movie Steel Magnolias?",
+    "matches": [
+      {
+        "rule": "fan_or_biography_minutiae",
+        "evidence": "played the role of",
+        "confidence": "pattern-match-not-semantic-verification"
+      }
+    ],
+    "outcome": "preserved-human-keep",
+    "sourceHash": "6930ed14da51704946c6eab59f910772dafe2b4a00f851aaa7a4cc2095c3612c"
+  },
+  {
+    "id": "otqa:098773f28678e568caa2f14f",
+    "category": "Kids Trivia",
+    "text": "Which house of Hogwarts was fictional character Sirius Black in when he attended the famous school?",
+    "matches": [
+      {
+        "rule": "fan_or_biography_minutiae",
+        "evidence": "attended the famous school",
+        "confidence": "pattern-match-not-semantic-verification"
+      }
+    ],
+    "outcome": "preserved-human-keep",
+    "sourceHash": "34b96121fa6465823cd5a629cd6ffa5c8dd0d8b37d190d845ebe04ba81f121f1"
+  },
+  {
+    "id": "otqa:15ea9c1f32f5abcc4d43eecb",
+    "category": "People",
+    "text": "What was Jacqueline Kennedys maiden name?",
+    "matches": [
+      {
+        "rule": "fan_or_biography_minutiae",
+        "evidence": "maiden name",
+        "confidence": "pattern-match-not-semantic-verification"
+      }
+    ],
+    "outcome": "preserved-human-keep",
+    "sourceHash": "7721c72a8fe2e127b370863b043b7ddb7cc986c08e56a563baa86a10ba0090c7"
+  },
+  {
+    "id": "otqa:16da6f0b37dbba1f20eddeca",
+    "category": "People",
+    "text": "How many of Henry VIIIs wives were called Catherine?",
+    "matches": [
+      {
+        "rule": "numeric_or_number_word_choices",
+        "evidence": "All four alternatives are numeric or spelled-out numbers.",
+        "confidence": "deterministic-feature"
+      }
+    ],
+    "outcome": "preserved-human-keep",
+    "sourceHash": "b18294f8f992573598ad656dc875fc8abc455a5a07015ddde7cff7725bba33ff"
+  },
+  {
+    "id": "otqa:3c20d4d16b5cbc5d24d2c844",
+    "category": "Brain Teasers",
+    "text": "A lion can eat a sheep in 2 hours, a wolf - in 3 hours, and a dog - in 6 hours. How long will it take the three animals to eat a sheep if they eat together?",
+    "matches": [
+      {
+        "rule": "numeric_or_number_word_choices",
+        "evidence": "All four alternatives are numeric or spelled-out numbers.",
+        "confidence": "deterministic-feature"
+      }
+    ],
+    "outcome": "preserved-human-keep",
+    "sourceHash": "9f43691029993e653b06fd8623a4bbc7ad846d24c0bbb61c255c7ad27102fac6"
+  },
+  {
+    "id": "otqa:59c29b305e17a90746696265",
+    "category": "Entertainment",
+    "text": "This Marvel Comics superhero, whose birth name was Peter Benjamin Parker, first used his new found superpowers as a professional wrestler.",
+    "matches": [
+      {
+        "rule": "fan_or_biography_minutiae",
+        "evidence": "birth name",
+        "confidence": "pattern-match-not-semantic-verification"
+      }
+    ],
+    "outcome": "preserved-human-keep",
+    "sourceHash": "fa1cef77af6c5872fcaba3d25397e23f53c359dd0306946615deed9a93ec070b"
+  },
+  {
+    "id": "otqa:5b0cc8daf3acd729a3f674ab",
+    "category": "Brain Teasers",
+    "text": "How long did the Hundred years war last?",
+    "matches": [
+      {
+        "rule": "numeric_or_number_word_choices",
+        "evidence": "All four alternatives are numeric or spelled-out numbers.",
+        "confidence": "deterministic-feature"
+      }
+    ],
+    "outcome": "preserved-human-keep",
+    "sourceHash": "d155ce88e324c7abed28be79f31b22cd3b6445cc0783fcade693121dc63e722e"
+  },
+  {
+    "id": "otqa:955e1958440d94f2cd609228",
+    "category": "Brain Teasers",
+    "text": "12 candles were alight. The wind blew out 5 of them. How many candles were left?",
+    "matches": [
+      {
+        "rule": "numeric_or_number_word_choices",
+        "evidence": "All four alternatives are numeric or spelled-out numbers.",
+        "confidence": "deterministic-feature"
+      }
+    ],
+    "outcome": "preserved-human-keep",
+    "sourceHash": "c88351fb1a38fe2c9f8f91d4bd03c1e48e1c4775e8cafb632781a3290144a44a"
+  },
+  {
+    "id": "otqa:dc1e428a720a39e99d299c03",
+    "category": "Brain Teasers",
+    "text": "There are 15 birds sitting on the branches of a tree. A hunter goes by and shoots 3 of them. How many birds are left on the tree?",
+    "matches": [
+      {
+        "rule": "numeric_or_number_word_choices",
+        "evidence": "All four alternatives are numeric or spelled-out numbers.",
+        "confidence": "deterministic-feature"
+      }
+    ],
+    "outcome": "preserved-human-keep",
+    "sourceHash": "a50136668668a2f68b49a15993f34327f50841aa6d37c426d3c30a72fd39aa1a"
+  },
+  {
+    "id": "otqa:f8c4aa92d8feee7553fda852",
+    "category": "Brain Teasers",
+    "text": "One iPod can hold 950 songs and 3 movies. How many iPods of this model would one person have to buy to have 27 movies and 8550 songs?",
+    "matches": [
+      {
+        "rule": "numeric_or_number_word_choices",
+        "evidence": "All four alternatives are numeric or spelled-out numbers.",
+        "confidence": "deterministic-feature"
+      }
+    ],
+    "outcome": "preserved-human-keep",
+    "sourceHash": "586e4fafe2c19e00d99ba4e902dabe9109e4ee1723b69c8a65906018aebc6db6"
+  }
+]

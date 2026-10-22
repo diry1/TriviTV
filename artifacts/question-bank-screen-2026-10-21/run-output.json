@@ -1,0 +1,70 @@
+{
+  "sourceCount": 38926,
+  "ukrainianDraftCount": 36614,
+  "status": "preliminary_retrieval_not_full_semantic_or_translation_approval",
+  "counts": {
+    "previously_screened_draft": 799,
+    "filtered_or_held": 11682,
+    "unassessed_potential": 24133
+  },
+  "potentialTotal": 24932,
+  "categories": {
+    "Animals": 543,
+    "Arts & Humanities": 560,
+    "Brain Teasers": 28,
+    "Celebrities": 1880,
+    "Entertainment": 75,
+    "General Knowledge": 3697,
+    "Geography": 521,
+    "History": 927,
+    "Hobbies": 767,
+    "Kids Trivia": 369,
+    "Literature": 849,
+    "Movies": 2812,
+    "Music": 2014,
+    "People": 1567,
+    "Science & Technology": 1380,
+    "Sport": 1255,
+    "Television": 2816,
+    "Video Games": 217,
+    "World": 2655
+  },
+  "ruleMatchesOverlapping": {
+    "Q01": 1095,
+    "NEW_UA_WORD_MEANING": 1029,
+    "Q03": 1995,
+    "LEGACY_REGION": 2772,
+    "NEW_RELIGION_CATEGORY": 480,
+    "EU02": 87,
+    "UA_REPAIR": 21,
+    "OLD_MEDIA_REVIEW": 6,
+    "UA03": 30,
+    "EU01": 762,
+    "Q02": 3128,
+    "EU06": 182,
+    "REVIEW_OVERRIDE": 169,
+    "EU05": 395,
+    "EU04": 375,
+    "EU03": 259,
+    "UA01": 37,
+    "UA04": 151,
+    "Q05": 51,
+    "EU07": 77,
+    "UA02": 80,
+    "Q04": 127,
+    "EU08": 67,
+    "Q06": 14,
+    "AGE_REVIEW": 10
+  },
+  "limitations": [
+    "Existing human decisions and saved deterministic rules reused; unassessed survivors still require semantic audience screening.",
+    "Word-meaning detection is a retrieval heuristic and can miss cases or match false positives.",
+    "Movie/book translated-title verification remains pending; surviving titles are not verified.",
+    "Source, translation and live game files remain unchanged."
+  ],
+  "inputHashes": {
+    "provided-916\\TriviTV-EU-Filtered-Test\\Server\\data\\opentriviaqa\\questions.json": "f9d14f56198416de0214b0a9be292b807415177835c058c5cb434d1cef2542ab",
+    "provided-916\\TriviTV-EU-Filtered-Test\\Server\\data\\translations\\uk.json": "3516437445dddea8ef13e37966a72edb038bedd2cfa6086f9ff1ea2b3770c443",
+    "docs\\question-bank-notes.md": "47c0ff5a37fdbad703132e049fa976e8d790298fad657bd530be675f52e27cbe"
+  }
+}

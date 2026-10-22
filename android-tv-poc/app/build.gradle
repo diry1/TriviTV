@@ -6,7 +6,7 @@ android {
  namespace 'dev.trivitv.app'
  compileSdk 36
  buildToolsVersion '35.0.0'
- defaultConfig { applicationId 'dev.trivitv.poc'; minSdk 26; targetSdk 36; versionCode 13; versionName '0.6.0-turf-war' }
+ defaultConfig { applicationId 'dev.trivitv.poc'; minSdk 26; targetSdk 36; versionCode 18; versionName '0.11.0-difficulty-uk' }
  compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
  kotlinOptions { jvmTarget = '17' }
 }
